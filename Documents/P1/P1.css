@@ -1,0 +1,31 @@
+body {
+  font-family: "Comic Sans MS";
+  background-color: #aecaf5;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexBox {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+
+  padding-left: 5%;
+  padding-right: 5%;
+
+  width: 60%;
+
+  border: 5px solid transparent;
+  border-image: linear-gradient(
+    to bottom right,
+    #b827fc 0%,
+    #2c90fc 25%,
+    #b8fd33 50%,
+    #fec837 75%,
+    #fd1892 100%
+  );
+  border-image-slice: 1;
+}
