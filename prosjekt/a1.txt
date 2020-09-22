@@ -1,0 +1,20 @@
+-eksempler er gamle så ikke følg dem for mye
+- bare Html, js og css
+- validere HTML filer!!!
+- endre funskjonelle krav til å bli mer spesifikke kanskje som å trykke på en knapp så skal noe kanskje
+- endre css til litt mer lese vennlig
+
+
+
+hvordan siden skal se ut:
+i nav bar:
+de 4 hembrene (underliggende 3 ting hver)
+historie, sponsors, kontak oss, totalt merittter,
+
+
+
+ideer om hva som kan være med:
+-form for å sende inn spm eller ønske om å være sponsor, fake.
+- En kalkulator eller noe regning som forteller hvor kjapt kulen går, ellr hvor bra eller gjennomsnitt treff per person ellerno
+- totale trofeer/ rekorder slått tilsammen og gjennomsnittloig = viser matte
+- 
