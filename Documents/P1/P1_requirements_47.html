@@ -3,17 +3,29 @@
   <head>
     <meta charset="utf-8" />
     <title>P1</title>
-    <link rel="stylesheet" href="./P1.css" />
+    <link rel="stylesheet" href="./p_1.css" />
+    <link rel="shortcut icon" href="bilder/ikon_hembre.png" />
   </head>
+
   <body>
     <div class="flexContainer">
-      <div class="flexBox">
+      <ul class="nav_ul">
+        <li><a href="#admin">Administrative Details</a></li>
+        <li><a href="#goals">Purpose and goals</a></li>
+        <li><a href="#audience">Audience</a></li>
+        <li><a href="#content">Content</a></li>
+        <li><a href="#function">Functional</a></li>
+        <li><a href="#non_function">Non functional</a></li>
+        <li><a href="#final">Location</a></li>
+      </ul>
+      <div class="start">
         <h1>P1 Project Requirements</h1>
+        <img src="bilder/ikon_hembre.png" class="logo" alt="" />
         <h4>Casper, Egil, Karan, Martin og Mattis</h4>
         <time>15. September 2020</time>
       </div>
       <div class="flexBox">
-        <h3>Administrative Details</h3>
+        <h3 id="admin">Administrative Details</h3>
         <p class="infoP">
           For this project we wanted a real client that could give us some
           specific needs for the website and also motivate us by having the
@@ -34,8 +46,10 @@
           client.
         </p>
       </div>
+      <hr />
+
       <div class="flexBox">
-        <h3>Purpose and goals</h3>
+        <h3 id="goals">Purpose and goals</h3>
         <p>
           We had a short meeting with Pål where we talked about what he wanted
           to use the website for and how he wanted it to function. During this
@@ -54,8 +68,11 @@
           add a more personal feel, and therefore be more convincing.
         </p>
       </div>
+
+      <hr />
+
       <div class="flexBox">
-        <h3>Audience</h3>
+        <h3 id="audience">Audience</h3>
         <p class="infoP">
           The intended audience for this webpage is going to be mainly sponsors
           but also the general public who are eager to know more about this
@@ -69,7 +86,7 @@
         </p>
       </div>
       <div class="flexBox">
-        <h3>The content of the site and how it is organized</h3>
+        <h3 id="content">The content of the site and how it is organized</h3>
         <p class="infoP">
           The main content of the site will be divided into the main page, each
           member of the Hembre families own page, sponsors, history and
@@ -79,11 +96,12 @@
         <ul>
           <li>Main page</li>
           <ul>
+            <li>Navigation bar(consistent on all pages)</li>
             <li>Videos and pictures</li>
             <li>News</li>
             <li>Slideshow</li>
             <li>Grid showing all 4 Hembre's</li>
-            <li>Footer with contact information</li>
+            <li>Footer with contact information(will be on all the sites)</li>
           </ul>
           <li>Each member of the Hembre families own page</li>
           <ul>
@@ -111,13 +129,13 @@
         <h3>Functional and Non-Functional Requirements</h3>
         <p class="infoP"></p>
         <ul>
-          <li>Functional Requirements</li>
+          <li id="function">Functional Requirements</li>
           <ul>
             <li>Show statistics for each member</li>
             <li>Links to current sponsors</li>
             <li>Link to FSU.no where the general statistics are.</li>
           </ul>
-          <li>Non-Functional Requirements</li>
+          <li id="non_function">Non-Functional Requirements</li>
           <ul>
             <li>Add statistics to the site as easily as possible</li>
             <li>Sponsors should be listed on the main page</li>
@@ -129,10 +147,8 @@
         </ul>
       </div>
       <div class="flexBox">
-        <h3>Final location</h3>
-        <p class="infoP">
-          http://fsu.no/teamhembre/ -Mainted by Pål Hembre
-        </p>
+        <h3 id="final">Final location</h3>
+        <p class="infoP">http://fsu.no/teamhembre/ -Mainted by Pål Hembre</p>
       </div>
     </div>
   </body>
