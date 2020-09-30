@@ -1,0 +1,20 @@
+6. Content
+There will be 19 separate pages as follows:
+
+the homepage:
+the homepage will be the first webpage the user sees.
+This is why we want to make it easy for the user to navigate with a navigation bar.
+We also want the consumer to see the lates news about the Hembre family with a slide show they can click on to get to the news.
+It will also have buttons to go  back or forward.
+Under the News slide you will find a square with all the 4 athletes so you can go in on their personal site for more information about them easily.
+
+
+navigation bar:
+the navigation bar will be made up off the logo, about, historie, kontakt oss, sponorer og Utdøverne.
+If you hover over the utdøvere link you will get a dropdownmenu with all the four athletes with the underlying pages for each of them which are:
+their own personal page, beste resultat, gjennomsnitt, ant starter.
+
+
+the logo:
+the logo will be made with svg for the best quality. It will say Hembre or Team hembre.
+When you hover over the navigation bar it will change to say home or hjem so its easier for the user to get to the homepage.
