@@ -33,6 +33,7 @@ html{
 
 .knapp_header>a{
 color: white;
+font-size: 25px;
 border-style: solid;
 border-color: white;
 border-width: 5px;
@@ -61,6 +62,8 @@ border-color: #022c70;
   .logo>.overskrift {
     font-size: 89px;
     color: white;
+    background-color: black;
+    margin: 10% 20%;
     /* endrer plassering*/
     margin-top: 0px;
     grid-column: span 7;
