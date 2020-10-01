@@ -92,3 +92,15 @@ text-align: center;
 .over_grid{
   font-size: 25px;
 }
+.liste>.overskkrift_li{
+  margin-left: -40px;
+  list-style: none;
+}
+.liste>.underlying_li{
+  margin-left: 0px;
+  list-style: none;
+  list-style:square;
+}
+.liste>li{
+  margin-left: 40px;
+}
