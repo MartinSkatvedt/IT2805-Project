@@ -1,8 +1,9 @@
 body {
-  font-family: "Comic Sans MS";
+  font-family: "Comic Sans MS", sans-serif;
+  color: #000;
   background-color: #e3e3e3;
 }
-@media only screen and (max-device-width : 1309px) {
+@media only screen and (max-width : 1309px) {
   .nav_ul {
     display: none;
   }
@@ -61,7 +62,7 @@ li>a:hover{
   width: 60%;
   border-bottom-style: ridge;
   border-bottom-color: red;
-  border-left-width: 50%;
+  /* border-left-width: 50%; */ /* NOTE: <-- Ikke lov å oppgi i prosent, denne går ingenting| */
   border-left-style: ridge;
   border-left-color: salmon;
 }
@@ -98,7 +99,7 @@ text-align: center;
 }
 .liste>.underlying_li{
   margin-left: 0px;
-  list-style: none;
+  /* list-style: none; */
   list-style:square;
 }
 .liste>li{
