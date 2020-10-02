@@ -2,7 +2,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #000;
   background-color: #e3e3e3;
-  
+
 }
 @media only screen and (max-width : 1309px) {
   .nav_ul {
@@ -91,6 +91,9 @@ margin: 2px;
 text-align: center;
 }
 
+#struktur {
+  width: 100%;
+}
 
 .over_grid{
   font-size: 25px;
