@@ -105,6 +105,6 @@ text-align: center;
 .liste>li{
   margin-left: 40px;
 }
-#page_layout+.infoP>img{
+.infoP+img{
   height: 50vh;
 }
