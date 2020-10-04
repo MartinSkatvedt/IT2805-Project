@@ -9,6 +9,10 @@ body {
   }
 }
 
+.flexContainer>.flexBox>img{
+  margin: auto;
+  display: block;
+}
 .nav_ul {
   list-style-type: none;
   margin: 0;
