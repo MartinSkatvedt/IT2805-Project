@@ -106,3 +106,6 @@ li > a:hover {
 .liste > li {
   margin-left: 40px;
 }
+.infoP+img{
+  height: 50vh;
+}
