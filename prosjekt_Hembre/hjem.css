@@ -1,0 +1,15 @@
+:root{
+    --main-background:  #C9D3D3;
+    --nav-color: #E8FFFF;
+    --background: #C9D3D3;
+    --element-background: #C4C4C4;
+    --text-color: #000;
+    --background-text-color: none;
+    --Secondary-teks-color: #F2F2F2;
+    --Secondary-background-teks-color: #000000BF;
+
+}
+
+body{
+    background-color: var(--main-background);
+}
