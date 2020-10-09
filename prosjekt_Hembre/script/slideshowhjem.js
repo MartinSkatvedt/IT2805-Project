@@ -27,7 +27,7 @@ function nextSlide(n) {
     const slides = document.getElementsByClassName("slides");
 
     for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+        slides[i].style.display = "none";
     }
 
     slideIndex += n
@@ -37,9 +37,8 @@ function nextSlide(n) {
     }
 
     if (slideIndex < 0) {
-        slideIndex = slides.length-1
+        slideIndex = slides.length - 1
     }
     console.log(slideIndex);
-    slides[slideIndex].style.display = "block";  
+    slides[slideIndex].style.display = "block";
 }
-
