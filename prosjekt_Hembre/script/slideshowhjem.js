@@ -1,5 +1,5 @@
 let slideIndex = -1;
-showSlides();
+
 const next = document.querySelector(".next");
 const prev = document.querySelector(".prev");
 
@@ -34,8 +34,8 @@ function nextSlide(n) {
     if (slideIndex < 0) {
         slideIndex = slides.length-1
     }
-    console.log(slideIndex);
     
     slides[slideIndex].style.display = "block";  
-    
 }
+
+showSlides()
