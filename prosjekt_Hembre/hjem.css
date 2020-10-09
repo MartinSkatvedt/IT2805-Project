@@ -7,7 +7,9 @@
     --secondary-teks-color: #F2F2F2;
     --secondary-background-color: #000000BF;
     --button-color: #F2994A;
-    --font-size: 15pt
+    --font-size-large: 25pt;
+    --font-size: 15pt;
+    --font-size-small: 10pt;
 }
 
 body {
@@ -34,6 +36,41 @@ body {
     min-height: 100vh;
 }
 
+.grid-container-athletes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2ch;
+    margin-top: 2ch;
+    font-size: var(--font-size);
+}
+.athlete{
+    position: relative;
+    width: 100%;
+
+}
+.athlete img {
+    width: 100%;
+    vertical-align: middle;
+
+}
+.athlete a{
+    height: 100%;
+}
+.athlete .text{
+    color: var(--secondary-teks-color);
+    background-color: var(--secondary-background-color);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+
+
+
+
 /*Slideshow*/
 .slideshow-container * {
     box-sizing: border-box;
@@ -57,7 +94,7 @@ body {
 }
 
 /* Caption text */
-.slides>.text {
+.slides>.text{
     color: var(--secondary-teks-color);
     background-color: var(--secondary-background-color);
     padding: 8px 12px;
