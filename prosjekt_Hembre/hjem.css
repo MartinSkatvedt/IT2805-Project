@@ -1,0 +1,31 @@
+:root{
+    --background-color: #C9D3D3;
+    --nav-color: #E8FFFF;
+    --element-background: #C4C4C4;
+    --text-color: #000;
+    --background-text-color: none;
+    --secondary-teks-color: #F2F2F2;
+    --secondary-background-teks-color: #000000BF;
+    --button-color: #0D0C0C;
+
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    width: 90%;
+    margin: auto;
+
+    margin-top: 20ch; /*TEMPORARY*/
+}
+.grid-container-hjem{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-column-gap: 2ch;
+    
+}
+.grid-container-hjem>div{
+    background-color: var(--element-background);
+    padding: 2ch;
+    min-height: 100vh;
+}
