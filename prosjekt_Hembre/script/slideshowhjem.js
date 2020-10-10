@@ -9,7 +9,7 @@ next.addEventListener("click", btnClick)
 prev.addEventListener("click", btnClick)
 
 function btnClick(event) {
-    eventType = event.target.className
+    eventType = event.target.id
     console.log(eventType);
     if (eventType == 'next') {
         nextSlide(1)

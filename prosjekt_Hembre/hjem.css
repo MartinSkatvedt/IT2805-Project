@@ -1,5 +1,6 @@
 :root {
-    --background-color: #C9D3D3;
+    --background-color: #D3EBEB;
+    --background-color: #ADC3C3;
     --nav-color: #E8FFFF;
     --element-background: #C4C4C4;
     --text-color: #000;
@@ -19,46 +20,54 @@ body {
     width: 90%;
     margin: auto;
     font-size: var(--font-size);
-    margin-top: 20ch;
+    margin-top: 10%;
     /*TEMPORARY*/
 }
 
 .grid-container-hjem {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-column-gap: 2ch;
-
+    grid-column-gap: 2%;
 }
+
 
 .grid-container-hjem>div {
     background-color: var(--element-background);
-    padding: 2ch;
-    min-height: 100vh;
+    padding: 2%;
 }
 
 .grid-container-athletes {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2ch 5ch;
-    margin: 2ch 5ch;
+    grid-gap: 5%;
     font-size: var(--font-size);
+    margin: 5% 0;
 }
-.athlete{
+
+.athlete {
     position: relative;
     width: 100%;
     max-height: 25ch;
     background-color: var(--secondary-background-color);
     overflow: hidden;
-    
+    border-radius: 3px 3px 0 0;
+
 }
+
+.athlete:active {
+    opacity: 0.7;
+}
+
 .athlete img {
     /* vertical-align: middle; */
     width: 100%;
 }
-.athlete a{
+
+.athlete a {
     height: 100%;
 }
-.athlete .text{
+
+.athlete .text {
     color: var(--secondary-teks-color);
     background-color: var(--secondary-background-color);
     position: absolute;
@@ -76,27 +85,33 @@ body {
 /*Slideshow*/
 .slideshow-container * {
     box-sizing: border-box;
+
 }
 
 .slides {
-    /* for at siden skal lastes bedre */
+    /* for at siden skal lastes bedre/finere */
     display: hidden;
 }
 
 .slides>img {
-    vertical-align: middle;
+    /* vertical-align: middle; */
     width: 100%;
-    height: 300px;
 }
 
 /* Slideshow container */
 .slideshow-container {
     position: relative;
     margin: auto;
+    overflow: hidden;
+    height: 25vw;
+    background-color: var(--secondary-background-color);
+    border-radius: 3px 3px 0 0;
+
+
 }
 
 /* Caption text */
-.slides>.text{
+.slides>.text {
     color: var(--secondary-teks-color);
     background-color: var(--secondary-background-color);
     padding: 8px 12px;
@@ -121,12 +136,20 @@ body {
 }*/
 
 .buttonsSlides * {
-    background-color: var(--button-color);
-    padding: 0 2ch 0 2ch;
-    margin: 0 5ch;
+    padding: 0 2ch;
     cursor: pointer;
     font-weight: 900;
     border-radius: 10%;
+    border-radius: 0 0 10px 10px;
+    margin: 0 10%;
+}
+
+.buttonsSlides>*:hover {
+    background-color: var(--button-color);
+}
+
+.buttonsSlides>*:active {
+    opacity: 0.7;
 }
 
 /* Fading animation, denne funker ikke */
