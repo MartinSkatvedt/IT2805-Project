@@ -76,6 +76,7 @@ textarea {
 .subContainers {
   margin: 0px;
   width: 50%;
+  height: 300px;
   background-color: #f1b04f;
   border: 1px solid black;
   text-align: center;
