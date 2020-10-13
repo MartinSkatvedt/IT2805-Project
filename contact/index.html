@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="./contact.css" />
+  </head>
+  <body>
+    <div id="formContainer">
+      <h1>Kontakt oss</h1>
+      <p>
+        La oss få denne samtalen i gang. Fortell litt om deg selv, så tar vi
+        kontakt så snart vi kan.
+      </p>
+
+      <form id="contactForm" action="index.html" method="post">
+        <div class="gridElement" id="f_mail">
+          <label for="email">Mail:</label>
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <div class="gridElement" id="f_melding">
+          <label for="melding">Melding (maks 150 ord):</label>
+          <textarea name="melding" id="melding" rows="8" cols="70"> </textarea>
+        </div>
+
+        <div class="gridElement" id="f_fornavn">
+          <label for="fornavn">Fornavn:</label>
+          <input type="text" name="fornavn" id="fornavn" />
+        </div>
+
+        <div class="gridElement" id="f_etternavn">
+          <label for="etternavn">Etternavn:</label>
+          <input type="text" name="etternavn" id="etternavn" />
+        </div>
+
+        <div class="gridElement" id="f_telefon">
+          <label for="telephone">Telefon:</label>
+          <input type="text" name="telephone" id="telephone" />
+        </div>
+
+        <div class="gridElement" id="f_submit">
+          <button type="submit" name="button">Send</button>
+        </div>
+
+        <!-- TODO: captcha -->
+      </form>
+    </div>
+  </body>
+</html>
