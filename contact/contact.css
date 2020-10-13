@@ -69,3 +69,14 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
+
+.subFolder {
+  display: flex;
+}
+.subContainers {
+  margin: 0px;
+  width: 50%;
+  background-color: #f1b04f;
+  border: 1px solid black;
+  text-align: center;
+}
