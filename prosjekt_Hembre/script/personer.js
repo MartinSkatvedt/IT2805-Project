@@ -14,8 +14,6 @@ function getIndex(value, array) {
 
 const index = getIndex(personId, personer)
 const person = personer[index]
-console.log(person);
-console.log(index);
 const main = document.querySelector('main')
 
 main.innerHTML = ''
@@ -148,7 +146,6 @@ function createSite() {
 
         tabellRekorder.appendChild(tr)
 
-        console.log(element.event);
     }
 
 }
