@@ -14,8 +14,6 @@ function getIndex(value, array) {
 
 const index = getIndex(personId, personer)
 const person = personer[index]
-
-console.log(index);
 const main = document.querySelector('main')
 
 main.innerHTML = ''
@@ -33,7 +31,7 @@ function createSite() {
     let imgDiv = document.createElement('div')
     imgDiv.id = 'person_bilder'
     let img = document.createElement('img')
-    img.src = personer[index].image.mainImage
+    img.src = person.image.mainImage
     imgDiv.appendChild(img)
     mainDiv.appendChild(imgDiv)
 
@@ -62,10 +60,14 @@ function createSite() {
     p.innerHTML = 'Age: '+person.age+' years'
     infoDiv.appendChild(p)
 
-//Startet å skyte
     p = document.createElement('p')
-    p.innerHTML = person.description.statedShooting
+    p.innerHTML = 'Birth: '+person.birthDay+person.birthYear+', '+person.birthPlace 
     infoDiv.appendChild(p)
+
+//Startet å skyte
+    // p = document.createElement('p')
+    // p.innerHTML = person.description.statedShooting
+    // infoDiv.appendChild(p)
 
 //medlem i bpk med linken
     p = document.createElement('p')
@@ -148,7 +150,6 @@ function createSite() {
 
         tabellRekorder.appendChild(tr)
 
-        console.log(element.event);
     }
 
 }
