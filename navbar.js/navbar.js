@@ -1,3 +1,61 @@
+document.write(`
+<div id="navbar">
+  <div class="navBarElement" id="utoverElement">
+    <a href="#">Athletes</a>
+  </div>
+  <div class="navBarElement">
+    <a href="./sponsors.html">Sponsors</a>
+  </div>
+  <div class="navBarElement">
+    <a href="./news.html">News</a>
+  </div>
+  <div class="navBarElement">
+    <a href="./about.html">About us</a>
+  </div>
+  <div class="navBarElement">
+    <button type="button" name="button" id="kontaktKnapp">
+      <a href="./contact.html">Contact</a>
+    </button>
+  </div>
+</div>
+
+<div id="submenus">
+  <div class="submenu" id="submenu_1">
+    <div class="submenuElement_1">
+      <a href="./paal/index.html">Pål Hembre</a>
+      <hr class="underline" />
+    </div>
+    <div class="submenuElement_1">
+      <a href="./mattis/index.html">Mattis Hembre</a>
+      <hr class="underline" />
+    </div>
+    <div class="submenuElement_1">
+      <a href="./ludvik/index.html">Ludvik Hembre</a>
+      <hr class="underline" />
+    </div>
+    <div class="submenuElement_1">
+      <a href="./tim_leo/index.html">Tim Leo Hembre</a>
+    </div>
+  </div>
+
+  <div class="submenu" id="submenu_2">
+    <div class="submenuElement_2" id="resultat">
+      <a href="#">Best Result</a>
+      <hr class="underline" />
+    </div>
+    <div class="submenuElement_2" id="gjennomsnitt">
+      <a href="#">Average</a>
+      <hr class="underline" />
+    </div>
+    <div class="submenuElement_2" id="start">
+      <a href="#">Starts</a>
+      <hr class="underline" />
+    </div>
+    <div class="submenuElement_2" id="stevner">
+      <a href="#">Events this year</a>
+    </div>
+  </div>
+</div>`);
 let submenu_1 = document.getElementById("submenu_1");
 let submenuElement_1 = document.getElementsByClassName("submenuElement_1");
 let submenu_2 = document.getElementById("submenu_2");

@@ -1,50 +1,49 @@
 :root {
-    --background-color: #D3EBEB;
-    --background-color: #ADC3C3;
-    --background-color: #C9D3D3;
-    --nav-color: #E8FFFF;
-    --element-background: #C4C4C4;
-    --element-background: #D1D1D1;
-    --text-color: #000;
-    --background-text-color: none;
-    --secondary-teks-color: #F2F2F2;
-    --secondary-background-color: #000000BF;
-    --button-color: #F2994A;
-    --font-size-large: 25pt;
-    --font-size: 15pt;
-    --font-size-small: 10pt;
+  --background-color: #d3ebeb;
+  --background-color: #adc3c3;
+  --background-color: #c9d3d3;
+  --nav-color: #e8ffff;
+  --element-background: #c4c4c4;
+  --element-background: #d1d1d1;
+  --text-color: #000;
+  --background-text-color: none;
+  --secondary-teks-color: #f2f2f2;
+  --secondary-background-color: #000000bf;
+  --button-color: #f2994a;
+  --font-size-large: 25pt;
+  --font-size: 15pt;
+  --font-size-small: 10pt;
 }
 
 body {
-    font-family: "Arial","Times new roman", sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    width: 90%;
-    margin: auto;
-    font-size: var(--font-size);
-    margin: 10% auto;
-    /*TEMPORARY*/
+  font-family: "Arial", "Times new roman", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  width: 90%;
+  margin: auto;
+  font-size: var(--font-size);
+  margin: 10% auto;
+  /*TEMPORARY*/
 }
 
 .grid-container-hjem {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-column-gap: 2%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-column-gap: 2%;
 }
 
-
-.grid-container-hjem>div {
-    background-color: var(--element-background);
-    padding: 2%;
-    border: 1px solid black;
+.grid-container-hjem > div {
+  background-color: var(--element-background);
+  padding: 2%;
+  border: 1px solid black;
 }
 
 .grid-container-athletes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    font-size: var(--font-size);
-    margin: 5% 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  font-size: var(--font-size);
+  margin: 5% 0;
 }
 
 .athlete {
@@ -56,25 +55,23 @@ body {
 
 }
 
-
 .athlete img {
-    /* vertical-align: middle; */
-    width: 100%;
+  /* vertical-align: middle; */
+  width: 100%;
 }
 
 .athlete a {
-    height: 100%;
+  height: 100%;
 }
 
 .athlete .text {
-    color: var(--secondary-teks-color);
-    background-color: var(--secondary-background-color);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 1ch 0;
-
+  color: var(--secondary-teks-color);
+  background-color: var(--secondary-background-color);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1ch 0;
 }
 
 #sponsors{
@@ -99,12 +96,12 @@ padding-bottom: 0px;
 
 /*Slideshow*/
 .slideshow-container * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .slides {
-    /* for at siden skal lastes bedre/finere */
-    display: hidden;
+  /* for at siden skal lastes bedre/finere */
+  display: hidden;
 }
 
 .slides>img {
@@ -115,24 +112,23 @@ padding-bottom: 0px;
 
 /* Slideshow container */
 .slideshow-container {
-    position: relative;
-    margin: auto;
-    overflow: hidden;
-    background-color: var(--secondary-background-color);
-    border-radius: 3px 3px 0 0;
-    width: 100%;
-
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  background-color: var(--secondary-background-color);
+  border-radius: 3px 3px 0 0;
+  width: 100%;
 }
 
 /* Caption text */
-.slides>.text {
-    color: var(--secondary-teks-color);
-    background-color: var(--secondary-background-color);
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+.slides > .text {
+  color: var(--secondary-teks-color);
+  background-color: var(--secondary-background-color);
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 /* Number text (1/3 etc) */
@@ -150,46 +146,46 @@ padding-bottom: 0px;
 }*/
 
 .buttonsSlides * {
-    padding: 0 2ch;
-    cursor: pointer;
-    font-weight: 900;
-    border-radius: 10%;
-    border-radius: 0 0 10px 10px;
-    margin: 0 10%;
+  padding: 0 2ch;
+  cursor: pointer;
+  font-weight: 900;
+  border-radius: 10%;
+  border-radius: 0 0 10px 10px;
+  margin: 0 10%;
 }
 
-.buttonsSlides>*:hover{
-    background-color: var(--button-color);
-    cursor: pointer;
+.buttonsSlides > *:hover {
+  background-color: var(--button-color);
+  cursor: pointer;
 }
-.athlete:hover .text{
-    background-color: var(--background-color);
-    color: var(--text-color);
-    cursor: pointer;
-    border-bottom: 1px solid black;
+.athlete:hover .text {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  cursor: pointer;
+  border-bottom: 1px solid black;
 }
 
-.buttonsSlides>*:active, .athlete:active {
-    opacity: 0.7;
+.buttonsSlides > *:active,
+.athlete:active {
+  opacity: 0.7;
 }
 
 /* Fading animation, denne funker ikke */
 .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1s;
-    animation-name: fade;
-    animation-duration: 1s;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
 }
 
-
 @-webkit-keyframes fade {
-    from {
-        opacity: 0.6
-    }
+  from {
+    opacity: 0.6;
+  }
 
-    to {
-        opacity: 1
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
