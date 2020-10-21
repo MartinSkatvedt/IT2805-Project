@@ -130,8 +130,131 @@ const personer = [
                 score:'',
                 year:''
             },
-        ]
+        ],
 
+        merits:[
+            {
+                merit:'Military World Championship',
+                results:{
+                    ind:{
+                        gold:3,
+                        silver:3,
+                        bronse:3    
+                    },
+                    team:{
+                        gold:3,
+                        silver:7,
+                        bronse:4    
+                    }
+                }
+            },
+            {
+                merit:'Military Nordic Championship',
+                type:'Ind',
+                results:{
+                    ind:{
+                        gold:30,
+                        silver:14,
+                        bronse:9    
+                    },
+                    team:{
+                        gold:47,
+                        silver:13,
+                        bronse:null    
+                    }
+                }
+            },
+            {
+                merit:'ISSF World Championship',
+                results:{
+                    ind:{
+                        gold:1,
+                        silver:2,
+                        bronse:1    
+                    },
+                    team:{
+                        gold:null,
+                        silver:2,
+                        bronse:null    
+                    }
+                }
+            },
+            {
+                merit:'ESC European Championship',
+                results:{
+                    ind:{
+                        gold:2,
+                        silver:1,
+                        bronse:1    
+                    },
+                    team:{
+                        gold:5,
+                        silver:5,
+                        bronse:2    
+                    }
+                }
+            },
+            {
+                merit:'ESC European Cup Final:',
+                results:{
+                    ind:{
+                        gold:5,
+                        silver:4,
+                        bronse:2    
+                    },
+                    team:{
+                        gold:null,
+                        silver:null,
+                        bronse:null    
+                    }
+                }
+            },
+            {
+                merit:'ESC European Cup:',
+                results:{
+                    ind:{
+                        gold:12,
+                        silver:7,
+                        bronse:3    
+                    },
+                    team:{
+                        gold:null,
+                        silver:null,
+                        bronse:null
+                    }
+                }
+            },
+            {
+                merit:'Nordic Champion',
+                results:{
+                    ind:{
+                        gold:5,
+                        silver:null,
+                        bronse:null   
+                    },
+                    team:{
+                        gold:8,
+                        silver:null,
+                        bronse:null
+                    }
+                }
+            },
+            {
+                merit:'Norwegian Champion',
+                results:{
+                    ind:{
+                        gold:144,
+                        silver:null,
+                        bronse:null   
+                    },
+                    team:{
+                        gold:8,
+                        silver:null,
+                        bronse:null
+                    }
+                }
+            }
+        ]
 
     },
 
