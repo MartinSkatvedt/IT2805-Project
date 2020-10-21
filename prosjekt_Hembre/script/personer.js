@@ -79,18 +79,19 @@ function createSite() {
     let select = document.createElement('select')
     select.id = 'dp_meny'
 
-    let opt = document.createElement('select')
-    // select.setAttribute('disabled')
-    // select.appendChild(opt)
+    let oopt = document.createElement('select')
+    oopt.disabled = true
+    oopt.
+    oopt.deafultSelected = true
+    select.appendChild(oopt)
     
     for (const stat of person.yearlyStatistics) {
-        opt = document.createElement('option','true')
+        let opt = document.createElement('option','true')
         opt.value = stat[0]
         opt.innerHTML = 'Events in '+stat[1]
         select.appendChild(opt)
     }
     infoDiv.appendChild(select)
-
 
     let dp_list = document.getElementById("dp_meny") // Global variable that refers to element in HTML
     dp_list.onchange = function() {
