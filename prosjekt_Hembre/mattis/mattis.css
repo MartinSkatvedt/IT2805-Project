@@ -1,0 +1,97 @@
+:root {
+  --background-color: #C9D3D3;
+  --nav-color: #E8FFFF;
+  --element-background: #C4C4C4;
+  --text-color: #000;
+  --background-text-color: none;
+  --secondary-teks-color: #F2F2F2;
+  --secondary-background-teks-color: #000000BF;
+  --button-color: #0D0C0C;
+}
+
+main {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  width: 90%;
+  margin: auto;
+  margin-top: 20ch;
+  /*TEMPORARY*/
+}
+#mattis_side_topp{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+#mattis_bilder>img{
+  width: 90%;
+}
+#mattis_side_info{
+  padding: 30px;
+  text-align: center;
+}
+
+#dp_meny{
+  background-color: inherit;
+  border-color: black;
+  padding: 8px;
+  font-size: 16px;
+  text-align: center;
+
+
+}
+h1{
+  text-align: center;
+}
+#barum_pk{
+  text-decoration: underline;
+  color: black;
+}
+#mattis_rekorder{
+  background-color: #ff8080;
+  width: 50%;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#mattis_rekorder>div>ul>li{
+  list-style-type: none;
+}
+
+content{
+  display:none;;
+}
+content:focus{
+  display: inline-block;
+}
+
+#vunnet {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  background-color: #F0FFF0;
+  color: black;
+  margin: 5% 25%;
+  margin-top: 5px;
+  padding: 1%;
+  font-size: 12px;
+}
+
+#gull>h1{
+  color: #e68a00;
+}
+#ol-deltat>h1{
+  color: red;
+}
+#norge_rekorder>h1{
+  color: blue;
+}
+
+
+#mattis_bilder_vid{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#mattis_video{
+  grid-column: 4fr;
+}
