@@ -22,8 +22,6 @@ body {
   width: 90%;
   margin: auto;
   font-size: var(--font-size);
-  margin: 10% auto;
-  /*TEMPORARY*/
 }
 
 .grid-container-hjem {
@@ -499,8 +497,6 @@ main {
   color: var(--text-color);
   width: 90%;
   margin: auto;
-  margin-top: 20ch;
-  /*TEMPORARY*/
 }
 
 #vunnet {
