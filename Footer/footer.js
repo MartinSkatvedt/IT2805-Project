@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Footer</title>
-    <link rel="stylesheet" href="./footer.css">
-  </head>
-  <body>
-
+document.write(`
     <footer>
 
       <div class="footer-container-one">
@@ -62,12 +54,13 @@
         </div>
 
           <ul>
-            <li><p><a href="#">Contact Us</a></p></li>
+            <li><p id="footer_contact"><a href="#">Contact Us</a></p></li>
           </ul>
 
       </div>
 
       <div class="footer-container-two">
+
 
         <div class="contact">
 
@@ -85,9 +78,7 @@
 
         </div>
 
+
       </div>
 
-    </footer>
-
-  </body>
-</html>
+    </footer>`)

@@ -1,7 +1,7 @@
 .footer-container-one {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  border-bottom: black 1px solid;
+  border-bottom: black 0.4px solid;
 }
 .footer-container-one ul li a {
   text-decoration: none;
@@ -28,4 +28,10 @@ p {
   font-size: 12px;
   padding: 10px;
   border: solid 1px black;
+}
+#footer_contact {
+  text-align: center;
+  padding: 10px;
+  background-color: orange;
+  border-radius: 20px;
 }
