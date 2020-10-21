@@ -132,16 +132,19 @@ const personer = [
     {
         id:'mattishembre',
 
-        surName:'Mattis'
+        surName:'Mattis',
+        lastName:'Hembre'
     },
     {
         id:'ludvikhembre',
 
-        surName:'Ludvik'
+        surName:'Ludvik',
+        lastName:'Hembre'
     },
     {
         id:'timleohembre',
 
-        surName:'Tim Leo'
+        surName:'Tim Leo',
+        lastName:'Hembre'
     }
 ]
