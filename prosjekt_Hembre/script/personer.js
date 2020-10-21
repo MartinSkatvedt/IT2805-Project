@@ -11,9 +11,11 @@ function getIndex(value, array) {
         }
     }
 }
+
 const index = getIndex(personId, personer)
 const person = personer[index]
 
+console.log(index);
 const main = document.querySelector('main')
 
 main.innerHTML = ''
@@ -79,14 +81,14 @@ function createSite() {
     let select = document.createElement('select')
     select.id = 'dp_meny'
 
-    let oopt = document.createElement('select')
-    oopt.disabled = true
-    oopt.
-    oopt.deafultSelected = true
-    select.appendChild(oopt)
+    let opt = document.createElement('option')
+    opt.disabled = true
+    opt.selected = true
+    opt.innerHTML = 'Events'
+    select.appendChild(opt)
     
     for (const stat of person.yearlyStatistics) {
-        let opt = document.createElement('option','true')
+        opt = document.createElement('option')
         opt.value = stat[0]
         opt.innerHTML = 'Events in '+stat[1]
         select.appendChild(opt)
@@ -100,5 +102,55 @@ function createSite() {
     
     }
     
+    h1 = document.createElement('h1')
+    h1.innerHTML = 'MERITS'
+    main.appendChild(h1)
+    
+    //div = document.createAttribute('div') OBS MEKK MERITTER
+
+    h1 = document.createElement('h1')
+    h1.innerHTML = 'PERSONAL RECORDS'
+    main.appendChild(h1)
+
+    let tabellRekorder = document.createElement('table')
+    tabellRekorder.id = 'person_rekorder'
+    main.appendChild(tabellRekorder)
+
+    let tr = document.createElement('tr')
+    let th = document.createElement('th')
+    th.innerHTML = 'Event'
+    tr.appendChild(th)
+    th = document.createElement('th')
+    th.innerHTML = 'Score'
+    tr.appendChild(th)
+    th = document.createElement('th')
+    th.innerHTML = 'Year'
+    tr.appendChild(th)
+    
+    tabellRekorder.appendChild(tr)
+
+    console.log(person.bestStatistics.length)
+    for (let i = 0; i < person.bestStatistics.length; i++) {
+        const element = person.bestStatistics[i];
+        tr = document.createElement('tr')
+
+        let tdEvent = document.createElement('td')
+        tdEvent.innerHTML = element.event
+        tr.appendChild(tdEvent)
+
+        let tdScore = document.createElement('td')
+        tdScore.innerHTML = element.score
+        tr.appendChild(tdScore)
+
+
+        let tdYear = document.createElement('td')
+        tdYear.innerHTML = element.year
+        tr.appendChild(tdYear)
+
+        tabellRekorder.appendChild(tr)
+
+        console.log(element.event);
+    }
+
 }
 createSite()

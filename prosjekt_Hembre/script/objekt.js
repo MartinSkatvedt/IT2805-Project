@@ -152,7 +152,7 @@ const personer = [
             name:'Bærum PK',
             link:'http://bpk.no/s'
 
-    },
+      },
 
 
     yearlyStatistics:[
@@ -166,7 +166,8 @@ const personer = [
         'http://fsu.no/issf/2012/sk/st_mattish.htm',
         'http://fsu.no/issf/2011/sk/st_mattish.htm',
         'http://fsu.no/issf/2010/sk/st_mattish.htm'
-    ],
+    ]
+
     },
     {
         id:'ludvikhembre',
@@ -190,19 +191,20 @@ const personer = [
     },
 
 
-    yearlyStatistics:[
-      'http://fsu.no/issf/2019/sk/st_ludvikh.htm',
-      'http://fsu.no/issf/2018/sk/st_ludvikh.htm',
-      'http://fsu.no/issf/2017/sk/st_ludvikh.htm',
-      'http://fsu.no/issf/2016/sk/st_ludvikh.htm',
-      'http://fsu.no/issf/2015/sk/st_ludvikh.htm',
-      'http://fsu.no/issf/2014/sk/st_ludvikh.htm',
-      'http://fsu.no/issf/2013/sk/st_ludvikh.htm',
-      'http://fsu.no/issf/2012/sk/st_ludvikh.htm',
-      'http://fsu.no/issf/2011/sk/st_ludvikh.htm',
-      'http://fsu.no/issf/2010/sk/st_ludvikh.htm',
+        yearlyStatistics:[
+        'http://fsu.no/issf/2019/sk/st_ludvikh.htm',
+        'http://fsu.no/issf/2018/sk/st_ludvikh.htm',
+        'http://fsu.no/issf/2017/sk/st_ludvikh.htm',
+        'http://fsu.no/issf/2016/sk/st_ludvikh.htm',
+        'http://fsu.no/issf/2015/sk/st_ludvikh.htm',
+        'http://fsu.no/issf/2014/sk/st_ludvikh.htm',
+        'http://fsu.no/issf/2013/sk/st_ludvikh.htm',
+        'http://fsu.no/issf/2012/sk/st_ludvikh.htm',
+        'http://fsu.no/issf/2011/sk/st_ludvikh.htm',
+        'http://fsu.no/issf/2010/sk/st_ludvikh.htm'
 
-    ]
+        ]
+        
     },
     {
         id:'timleohembre',

@@ -55,18 +55,13 @@ h1 {
   background-color: #ff8080;
   width: 50%;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-#person_rekorder > div > ul > li {
-  list-style-type: none;
+  text-align: left;
+  padding: 15px;
+  border-radius: 10px;
 }
 
-content {
-  display: none;
-}
-content:focus {
-  display: inline-block;
+th,td{
+  padding: 5px;
 }
 
 #vunnet {
