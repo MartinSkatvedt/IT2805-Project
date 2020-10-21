@@ -33,6 +33,7 @@ body {
 
 #person_bilder > img {
   width: 90%;
+  border-radius: 10px;
 }
 
 #dp_meny {
