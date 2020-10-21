@@ -77,6 +77,21 @@ body {
 
 }
 
+#sponsors{
+text-align: center;
+font-size: 2vh;
+}
+
+#bekkvold_spon{
+background-color: white;
+width: 96%;
+height: 20%;
+padding: 2% 2%;
+padding-bottom: 0px;
+}
+#bekkvold_spon>img{
+  width: 100%;
+}
 
 
 
