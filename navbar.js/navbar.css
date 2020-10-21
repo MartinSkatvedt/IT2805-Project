@@ -44,3 +44,11 @@ a {
   text-decoration: none;
   color: black;
 }
+
+#kontaktKnapp {
+  border-radius: 0px;
+  background-color: orange;
+  border: 0px;
+  width: 50%;
+  height: 50%;
+}
