@@ -102,9 +102,18 @@ function createSite() {
         window.open(valgt.value)
     }
 
-    //MERITS
+    let divGrid = document.createElement('div')
+    divGrid.id = 'grid_container_stats'
+    main.appendChild(divGrid)
+
+//MERITS-------------------------------------------------
     let meritsDiv = document.createElement('div')
     meritsDiv.id = 'merits'
+
+    h1 = document.createElement('h1')
+    h1.innerHTML = 'MERITS'
+    meritsDiv.appendChild(h1)
+
 
     for (let i = 0; i < person.merits.length; i++) {
         const element = person.merits[i]
@@ -115,7 +124,7 @@ function createSite() {
         kursive.innerHTML = element.merit
         div.appendChild(kursive)
 
-        let strengInd = '<b>Ind;</b>'
+        let strengInd = '<b>Ind:</b>'
         let tomStreng = true
 
         for (let medalje in element.results.ind){
@@ -148,26 +157,21 @@ function createSite() {
         }
         meritsDiv.appendChild(div)
     }
-    main.appendChild(meritsDiv)
+    divGrid.appendChild(meritsDiv)
 
 
+//PERSONAL RECORDS----------------------------------------
 
-
-
-
-    h1 = document.createElement('h1')
-    h1.innerHTML = 'MERITS'
-    main.appendChild(h1)
-
-    //div = document.createAttribute('div') OBS MEKK MERITTER
+    let tableDiv = document.createElement('div')
+    divGrid.appendChild(tableDiv)
 
     h1 = document.createElement('h1')
     h1.innerHTML = 'PERSONAL RECORDS'
-    main.appendChild(h1)
+    tableDiv.appendChild(h1)
 
     let tabellRekorder = document.createElement('table')
     tabellRekorder.id = 'person_rekorder'
-    main.appendChild(tabellRekorder)
+    tableDiv.appendChild(tabellRekorder)
 
     let tr = document.createElement('tr')
     let th = document.createElement('th')
@@ -200,8 +204,6 @@ function createSite() {
         tr.appendChild(tdYear)
 
         tabellRekorder.appendChild(tr)
-
     }
-
 }
 createSite()
