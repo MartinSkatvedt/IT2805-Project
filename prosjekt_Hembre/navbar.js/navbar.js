@@ -34,7 +34,7 @@ document.write(`
       <hr class="underline" />
     </div>
     <div class="submenuElement_1">
-      <a href="./personer.html?id=timleihembre">Tim Leo Hembre</a>
+      <a href="./personer.html?id=timleohembre">Tim Leo Hembre</a>
     </div>
   </div>
 
