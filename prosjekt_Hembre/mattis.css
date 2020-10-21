@@ -35,9 +35,7 @@ body {
 #person_bilder>img{
   width: 90%;
 }
-#person_side_info{
 
-}
 
 #dp_meny{
   background-color: inherit;
@@ -98,7 +96,7 @@ content:focus{
 }
 
 
-#person_bilder{
+#personer_underliggende_bilder{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 20px;
