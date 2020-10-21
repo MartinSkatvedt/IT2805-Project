@@ -19,7 +19,7 @@ body {
   font-family: "Arial", "Times new roman", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
-  width: 90%;
+  width: 100%;
   margin: auto;
   font-size: var(--font-size);
 }
@@ -378,11 +378,14 @@ main {
 }
 
 .header_over_mitt_navn {
+  text-align: center;
+  width: 15%;
+  margin: auto;
+  margin-top: 20vh;
   color: white;
-  margin-top: 140px;
   padding: 10px;
   font-size: 40px;
-  background-color: black;
+
 }
 .logo > img {
   width: 30%;
@@ -440,7 +443,7 @@ main {
   transition-duration: 0.5s;
 }
 
-header {
+#header_om_oss{
   background-image: url(bilder/om6.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -524,12 +527,13 @@ main {
 }
 
 #alle_spillere > div {
-  padding: 70px 250px;
+  padding: 5vh 13vh;
   height: 60vh;
   scroll-snap-align: center;
 }
 
 #alle_spillere {
+  text-align: left;
   background-color: #ffaf37;
   margin: 5%;
   margin-top: 20px;
@@ -547,6 +551,7 @@ main {
     height: 250px;
   }
 }
+
 #bare_team {
   background-color: #ffaf37;
   margin: 5%;
@@ -572,6 +577,10 @@ main {
   box-shadow: 0px 2px 8px 4px;
 }
 
+
+#alle_spillere>div> h1{
+  margin:0px;
+}
 #pol_info > ul {
   list-style-type: none;
   font-size: 22px;
@@ -581,7 +590,10 @@ main {
 #pol_bilder {
   display: block;
   margin: auto;
+  text-align:center;
 }
+
+
 #pol_info > ul > li > a,
 #pol_info > p > a {
   color: black;
@@ -594,9 +606,9 @@ main {
 h3 > a {
   color: black;
   text-decoration: none;
-  padding: 3px;
+  padding: 7px;
   border-style: ridge;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   background-color: lightblue;
   border-color: lightblue;
   border-radius: 2px;
@@ -622,6 +634,7 @@ h3 > a:hover {
   background-color: #ff8000;
 }
 #bilder_team {
+  margin: 30px 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
