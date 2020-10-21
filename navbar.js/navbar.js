@@ -1,5 +1,3 @@
-let navbarElement = document.getElementById("navbar");
-let submenu = document.getElementsByClassName("submenu");
 let submenu_1 = document.getElementById("submenu_1");
 let submenuElement_1 = document.getElementsByClassName("submenuElement_1");
 let submenu_2 = document.getElementById("submenu_2");
@@ -9,9 +7,8 @@ let submenusElement = document.getElementById("submenus");
 
 let submenuElement_1_Array = Array.from(submenuElement_1);
 let submenuElement_2_Array = Array.from(submenuElement_2);
-let submenu_Array = Array.from(submenu);
 
-submenus.addEventListener("mouseleave", hideSubmenus);
+submenusElement.addEventListener("mouseleave", hideSubmenus);
 utoverElement.addEventListener("mouseover", showSub1);
 
 function hideSubmenus() {
