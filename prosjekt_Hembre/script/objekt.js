@@ -1,5 +1,7 @@
 const personer = [
     {
+        id:'palhembre',
+
         surName:'Pål',
         lastName:'Hembre',
         middleName:'',
@@ -126,5 +128,20 @@ const personer = [
         ]
 
 
+    },
+    {
+        id:'mattishembre',
+
+        surName:'Mattis'
+    },
+    {
+        id:'ludvikhembre',
+
+        surName:'Ludvik'
+    },
+    {
+        id:'timleohembre',
+
+        surName:'Tim Leo'
     }
 ]
