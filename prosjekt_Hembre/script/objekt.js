@@ -18,7 +18,7 @@ const personer = [
         description:{
             short:'Started with pistol shooting in 1978. CISM shooter in 1984/85 and from 1990 to 2018.',
             long:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam unde excepturi, quaerat sit quasi recusandae id soluta. Voluptas totam debitis, expedita odit quo voluptatum repellat suscipit animi voluptates! Temporibus, qui?',
-            statedShooting:'Started with pistol shooting in 1978. CISM shooter in 1984/85 and from 1990 to 2018.'
+            // statedShooting:'Started with pistol shooting in 1978. CISM shooter in 1984/85 and from 1990 to 2018.'
         },
 
         kids:['Mattis','Ludvik','Tim Leo','Leonel'],
