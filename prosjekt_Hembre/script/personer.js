@@ -13,34 +13,36 @@ function getIndex(value,array) {
 }
 
 const index = getIndex(personId,personer)
+const person = personer[index]
 
 const main = document.querySelector('main')
 
 main.innerHTML = ''
 
 function createSite() {
-    let person = personer[index]
 
     let mainDiv = document.createElement('div')
     mainDiv.id = 'person_side_topp'
     main.appendChild(mainDiv)
     
-    let div = document.createElement('div')
-    div.id = 'person_bilder'
-
+    let imgDiv = document.createElement('div')
+    imgDiv.id = 'person_bilder'
     let img = document.createElement('img')
     img.src = personer[index].image.mainImage
-    div.appendChild(img)
-    main.appendChild(div)
+    imgDiv.appendChild(img)
+    mainDiv.appendChild(imgDiv)
 
-    div = document.createElement('div')
-    div.id = 'person_side_info'
-    main.appendChild(div)
+
+    infoDiv = document.createElement('div')
+    infoDiv.id = 'person_side_info'
+    mainDiv.appendChild(infoDiv)
 
     let h1 = document.createElement('h1')
     h1.innerHTML = person.surName +' '+ person.lastName
-    mainDiv.appendChild(h1)
+    infoDiv.appendChild(h1)
     
     let p = document.createElement('p')
+    p.innerHTML = person.description
+
 }
 createSite()
