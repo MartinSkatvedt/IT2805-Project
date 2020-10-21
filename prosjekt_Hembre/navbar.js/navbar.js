@@ -4,17 +4,17 @@ document.write(`
     <a href="#">Athletes</a>
   </div>
   <div class="navBarElement">
-    <a href="./sponsors.html">Sponsors</a>
+    <a href="./sponsor.html">Sponsors</a>
   </div>
   <div class="navBarElement">
     <a href="./news.html">News</a>
   </div>
   <div class="navBarElement">
-    <a href="./about.html">About us</a>
+    <a href="./om_oss.html">About us</a>
   </div>
   <div class="navBarElement">
     <button type="button" name="button" id="kontaktKnapp">
-      <a href="./contact.html">Contact</a>
+      <a href="./kontakt.html">Contact</a>
     </button>
   </div>
 </div>
@@ -22,19 +22,19 @@ document.write(`
 <div id="submenus">
   <div class="submenu" id="submenu_1">
     <div class="submenuElement_1">
-      <a href="./paal/index.html">Pål Hembre</a>
+      <a href="./personer.html?id=palhembre">Pål Hembre</a>
       <hr class="underline" />
     </div>
     <div class="submenuElement_1">
-      <a href="./mattis/index.html">Mattis Hembre</a>
+      <a href="./personer.html?id=mattishembre">Mattis Hembre</a>
       <hr class="underline" />
     </div>
     <div class="submenuElement_1">
-      <a href="./ludvik/index.html">Ludvik Hembre</a>
+      <a href="./personer.html?id=ludvikhembre">Ludvik Hembre</a>
       <hr class="underline" />
     </div>
     <div class="submenuElement_1">
-      <a href="./tim_leo/index.html">Tim Leo Hembre</a>
+      <a href="./personer.html?id=timleihembre">Tim Leo Hembre</a>
     </div>
   </div>
 
