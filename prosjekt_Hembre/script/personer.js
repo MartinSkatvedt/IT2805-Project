@@ -97,13 +97,19 @@ function createSite() {
     }
     infoDiv.appendChild(select)
 
-    let dp_list = document.getElementById("dp_meny") // Global variable that refers to element in HTML
-    dp_list.onchange = function() {
+    select.onchange = function() {
     let valgt = this.options[this.selectedIndex] // js property
       window.open(valgt.value)
-    
     }
     
+//MERITS
+
+
+
+
+
+
+
     h1 = document.createElement('h1')
     h1.innerHTML = 'MERITS'
     main.appendChild(h1)
