@@ -60,6 +60,10 @@ function createSite() {
     p.innerHTML = 'Age: '+person.age+' years'
     infoDiv.appendChild(p)
 
+    p = document.createElement('p')
+    p.innerHTML = 'Birth: '+person.birthDay+person.birthYear+', '+person.birthPlace 
+    infoDiv.appendChild(p)
+
 //Startet å skyte
     p = document.createElement('p')
     p.innerHTML = person.description.statedShooting
