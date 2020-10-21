@@ -12,6 +12,8 @@ const personer = [
             mainImage:'../bilder/pal.png',
         }
 
+        description:'Started with pistol shooting in 1978. CISM shooter in 1984/85 and from 1990 to 2018.',
+
         kids:['Mattis','Ludvik','Tim Leo','Leonel'],
 
         memberShip:{
