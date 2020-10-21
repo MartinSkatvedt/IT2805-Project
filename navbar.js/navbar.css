@@ -11,6 +11,8 @@
 .navBarElement {
   width: 25%;
   transition: 0.5s;
+  margin-top: auto;
+  margin-bottom: auto;
   height: 75px;
 }
 
@@ -75,6 +77,6 @@ a {
   border-radius: 0px;
   background-color: orange;
   border: 0px;
-  width: 75%;
-  height: 75%;
+  width: 50%;
+  height: 50%;
 }
