@@ -151,23 +151,23 @@ const personer = [
         memberShip:{
             name:'Bærum PK',
             link:'http://bpk.no/s'
+        },
 
-      },
 
+        yearlyStatistics:[
+            'http://fsu.no/issf/2019/sk/st_mattish.htm',
+            'http://fsu.no/issf/2018/sk/st_mattish.htm',
+            'http://fsu.no/issf/2017/sk/st_mattish.htm',
+            'http://fsu.no/issf/2016/sk/st_mattish.htm',
+            'http://fsu.no/issf/2015/sk/st_mattish.htm',
+            'http://fsu.no/issf/2014/sk/st_mattish.htm',
+            'http://fsu.no/issf/2013/sk/st_mattish.htm',
+            'http://fsu.no/issf/2012/sk/st_mattish.htm',
+            'http://fsu.no/issf/2011/sk/st_mattish.htm',
+            'http://fsu.no/issf/2010/sk/st_mattish.htm'
+        ],
 
-    yearlyStatistics:[
-        'http://fsu.no/issf/2019/sk/st_mattish.htm',
-        'http://fsu.no/issf/2018/sk/st_mattish.htm',
-        'http://fsu.no/issf/2017/sk/st_mattish.htm',
-        'http://fsu.no/issf/2016/sk/st_mattish.htm',
-        'http://fsu.no/issf/2015/sk/st_mattish.htm',
-        'http://fsu.no/issf/2014/sk/st_mattish.htm',
-        'http://fsu.no/issf/2013/sk/st_mattish.htm',
-        'http://fsu.no/issf/2012/sk/st_mattish.htm',
-        'http://fsu.no/issf/2011/sk/st_mattish.htm',
-        'http://fsu.no/issf/2010/sk/st_mattish.htm'
-    ]
-
+        bestStatistics:[]
     },
     {
         id:'ludvikhembre',

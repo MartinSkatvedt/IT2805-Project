@@ -129,7 +129,6 @@ function createSite() {
     
     tabellRekorder.appendChild(tr)
 
-    console.log(person.bestStatistics.length)
     for (let i = 0; i < person.bestStatistics.length; i++) {
         const element = person.bestStatistics[i];
         tr = document.createElement('tr')
