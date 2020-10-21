@@ -14,7 +14,7 @@ function getIndex(value, array) {
 
 const index = getIndex(personId, personer)
 const person = personer[index]
-
+console.log(person);
 console.log(index);
 const main = document.querySelector('main')
 
@@ -33,7 +33,7 @@ function createSite() {
     let imgDiv = document.createElement('div')
     imgDiv.id = 'person_bilder'
     let img = document.createElement('img')
-    img.src = personer[index].image.mainImage
+    img.src = person.image.mainImage
     imgDiv.appendChild(img)
     mainDiv.appendChild(imgDiv)
 

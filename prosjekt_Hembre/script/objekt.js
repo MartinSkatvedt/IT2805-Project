@@ -134,6 +134,7 @@ const personer = [
 
 
     },
+
     {
         id:'mattishembre',
 
@@ -155,20 +156,21 @@ const personer = [
 
 
         yearlyStatistics:[
-            'http://fsu.no/issf/2019/sk/st_mattish.htm',
-            'http://fsu.no/issf/2018/sk/st_mattish.htm',
-            'http://fsu.no/issf/2017/sk/st_mattish.htm',
-            'http://fsu.no/issf/2016/sk/st_mattish.htm',
-            'http://fsu.no/issf/2015/sk/st_mattish.htm',
-            'http://fsu.no/issf/2014/sk/st_mattish.htm',
-            'http://fsu.no/issf/2013/sk/st_mattish.htm',
-            'http://fsu.no/issf/2012/sk/st_mattish.htm',
-            'http://fsu.no/issf/2011/sk/st_mattish.htm',
-            'http://fsu.no/issf/2010/sk/st_mattish.htm'
+            ['http://fsu.no/issf/2019/sk/st_mattish.htm','2019'],
+            ['http://fsu.no/issf/2018/sk/st_mattish.htm','2018'],
+            ['http://fsu.no/issf/2017/sk/st_mattish.htm','2017'],
+            ['http://fsu.no/issf/2016/sk/st_mattish.htm','2016'],
+            ['http://fsu.no/issf/2015/sk/st_mattish.htm','2015'],
+            ['http://fsu.no/issf/2014/sk/st_mattish.htm','2014'],
+            ['http://fsu.no/issf/2013/sk/st_mattish.htm','2013'],
+            ['http://fsu.no/issf/2012/sk/st_mattish.htm','2012'],
+            ['http://fsu.no/issf/2011/sk/st_mattish.htm','2011'],
+            ['http://fsu.no/issf/2010/sk/st_mattish.htm','2010']
         ],
 
         bestStatistics:[]
     },
+
     {
         id:'ludvikhembre',
 
@@ -187,25 +189,24 @@ const personer = [
         memberShip:{
             name:'Bærum PK',
             link:'http://bpk.no/s'
-
-    },
+        },
 
 
         yearlyStatistics:[
-        'http://fsu.no/issf/2019/sk/st_ludvikh.htm',
-        'http://fsu.no/issf/2018/sk/st_ludvikh.htm',
-        'http://fsu.no/issf/2017/sk/st_ludvikh.htm',
-        'http://fsu.no/issf/2016/sk/st_ludvikh.htm',
-        'http://fsu.no/issf/2015/sk/st_ludvikh.htm',
-        'http://fsu.no/issf/2014/sk/st_ludvikh.htm',
-        'http://fsu.no/issf/2013/sk/st_ludvikh.htm',
-        'http://fsu.no/issf/2012/sk/st_ludvikh.htm',
-        'http://fsu.no/issf/2011/sk/st_ludvikh.htm',
-        'http://fsu.no/issf/2010/sk/st_ludvikh.htm'
-
+            ['http://fsu.no/issf/2019/sk/st_ludvikh.htm','2019'],
+            ['http://fsu.no/issf/2018/sk/st_ludvikh.htm','2018'],
+            ['http://fsu.no/issf/2017/sk/st_ludvikh.htm','2017'],
+            ['http://fsu.no/issf/2016/sk/st_ludvikh.htm','2016'],
+            ['http://fsu.no/issf/2015/sk/st_ludvikh.htm','2015'],
+            ['http://fsu.no/issf/2014/sk/st_ludvikh.htm','2014'],
+            ['http://fsu.no/issf/2013/sk/st_ludvikh.htm','2013'],
+            ['http://fsu.no/issf/2012/sk/st_ludvikh.htm','2012'],
+            ['http://fsu.no/issf/2011/sk/st_ludvikh.htm','2011'],
+            ['http://fsu.no/issf/2010/sk/st_ludvikh.htm','2010']
         ]
         
     },
+
     {
         id:'timleohembre',
 
@@ -223,18 +224,17 @@ const personer = [
         memberShip:{
             name:'Bærum PK',
             link:'http://bpk.no/s'
-
-    },
-
-
-    yearlyStatistics:[
-      'http://fsu.no/2019/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm',
-      'http://fsu.no/2018/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm',
-      'http://fsu.no/2017/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm',
-      'http://fsu.no/2016/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm',
-      'http://fsu.no/2015/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm',
-      'http://fsu.no/2014/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm',
+        },
 
 
-    ]
-  }]
+        yearlyStatistics:[
+            ['http://fsu.no/2019/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2019'],    
+            ['http://fsu.no/2018/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2018'],
+            ['http://fsu.no/2017/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2017'],
+            ['http://fsu.no/2016/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2016'],
+            ['http://fsu.no/2015/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2015'],
+            ['http://fsu.no/2014/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2014'] 
+        ]
+
+    }
+]
