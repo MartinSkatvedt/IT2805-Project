@@ -10,7 +10,6 @@ prev.addEventListener("click", btnClick)
 
 function btnClick(event) {
     eventType = event.target.id
-    console.log(eventType);
     if (eventType == 'next') {
         nextSlide(1)
     } else {
@@ -39,6 +38,5 @@ function nextSlide(n) {
     if (slideIndex < 0) {
         slideIndex = slides.length - 1
     }
-    console.log(slideIndex);
     slides[slideIndex].style.display = "block";
 }
