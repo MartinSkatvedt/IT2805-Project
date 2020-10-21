@@ -53,18 +53,24 @@ h1 {
   color: black;
 }
 #person_rekorder {
-  background-color: #ff8080;
+  /* background-color: #ff8080; */
   width: 100%;
   margin: auto;
   text-align: left;
   padding: 15px;
+  border-collapse: collapse;
   border-radius: 10px;
 }
 
-th,td{
+th, td{
   padding: 5px;
 }
-
+td{
+  border-bottom: 1px solid var(--text-color);
+}
+th{
+  border-bottom: dashed 1px var(--text-color);
+}
 #vunnet {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
