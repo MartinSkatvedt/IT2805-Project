@@ -115,16 +115,37 @@ function createSite() {
         kursive.innerHTML = element.merit
         div.appendChild(kursive)
 
-        p = document.createElement('p')
-        p.innerHTML = 'Ind: Gold: ' + element.results.ind.gold + ', Silver: ' + element.results.ind.silver + ', Bronse: ' + element.results.ind.bronse
-        div.appendChild(p)
+        let strengInd = '<b>Ind;</b>'
+        let tomStreng = true
 
-        p = document.createElement('p')
-        p.innerHTML = 'Team: Gold: ' + element.results.team.gold + ', Silver: ' + element.results.team.silver + ', Bronse: ' + element.results.team.bronse
-        div.appendChild(p)
+        for (let medalje in element.results.ind){
+            const antallMedaljer = element.results.ind[medalje]
+            if (antallMedaljer > 0) {
+                strengInd+= ' | '+medalje+': '+antallMedaljer
+                tomStreng = false
+            }
+        }
+        if (!tomStreng) {
+            p = document.createElement('p')
+            p.innerHTML = strengInd
+            div.appendChild(p)
+        }
 
-        console.log(element);
+        let strengTeam = '<b>Team:</b>'
+        tomStreng = true
 
+        for (let medalje in element.results.team){
+            const antallMedaljer = element.results.team[medalje]
+            if (antallMedaljer > 0) {
+                strengTeam+= ' | '+medalje+': '+antallMedaljer
+                tomStreng = false
+            }
+        }
+        if (!tomStreng) {
+            p = document.createElement('p')
+            p.innerHTML = strengTeam
+            div.appendChild(p)            
+        }
         meritsDiv.appendChild(div)
     }
     main.appendChild(meritsDiv)
