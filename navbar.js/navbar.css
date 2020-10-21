@@ -2,24 +2,38 @@
   display: flex;
   border: 1px solid black;
   text-align: center;
-  background-color: lightblue;
-  height: 50px;
-  font-family: fantasy;
+  background-color: #e8ffff;
+  height: 75px;
   font-size: 30px;
+  font-family: Montserrat;
 }
 
 .navBarElement {
   width: 25%;
   transition: 0.5s;
+  height: 75px;
 }
 
 .navBarElement:hover {
   background-color: lightgray;
 }
 
+#submenu_1 {
+  border-top: 10px solid darkblue;
+}
+#submenu_2 {
+  border-left: 10px solid darkred;
+}
+
 #submenu_1,
 #submenu_2 {
   display: none;
+  font-family: Montserrat;
+}
+
+.submenuElement_1 a,
+.submenuElement_2 a {
+  color: #ddcccc;
 }
 
 .submenu {
@@ -27,17 +41,29 @@
   flex-direction: column;
   border: 1px solid black;
   text-align: center;
-  background-color: lightblue;
+  background-color: #353131;
   font-family: fantasy;
   font-size: 30px;
   width: 20%;
   position: absolute;
   transition: 0.2s;
+  color: white;
+}
+.submenuElement_1,
+.submenuElement_2 {
+  padding: 10px;
 }
 
 .submenuElement_1:hover,
 .submenuElement_2:hover {
-  background-color: lightgray;
+  background-color: darkgray;
+}
+
+.underline {
+  width: 60%;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  border-color: #ddcccc;
 }
 
 a {
@@ -49,6 +75,6 @@ a {
   border-radius: 0px;
   background-color: orange;
   border: 0px;
-  width: 50%;
-  height: 50%;
+  width: 75%;
+  height: 75%;
 }
