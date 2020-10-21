@@ -29,6 +29,16 @@ main {
   padding: 30px;
   text-align: center;
 }
+
+#dp_meny{
+  background-color: inherit;
+  border-color: black;
+  padding: 8px;
+  font-size: 16px;
+  text-align: center;
+
+
+}
 h1{
   text-align: center;
 }
@@ -74,4 +84,14 @@ content:focus{
 }
 #norge_rekorder>h1{
   color: blue;
+}
+
+
+#mattis_bilder_vid{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#mattis_video{
+  grid-column: 4fr;
 }
