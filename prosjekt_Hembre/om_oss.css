@@ -10,8 +10,36 @@ html {
     top: 0px;
     /*gir body en bakgrunnsfarge*/
     background-color: #dbdde0;
+
   }
 }
+:root {
+    --background-color: #D3EBEB;
+    --background-color: #ADC3C3;
+    --background-color: #C9D3D3;
+    --nav-color: #E8FFFF;
+    --element-background: #C4C4C4;
+    --element-background: #D1D1D1;
+    --text-color: #000;
+    --background-text-color: none;
+    --secondary-teks-color: #F2F2F2;
+    --secondary-background-color: #000000BF;
+    --button-color: #F2994A;
+    --font-size-large: 25pt;
+    --font-size: 15pt;
+    --font-size-small: 10pt;
+}
+
+main{
+  font-family: "Arial","Times new roman", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  width: 90%;
+  margin: auto;
+  font-size: var(--font-size);
+  margin: 10% auto;
+}
+
 
 /*css for hele delen over søkemotoren av header når den er større enn 600px starter under her*/
 .header_øverst {

@@ -1,22 +1,32 @@
 :root {
-  --background-color: #C9D3D3;
-  --nav-color: #E8FFFF;
-  --element-background: #C4C4C4;
-  --text-color: #000;
-  --background-text-color: none;
-  --secondary-teks-color: #F2F2F2;
-  --secondary-background-teks-color: #000000BF;
-  --button-color: #0D0C0C;
+    --background-color: #D3EBEB;
+    --background-color: #ADC3C3;
+    --background-color: #C9D3D3;
+    --nav-color: #E8FFFF;
+    --element-background: #C4C4C4;
+    --element-background: #D1D1D1;
+    --text-color: #000;
+    --background-text-color: none;
+    --secondary-teks-color: #F2F2F2;
+    --secondary-background-color: #000000BF;
+    --button-color: #F2994A;
+    --font-size-large: 25pt;
+    --font-size: 15pt;
+    --font-size-small: 10pt;
 }
 
-main {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  width: 90%;
-  margin: auto;
-  margin-top: 20ch;
-  /*TEMPORARY*/
+body {
+    font-family: "Arial","Times new roman", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    width: 90%;
+    margin: auto;
+    font-size: var(--font-size);
+    margin: 10% auto;
+    /*TEMPORARY*/
 }
+
+
 #mattis_side_topp{
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -26,8 +36,7 @@ main {
   width: 90%;
 }
 #mattis_side_info{
-  padding: 30px;
-  text-align: center;
+
 }
 
 #dp_meny{
@@ -41,6 +50,8 @@ main {
 }
 h1{
   text-align: center;
+  font-size: 6vh;
+  margin-top: 0px;
 }
 #barum_pk{
   text-decoration: underline;
@@ -87,11 +98,19 @@ content:focus{
 }
 
 
-#mattis_bilder_vid{
+#mattis_bilder{
   display:grid;
-  grid-template-columns: repeat(4, 1fr);
-}
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 20px;
 
-#mattis_video{
-  grid-column: 4fr;
+}
+#mattis_bilder_vid>img{
+  width:10%;
+  height: 50px;
+  display: block;
+  margin: auto;
+}
+#mattis_video>video{
+  display: block;
+  margin: auto;
 }
