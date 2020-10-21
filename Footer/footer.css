@@ -1,0 +1,31 @@
+.footer-container-one {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  border-bottom: black 1px solid;
+}
+.footer-container-one ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 10px;
+}
+.footer-container-one ul li {
+  list-style-type: none;
+}
+
+.footer-container-one ul li p a {
+  font-size: 14px;
+}
+.footer-container-two {
+  margin: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20%;
+}
+p {
+  margin:0;
+}
+.footer-container-two div {
+  font-size: 12px;
+  padding: 10px;
+  border: solid 1px black;
+}
