@@ -1,13 +1,13 @@
 //For å siste url del
-const url_string = window.location.href; //window.location.href
-const url = new URL(url_string);
-const personId = url.searchParams.get('id');
+const url_string = window.location.href //window.location.href
+const url = new URL(url_string)
+const personId = url.searchParams.get('id')
 
 function getIndex(value, array) {
     for (let i = 0; i < array.length; i++) {
-        const element = array[i].id;
+        const element = array[i].id
         if (element == value) {
-            return i;
+            return i
         }
     }
 }
@@ -19,15 +19,15 @@ const main = document.querySelector('main')
 main.innerHTML = ''
 
 function createSite() {
-//endrer tittelen
+    //endrer tittelen
     document.title = person.surName + ' ' + person.lastName
 
-//Leger til hoved-div-elementet
+    //Leger til hoved-div-elementet
     let mainDiv = document.createElement('div')
     mainDiv.id = 'person_side_topp'
     main.appendChild(mainDiv)
 
-//Lager bilde med en div inni
+    //Lager bilde med en div inni
     let imgDiv = document.createElement('div')
     imgDiv.id = 'person_bilder'
     let img = document.createElement('img')
@@ -35,41 +35,41 @@ function createSite() {
     imgDiv.appendChild(img)
     mainDiv.appendChild(imgDiv)
 
-//Lager div id=mattis_side_info
+    //Lager div id=mattis_side_info
     infoDiv = document.createElement('div')
     infoDiv.id = 'person_side_info'
     mainDiv.appendChild(infoDiv)
 
-//Overskrift
+    //Overskrift
     let overskrift = document.createElement('h1')
     overskrift.innerHTML = person.surName + ' ' + person.lastName
     infoDiv.appendChild(overskrift)
-    
-//Beskrivelse kort
+
+    //Beskrivelse kort
     let p = document.createElement('p')
     p.innerHTML = person.description.short
     infoDiv.appendChild(p)
 
-//Beskrivelse lang
+    //Beskrivelse lang
     p = document.createElement('p')
     p.innerHTML = person.description.long
     infoDiv.appendChild(p)
 
-//Alder
+    //Alder
     p = document.createElement('p')
-    p.innerHTML = 'Age: '+person.age+' years'
+    p.innerHTML = 'Age: ' + person.age + ' years'
     infoDiv.appendChild(p)
 
     p = document.createElement('p')
-    p.innerHTML = 'Birth: '+person.birthDay+person.birthYear+', '+person.birthPlace 
+    p.innerHTML = 'Birth: ' + person.birthDay + person.birthYear + ', ' + person.birthPlace
     infoDiv.appendChild(p)
 
-//Startet å skyte
+    //Startet å skyte
     // p = document.createElement('p')
     // p.innerHTML = person.description.statedShooting
     // infoDiv.appendChild(p)
 
-//medlem i bpk med linken
+    //medlem i bpk med linken
     p = document.createElement('p')
     p.innerHTML = 'membership: '
     let link = document.createElement('a')
@@ -79,7 +79,7 @@ function createSite() {
     p.appendChild(link)
     infoDiv.appendChild(p)
 
-//legger til select-element
+    //legger til select-element
     let select = document.createElement('select')
     select.id = 'dp_meny'
 
@@ -88,22 +88,46 @@ function createSite() {
     opt.selected = true
     opt.innerHTML = 'Events'
     select.appendChild(opt)
-    
+
     for (const stat of person.yearlyStatistics) {
         opt = document.createElement('option')
         opt.value = stat[0]
-        opt.innerHTML = 'Events in '+stat[1]
+        opt.innerHTML = 'Events in ' + stat[1]
         select.appendChild(opt)
     }
     infoDiv.appendChild(select)
 
-    select.onchange = function() {
-    let valgt = this.options[this.selectedIndex] // js property
-      window.open(valgt.value)
+    select.onchange = function () {
+        let valgt = this.options[this.selectedIndex] // js property
+        window.open(valgt.value)
     }
-    
-//MERITS
 
+    //MERITS
+    let meritsDiv = document.createElement('div')
+    meritsDiv.id = 'merits'
+
+    for (let i = 0; i < person.merits.length; i++) {
+        const element = person.merits[i]
+        div = document.createElement('div')
+        div.id = 'merit'
+
+        let kursive = document.createElement('i')
+        kursive.innerHTML = element.merit
+        div.appendChild(kursive)
+
+        p = document.createElement('p')
+        p.innerHTML = 'Ind: Gold: ' + element.results.ind.gold + ', Silver: ' + element.results.ind.silver + ', Bronse: ' + element.results.ind.bronse
+        div.appendChild(p)
+
+        p = document.createElement('p')
+        p.innerHTML = 'Team: Gold: ' + element.results.team.gold + ', Silver: ' + element.results.team.silver + ', Bronse: ' + element.results.team.bronse
+        div.appendChild(p)
+
+        console.log(element);
+
+        meritsDiv.appendChild(div)
+    }
+    main.appendChild(meritsDiv)
 
 
 
@@ -113,7 +137,7 @@ function createSite() {
     h1 = document.createElement('h1')
     h1.innerHTML = 'MERITS'
     main.appendChild(h1)
-    
+
     //div = document.createAttribute('div') OBS MEKK MERITTER
 
     h1 = document.createElement('h1')
@@ -134,11 +158,11 @@ function createSite() {
     th = document.createElement('th')
     th.innerHTML = 'Year'
     tr.appendChild(th)
-    
+
     tabellRekorder.appendChild(tr)
 
     for (let i = 0; i < person.bestStatistics.length; i++) {
-        const element = person.bestStatistics[i];
+        const element = person.bestStatistics[i]
         tr = document.createElement('tr')
 
         let tdEvent = document.createElement('td')
