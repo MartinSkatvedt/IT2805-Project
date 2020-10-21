@@ -1,0 +1,152 @@
+:root {
+    --background-color: #D3EBEB;
+    --background-color: #ADC3C3;
+    --background-color: #C9D3D3;
+    --element-background: #7a7575;
+    --element-background: #807c7c;
+    --text-color: #000;
+    --background-text-color: none;
+    --secondary-teks-color: #F2F2F2;
+    --secondary-background-color: #000000bf;
+    --button-color: #F2994A;
+    --font-size-large: 25pt;
+    --font-size: 15pt;
+    --font-size-small: 10pt;
+}
+
+body {
+    font-family: "Arial","Times new roman", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    width: 90%;
+    margin: auto;
+    font-size: var(--font-size);
+    margin: 10% auto;
+    text-align: center;
+    /*TEMPORARY*/
+}
+
+.grid-container-news {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.grid-container-news>div {
+    background-color: var(--element-background);
+    padding: 2%;
+}
+
+
+.slides {
+    /* for at siden skal lastes bedre/finere */
+    display: hidden;
+    
+}
+
+.slides>img {
+    /* vertical-align: middle; */
+    height: 100%;
+    width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    overflow: hidden;
+    height: 25vw;
+    background-color: var(--secondary-background-color);
+    border-radius: 3px 3px 0 0;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+/* Caption text */
+.slides>.text {
+    color: var(--secondary-teks-color);
+    background-color: var(--secondary-background-color);
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+.buttonsSlides * {
+    padding: 0 2ch;
+    cursor: pointer;
+    font-weight: 900;
+    border-radius: 10%;
+    border-radius: 0 0 10px 10px;
+    margin: 0 10%;
+}
+
+.buttonsSlides>*:hover{
+    background-color: var(--button-color);
+    cursor: pointer;
+}
+
+/* nederste nyhetsbokser */
+.grid-container-boxes{
+    display: grid;
+    grid-template-rows: 2fr;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 30px;
+}
+
+
+
+.box {
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    min-height: 25vw;
+    background-color: rgb(168, 167, 167);
+    border-radius: 3px 3px 0 0;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+
+.box img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    top: 30px;
+    right: 100px;
+    bottom: 30px;
+    left: 10px;
+    grid-column: 2;
+
+}
+
+.box .newsheadline {
+    position: absolute;
+    font-size: var(--font-size-large);
+    text-align: center;
+    top: 10%;
+}
+
+
+
+.box .newstext {
+    color: var(--text-color);
+    font-size: var(--font-size-small);
+    position: relative;
+    text-align: center;
+    top: 20%;
+    left:20%;
+    width: 40ch;
+    grid-column: 1;
+
+}
