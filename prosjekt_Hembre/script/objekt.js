@@ -8,7 +8,7 @@ const personer = [
 
         age:57,
         birthYear:'1963',
-        birthDay:'4/20',
+        birthDay:'20/4',
         birthPlace:'Molde',
 
         image:{
@@ -141,11 +141,20 @@ const personer = [
         surName:'Mattis',
         lastName:'Hembre',
 
+        age:19,
+        birthYear:'2001',
+        birthDay:'29/9',
+        birthPlace:'Oslo',
+
         image:{
             mainImage:'bilder/mattis.jpg'
         },
 
-        description:'Started his career in 2010',
+        description:{
+          short:'Started his career in 2010',
+          long:'',
+          statedShooting:''
+        },
 
         kids:null,
 
@@ -177,12 +186,21 @@ const personer = [
         surName:'Ludvik',
         lastName:'Hembre',
 
+        age:19,
+        birthYear:'2001',
+        birthDay:'29/9',
+        birthPlace:'Oslo',
+
 
         image:{
             mainImage:'bilder/ludvik.jpg'
         },
 
-        description:'Started his career in 2010',
+        description:{
+          short:'Started his career in 2010',
+          long:'',
+          statedShooting:''
+        },
 
         kids:null,
 
@@ -204,7 +222,7 @@ const personer = [
             ['http://fsu.no/issf/2011/sk/st_ludvikh.htm','2011'],
             ['http://fsu.no/issf/2010/sk/st_ludvikh.htm','2010']
         ]
-        
+
     },
 
     {
@@ -213,11 +231,20 @@ const personer = [
         surName:'Tim Leo',
         lastName:'Hembre',
 
+        age:14,
+        birthYear:'2006',
+        birthDay:'27/9',
+        birthPlace:'Bærum',
+
         image:{
             mainImage:'bilder/timleo.jpg'
         },
 
-        description:'Started his career in 2014',
+        description:{
+            short:'Started his career in 2014',
+            long:'',
+            statedShooting:''
+        },
 
         kids:null,
 
@@ -228,12 +255,12 @@ const personer = [
 
 
         yearlyStatistics:[
-            ['http://fsu.no/2019/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2019'],    
+            ['http://fsu.no/2019/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2019'],
             ['http://fsu.no/2018/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2018'],
             ['http://fsu.no/2017/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2017'],
             ['http://fsu.no/2016/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2016'],
             ['http://fsu.no/2015/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2015'],
-            ['http://fsu.no/2014/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2014'] 
+            ['http://fsu.no/2014/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2014']
         ]
 
     }
