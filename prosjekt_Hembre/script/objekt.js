@@ -11,7 +11,7 @@ const personer = [
         birthPlace:'Molde',
 
         image:{
-            mainImage:'../bilder/pal.png'
+            mainImage:'bilder/pal.png'
         },
 
         description:'Started with pistol shooting in 1978. CISM shooter in 1984/85 and from 1990 to 2018.',
@@ -133,18 +133,34 @@ const personer = [
         id:'mattishembre',
 
         surName:'Mattis',
-        lastName:'Hembre'
+        lastName:'Hembre',
+
+        image:{
+            mainImage:'bilder/mattis.jpg'
+        }
+
     },
     {
         id:'ludvikhembre',
 
         surName:'Ludvik',
-        lastName:'Hembre'
+        lastName:'Hembre',
+
+
+        image:{
+            mainImage:'bilder/ludvik.jpg'
+        }
+
     },
     {
         id:'timleohembre',
 
         surName:'Tim Leo',
-        lastName:'Hembre'
+        lastName:'Hembre',
+
+        image:{
+            mainImage:'bilder/timleo.jpg'
+        }
+
     }
 ]
