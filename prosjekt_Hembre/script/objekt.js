@@ -29,10 +29,10 @@ const personer = [
                 ['Tim Leo','timleohembre'],
                 ['Leonel','leonelhembre']               
             ],
-            parent:[
+            parents:[
                 
             ],
-            sibling:[
+            siblings:[
                 
             ]
         },
@@ -298,10 +298,10 @@ const personer = [
         family:{
             children:[
             ],
-            parent:[
+            parents:[
                 ['Pål','palhembre']
             ],
-            sibling:[
+            siblings:[
                 ['Ludvik','ludvikhembre'],
                 ['Tim Leo','timleohembre'],
                 ['Leonel','leonelhembre']
@@ -462,10 +462,10 @@ const personer = [
         family:{
             children:[
             ],
-            parent:[
+            parents:[
                 ['Pål','palhembre']
             ],
-            sibling:[
+            siblings:[
                 ['Mattis','mattishembre'],
                 ['Tim Leo','timleohembre'],
                 ['Leonel','leonelhembre']
@@ -625,10 +625,10 @@ const personer = [
         family:{
             children:[
             ],
-            parent:[
+            parents:[
                 ['Pål','palhembre']
             ],
-            sibling:[
+            siblings:[
                 ['Mattis','mattishembre'],
                 ['Ludvik','ludvikhembre'],
                 ['Leonel','leonelhembre']
@@ -753,10 +753,10 @@ const personer = [
         family:{
             children:[
             ],
-            parent:[
+            parents:[
                 ['Pål','palhembre']
             ],
-            sibling:[
+            siblings:[
                 ['Mattis','leonelhembre'],
                 ['Ludvik','ludvikhembre'],
                 ['Tim Leo','timleohembre']
