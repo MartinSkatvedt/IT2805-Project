@@ -61,9 +61,36 @@ function createSite() {
     infoDiv.appendChild(p)
 
     p = document.createElement('p')
-    p.innerHTML = 'Birth: ' + person.about.birthDay + person.about.birthYear + ', ' + person.about.birthPlace
+    p.innerHTML = 'Birth: ' + person.about.birthDay +'/'+ person.about.birthYear + ', ' + person.about.birthPlace
     infoDiv.appendChild(p)
 
+
+//FAMILY------------------------------------------------
+
+    let familyDiv = document.createElement('div')
+    familyDiv.id = 'familyDiv'
+    for (const obj in person.family) {
+        if (person.family.hasOwnProperty(obj)) {
+            const element = person.family[obj];
+            let p = document.createElement('p')
+            p.innerHTML = obj.charAt(0).toUpperCase() + obj.substring(1) + '(s):' //For å for føste bokstav Stor
+            if (element.length>0) {
+                let induvidualDiv = document.createElement('div')
+                for (let i = 0; i < element.length; i++) {
+                    const individual = element[i];
+                    let a = document.createElement('a')
+                    a.href = '?id='+ individual[1]
+                    a.innerHTML = individual[0]
+
+                    p.appendChild(a)            
+                }    
+                induvidualDiv.appendChild(p)
+                familyDiv.appendChild(induvidualDiv)            
+            }
+        }
+    }
+    imgDiv.appendChild(familyDiv)
+//FAMILY------------------------------------------------
     //Startet å skyte
     // p = document.createElement('p')
     // p.innerHTML = person.description.statedShooting
@@ -115,49 +142,49 @@ function createSite() {
     meritsDiv.appendChild(h1)
 
 
-    // for (let i = 0; i < person.merits.length; i++) {
-    //     const element = person.merits[i]
-    //     div = document.createElement('div')
-    //     div.id = 'merit'
+    for (let i = 0; i < person.merits.length; i++) {
+        const element = person.merits[i]
+        div = document.createElement('div')
+        div.id = 'merit'
 
-    //     let kursive = document.createElement('i')
-    //     kursive.innerHTML = element.merit
-    //     div.appendChild(kursive)
+        let kursive = document.createElement('i')
+        kursive.innerHTML = element.merit
+        div.appendChild(kursive)
 
-    //     let strengInd = '<b>Ind:</b>'
-    //     let tomStreng = true
+        let strengInd = '<b>Ind:</b>'
+        let tomStreng = true
 
-    //     for (let medalje in element.results.ind){
-    //         const antallMedaljer = element.results.ind[medalje]
-    //         if (antallMedaljer > 0) {
-    //             strengInd+= ' | '+medalje+': '+antallMedaljer
-    //             tomStreng = false
-    //         }
-    //     }
-    //     if (!tomStreng) {
-    //         p = document.createElement('p')
-    //         p.innerHTML = strengInd
-    //         div.appendChild(p)
-    //     }
+        for (let medalje in element.results.ind){
+            let antallMedaljer = element.results.ind[medalje]
+            if (antallMedaljer > 0) {
+                strengInd+= ' | '+antallMedaljer+' '+medalje
+                tomStreng = false
+            }
+        }
+        if (!tomStreng) {
+            p = document.createElement('p')
+            p.innerHTML = strengInd
+            div.appendChild(p)
+        }
 
-    //     let strengTeam = '<b>Team:</b>'
-    //     tomStreng = true
+        let strengTeam = '<b>Team:</b>'
+        tomStreng = true
 
-    //     for (let medalje in element.results.team){
-    //         const antallMedaljer = element.results.team[medalje]
-    //         if (antallMedaljer > 0) {
-    //             strengTeam+= ' | '+medalje+': '+antallMedaljer
-    //             tomStreng = false
-    //         }
-    //     }
-    //     if (!tomStreng) {
-    //         p = document.createElement('p')
-    //         p.innerHTML = strengTeam
-    //         div.appendChild(p)            
-    //     }
-    //     meritsDiv.appendChild(div)
-    // }
-    // divGrid.appendChild(meritsDiv)
+        for (let medalje in element.results.team){
+            let antallMedaljer = element.results.team[medalje]
+            if (antallMedaljer > 0) {
+                strengTeam+= ' | '+antallMedaljer+' '+medalje
+                tomStreng = false
+            }
+        }
+        if (!tomStreng) {
+            p = document.createElement('p')
+            p.innerHTML = strengTeam
+            div.appendChild(p)            
+        }
+        meritsDiv.appendChild(div)
+    }
+    divGrid.appendChild(meritsDiv)
 
 
 //PERSONAL RECORDS----------------------------------------

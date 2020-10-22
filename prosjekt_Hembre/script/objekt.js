@@ -21,7 +21,20 @@ const personer = [
             long:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam unde excepturi, quaerat sit quasi recusandae id soluta. Voluptas totam debitis, expedita odit quo voluptatum repellat suscipit animi voluptates! Temporibus, qui?',
         },
 
-        kids:['Mattis','Ludvik','Tim Leo','Leonel'],
+        family:{
+            children:[
+                ['Mattis','mattishembre'],
+                ['Ludvik','ludvikhembre'],
+                ['Tim Leo','timleohembre'],
+                ['Leonel','leonelhembre']               
+            ],
+            parents:[
+                
+            ],
+            siblings:[
+                
+            ]
+        },
 
         memberShip:{
             name:'Bærum PK',
@@ -280,7 +293,19 @@ const personer = [
           long:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam unde excepturi, quaerat sit quasi recusandae id soluta. Voluptas totam debitis, expedita odit quo voluptatum repellat suscipit animi voluptates! Temporibus, qui?',
         },
 
-        kids:null,
+        family:{
+            children:[
+            ],
+            parents:[
+                ['Pål','palhembre']
+            ],
+            siblings:[
+                ['Ludvik','ludvikhembre'],
+                ['Tim Leo','timleohembre'],
+                ['Leonel','leonelhembre']
+                
+            ]
+        },
 
         memberShip:{
             name:'Bærum PK',
@@ -303,9 +328,24 @@ const personer = [
 
         bestStatistics:[
             {
-                event:'Center Fire',
-                score:596,
-                year:2000
+                event:'Luft 60 skudd',
+                score:582,
+                year:2020
+            },
+            {
+                event:'Luft 40 skudd',
+                score:386,
+                year:2020
+            },
+            {
+                event:'Air-sprint',
+                score:298,
+                year:2020
+            },
+            {
+                event:'Finpistol',
+                score:578,
+                year:2019
             },
             {
                 event:'Standardpistol',
@@ -313,49 +353,79 @@ const personer = [
                 year:2019
             },
             {
-                event:'Olympic Rapid Fire',
+                event:'Silhuettpistol',
                 score:553,
                 year:2019
             },
             {
-                event:'Freepistol',
+                event:'Fripistol',
                 score:490,
                 year:2019
             },
             {
-                event:'Airpistol',
-                score:582,
-                year:2020
-            },
-            {
-                event:'Sportpistol',
-                score:578,
-                year:2019
-            },
-            {
-                event:'Mil. RF, cal. 22',
+                event:'Hurtig Fin',
                 score:582,
                 year:2019
             },
             {
-                event:'Air-sprint',
-                score:298,
-                year:2020
+                event:'Hurtig Grov',
+                score:562,
+                year:2019
+            },
+            {
+                event:'Grovpistol',
+                score:560,
+                year:2019
             }
+        ],
 
+        merits:[
+            {
+                merit:'NM klasse Junior',
+                results:{
+                    ind:{
+                        gold:12,
+                        silver:null,
+                        bronse:null   
+                    },
+                    team:{
+                        gold:null,
+                        silver:null,
+                        bronse:null
+                    }
+                }
+            },
+            {
+                merit:'NM klasse Ungdom',
+                results:{
+                    ind:{
+                        gold:2,
+                        silver:null,
+                        bronse:null   
+                    },
+                    team:{
+                        gold:null,
+                        silver:null,
+                        bronse:null
+                    }
+                }
+            }
         ]
+
     },
 
     {
         id:'ludvikhembre',
 
-        surName:'Ludvik',
-        lastName:'Hembre',
-
-        age:19,
-        birthYear:'2001',
-        birthDay:'29/9',
-        birthPlace:'Oslo',
+        about:{
+            surName:'Ludvik',
+            lastName:'Hembre',
+    
+            age:19,
+            birthYear:'2001',
+            birthDay:'29/9',
+            birthPlace:'Oslo',
+        },
 
 
         image:{
@@ -368,7 +438,19 @@ const personer = [
           statedShooting:''
         },
 
-        kids:null,
+        family:{
+            children:[
+            ],
+            parent:[
+                ['Pål','palhembre']
+            ],
+            sibling:[
+                ['Mattis','mattishembre'],
+                ['Tim Leo','timleohembre'],
+                ['Leonel','leonelhembre']
+                
+            ]
+        },
 
         memberShip:{
             name:'Bærum PK',
@@ -387,20 +469,26 @@ const personer = [
             ['http://fsu.no/issf/2012/sk/st_ludvikh.htm','2012'],
             ['http://fsu.no/issf/2011/sk/st_ludvikh.htm','2011'],
             ['http://fsu.no/issf/2010/sk/st_ludvikh.htm','2010']
-        ]
+        ],
+        
+        bestStatistics:[],
+
+        merits:[]
 
     },
 
     {
         id:'timleohembre',
 
-        surName:'Tim Leo',
-        lastName:'Hembre',
-
-        age:14,
-        birthYear:'2006',
-        birthDay:'27/9',
-        birthPlace:'Bærum',
+        about:{
+            surName:'Tim Leo',
+            lastName:'Hembre',
+    
+            age:14,
+            birthYear:'2006',
+            birthDay:'27/9',
+            birthPlace:'Bærum',
+        },
 
         image:{
             mainImage:'bilder/timleo.jpg'
@@ -412,7 +500,19 @@ const personer = [
             statedShooting:''
         },
 
-        kids:null,
+        family:{
+            children:[
+            ],
+            parents:[
+                ['Pål','palhembre']
+            ],
+            siblings:[
+                ['Mattis','mattishembre'],
+                ['Ludvik','ludvikhembre'],
+                ['Leonel','leonelhembre']
+                
+            ]
+        },
 
         memberShip:{
             name:'Bærum PK',
@@ -427,7 +527,10 @@ const personer = [
             ['http://fsu.no/2016/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2016'],
             ['http://fsu.no/2015/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2015'],
             ['http://fsu.no/2014/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2014']
-        ]
+        ],
 
+        bestStatistics:[],
+
+        merits:[]
     }
 ]
