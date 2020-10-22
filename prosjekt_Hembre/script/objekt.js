@@ -736,7 +736,7 @@ const personer = [
             lastName:'Hembre',
     
             birthYear:2016,
-            birthDay:21,
+            birthDay:14,
             birthMonth:1,
             birthPlace:'The Philippines',
         },

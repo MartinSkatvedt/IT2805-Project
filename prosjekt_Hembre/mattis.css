@@ -19,8 +19,8 @@ body {
   font-family: "Arial", "Times new roman", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
-  width: 60%;
-  margin: 10% auto;
+  width: 95%;
+  margin: 1% auto;
   font-size: var(--font-size);
 
 }

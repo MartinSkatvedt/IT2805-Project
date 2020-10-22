@@ -53,9 +53,9 @@ function makeToppDiv() {
     infoDiv.appendChild(p)
     
 //Beskrivelse lang
-    p = document.createElement('p')
-    p.innerHTML = person.description.long
-    infoDiv.appendChild(p)
+    // p = document.createElement('p')
+    // p.innerHTML = person.description.long
+    // infoDiv.appendChild(p)
     
 //Alder --------------------------------------------------------- ikke ferdig, automatisk alder
     let age = getYears()
@@ -132,10 +132,11 @@ function makeToppDiv() {
 
 function getYears() {
     let today = new Date()
-    let dd = Number(String(today.getDate()).padStart(2, '0')) - person.about.birthDay
+    let dd = Number(String(today.getDate()+1).padStart(2, '0')) - person.about.birthDay
     let mm = Number(String(today.getMonth() + 1).padStart(2, '0')) - person.about.birthMonth//January is 0!
     let yyyy = today.getFullYear() - person.about.birthYear
-    if (dd<0) if (mm<1) yyyy--
+    console.log(yyyy+'|'+mm+'|'+dd+'|');
+    if (mm<0) if (mm<1 || dd<0) yyyy--
     return yyyy
      
 }
