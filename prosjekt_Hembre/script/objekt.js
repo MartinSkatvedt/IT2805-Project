@@ -1,6 +1,7 @@
 const personer = [
     {
         id:'palhembre',
+        viewedOnIndex:true,
 
         about:{
             surName:'Pål',
@@ -140,8 +141,8 @@ const personer = [
             },
             {
                 event:'Air-sprint',
-                score:'',
-                year:''
+                score:'---',
+                year:'----'
             }
         ],
 
@@ -273,6 +274,7 @@ const personer = [
 
     {
         id:'mattishembre',
+        viewedOnIndex:true,
 
         about:{
             surName:'Mattis',
@@ -312,7 +314,6 @@ const personer = [
             link:'http://bpk.no/s'
         },
 
-
         yearlyStatistics:[
             ['http://fsu.no/issf/2019/sk/st_mattish.htm','2019'],
             ['http://fsu.no/issf/2018/sk/st_mattish.htm','2018'],
@@ -338,7 +339,7 @@ const personer = [
                 year:2020
             },
             {
-                event:'Air-sprint',
+                event:'Luft-sprint',
                 score:298,
                 year:2020
             },
@@ -376,6 +377,11 @@ const personer = [
                 event:'Grovpistol',
                 score:560,
                 year:2019
+            },
+            {
+                event:'NAIS Fin',
+                score:'---',
+                year:'----'
             }
         ],
 
@@ -409,13 +415,30 @@ const personer = [
                         bronse:null
                     }
                 }
+            },
+            {
+                merit:'Nordisk Felt Jr.',
+                results:{
+                    ind:{
+                        gold:null,
+                        silver:null,
+                        bronse:1   
+                    },
+                    team:{
+                        gold:null,
+                        silver:null,
+                        bronse:null
+                    }
+                }
             }
+
         ]
 
     },
 
     {
         id:'ludvikhembre',
+        viewedOnIndex:true,
 
         about:{
             surName:'Ludvik',
@@ -427,15 +450,13 @@ const personer = [
             birthPlace:'Oslo',
         },
 
-
         image:{
             mainImage:'bilder/ludvik.jpg'
         },
 
         description:{
           short:'Started his career in 2010',
-          long:'',
-          statedShooting:''
+          long:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam unde excepturi, quaerat sit quasi recusandae id soluta. Voluptas totam debitis, expedita odit quo voluptatum repellat suscipit animi voluptates! Temporibus, qui?',
         },
 
         family:{
@@ -457,7 +478,6 @@ const personer = [
             link:'http://bpk.no/s'
         },
 
-
         yearlyStatistics:[
             ['http://fsu.no/issf/2019/sk/st_ludvikh.htm','2019'],
             ['http://fsu.no/issf/2018/sk/st_ludvikh.htm','2018'],
@@ -471,14 +491,117 @@ const personer = [
             ['http://fsu.no/issf/2010/sk/st_ludvikh.htm','2010']
         ],
         
-        bestStatistics:[],
+        bestStatistics:[
+            {
+                event:'Luft 40 skudd',
+                score:370,
+                year:2014
+            },
+            {
+                event:'Luft 60 skudd',
+                score:567,
+                year:2020
+            },
+            {
+                event:'Fripistol',
+                score:515,
+                year:2019
+            },
+            {
+                event:'Silhuettpistol',
+                score:559,
+                year:2018
+            },
+            {
+                event:'Luft-sprint',
+                score:298,
+                year:2020
+            },
+            {
+                event:'Standardpistol',
+                score:551,
+                year:2017
+            },
+            {
+                event:'Finpistol',
+                score:570,
+                year:2018
+            },
+            {
+                event:'Hurtig Fin',
+                score:570,
+                year:2019
+            },
+            {
+                event:'Hurtig Grov',
+                score:554,
+                year:2018
+            },
+            {
+                event:'Grovpistol',
+                score:558,
+                year:2018
+            },
+            {
+                event:'NAIS Fin',
+                score:290,
+                year:2019
+            }
+        ],
 
-        merits:[]
+        merits:[
+            {
+                merit:'NM klasse Junior',
+                results:{
+                    ind:{
+                        gold:7,
+                        silver:null,
+                        bronse:null   
+                    },
+                    team:{
+                        gold:null,
+                        silver:null,
+                        bronse:null
+                    }
+                }
+            },
+            {
+                merit:'NM klasse Ungdom',
+                results:{
+                    ind:{
+                        gold:7,
+                        silver:null,
+                        bronse:null   
+                    },
+                    team:{
+                        gold:null,
+                        silver:null,
+                        bronse:null
+                    }
+                }
+            },
+            {
+                merit:'Nordisk Felt Jr.',
+                results:{
+                    ind:{
+                        gold:null,
+                        silver:1,
+                        bronse:null   
+                    },
+                    team:{
+                        gold:null,
+                        silver:null,
+                        bronse:null
+                    }
+                }
+            }
+        ]
 
     },
 
     {
         id:'timleohembre',
+        viewedOnIndex:true,
 
         about:{
             surName:'Tim Leo',
@@ -496,8 +619,7 @@ const personer = [
 
         description:{
             short:'Started his career in 2014',
-            long:'',
-            statedShooting:''
+            long:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam unde excepturi, quaerat sit quasi recusandae id soluta. Voluptas totam debitis, expedita odit quo voluptatum repellat suscipit animi voluptates! Temporibus, qui?'
         },
 
         family:{
@@ -510,7 +632,6 @@ const personer = [
                 ['Mattis','mattishembre'],
                 ['Ludvik','ludvikhembre'],
                 ['Leonel','leonelhembre']
-                
             ]
         },
 
@@ -518,7 +639,6 @@ const personer = [
             name:'Bærum PK',
             link:'http://bpk.no/s'
         },
-
 
         yearlyStatistics:[
             ['http://fsu.no/2019/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2019'],
@@ -529,8 +649,120 @@ const personer = [
             ['http://fsu.no/2014/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2014']
         ],
 
-        bestStatistics:[],
+        bestStatistics:[
+            {
+                event:'Luft 40 skudd',
+                score:366,
+                year:2020
+            },
+            {
+                event:'Luft 60 skudd',
+                score:515,
+                year:2020
+            },
+            {
+                event:'Fripistol',
+                score:420,
+                year:2019
+            },
+            {
+                event:'Silhuettpistol',
+                score:475,
+                year:2020
+            },
+            {
+                event:'Luft-sprint',
+                score:294,
+                year:2020
+            },
+            {
+                event:'Standardpistol',
+                score:474,
+                year:2020
+            },
+            {
+                event:'Finpistol',
+                score:526,
+                year:2020
+            },
+            {
+                event:'Hurtig Fin',
+                score:535,
+                year:2020
+            },
+            {
+                event:'Hurtig Grov',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'Grovpistol',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'NAIS Fin',
+                score:'---',
+                year:'----'
+            }
 
-        merits:[]
+        ],
+
+        merits:[
+            {
+                merit:'NM klasse Ungdom',
+                results:{
+                    ind:{
+                        gold:1,
+                        silver:null,
+                        bronse:null   
+                    },
+                    team:{
+                        gold:null,
+                        silver:null,
+                        bronse:null
+                    }
+                }
+            },
+        ]
+    },
+
+    {
+        id:'leonelhembre',
+        viewedOnIndex:false,
+        
+        about:{
+            surName:'Leonel',
+            lastName:'Hembre',
+    
+            age:'X',
+            birthYear:'201X',
+            birthDay:'XX/X',
+            birthPlace:'The Philippines',
+        },
+
+        image:{
+            mainImage:'bilder/leonel.jpg'
+        },
+
+        description:{
+          short:'Has not yet startet his career',
+          long:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam unde excepturi, quaerat sit quasi recusandae id soluta. Voluptas totam debitis, expedita odit quo voluptatum repellat suscipit animi voluptates! Temporibus, qui?',
+        },
+
+        family:{
+            children:[
+            ],
+            parents:[
+                ['Pål','palhembre']
+            ],
+            siblings:[
+                ['Mattis','leonelhembre'],
+                ['Ludvik','ludvikhembre'],
+                ['Tim Leo','timleohembre']
+                
+            ]
+        }
+
     }
 ]
