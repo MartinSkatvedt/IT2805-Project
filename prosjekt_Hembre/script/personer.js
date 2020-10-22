@@ -90,11 +90,6 @@ function createSite() {
         }
     }
     imgDiv.appendChild(familyDiv)
-//FAMILY------------------------------------------------
-    //Startet å skyte
-    // p = document.createElement('p')
-    // p.innerHTML = person.description.statedShooting
-    // infoDiv.appendChild(p)
 
     //medlem i bpk med linken
     p = document.createElement('p')
