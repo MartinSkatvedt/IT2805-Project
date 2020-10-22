@@ -18,62 +18,65 @@ const main = document.querySelector('main')
 
 main.innerHTML = ''
 
-function createSite() {
-    //endrer tittelen
-    document.title = person.about.surName + ' ' + person.about.lastName
+function changeTitle() {
+//endrer tittelen
+    document.title = person.about.surName + ' ' + person.about.lastName    
+}
 
-    //Leger til hoved-div-elementet
-    let mainDiv = document.createElement('div')
-    mainDiv.id = 'person_side_topp'
-    main.appendChild(mainDiv)
-
-    //Lager bilde med en div inni
+function makeToppDiv() {
+//Leger til hoved-div-elementet
+    let toppDiv = document.createElement('div')
+    toppDiv.id = 'person_side_topp'
+    main.appendChild(toppDiv)
+    
+//Lager div med bilde inni
     let imgDiv = document.createElement('div')
     imgDiv.id = 'person_bilder'
     let img = document.createElement('img')
     img.src = person.image.mainImage
     imgDiv.appendChild(img)
-    mainDiv.appendChild(imgDiv)
-
-    //Lager div id=mattis_side_info
+    toppDiv.appendChild(imgDiv)
+    
+//Lager person_side_info div
     infoDiv = document.createElement('div')
     infoDiv.id = 'person_side_info'
-    mainDiv.appendChild(infoDiv)
-
-    //Overskrift
+    toppDiv.appendChild(infoDiv)
+    
+//Overskrift
     let overskrift = document.createElement('h1')
     overskrift.innerHTML = person.about.surName + ' ' + person.about.lastName
     infoDiv.appendChild(overskrift)
-
-    //Beskrivelse kort
+    
+//Beskrivelse kort
     let p = document.createElement('p')
     p.innerHTML = person.description.short
     infoDiv.appendChild(p)
-
-    //Beskrivelse lang
+    
+//Beskrivelse lang
     p = document.createElement('p')
     p.innerHTML = person.description.long
     infoDiv.appendChild(p)
-
-    //Alder
+    
+//Alder --------------------------------------------------------- ikke ferdig, automatisk alder
+    let age = getYears()
     p = document.createElement('p')
-    p.innerHTML = 'Age: ' + person.about.age + ' years'
+    p.innerHTML = 'Age: ' + age + ' years'
     infoDiv.appendChild(p)
-
+    
+//Bithday
     p = document.createElement('p')
-    p.innerHTML = 'Birth: ' + person.about.birthDay +'/'+ person.about.birthYear + ', ' + person.about.birthPlace
+    p.innerHTML = 'Birth: ' + person.about.birthDay +'/'+ person.about.birthMonth +'/'+ person.about.birthYear + ', ' + person.about.birthPlace
     infoDiv.appendChild(p)
+//-------------------------------------------------------------- 
 
-
-//FAMILY------------------------------------------------
-
+//FAMILY
     let familyDiv = document.createElement('div')
     familyDiv.id = 'familyDiv'
     for (const obj in person.family) {
         if (person.family.hasOwnProperty(obj)) {
             const element = person.family[obj];
             let p = document.createElement('p')
-            p.innerHTML = obj.charAt(0).toUpperCase() + obj.substring(1) + '(s):' //For å for føste bokstav Stor
+            p.innerHTML = obj.charAt(0).toUpperCase() + obj.substring(1) + ' who compete:' //For å for føste bokstav Stor
             if (element.length>0) {
                 let induvidualDiv = document.createElement('div')
                 for (let i = 0; i < element.length; i++) {
@@ -125,66 +128,77 @@ function createSite() {
         window.open(valgt.value)
     }
 
-    let divGrid = document.createElement('div')
-    divGrid.id = 'grid_container_stats'
-    main.appendChild(divGrid)
+}
 
+function getYears() {
+    let today = new Date()
+    let dd = Number(String(today.getDate()).padStart(2, '0')) - person.about.birthDay
+    let mm = Number(String(today.getMonth() + 1).padStart(2, '0')) - person.about.birthMonth//January is 0!
+    let yyyy = today.getFullYear() - person.about.birthYear
+    if (dd<0) if (mm<1) yyyy--
+    return yyyy
+     
+}
+
+function makeBottomDiv() {
 //MERITS-------------------------------------------------
-    let meritsDiv = document.createElement('div')
-    meritsDiv.id = 'merits'
+   let divGrid = document.createElement('div')
+   divGrid.id = 'grid_container_stats'
+   main.appendChild(divGrid)
 
-    h1 = document.createElement('h1')
-    h1.innerHTML = 'MERITS'
-    meritsDiv.appendChild(h1)
+   let meritsDiv = document.createElement('div')
+   meritsDiv.id = 'merits'
+   
+   h1 = document.createElement('h1')
+   h1.innerHTML = 'MERITS'
+   meritsDiv.appendChild(h1)
 
 
-    for (let i = 0; i < person.merits.length; i++) {
-        const element = person.merits[i]
-        div = document.createElement('div')
-        div.id = 'merit'
+   for (let i = 0; i < person.merits.length; i++) {
+       const element = person.merits[i]
+       div = document.createElement('div')
+       div.id = 'merit'
 
-        let kursive = document.createElement('i')
-        kursive.innerHTML = element.merit
-        div.appendChild(kursive)
+       let kursive = document.createElement('i')
+       kursive.innerHTML = element.merit
+       div.appendChild(kursive)
 
-        let strengInd = '<b>Ind:</b>'
-        let tomStreng = true
+       let strengInd = '<b>Ind:</b>'
+       let tomStreng = true
 
-        for (let medalje in element.results.ind){
-            let antallMedaljer = element.results.ind[medalje]
-            if (antallMedaljer > 0) {
-                strengInd+= ' | '+antallMedaljer+' '+medalje
-                tomStreng = false
-            }
-        }
-        if (!tomStreng) {
-            p = document.createElement('p')
-            p.innerHTML = strengInd
-            div.appendChild(p)
-        }
+       for (let medalje in element.results.ind){
+           let antallMedaljer = element.results.ind[medalje]
+           if (antallMedaljer > 0) {
+               strengInd+= ' | '+antallMedaljer+' '+medalje
+               tomStreng = false
+           }
+       }
+       if (!tomStreng) {
+           p = document.createElement('p')
+           p.innerHTML = strengInd
+           div.appendChild(p)
+       }
 
-        let strengTeam = '<b>Team:</b>'
-        tomStreng = true
+       let strengTeam = '<b>Team:</b>'
+       tomStreng = true
 
-        for (let medalje in element.results.team){
-            let antallMedaljer = element.results.team[medalje]
-            if (antallMedaljer > 0) {
-                strengTeam+= ' | '+antallMedaljer+' '+medalje
-                tomStreng = false
-            }
-        }
-        if (!tomStreng) {
-            p = document.createElement('p')
-            p.innerHTML = strengTeam
-            div.appendChild(p)            
-        }
-        meritsDiv.appendChild(div)
-    }
-    divGrid.appendChild(meritsDiv)
-
+       for (let medalje in element.results.team){
+           let antallMedaljer = element.results.team[medalje]
+           if (antallMedaljer > 0) {
+               strengTeam+= ' | '+antallMedaljer+' '+medalje
+               tomStreng = false
+           }
+       }
+       if (!tomStreng) {
+           p = document.createElement('p')
+           p.innerHTML = strengTeam
+           div.appendChild(p)            
+       }
+       meritsDiv.appendChild(div)
+   }
+   divGrid.appendChild(meritsDiv)
 
 //PERSONAL RECORDS----------------------------------------
-
     let tableDiv = document.createElement('div')
     divGrid.appendChild(tableDiv)
 
@@ -223,6 +237,16 @@ function createSite() {
             }
         }
         tabellRekorder.appendChild(tr)
-    }
+   
 }
+
+}
+
+
+function createSite() {
+    changeTitle()
+    makeToppDiv()
+    makeBottomDiv()
+}
+
 createSite()

@@ -7,9 +7,9 @@ const personer = [
             surName:'Pål',
             lastName:'Hembre',
     
-            age:57,
-            birthYear:'1963',
-            birthDay:'20/4',
+            birthYear:1963,
+            birthDay:20,
+            birthMonth:4,
             birthPlace:'Molde',
         },
 
@@ -29,10 +29,10 @@ const personer = [
                 ['Tim Leo','timleohembre'],
                 ['Leonel','leonelhembre']               
             ],
-            parents:[
+            parent:[
                 
             ],
-            siblings:[
+            sibling:[
                 
             ]
         },
@@ -280,9 +280,9 @@ const personer = [
             surName:'Mattis',
             lastName:'Hembre',
     
-            age:19,
-            birthYear:'2001',
-            birthDay:'29/9',
+            birthYear:2001,
+            birthDay:29,
+            birthMonth:9,
             birthPlace:'Oslo',
         },
 
@@ -298,10 +298,10 @@ const personer = [
         family:{
             children:[
             ],
-            parents:[
+            parent:[
                 ['Pål','palhembre']
             ],
-            siblings:[
+            sibling:[
                 ['Ludvik','ludvikhembre'],
                 ['Tim Leo','timleohembre'],
                 ['Leonel','leonelhembre']
@@ -444,9 +444,9 @@ const personer = [
             surName:'Ludvik',
             lastName:'Hembre',
     
-            age:19,
-            birthYear:'2001',
-            birthDay:'29/9',
+            birthYear:2001,
+            birthDay:29,
+            birthMonth:9,
             birthPlace:'Oslo',
         },
 
@@ -607,9 +607,9 @@ const personer = [
             surName:'Tim Leo',
             lastName:'Hembre',
     
-            age:14,
-            birthYear:'2006',
-            birthDay:'27/9',
+            birthYear:2006,
+            birthDay:27,
+            birthMonth:9,
             birthPlace:'Bærum',
         },
 
@@ -625,10 +625,10 @@ const personer = [
         family:{
             children:[
             ],
-            parents:[
+            parent:[
                 ['Pål','palhembre']
             ],
-            siblings:[
+            sibling:[
                 ['Mattis','mattishembre'],
                 ['Ludvik','ludvikhembre'],
                 ['Leonel','leonelhembre']
@@ -735,9 +735,9 @@ const personer = [
             surName:'Leonel',
             lastName:'Hembre',
     
-            age:'X',
-            birthYear:'201X',
-            birthDay:'XX/X',
+            birthYear:2016,
+            birthDay:21,
+            birthMonth:1,
             birthPlace:'The Philippines',
         },
 
@@ -753,10 +753,10 @@ const personer = [
         family:{
             children:[
             ],
-            parents:[
+            parent:[
                 ['Pål','palhembre']
             ],
-            siblings:[
+            sibling:[
                 ['Mattis','leonelhembre'],
                 ['Ludvik','ludvikhembre'],
                 ['Tim Leo','timleohembre']

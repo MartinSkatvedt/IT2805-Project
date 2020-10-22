@@ -19,11 +19,10 @@ body {
   font-family: "Arial", "Times new roman", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
-  width: 90%;
-  margin: auto;
-  font-size: var(--font-size);
+  width: 60%;
   margin: 10% auto;
-  /*TEMPORARY*/
+  font-size: var(--font-size);
+
 }
 
 #person_side_topp {
