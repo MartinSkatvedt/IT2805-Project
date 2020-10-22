@@ -103,6 +103,7 @@ function createSite() {
     link.id = 'medlemskap'
     link.href = person.memberShip.link
     link.innerHTML = person.memberShip.name
+    link.target = ':blank'
     p.appendChild(link)
     infoDiv.appendChild(p)
 
