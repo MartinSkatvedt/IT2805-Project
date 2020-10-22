@@ -109,7 +109,7 @@ function createSite() {
     let opt = document.createElement('option')
     opt.disabled = true
     opt.selected = true
-    opt.innerHTML = 'Events'
+    opt.innerHTML = 'Competition Statistics'
     select.appendChild(opt)
 
     for (const stat of person.yearlyStatistics) {
