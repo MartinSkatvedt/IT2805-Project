@@ -2,14 +2,15 @@ const personer = [
     {
         id:'palhembre',
 
-        surName:'Pål',
-        lastName:'Hembre',
-        middleName:'',
-
-        age:57,
-        birthYear:'1963',
-        birthDay:'20/4',
-        birthPlace:'Molde',
+        about:{
+            surName:'Pål',
+            lastName:'Hembre',
+    
+            age:57,
+            birthYear:'1963',
+            birthDay:'20/4',
+            birthPlace:'Molde',
+        },
 
         image:{
             mainImage:'bilder/pal.png'
@@ -18,7 +19,6 @@ const personer = [
         description:{
             short:'Started with pistol shooting in 1978. CISM shooter in 1984/85 and from 1990 to 2018.',
             long:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam unde excepturi, quaerat sit quasi recusandae id soluta. Voluptas totam debitis, expedita odit quo voluptatum repellat suscipit animi voluptates! Temporibus, qui?',
-            // statedShooting:'Started with pistol shooting in 1978. CISM shooter in 1984/85 and from 1990 to 2018.'
         },
 
         kids:['Mattis','Ludvik','Tim Leo','Leonel'],
@@ -129,7 +129,7 @@ const personer = [
                 event:'Air-sprint',
                 score:'',
                 year:''
-            },
+            }
         ],
 
         merits:[
@@ -261,13 +261,15 @@ const personer = [
     {
         id:'mattishembre',
 
-        surName:'Mattis',
-        lastName:'Hembre',
-
-        age:19,
-        birthYear:'2001',
-        birthDay:'29/9',
-        birthPlace:'Oslo',
+        about:{
+            surName:'Mattis',
+            lastName:'Hembre',
+    
+            age:19,
+            birthYear:'2001',
+            birthDay:'29/9',
+            birthPlace:'Oslo',
+        },
 
         image:{
             mainImage:'bilder/mattis.jpg'
@@ -275,8 +277,7 @@ const personer = [
 
         description:{
           short:'Started his career in 2010',
-          long:'',
-          statedShooting:''
+          long:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam unde excepturi, quaerat sit quasi recusandae id soluta. Voluptas totam debitis, expedita odit quo voluptatum repellat suscipit animi voluptates! Temporibus, qui?',
         },
 
         kids:null,
@@ -300,7 +301,49 @@ const personer = [
             ['http://fsu.no/issf/2010/sk/st_mattish.htm','2010']
         ],
 
-        bestStatistics:[]
+        bestStatistics:[
+            {
+                event:'Center Fire',
+                score:596,
+                year:2000
+            },
+            {
+                event:'Standardpistol',
+                score:559,
+                year:2019
+            },
+            {
+                event:'Olympic Rapid Fire',
+                score:553,
+                year:2019
+            },
+            {
+                event:'Freepistol',
+                score:490,
+                year:2019
+            },
+            {
+                event:'Airpistol',
+                score:582,
+                year:2020
+            },
+            {
+                event:'Sportpistol',
+                score:578,
+                year:2019
+            },
+            {
+                event:'Mil. RF, cal. 22',
+                score:582,
+                year:2019
+            },
+            {
+                event:'Air-sprint',
+                score:298,
+                year:2020
+            }
+
+        ]
     },
 
     {

@@ -20,7 +20,7 @@ main.innerHTML = ''
 
 function createSite() {
     //endrer tittelen
-    document.title = person.surName + ' ' + person.lastName
+    document.title = person.about.surName + ' ' + person.about.lastName
 
     //Leger til hoved-div-elementet
     let mainDiv = document.createElement('div')
@@ -42,7 +42,7 @@ function createSite() {
 
     //Overskrift
     let overskrift = document.createElement('h1')
-    overskrift.innerHTML = person.surName + ' ' + person.lastName
+    overskrift.innerHTML = person.about.surName + ' ' + person.about.lastName
     infoDiv.appendChild(overskrift)
 
     //Beskrivelse kort
@@ -57,11 +57,11 @@ function createSite() {
 
     //Alder
     p = document.createElement('p')
-    p.innerHTML = 'Age: ' + person.age + ' years'
+    p.innerHTML = 'Age: ' + person.about.age + ' years'
     infoDiv.appendChild(p)
 
     p = document.createElement('p')
-    p.innerHTML = 'Birth: ' + person.birthDay + person.birthYear + ', ' + person.birthPlace
+    p.innerHTML = 'Birth: ' + person.about.birthDay + person.about.birthYear + ', ' + person.about.birthPlace
     infoDiv.appendChild(p)
 
     //Startet å skyte
@@ -115,49 +115,49 @@ function createSite() {
     meritsDiv.appendChild(h1)
 
 
-    for (let i = 0; i < person.merits.length; i++) {
-        const element = person.merits[i]
-        div = document.createElement('div')
-        div.id = 'merit'
+    // for (let i = 0; i < person.merits.length; i++) {
+    //     const element = person.merits[i]
+    //     div = document.createElement('div')
+    //     div.id = 'merit'
 
-        let kursive = document.createElement('i')
-        kursive.innerHTML = element.merit
-        div.appendChild(kursive)
+    //     let kursive = document.createElement('i')
+    //     kursive.innerHTML = element.merit
+    //     div.appendChild(kursive)
 
-        let strengInd = '<b>Ind:</b>'
-        let tomStreng = true
+    //     let strengInd = '<b>Ind:</b>'
+    //     let tomStreng = true
 
-        for (let medalje in element.results.ind){
-            const antallMedaljer = element.results.ind[medalje]
-            if (antallMedaljer > 0) {
-                strengInd+= ' | '+medalje+': '+antallMedaljer
-                tomStreng = false
-            }
-        }
-        if (!tomStreng) {
-            p = document.createElement('p')
-            p.innerHTML = strengInd
-            div.appendChild(p)
-        }
+    //     for (let medalje in element.results.ind){
+    //         const antallMedaljer = element.results.ind[medalje]
+    //         if (antallMedaljer > 0) {
+    //             strengInd+= ' | '+medalje+': '+antallMedaljer
+    //             tomStreng = false
+    //         }
+    //     }
+    //     if (!tomStreng) {
+    //         p = document.createElement('p')
+    //         p.innerHTML = strengInd
+    //         div.appendChild(p)
+    //     }
 
-        let strengTeam = '<b>Team:</b>'
-        tomStreng = true
+    //     let strengTeam = '<b>Team:</b>'
+    //     tomStreng = true
 
-        for (let medalje in element.results.team){
-            const antallMedaljer = element.results.team[medalje]
-            if (antallMedaljer > 0) {
-                strengTeam+= ' | '+medalje+': '+antallMedaljer
-                tomStreng = false
-            }
-        }
-        if (!tomStreng) {
-            p = document.createElement('p')
-            p.innerHTML = strengTeam
-            div.appendChild(p)            
-        }
-        meritsDiv.appendChild(div)
-    }
-    divGrid.appendChild(meritsDiv)
+    //     for (let medalje in element.results.team){
+    //         const antallMedaljer = element.results.team[medalje]
+    //         if (antallMedaljer > 0) {
+    //             strengTeam+= ' | '+medalje+': '+antallMedaljer
+    //             tomStreng = false
+    //         }
+    //     }
+    //     if (!tomStreng) {
+    //         p = document.createElement('p')
+    //         p.innerHTML = strengTeam
+    //         div.appendChild(p)            
+    //     }
+    //     meritsDiv.appendChild(div)
+    // }
+    // divGrid.appendChild(meritsDiv)
 
 
 //PERSONAL RECORDS----------------------------------------
@@ -187,22 +187,18 @@ function createSite() {
     tabellRekorder.appendChild(tr)
 
     for (let i = 0; i < person.bestStatistics.length; i++) {
-        const element = person.bestStatistics[i]
+        const obj = person.bestStatistics[i]
         tr = document.createElement('tr')
 
-        let tdEvent = document.createElement('td')
-        tdEvent.innerHTML = element.event
-        tr.appendChild(tdEvent)
-
-        let tdScore = document.createElement('td')
-        tdScore.innerHTML = element.score
-        tr.appendChild(tdScore)
-
-
-        let tdYear = document.createElement('td')
-        tdYear.innerHTML = element.year
-        tr.appendChild(tdYear)
-
+        for (const ovelse in obj) {
+            if (obj.hasOwnProperty(ovelse)) {
+                const element = obj[ovelse];
+                td = document.createElement('td')
+                td.innerHTML = element
+                tr.appendChild(td)
+                
+            }
+        }
         tabellRekorder.appendChild(tr)
     }
 }
