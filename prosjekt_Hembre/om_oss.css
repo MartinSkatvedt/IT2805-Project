@@ -246,7 +246,7 @@ main {
   text-align: left;
 }
 @media only screen and (max-width: 1200px) {
-  #pol_info>ul>li{
+  #pal_info>ul>li{
     font-size: 1.5vw;
   }
 #alle_spillere>div>div>img{
@@ -280,21 +280,21 @@ text-align: center;
   box-shadow: 0px 2px 8px 4px;
 }
 
-#pol_info>ul{
+#pal_info>ul{
   list-style-type: none;
   font-size: 22px;
   margin:0px;
 }
 
-#pol_bilder{
+#pal_bilder{
   display: block;
   margin: auto;
 }
-#pol_info>ul>li>a, #pol_info>p>a {
+#pal_info>ul>li>a, #pal_info>p>a {
 color: black;
 text-decoration: none;
 }
-#pol_info>ul>li>a:hover, #pol_info>p>a:hover{
+#pal_info>ul>li>a:hover, #pal_info>p>a:hover{
 text-decoration:underline;
 }
 h3>a{
@@ -314,7 +314,7 @@ h3>a:hover{
 
 }
 
-#pol_hembre{
+#pal_hembre{
   background-color: #ffcc99;
   display: grid;
   grid-template-columns: 1fr 1fr;

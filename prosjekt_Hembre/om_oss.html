@@ -38,7 +38,7 @@
     </section>
 
     <div class="navn_header">
-      <a href="pol.html">
+      <a href="pal.html">
         <button class="link">Pål</button></a>
       <a href="mattis.html">
         <button class="link">Mattis</button></a>
@@ -95,8 +95,8 @@
 
   <div id="alle_spillere">
 
-    <div id="pol_hembre">
-      <div id="pol_info">
+    <div id="palhembre" class="hembre">
+      <div id="pal_info">
         <h1>PÅL HEMBRE</h1>
         <h3>Former Second Lieutenant for the Norwegian army</h3>
         <ul>
@@ -118,37 +118,52 @@
 
       </div>
 
-      <div id="pol_bilder">
+      <div id="pal_bilder">
         <img src=" bilder/paal.png" alt="">
-        <h3><a href="pol.html">click here for more about Pål</a> </h3>
+        <h3><a href="pal.html">click here for more about Pål</a> </h3>
 
       </div>
 
     </div>
 
-    <div id="mattis_hembre">
+    <div id="mattishembre" class="hembre">
       <h2>MATTIS HEMBRE</h2>
 
     </div>
 
-    <div id="ludvik_hembre">
+    <div id="timleohembre" class="hembre">
+      <h2>TIM LEO HEMBRE</h2>
+
+    </div>
+    <div id="ludvikhembre" class="hembre">
       <h2>LUDVIK HEMBRE</h2>
 
     </div>
 
-    <div id="tim_leo_hembre">
-      <h2>TIM LEO HEMBRE</h2>
-
-    </div>
 
   </div>
 
-  <script src="om_oss.js">
-
-  </script>
-  <main>
 
     <!-- footer slutter her-->
+
+    <script src="script/data.js"></script>
+    <script src="script/skyttere.js"></script>
+    <script>
+
+function writeStats() {
+  const persons = document.querySelectorAll('.hembre')
+  const alleSpillere = document.querySelectorAll('#alle_spillere')
+  for (let i = 0; i < persons.length; i++) {
+    const index = findIndex(persons[i].id);
+    skytter = skyttere[index]
+    const merits = 
+    console.log(skytter);
+    console.log(persons[i].id);
+    
+  }
+}
+writeStats()
+  </script>
 </body>
 
 </html>

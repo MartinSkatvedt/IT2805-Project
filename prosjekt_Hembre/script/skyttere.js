@@ -20,12 +20,15 @@ function getIndex() {//FUNCTION TO FETCH THE SHOOTER INDEX FOR SHOOTER ID---
     const url_string = window.location.href //window.location.href
     const url = new URL(url_string)
     const personId = url.searchParams.get('skytter')
+    return findIndex(personId)
+}
+function findIndex(id) {
     for (let i = 0; i < skyttere.length; i++) {
         const element = skyttere[i].id
-        if (element == personId) {
+        if (element == id) {
             return i
         }
-    }
+    }    
 }
 function changeTitle(skytter) {//CHANGING THE TOP DIV-----------------------------
     document.title = skytter.about.surName + ' ' + skytter.about.lastName    
@@ -145,63 +148,77 @@ function getYears(skytter) {//cALCUTATING THE AGE FOR THE BIRTHDAY--------------
 }
 
 function makeBottomDiv(skytter) {
+//StatsDiv-------------------------------------------
+    const statsDiv = document.createElement('div')
+    statsDiv.id = 'grid_container_stats'
 //MERITS-------------------------------------------------
-   const statsDiv = document.createElement('div')
-   statsDiv.id = 'grid_container_stats'
 
-   const meritsDiv = document.createElement('div')
-   meritsDiv.id = 'merits'
-   
-   const meritsTitle = document.createElement('h1')
-   meritsTitle.innerHTML = 'MERITS'
-   meritsDiv.appendChild(meritsTitle)
-
-//WRITING OUT ALL THE MERITS
-   for (let i = 0; i < skytter.merits.length; i++) {
-       const element = skytter.merits[i]
-       const div = document.createElement('div')
-       div.id = 'merit'
-
-       const kursive = document.createElement('i')
-       kursive.innerHTML = element.merit
-       div.appendChild(kursive)
-
-       let strengInd = '<b>Ind:</b>'
-       let tomStreng = true
-
-       for (let medalje in element.results.ind){
-           const antallMedaljer = element.results.ind[medalje]
-           if (antallMedaljer > 0) {
-               strengInd+= ' | '+antallMedaljer+' '+medalje
-               tomStreng = false
-           }
-       }
-       if (!tomStreng) {
-           p = document.createElement('p')
-           p.innerHTML = strengInd
-           div.appendChild(p)
-       }
-
-       let strengTeam = '<b>Team:</b>'
-       tomStreng = true
-
-       for (let medalje in element.results.team){
-           const antallMedaljer = element.results.team[medalje]
-           if (antallMedaljer > 0) {
-               strengTeam+= ' | '+antallMedaljer+' '+medalje
-               tomStreng = false
-           }
-       }
-       if (!tomStreng) {
-           p = document.createElement('p')
-           p.innerHTML = strengTeam
-           div.appendChild(p)            
-       }
-       meritsDiv.appendChild(div)
-   }
+   const meritsDiv = getMeritsDiv(skytter)
    statsDiv.appendChild(meritsDiv)
 
 //PERSONAL RECORDS----------------------------------------
+
+    const recordsDiv = getRecordsDiv(skytter)
+    statsDiv.appendChild(recordsDiv)
+
+    return statsDiv
+    
+}
+function getMeritsDiv(skytter) {
+    meritsDiv = document.createElement('div')
+    meritsDiv.id = 'merits'
+ 
+    const meritsTitle = document.createElement('h1')
+    meritsTitle.innerHTML = 'MERITS'
+    meritsDiv.appendChild(meritsTitle)
+ 
+ //WRITING OUT ALL THE MERITS
+    for (let i = 0; i < skytter.merits.length; i++) {
+        const element = skytter.merits[i]
+        const div = document.createElement('div')
+        div.id = 'merit'
+ 
+        const kursive = document.createElement('i')
+        kursive.innerHTML = element.merit
+        div.appendChild(kursive)
+ 
+        let strengInd = '<b>Ind:</b>'
+        let tomStreng = true
+ 
+        for (let medalje in element.results.ind){
+            const antallMedaljer = element.results.ind[medalje]
+            if (antallMedaljer > 0) {
+                strengInd+= ' | '+antallMedaljer+' '+medalje
+                tomStreng = false
+            }
+        }
+        if (!tomStreng) {
+            p = document.createElement('p')
+            p.innerHTML = strengInd
+            div.appendChild(p)
+        }
+ 
+        let strengTeam = '<b>Team:</b>'
+        tomStreng = true
+ 
+        for (let medalje in element.results.team){
+            const antallMedaljer = element.results.team[medalje]
+            if (antallMedaljer > 0) {
+                strengTeam+= ' | '+antallMedaljer+' '+medalje
+                tomStreng = false
+            }
+        }
+        if (!tomStreng) {
+            p = document.createElement('p')
+            p.innerHTML = strengTeam
+            div.appendChild(p)            
+        }
+        meritsDiv.appendChild(div)
+    }
+    return meritsDiv
+ 
+}
+function getRecordsDiv(skytter) {
     const recordsDiv = document.createElement('div')
     recordsDiv.id = 'personal-records'
     
@@ -244,7 +261,6 @@ function makeBottomDiv(skytter) {
         }
         recordsTable.appendChild(tr)
     }
-    statsDiv.appendChild(recordsDiv)
-    return statsDiv
-    
+
+    return recordsDiv
 }
