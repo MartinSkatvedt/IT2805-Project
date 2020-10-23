@@ -594,18 +594,20 @@ h3 > a:hover {
   transition-duration: 1s;
 }
 
-.pal_hembre {
-  background-color: #ffcc99;
+.hembre {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-#mattis_hembre {
+.hembre:nth-child(1n){
+  background-color: #ffcc99;
+}
+.hembre:nth-child(2n) {
   background-color: #ffb366;
 }
-#ludvik_hembre {
+.hembre:nth-child(3n) {
   background-color: #ff9933;
 }
-#tim_leo_hembre {
+.hembre:nth-child(4n) {
   background-color: #ff8000;
 }
 #bilder_team {

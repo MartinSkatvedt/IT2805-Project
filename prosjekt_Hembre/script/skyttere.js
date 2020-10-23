@@ -135,7 +135,6 @@ function maketopDiv(skytter) {//CREATING THE TOP DIV
     }
     return topDiv
 }
-
 function getYears(skytter) {//cALCUTATING THE AGE FOR THE BIRTHDAY----------------
     let today = new Date()
     let dd = Number(String(today.getDate()+1).padStart(2, '0')) - skytter.about.birthDay
@@ -146,7 +145,6 @@ function getYears(skytter) {//cALCUTATING THE AGE FOR THE BIRTHDAY--------------
     return yyyy
      
 }
-
 function makeBottomDiv(skytter) {
 //StatsDiv-------------------------------------------
     const statsDiv = document.createElement('div')
