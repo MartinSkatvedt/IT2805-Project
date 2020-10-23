@@ -1,7 +1,7 @@
 const personer = [
     {
         id:'palhembre',
-        viewedOnIndex:true,
+        isShown:true,
 
         about:{
             surName:'Pål',
@@ -274,7 +274,7 @@ const personer = [
 
     {
         id:'mattishembre',
-        viewedOnIndex:true,
+        isShown:true,
 
         about:{
             surName:'Mattis',
@@ -438,7 +438,7 @@ const personer = [
 
     {
         id:'ludvikhembre',
-        viewedOnIndex:true,
+        isShown:true,
 
         about:{
             surName:'Ludvik',
@@ -601,7 +601,7 @@ const personer = [
 
     {
         id:'timleohembre',
-        viewedOnIndex:true,
+        isShown:true,
 
         about:{
             surName:'Tim Leo',
@@ -729,7 +729,7 @@ const personer = [
 
     {
         id:'leonelhembre',
-        viewedOnIndex:false,
+        isShown:false,
         
         about:{
             surName:'Leonel',
