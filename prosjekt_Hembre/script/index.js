@@ -1,57 +1,95 @@
-function createAtletes() {
-    const gridHjem = document.querySelector('.grid-container-hjem')
+main()
+
+function main() {
+    const main = document.querySelector('main')
+    const gch =  document.createElement('div')
+    gch.className = 'grid-container-hjem'
+
+//Sporsors------------------------------------------------
+    const sponsors = document.createElement('div')
+    sponsors.id = 'sponsors'
+    
+//ikke ferdig    
+    
+    
+    gch.appendChild(sponsors)
+    
+//Center -------------------------------------------------
     const center = document.createElement('div')
     center.id = 'center'
+
+    center.appendChild(createSlideshow())
+    center.appendChild(makeButtons())
+    center.appendChild(createAtletes())
+    gch.appendChild(center)
+
+//Supporters----------------------------------------------
+     const supporters = document.createElement('div')
+     supporters.id = 'supporters'
+
+//Ikke ferdig
+
+
+    gch.appendChild(supporters)
+
+//Main----------------------------------------------------
+    main.appendChild(gch)
+
+
+
+}
+
+
+
+function createAtletes() {
     const container = document.createElement('div')
-    container.className = "grid-container-athletes"
-    center.appendChild(container)
-    gridHjem.appendChild(center)
-    
+    container.className = 'grid-container-athletes'
+
     for (let i = 0; i < skyttere.length; i++) {
         const element = skyttere[i]
         if (element.isShown) {
-            makeAthlete(i)   
-            // const container = document.querySelector('.')
+            container.appendChild(makeAthlete(i))
         }
     }
+    return container
 }
-
 function makeAthlete(i) {
     const skytter = skyttere[i]
-    const container = document.querySelector('.grid-container-athletes')
+    
+    
+    const img = document.createElement('img')
+    img.src = skytter.image.mainImage
+    
+    const textDiv = document.createElement('div')
+    textDiv.className = 'text'
+    textDiv.innerHTML = skytter.about.surName + ' ' + skytter.about.lastName
+    
     const divAthlete = document.createElement('div')
+    divAthlete.appendChild(img)
+    divAthlete.appendChild(textDiv)
     
     const a = document.createElement('a')
     a.className = 'athlete'
     a.href = 'skyttere.html?id='+skytter.id
 
-    const img = document.createElement('img')
-    img.src = skytter.image.mainImage
-
-    const textDiv = document.createElement('div')
-    textDiv.className = 'text'
-    textDiv.innerHTML = skytter.about.surName + ' ' + skytter.about.lastName
-
-    divAthlete.appendChild(img)
-    divAthlete.appendChild(textDiv)
-
     a.appendChild(divAthlete)
-    console.log(a);
-    console.log(container);
-    container.appendChild(a)
+
+    return a
+
 }
 
 function createSlideshow() {
+    const container = document.createElement('div')
+    container.className = 'slideshow-container'
+
     for (let i = 0; i < bilder.slideShow.length; i++) {
-        makeSlide(i)
+        container.appendChild(makeSlide(i))
     }
-    makeButtons()
+    return container
 }
 
 function makeSlide(i) {
-    console.log(bilder.slideShow[i]);
     const src = bilder.slideShow[i]
-    const slideshowContainer = document.querySelector(".slideshow-container")
     
     const divSlides = document.createElement('div')
     divSlides.className = 'slides fade'
@@ -66,15 +104,13 @@ function makeSlide(i) {
     divSlides.appendChild(img)
     divSlides.appendChild(textDiv)
     
-    slideshowContainer.appendChild(divSlides)
+    return divSlides
 }
 
 function makeButtons() {
-    const container = document.querySelector("#center")
     
     const buttonSlidesDiv = document.createElement('div')
     buttonSlidesDiv.className = 'buttonsSlides'
-    buttonSlidesDiv.style.textAlign = 'center'
 
     const prevSpan = document.createElement('span')
     prevSpan.innerHTML = '<'
@@ -85,45 +121,9 @@ function makeButtons() {
     const nextSpan = document.createElement('span')
     nextSpan.innerHTML = '>'
     nextSpan.id = 'next'
+
     buttonSlidesDiv.appendChild(nextSpan)
 
-    container.appendChild(buttonSlidesDiv)
+    return buttonSlidesDiv
 
 }
-
-// let slideIndex = -1;
-// function btnClick(event) {
-//     eventType = event.target.id
-//     if (eventType == 'next') {
-//         nextSlide(1)
-//     } else {
-//         nextSlide(-1)
-//     }
-// }
-
-// function showSlides() {
-//     nextSlide(1)
-//     setTimeout(showSlides, 5000); // Change image every 5000 milliseconds
-// }
-
-// function nextSlide(n) {
-//     const slides = document.getElementsByClassName("slides");
-
-//     for (let i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-
-//     slideIndex += n
-
-//     if (slideIndex >= slides.length) {
-//         slideIndex = 0
-//     }
-
-//     if (slideIndex < 0) {
-//         slideIndex = slides.length - 1
-//     }
-//     slides[slideIndex].style.display = "block";
-// }
-
-// createSlideshow()
-createAtletes()

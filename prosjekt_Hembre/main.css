@@ -94,7 +94,7 @@ body {
 
 .slides {
   /* for at siden skal lastes bedre/finere */
-  display: hidden;
+  display:none;
 }
 
 .slides > img {
@@ -137,7 +137,9 @@ body {
 /*.active {
     background-color: var(--background-color);
 }*/
-
+.buttonsSlides{
+  text-align: center;
+}
 .buttonsSlides * {
   padding: 0 2ch;
   cursor: pointer;
