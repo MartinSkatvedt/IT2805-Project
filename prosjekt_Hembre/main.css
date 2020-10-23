@@ -72,18 +72,19 @@ body {
 }
 
 #sponsors {
-  text-align: center;
-  font-size: 2vh;
 }
 
-#bekkvold_spon {
-  background-color: white;
+.sponsor {
+  margin: auto;
   width: 96%;
-  height: 20%;
-  padding: 2% 2%;
-  padding-bottom: 0px;
+  border: 1px solid black;
+  text-align: center;
 }
-#bekkvold_spon > img {
+.sponsor h4{
+  margin: 0;
+  padding: 5%;
+}
+.sponsor img {
   width: 100%;
 }
 

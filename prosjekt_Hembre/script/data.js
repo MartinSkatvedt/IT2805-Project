@@ -22,7 +22,10 @@ const bilder = {
         'bilder/om5.jpg',
         'bilder/om6.jpg',
         'bilder/om7.jpg'
-    ]
+    ],
+    sponsors:{
+        bekkevold:'bilder/bækkvold.png'
+    }
 }
 
 const skyttere = [
@@ -861,5 +864,13 @@ const skyttere = [
         merits:[
         ]
 
+    }
+]
+
+const sponsors = [
+    {
+        name:'Bækkevolds Våpenservice',
+        img:bilder.sponsors.bekkevold,
+        link:'https://www.pardininorge.no/'
     }
 ]

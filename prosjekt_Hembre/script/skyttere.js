@@ -1,7 +1,7 @@
 //For å siste url del
 const url_string = window.location.href //window.location.href
 const url = new URL(url_string)
-const personId = url.searchParams.get('id')
+const personId = url.searchParams.get('skytter')
 
 function getIndex(value, array) {
     for (let i = 0; i < array.length; i++) {
@@ -82,7 +82,7 @@ function makeToppDiv() {
                 for (let i = 0; i < element.length; i++) {
                     const individual = element[i];
                     let a = document.createElement('a')
-                    a.href = '?id='+ individual[1]
+                    a.href = '?skytter='+ individual[1]
                     a.innerHTML = individual[0]
 
                     p.appendChild(a)            
@@ -135,7 +135,7 @@ function getYears() {
     let dd = Number(String(today.getDate()+1).padStart(2, '0')) - skytter.about.birthDay
     let mm = Number(String(today.getMonth() + 1).padStart(2, '0')) - skytter.about.birthMonth//January is 0!
     let yyyy = today.getFullYear() - skytter.about.birthYear
-    console.log(yyyy+'|'+mm+'|'+dd+'|');
+
     if (mm<0) if (mm<1 || dd<0) yyyy--
     return yyyy
      

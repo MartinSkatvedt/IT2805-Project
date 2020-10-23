@@ -8,18 +8,17 @@ function main() {
 //Sporsors------------------------------------------------
     const sponsors = document.createElement('div')
     sponsors.id = 'sponsors'
-    
-//ikke ferdig    
+    sponsors.appendChild(createSponsors())
     
     
     gch.appendChild(sponsors)
     
-//Center -------------------------------------------------
+//Center--------------------------------------------------
     const center = document.createElement('div')
     center.id = 'center'
 
     center.appendChild(createSlideshow())
-    center.appendChild(makeButtons())
+    center.appendChild(createSlideshowButtons())
     center.appendChild(createAtletes())
     gch.appendChild(center)
 
@@ -40,6 +39,46 @@ function main() {
 }
 
 
+//Sponsors functions--------------------------------------
+function createSponsors() {
+    const container = document.createElement('div')
+    container.className = 'grid-container-sponsors'
+
+    const h1 = document.createElement('h1')
+    h1.innerHTML = 'Sponsors'
+    container.appendChild(h1)
+
+    for (let i = 0; i < sponsors.length; i++) {
+        container.appendChild(makeSponsor(i))
+    }
+    return container    
+}
+function makeSponsor(i) {
+    const sponsor = sponsors[i]
+    console.log(sponsor);
+    const a = document.createElement('a')
+    a.href = sponsor.link
+    
+    const div = document.createElement('div')
+    div.className = 'sponsor'
+
+    const img = document.createElement('img')
+    img.src = sponsor.img
+
+    const h4 = document.createElement('h4')
+    h4.innerHTML = sponsor.name
+
+    a.appendChild(h4)
+    a.appendChild(img)
+    div.appendChild(a)
+    return div
+    
+}
+
+
+
+
+//Center functions----------------------------------------
 
 function createAtletes() {
     const container = document.createElement('div')
@@ -70,14 +109,13 @@ function makeAthlete(i) {
     
     const a = document.createElement('a')
     a.className = 'athlete'
-    a.href = 'skyttere.html?id='+skytter.id
+    a.href = 'skyttere.html?skytter='+skytter.id
 
     a.appendChild(divAthlete)
 
     return a
 
 }
-
 function createSlideshow() {
     const container = document.createElement('div')
     container.className = 'slideshow-container'
@@ -87,7 +125,6 @@ function createSlideshow() {
     }
     return container
 }
-
 function makeSlide(i) {
     const src = bilder.slideShow[i]
     
@@ -106,8 +143,7 @@ function makeSlide(i) {
     
     return divSlides
 }
-
-function makeButtons() {
+function createSlideshowButtons() {
     
     const buttonSlidesDiv = document.createElement('div')
     buttonSlidesDiv.className = 'buttonsSlides'
