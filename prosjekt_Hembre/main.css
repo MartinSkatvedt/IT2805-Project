@@ -149,17 +149,16 @@ body {
 
 .buttonsSlides > *:hover {
   background-color: var(--button-color);
+  color: var(--secondary-teks-color);
   cursor: pointer;
 }
 .athlete:hover .text {
   background-color: var(--background-color);
   color: var(--text-color);
   cursor: pointer;
-  border-bottom: 1px solid black;
 }
 
-.buttonsSlides > *:active,
-.athlete:active {
+.buttonsSlides > *:active, .athlete:active {
   opacity: 0.7;
 }
 
@@ -310,22 +309,6 @@ html {
     /*gir body en bakgrunnsfarge*/
     background-color: #dbdde0;
   }
-}
-:root {
-  --background-color: #d3ebeb;
-  --background-color: #adc3c3;
-  --background-color: #c9d3d3;
-  --nav-color: #e8ffff;
-  --element-background: #c4c4c4;
-  --element-background: #d1d1d1;
-  --text-color: #000;
-  --background-text-color: none;
-  --secondary-teks-color: #f2f2f2;
-  --secondary-background-color: #000000bf;
-  --button-color: #f2994a;
-  --font-size-large: 25pt;
-  --font-size: 15pt;
-  --font-size-small: 10pt;
 }
 
 main {
@@ -482,17 +465,6 @@ h1 {
 
 .tekst_om {
   margin-bottom: 50px;
-}
-
-:root {
-  --background-color: #c9d3d3;
-  --nav-color: #e8ffff;
-  --element-background: #c4c4c4;
-  --text-color: #000;
-  --background-text-color: none;
-  --secondary-teks-color: #f2f2f2;
-  --secondary-background-teks-color: #000000bf;
-  --button-color: #0d0c0c;
 }
 
 main {
