@@ -16,8 +16,12 @@ const bilder = {
         mainImgage: 'bilder/leonel.jpg',
     },
     slideShow:[
-        'a',
-        'a'
+        'bilder/om1.jpg',
+        'bilder/om2.jpg',
+        'bilder/om4.jpg',
+        'bilder/om5.jpg',
+        'bilder/om6.jpg',
+        'bilder/om7.jpg'
     ]
 }
 
@@ -746,7 +750,7 @@ const skyttere = [
                         bronse:null
                     }
                 }
-            },
+            }
         ]
     },
 
@@ -785,7 +789,77 @@ const skyttere = [
                 ['Tim Leo','timleohembre']
                 
             ]
-        }
+        },
+
+        memberShip:{
+            name:null,
+            link:null
+        },
+
+        yearlyStatistics:[
+        ],
+
+        bestStatistics:[
+            {
+                event:'Luft 40 skudd',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'Luft 60 skudd',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'Fripistol',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'Silhuettpistol',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'Luft-sprint',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'Standardpistol',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'Finpistol',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'Hurtig Fin',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'Hurtig Grov',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'Grovpistol',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'NAIS Fin',
+                score:'---',
+                year:'----'
+            }
+
+        ],
+
+        merits:[
+        ]
 
     }
 ]
