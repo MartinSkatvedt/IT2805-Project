@@ -12,15 +12,15 @@ function getIndex(value, array) {
     }
 }
 
-const index = getIndex(personId, personer)
-const person = personer[index]
+const index = getIndex(personId, skyttere)
+const skytter = skyttere[index]
 const main = document.querySelector('main')
 
 main.innerHTML = ''
 
 function changeTitle() {
 //endrer tittelen
-    document.title = person.about.surName + ' ' + person.about.lastName    
+    document.title = skytter.about.surName + ' ' + skytter.about.lastName    
 }
 
 function makeToppDiv() {
@@ -33,7 +33,7 @@ function makeToppDiv() {
     let imgDiv = document.createElement('div')
     imgDiv.id = 'person_bilder'
     let img = document.createElement('img')
-    img.src = person.image.mainImage
+    img.src = skytter.image.mainImage
     imgDiv.appendChild(img)
     toppDiv.appendChild(imgDiv)
     
@@ -44,17 +44,17 @@ function makeToppDiv() {
     
 //Overskrift
     let overskrift = document.createElement('h1')
-    overskrift.innerHTML = person.about.surName + ' ' + person.about.lastName
+    overskrift.innerHTML = skytter.about.surName + ' ' + skytter.about.lastName
     infoDiv.appendChild(overskrift)
     
 //Beskrivelse kort
     let p = document.createElement('p')
-    p.innerHTML = person.description.short
+    p.innerHTML = skytter.description.short
     infoDiv.appendChild(p)
     
 //Beskrivelse lang
     // p = document.createElement('p')
-    // p.innerHTML = person.description.long
+    // p.innerHTML = skytter.description.long
     // infoDiv.appendChild(p)
     
 //Alder --------------------------------------------------------- ikke ferdig, automatisk alder
@@ -65,16 +65,16 @@ function makeToppDiv() {
     
 //Bithday
     p = document.createElement('p')
-    p.innerHTML = 'Birth: ' + person.about.birthDay +'/'+ person.about.birthMonth +'/'+ person.about.birthYear + ', ' + person.about.birthPlace
+    p.innerHTML = 'Birth: ' + skytter.about.birthDay +'/'+ skytter.about.birthMonth +'/'+ skytter.about.birthYear + ', ' + skytter.about.birthPlace
     infoDiv.appendChild(p)
 //-------------------------------------------------------------- 
 
 //FAMILY
     let familyDiv = document.createElement('div')
     familyDiv.id = 'familyDiv'
-    for (const obj in person.family) {
-        if (person.family.hasOwnProperty(obj)) {
-            const element = person.family[obj];
+    for (const obj in skytter.family) {
+        if (skytter.family.hasOwnProperty(obj)) {
+            const element = skytter.family[obj];
             let p = document.createElement('p')
             p.innerHTML = obj.charAt(0).toUpperCase() + obj.substring(1) + ' who compete:' //For å for føste bokstav Stor
             if (element.length>0) {
@@ -99,9 +99,9 @@ function makeToppDiv() {
     p.innerHTML = 'membership: '
     let link = document.createElement('a')
     link.id = 'medlemskap'
-    link.href = person.memberShip.link
-    link.innerHTML = person.memberShip.name
-    link.target = ':blank'
+    link.href = skytter.memberShip.link
+    link.innerHTML = skytter.memberShip.name
+    link.target = '_blank'
     p.appendChild(link)
     infoDiv.appendChild(p)
 
@@ -115,7 +115,7 @@ function makeToppDiv() {
     opt.innerHTML = 'Competition Statistics'
     select.appendChild(opt)
 
-    for (const stat of person.yearlyStatistics) {
+    for (const stat of skytter.yearlyStatistics) {
         opt = document.createElement('option')
         opt.value = stat[0]
         opt.innerHTML = 'Events in ' + stat[1]
@@ -132,9 +132,9 @@ function makeToppDiv() {
 
 function getYears() {
     let today = new Date()
-    let dd = Number(String(today.getDate()+1).padStart(2, '0')) - person.about.birthDay
-    let mm = Number(String(today.getMonth() + 1).padStart(2, '0')) - person.about.birthMonth//January is 0!
-    let yyyy = today.getFullYear() - person.about.birthYear
+    let dd = Number(String(today.getDate()+1).padStart(2, '0')) - skytter.about.birthDay
+    let mm = Number(String(today.getMonth() + 1).padStart(2, '0')) - skytter.about.birthMonth//January is 0!
+    let yyyy = today.getFullYear() - skytter.about.birthYear
     console.log(yyyy+'|'+mm+'|'+dd+'|');
     if (mm<0) if (mm<1 || dd<0) yyyy--
     return yyyy
@@ -155,8 +155,8 @@ function makeBottomDiv() {
    meritsDiv.appendChild(h1)
 
 
-   for (let i = 0; i < person.merits.length; i++) {
-       const element = person.merits[i]
+   for (let i = 0; i < skytter.merits.length; i++) {
+       const element = skytter.merits[i]
        div = document.createElement('div')
        div.id = 'merit'
 
@@ -224,8 +224,8 @@ function makeBottomDiv() {
 
     tabellRekorder.appendChild(tr)
 
-    for (let i = 0; i < person.bestStatistics.length; i++) {
-        const obj = person.bestStatistics[i]
+    for (let i = 0; i < skytter.bestStatistics.length; i++) {
+        const obj = skytter.bestStatistics[i]
         tr = document.createElement('tr')
 
         for (const ovelse in obj) {

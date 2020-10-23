@@ -1,4 +1,27 @@
-const personer = [
+
+const bilder = {
+    pal: {
+        mainImgage: 'bilder/pal.png',
+      },
+    mattis: {
+        mainImgage: 'bilder/mattis.jpg',
+    },
+    ludvik: {
+        mainImgage: 'bilder/ludvik.jpg',
+    },
+    timleo: {
+        mainImgage: 'bilder/timleo.jpg',
+    },
+    leonel: {
+        mainImgage: 'bilder/leonel.jpg',
+    },
+    slideShow:[
+        'a',
+        'a'
+    ]
+}
+
+const skyttere = [
     {
         id:'palhembre',
         isShown:true,
@@ -14,7 +37,7 @@ const personer = [
         },
 
         image:{
-            mainImage:'bilder/pal.png'
+            mainImage:bilder.pal.mainImgage
         },
 
         description:{
@@ -287,7 +310,7 @@ const personer = [
         },
 
         image:{
-            mainImage:'bilder/mattis.jpg'
+            mainImage:bilder.mattis.mainImgage
         },
 
         description:{
@@ -451,7 +474,7 @@ const personer = [
         },
 
         image:{
-            mainImage:'bilder/ludvik.jpg'
+            mainImage:bilder.ludvik.mainImgage
         },
 
         description:{
@@ -614,7 +637,7 @@ const personer = [
         },
 
         image:{
-            mainImage:'bilder/timleo.jpg'
+            mainImage:bilder.timleo.mainImgage
         },
 
         description:{
@@ -742,7 +765,7 @@ const personer = [
         },
 
         image:{
-            mainImage:'bilder/leonel.jpg'
+            mainImage:bilder.leonel.mainImgage
         },
 
         description:{
@@ -757,7 +780,7 @@ const personer = [
                 ['Pål','palhembre']
             ],
             siblings:[
-                ['Mattis','leonelhembre'],
+                ['Mattis','mattishembre'],
                 ['Ludvik','ludvikhembre'],
                 ['Tim Leo','timleohembre']
                 
