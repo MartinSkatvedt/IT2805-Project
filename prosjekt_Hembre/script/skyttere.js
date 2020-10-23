@@ -1,5 +1,7 @@
 function createSite(skytterIndex) {
     const index = getIndex()//GETING THE INDEX OF THE SHOOTER
+    if (index == -1) return //Retruns if it doesnt find an index
+
     const skytter = skyttere[skytterIndex]
     const main = document.querySelector('main')
     main.innerHTML = ''
@@ -16,68 +18,115 @@ function createSite(skytterIndex) {
     main.appendChild(divBottom)
 }    
 
-function getIndex() {//FUNCTION TO FETCH THE SHOOTER INDEX FOR SHOOTER ID---
-    const url_string = window.location.href //window.location.href
-    const url = new URL(url_string)
-    const personId = url.searchParams.get('skytter')
-    return findIndex(personId)
-}
-function findIndex(id) {
-    for (let i = 0; i < skyttere.length; i++) {
-        const element = skyttere[i].id
-        if (element == id) {
-            return i
-        }
-    }    
-}
 function changeTitle(skytter) {//CHANGING THE TOP DIV-----------------------------
     document.title = skytter.about.surName + ' ' + skytter.about.lastName    
 }
-
 function maketopDiv(skytter) {//CREATING THE TOP DIV
-//Leger til hoved-div-elementet--------------------------------------------------------
+//MAIKNG TOP-DIV-ELEMNT--------------------------------------------------------
     const topDiv = document.createElement('div')
     topDiv.id = 'person_side_top'
     
-//Lager div med bilde inni----------------------------------------------------------
+//MAKING THE ABOUTDIV----------------------------------------------------------
+    const aboutDiv = makeAboutDiv(skytter)
+    
+//MAKING 'person_side_info' DIV--------------------------------------------------------
+    const infoDiv = makeInfoDiv(skytter)
+
+//APPENDING------------------------------------------------------------------------
+    topDiv.appendChild(aboutDiv)
+    topDiv.appendChild(infoDiv)
+
+    return topDiv
+}
+function makeBottomDiv(skytter) {
+//StatsDiv-------------------------------------------
+    const statsDiv = document.createElement('div')
+    statsDiv.id = 'grid_container_stats'
+//MERITS-------------------------------------------------
+
+   const meritsDiv = makeMeritsDiv(skytter)
+   statsDiv.appendChild(meritsDiv)
+
+//PERSONAL RECORDS----------------------------------------
+
+    const recordsDiv = makeRecordsDiv(skytter)
+    statsDiv.appendChild(recordsDiv)
+
+    return statsDiv
+    
+}
+
+//Functions for topDiv--------------------------------------------------
+function getYears(skytter) {//cALCUTATING THE AGE FOR THE BIRTHDAY----------------
+    let today = new Date()
+    let dd = Number(String(today.getDate()+1).padStart(2, '0')) - skytter.about.birthDay
+    let mm = Number(String(today.getMonth() + 1).padStart(2, '0')) - skytter.about.birthMonth//January is 0!
+    let yyyy = today.getFullYear() - skytter.about.birthYear
+
+    if (mm<0) if (mm<1 || dd<0) yyyy--
+    return yyyy
+     
+}
+function makeAboutDiv(skytter) {
+//CREATING ABOUTDIV-----------------------------------------
     const aboutDiv = document.createElement('div')
     aboutDiv.id = 'person_bilder'
-    
-    const img = document.createElement('img')
-    img.src = skytter.image.mainImage
-    
+//IMG---------------------------------------------------
+    const img = makeMainImage(skytter)
     aboutDiv.appendChild(img)
 
 //FAMILY----------------------------------------------------------
+
+    const familyDiv = makeFamilyDiv(skytter)
+    aboutDiv.appendChild(familyDiv)
+    return aboutDiv
+}
+function makeMainImage(skytter) {
+    const img = document.createElement('img')
+    img.src = skytter.image.mainImage
+    return img
+}
+function makeFamilyDiv(skytter) {
     const familyDiv = document.createElement('div')
     familyDiv.id = 'familyDiv'
+
     for (const obj in skytter.family) {
-        if (skytter.family.hasOwnProperty(obj)) {
-            const element = skytter.family[obj];
+        const familyType = skytter.family[obj]
+        if (skytter.family.hasOwnProperty(obj) && familyType.length>0) {
+            const familyTypeDiv = document.createElement('div')
+            familyTypeDiv.id = 'familyType'
+
             const p = document.createElement('p')
             p.innerHTML = obj.charAt(0).toUpperCase() + obj.substring(1) + ' who compete:' //For å for føste bokstav Stor
-            if (element.length>0) {
-                const induvidualDiv = document.createElement('div')
-                    for (let i = 0; i < element.length; i++) {
-                        const individual = element[i];
-                        const a = document.createElement('a')
-                        a.href = '?skytter='+ individual[1]
-                        a.innerHTML = individual[0]
-                        
-                        p.appendChild(a)            
-                    }    
-                    induvidualDiv.appendChild(p)
-                    familyDiv.appendChild(induvidualDiv)            
-                }
-            }
+            familyTypeDiv.appendChild(p)
+
+            familyTypeDiv.appendChild(makeFamilyTypeLinks(familyType))
+
+            familyDiv.appendChild(familyTypeDiv)            
         }
-    topDiv.appendChild(aboutDiv)
-    aboutDiv.appendChild(familyDiv)
-    
-//Lager person_side_info div--------------------------------------------------------
+    }
+    return familyDiv
+}
+function makeFamilyTypeLinks(familyType) {
+    const div = document.createElement('div')
+    div.id = 'familyTypeLinks'
+    for (let i = 0; i < familyType.length; i++) {
+        const individual = familyType[i];
+        const a = makePersonLink(individual)
+        div.appendChild(a)            
+    }
+    return div
+}
+function makePersonLink(individual) {
+    const a = document.createElement('a')
+    a.href = '?skytter='+ individual[1]
+    a.innerHTML = individual[0]
+    return a
+}
+function makeInfoDiv(skytter) {
+//MAKING 'person_side_info' DIV--------------------------------------------------------
     const infoDiv = document.createElement('div')
     infoDiv.id = 'person_side_info'
-    topDiv.appendChild(infoDiv)
     
 //Overskrift--------------------------------------------------------
     const overskrift = document.createElement('h1')
@@ -133,36 +182,11 @@ function maketopDiv(skytter) {//CREATING THE TOP DIV
         const valgt = this.options[this.selectedIndex] // js property
         window.open(valgt.value)
     }
-    return topDiv
+    return infoDiv
 }
-function getYears(skytter) {//cALCUTATING THE AGE FOR THE BIRTHDAY----------------
-    let today = new Date()
-    let dd = Number(String(today.getDate()+1).padStart(2, '0')) - skytter.about.birthDay
-    let mm = Number(String(today.getMonth() + 1).padStart(2, '0')) - skytter.about.birthMonth//January is 0!
-    let yyyy = today.getFullYear() - skytter.about.birthYear
 
-    if (mm<0) if (mm<1 || dd<0) yyyy--
-    return yyyy
-     
-}
-function makeBottomDiv(skytter) {
-//StatsDiv-------------------------------------------
-    const statsDiv = document.createElement('div')
-    statsDiv.id = 'grid_container_stats'
-//MERITS-------------------------------------------------
-
-   const meritsDiv = getMeritsDiv(skytter)
-   statsDiv.appendChild(meritsDiv)
-
-//PERSONAL RECORDS----------------------------------------
-
-    const recordsDiv = getRecordsDiv(skytter)
-    statsDiv.appendChild(recordsDiv)
-
-    return statsDiv
-    
-}
-function getMeritsDiv(skytter) {
+//Functions for bottomDiv-------------------------------------------------------
+function makeMeritsDiv(skytter) {
     meritsDiv = document.createElement('div')
     meritsDiv.id = 'merits'
  
@@ -216,7 +240,7 @@ function getMeritsDiv(skytter) {
     return meritsDiv
  
 }
-function getRecordsDiv(skytter) {
+function makeRecordsDiv(skytter) {
     const recordsDiv = document.createElement('div')
     recordsDiv.id = 'personal-records'
     
@@ -261,4 +285,21 @@ function getRecordsDiv(skytter) {
     }
 
     return recordsDiv
+}
+
+//Getting index functions
+function getIndex() {//FUNCTION TO FETCH THE SHOOTER INDEX FOR SHOOTER ID---
+    const url_string = window.location.href //window.location.href
+    const url = new URL(url_string)
+    const personId = url.searchParams.get('skytter')
+    return findIndex(personId)
+}
+function findIndex(id) {
+    for (let i = 0; i < skyttere.length; i++) {
+        const element = skyttere[i].id
+        if (element == id) {
+            return i
+        }
+    }
+    return -1
 }

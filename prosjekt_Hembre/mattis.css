@@ -130,3 +130,12 @@ th, #merit i{
 #familyDiv a{
   display: block;
 }
+#familyType > p{
+  display: inline;
+}
+#familyType{
+  margin-top: 20px;
+}
+#familyType:first-child{
+  margin-top: 0;
+}
