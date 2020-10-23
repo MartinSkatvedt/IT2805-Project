@@ -1,6 +1,6 @@
-function createSite() {
+function createSite(skytterIndex) {
     const index = getIndex()//GETING THE INDEX OF THE SHOOTER
-    const skytter = skyttere[index]
+    const skytter = skyttere[skytterIndex]
     const main = document.querySelector('main')
     main.innerHTML = ''
 
