@@ -1,10 +1,9 @@
-main()
-
 function main() {
     const main = document.querySelector('main')
     const gch =  document.createElement('div')
     gch.className = 'grid-container-hjem'
 
+    // main.innerHTML = ""
 //Sporsors------------------------------------------------
     const sponsors = document.createElement('div')
     sponsors.id = 'sponsors'
@@ -55,7 +54,6 @@ function createSponsors() {
 }
 function makeSponsor(i) {
     const sponsor = sponsors[i]
-    console.log(sponsor);
     const a = document.createElement('a')
     a.href = sponsor.link
     

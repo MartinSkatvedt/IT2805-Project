@@ -25,7 +25,7 @@ body {
 
 }
 
-#person_side_topp {
+#person_side_top {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
