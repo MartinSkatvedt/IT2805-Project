@@ -23,13 +23,13 @@ body {
 }
 
 .grid-container-hjem {
-  margin-top:30px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-column-gap: 2%;
 }
 
-.grid-container-hjem > div {
+.grid-container-hjem>div {
   background-color: var(--element-background);
   padding: 2%;
   border: 1px solid black;
@@ -76,10 +76,12 @@ body {
   border: 1px solid black;
   text-align: center;
 }
-.sponsor h4{
+
+.sponsor h4 {
   margin: 0;
   padding: 5%;
 }
+
 .sponsor img {
   width: 100%;
 }
@@ -91,10 +93,10 @@ body {
 
 .slides {
   /* for at siden skal lastes bedre/finere */
-  display:none;
+  display: none;
 }
 
-.slides > img {
+.slides>img {
   /* vertical-align: middle; */
   width: 100%;
   height: 400px;
@@ -111,7 +113,7 @@ body {
 }
 
 /* Caption text */
-.slides > .text {
+.slides>.text {
   color: var(--secondary-teks-color);
   background-color: var(--secondary-background-color);
   padding: 8px 12px;
@@ -128,15 +130,14 @@ body {
     position: absolute;
     top: 0;
 }*/
-
 /* The dots/bullets/indicators */
-
 /*.active {
     background-color: var(--background-color);
 }*/
-.buttonsSlides{
+.buttonsSlides {
   text-align: center;
 }
+
 .buttonsSlides * {
   padding: 0 2ch;
   cursor: pointer;
@@ -146,18 +147,19 @@ body {
   margin: 0 10%;
 }
 
-.buttonsSlides > *:hover {
+.buttonsSlides>*:hover {
   background-color: var(--button-color);
   color: var(--secondary-teks-color);
   cursor: pointer;
 }
+
 .athlete:hover .text {
   background-color: var(--background-color);
   color: var(--text-color);
   cursor: pointer;
 }
 
-.buttonsSlides > *:active, .athlete:active {
+.buttonsSlides>*:active, .athlete:active {
   opacity: 0.7;
 }
 
@@ -192,21 +194,26 @@ body {
 @media (max-width: 1200px) {
   /*Tablets [601px -> 1200px]*/
 }
+
 @media (max-width: 600px) {
+
   /*Big smartphones [426px -> 600px]*/
   #center {
     grid-row: 1;
   }
+
   .grid-container-athletes {
     grid-gap: 5px;
   }
+
   .grid-container-hjem {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 425px) {
-  /*Small smartphones [325px -> 425px]*/
 
+@media (max-width: 425px) {
+
+  /*Small smartphones [325px -> 425px]*/
   .grid-container-athletes {
     grid-template-columns: 1fr;
   }
@@ -223,7 +230,6 @@ body {
   font-family: Montserrat;
 }
 
-
 .navBarElement>a::before {
   /* styler tekst og endrer plasseing og bakgrunnsfarge*/
   content: "";
@@ -232,7 +238,6 @@ body {
   position: absolute;
   width: 100%;
   height: 4px;
-
   background-color: #000;
   /* funksjoner for å skalere elementer og overgangs tid*/
   visibility: hidden;
@@ -249,13 +254,14 @@ body {
   transform: scaleX(1);
 }
 
-
-.navBarElement:hover>a{
+.navBarElement:hover>a {
   color: black;
 }
-.navBarElement>a{
+
+.navBarElement>a {
   position: relative;
 }
+
 .navBarElement {
   transition: 0.5s;
   height: 75px;
@@ -264,19 +270,18 @@ body {
   width: 16.677%
 }
 
-.logo_nav{
+.logo_nav {
   width: 16.6%;
   margin: 20px;
   padding: 0px;
 }
 
-.logo_nav>a>img{
+.logo_nav>a>img {
   height: 100%;
 }
 
-
 #kontaktKnapp {
-  background-color:orange;
+  background-color: orange;
   border-radius: 0px;
   border: 0px;
   width: 50%;
@@ -288,6 +293,7 @@ body {
 #submenu_1 {
   border-top: 10px solid darkblue;
 }
+
 #submenu_2 {
   border-left: 10px solid darkred;
 }
@@ -317,6 +323,7 @@ body {
   transition: 0.2s;
   color: white;
 }
+
 .submenuElement_1,
 .submenuElement_2 {
   padding: 10px;
@@ -327,8 +334,8 @@ body {
   background-color: darkgray;
 }
 
-#utoverElement:hover{
-text-decoration: none;
+#utoverElement:hover {
+  text-decoration: none;
 }
 
 .underline {
@@ -338,13 +345,15 @@ text-decoration: none;
   border-color: #ddcccc;
 }
 
-.submenuElement_1 a, .submenuElement_2 a{
+.submenuElement_1 a, .submenuElement_2 a {
   text-decoration: none;
 }
-#navbar a{
+
+#navbar a {
   text-decoration: none;
   color: var(--text-color);
 }
+
 #kontaktKnapp {
   border-radius: 0px;
   background-color: orange;
@@ -378,9 +387,10 @@ main {
   margin: 0% auto;
 }
 
-.index_body{
+.index_body {
   text-align: center
 }
+
 /*css for hele delen over søkemotoren av header når den er større enn 600px starter under her*/
 .header_øverst {
   text-align: center;
@@ -393,7 +403,7 @@ main {
   height: 755px;
 }
 
-.knapp_header > a {
+.knapp_header>a {
   color: white;
   font-size: 25px;
   border-style: solid;
@@ -403,12 +413,14 @@ main {
   font-style: monospace;
   text-decoration: none;
 }
+
 @media only screen and (max-height: 660px) {
   .knapp_header {
     display: none;
   }
 }
-.knapp_header > a:hover {
+
+.knapp_header>a:hover {
   transition: all 0.4s ease-in-out;
   border-color: #022c70;
 }
@@ -428,9 +440,9 @@ main {
   color: white;
   padding: 10px;
   font-size: 40px;
-
 }
-.logo > img {
+
+.logo>img {
   width: 30%;
 }
 
@@ -470,23 +482,23 @@ main {
   color: white;
 }
 
-.logo > img:hover {
+.logo>img:hover {
   -moz-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.1);
 }
 
-#bilder_team > div {
+#bilder_team>div {
   transform: scale(1);
   transition-duration: 0.4s;
 }
 
-#bilder_team > div:hover {
+#bilder_team>div:hover {
   transform: scale(1.2);
   transition-duration: 0.5s;
 }
 
-#header_om_oss{
+#header_om_oss {
   background-image: url(bilder/om6.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -494,18 +506,20 @@ main {
   position: relative;
 }
 
+
 /* Style the tab buttons */
 .navn_header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
 .link {
   background-color: #555;
   color: white;
   float: left;
   cursor: pointer;
   padding: 24px 16px;
-  margin-top: 0px;
+  margin: 0px;
   font-size: 17px;
   width: 25%;
   bottom: 0px;
@@ -522,7 +536,6 @@ h1 {
 }
 
 /* Style each tab content individually */
-
 .tekst_om {
   margin-bottom: 50px;
 }
@@ -544,21 +557,23 @@ main {
   padding: 1%;
 }
 
-#gull > h1 {
+#gull>h1 {
   color: #e68a00;
 }
-#ol-deltat > h1 {
+
+#ol-deltat>h1 {
   color: red;
 }
-#norge_rekorder > h1 {
+
+#norge_rekorder>h1 {
   color: blue;
 }
 
-#alle_spillere > div > h2 {
+#alle_spillere>div>h2 {
   padding-top: 30px;
 }
 
-#alle_spillere > div {
+#alle_spillere>div {
   padding: 5vh 13vh;
   height: 60vh;
   scroll-snap-align: center;
@@ -574,11 +589,13 @@ main {
   scroll-snap-type: y mandatory;
   text-align: left;
 }
+
 @media only screen and (max-width: 1200px) {
-  #pal_info > ul > li {
+  #pal_info>ul>li {
     font-size: 1.5vw;
   }
-  #alle_spillere > div > div > img {
+
+  #alle_spillere>div>div>img {
     width: 150px;
     height: 250px;
   }
@@ -592,7 +609,7 @@ main {
   text-align: center;
 }
 
-#bilder_team > div > img {
+#bilder_team>div>img {
   width: 80%;
   height: 80%;
   display: block;
@@ -609,11 +626,11 @@ main {
   box-shadow: 0px 2px 8px 4px;
 }
 
-
-#alle_spillere>div> h1{
-  margin:0px;
+#alle_spillere>div>h1 {
+  margin: 0px;
 }
-#pal_info > ul {
+
+#pal_info>ul {
   list-style-type: none;
   font-size: 22px;
   margin: 0px;
@@ -622,9 +639,8 @@ main {
 #pal_bilder {
   display: block;
   margin: auto;
-  text-align:center;
+  text-align: center;
 }
-
 
 /* #pal_info > ul > li > a,
 #pal_info > p > a {
@@ -650,26 +666,31 @@ h3 > a:hover {
   border-color: green;
   transition-duration: 1s;
 } */
-
 .hembre {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.hembre:nth-child(1n){
+
+.hembre:nth-child(1n) {
   background-color: #ffcc99;
 }
+
 .hembre:nth-child(2n) {
   background-color: #ffb366;
 }
+
 .hembre:nth-child(3n) {
   background-color: #ff9933;
 }
+
 .hembre:nth-child(4n) {
   background-color: #ff8000;
 }
-.hembre a{
+
+.hembre a {
   display: block;
 }
+
 #dp_meny {
   background-color: inherit;
   border-color: black;
@@ -709,22 +730,26 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 input,
 textarea {
   border: 2px solid black;
 }
+
 #f_mail {
   margin-left: auto;
   margin-right: auto;
   grid-column: 1 / span 2;
   grid-row: 1;
 }
+
 #f_melding {
   margin-left: auto;
   margin-right: auto;
   grid-column: 1 / span 2;
   grid-row: 2;
 }
+
 #f_fornavn {
   width: 55%;
   margin-right: 5%;
@@ -759,6 +784,7 @@ textarea {
 .subFolder {
   display: flex;
 }
+
 .subContainers {
   margin: 0px;
   width: 50%;
@@ -773,50 +799,59 @@ textarea {
   width: 100%;
 }
 
-
 .main_sponsor h1 {
   padding-top: 10px;
   text-align: center;
 }
+
 .main_sponsor p {
   margin: 0;
   text-align: center;
 }
+
 .main_sponsor a {
   text-decoration: none;
   color: black;
   width: 100%;
   height: 100%;
 }
+
 .spons-grid-container {
   background-color: lightgrey;
 }
+
 .main_sponsor {
   width: 80%;
   margin: auto;
   background-color: #f4f4f4;
 }
+
 .spons-grid-one {
   display: grid;
   grid-template-columns: 50% 50%;
   height: 80vh;
 }
-.spons-grid-one  .spons {
+
+.spons-grid-one .spons {
   padding-top: 10px;
   margin: auto;
   height: 40vh;
   width: 100%;
 }
-.spons_navn{
+
+.spons_navn {
   padding-top: 20px;
   font-size: 28px;
 }
+
 .kryss_farge_1 {
   background-color: #a0e6ff;
 }
+
 .kryss_farge_2 {
   background-color: #de785d;
 }
+
 .spons .logo_liten {
   width: 40%;
   height: 50%;
@@ -828,6 +863,7 @@ textarea {
   width: 20%;
   margin-left: 40%
 }
+
 .fyll {
   height: 40%;
   width: 40%;
@@ -836,15 +872,18 @@ textarea {
   margin-top: 10%;
   border-radius: 2000px
 }
+
 .fyll p {
-padding-top: 50px;
+  padding-top: 50px;
 }
+
 .spons-grid-two {
   width: 70%;
   margin: auto;
   margin-top: 90px;
 }
-.spons-grid-two>div{
+
+.spons-grid-two>div {
   text-align: center;
   padding: 10px;
   margin-bottom: 30px;
@@ -855,21 +894,21 @@ padding-top: 50px;
   width: 70%;
   padding-bottom: 15px;
 }
+
 .spons-grid-two .spons {
   height: 500px;
 }
-.spons-grid-two .tom .fyll {
 
-}
-
+.spons-grid-two .tom .fyll {}
 
 @media only screen and (max-width: 900px) {
-.pil{
-  display: none;
-}
-.main_sponsor{
-  width: 100%;
-}
+  .pil {
+    display: none;
+  }
+
+  .main_sponsor {
+    width: 100%;
+  }
 }
 
 .footer-container-one {
@@ -877,11 +916,13 @@ padding-top: 50px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   border-bottom: black 0.4px solid;
 }
+
 .footer-container-one ul li a {
   text-decoration: none;
   color: black;
   font-size: 10px;
 }
+
 .footer-container-one ul li {
   list-style-type: none;
 }
@@ -889,20 +930,24 @@ padding-top: 50px;
 .footer-container-one ul li p a {
   font-size: 14px;
 }
+
 .footer-container-two {
   margin: 2%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20%;
 }
+
 p {
   margin: 0;
 }
+
 .footer-container-two div {
   font-size: 12px;
   padding: 10px;
   border: solid 1px black;
 }
+
 #footer_contact {
   text-align: center;
   padding: 10px;
