@@ -1,5 +1,10 @@
 document.write(`
 <div id="navbar">
+<div class="logo_nav" >
+<a href="index.html"><img src="bilder/logo.svg" alt=""></a>
+
+</div>
+
   <div class="navBarElement" id="utoverElement">
     <a href="#">Athletes</a>
   </div>
@@ -22,19 +27,19 @@ document.write(`
 <div id="submenus">
   <div class="submenu" id="submenu_1">
     <div class="submenuElement_1">
-      <a href="./personer.html?id=palhembre">Pål Hembre</a>
+      <a href="./skyttere.html?skytter=palhembre">Pål Hembre</a>
       <hr class="underline" />
     </div>
     <div class="submenuElement_1">
-      <a href="./personer.html?id=mattishembre">Mattis Hembre</a>
+      <a href="./skyttere.html?skytter=mattishembre">Mattis Hembre</a>
       <hr class="underline" />
     </div>
     <div class="submenuElement_1">
-      <a href="./personer.html?id=ludvikhembre">Ludvik Hembre</a>
+      <a href="./skyttere.html?skytter=ludvikhembre">Ludvik Hembre</a>
       <hr class="underline" />
     </div>
     <div class="submenuElement_1">
-      <a href="./personer.html?id=timleohembre">Tim Leo Hembre</a>
+      <a href="./skyttere.html?skytter=timleohembre">Tim Leo Hembre</a>
     </div>
   </div>
 

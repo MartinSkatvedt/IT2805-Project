@@ -1,7 +1,37 @@
-const personer = [
+
+const bilder = {
+    pal: {
+        mainImgage: 'bilder/pal.png',
+      },
+    mattis: {
+        mainImgage: 'bilder/mattis.jpg',
+    },
+    ludvik: {
+        mainImgage: 'bilder/ludvik.jpg',
+    },
+    timleo: {
+        mainImgage: 'bilder/timleo.jpg',
+    },
+    leonel: {
+        mainImgage: 'bilder/leonel.jpg',
+    },
+    slideShow:[
+        'bilder/om1.jpg',
+        'bilder/om2.jpg',
+        'bilder/om4.jpg',
+        'bilder/om5.jpg',
+        'bilder/om6.jpg',
+        'bilder/om7.jpg'
+    ],
+    sponsors:{
+        bekkevold:'bilder/bækkvold.png'
+    }
+}
+
+const skyttere = [
     {
         id:'palhembre',
-        viewedOnIndex:true,
+        isShown:true,
 
         about:{
             surName:'Pål',
@@ -14,7 +44,7 @@ const personer = [
         },
 
         image:{
-            mainImage:'bilder/pal.png'
+            mainImage:bilder.pal.mainImgage
         },
 
         description:{
@@ -274,7 +304,7 @@ const personer = [
 
     {
         id:'mattishembre',
-        viewedOnIndex:true,
+        isShown:true,
 
         about:{
             surName:'Mattis',
@@ -287,7 +317,7 @@ const personer = [
         },
 
         image:{
-            mainImage:'bilder/mattis.jpg'
+            mainImage:bilder.mattis.mainImgage
         },
 
         description:{
@@ -438,7 +468,7 @@ const personer = [
 
     {
         id:'ludvikhembre',
-        viewedOnIndex:true,
+        isShown:true,
 
         about:{
             surName:'Ludvik',
@@ -451,7 +481,7 @@ const personer = [
         },
 
         image:{
-            mainImage:'bilder/ludvik.jpg'
+            mainImage:bilder.ludvik.mainImgage
         },
 
         description:{
@@ -601,7 +631,7 @@ const personer = [
 
     {
         id:'timleohembre',
-        viewedOnIndex:true,
+        isShown:true,
 
         about:{
             surName:'Tim Leo',
@@ -614,7 +644,7 @@ const personer = [
         },
 
         image:{
-            mainImage:'bilder/timleo.jpg'
+            mainImage:bilder.timleo.mainImgage
         },
 
         description:{
@@ -723,13 +753,13 @@ const personer = [
                         bronse:null
                     }
                 }
-            },
+            }
         ]
     },
 
     {
         id:'leonelhembre',
-        viewedOnIndex:false,
+        isShown:false,
         
         about:{
             surName:'Leonel',
@@ -742,7 +772,7 @@ const personer = [
         },
 
         image:{
-            mainImage:'bilder/leonel.jpg'
+            mainImage:bilder.leonel.mainImgage
         },
 
         description:{
@@ -757,12 +787,90 @@ const personer = [
                 ['Pål','palhembre']
             ],
             siblings:[
-                ['Mattis','leonelhembre'],
+                ['Mattis','mattishembre'],
                 ['Ludvik','ludvikhembre'],
                 ['Tim Leo','timleohembre']
                 
             ]
-        }
+        },
 
+        memberShip:{
+            name:null,
+            link:null
+        },
+
+        yearlyStatistics:[
+        ],
+
+        bestStatistics:[
+            {
+                event:'Luft 40 skudd',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'Luft 60 skudd',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'Fripistol',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'Silhuettpistol',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'Luft-sprint',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'Standardpistol',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'Finpistol',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'Hurtig Fin',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'Hurtig Grov',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'Grovpistol',
+                score:'---',
+                year:'----'
+            },
+            {
+                event:'NAIS Fin',
+                score:'---',
+                year:'----'
+            }
+
+        ],
+
+        merits:[
+        ]
+
+    }
+]
+
+const sponsors = [
+    {
+        name:'Bækkevolds Våpenservice',
+        img:bilder.sponsors.bekkevold,
+        link:'https://www.pardininorge.no/'
     }
 ]

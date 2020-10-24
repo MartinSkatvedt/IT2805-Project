@@ -25,7 +25,7 @@ body {
 
 }
 
-#person_side_topp {
+#person_side_top {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
@@ -81,7 +81,7 @@ th, #merit i{
   font-size: 12px;
 }
 
-#gull > h1 {
+/* #gull > h1 {
   color: #e68a00;
 }
 #ol-deltat > h1 {
@@ -89,7 +89,7 @@ th, #merit i{
 }
 #norge_rekorder > h1 {
   color: blue;
-}
+} */
 
 #personer_underliggende_bilder {
   display: grid;
@@ -129,4 +129,13 @@ th, #merit i{
 
 #familyDiv a{
   display: block;
+}
+#familyType > p{
+  display: inline;
+}
+#familyType{
+  margin-top: 20px;
+}
+#familyType:first-child{
+  margin-top: 0;
 }
