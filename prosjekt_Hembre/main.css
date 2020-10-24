@@ -221,6 +221,7 @@ body {
   height: 75px;
   font-size: 30px;
   font-family: Montserrat;
+  z-index: 999;
 }
 
 .navBarElement {
@@ -283,10 +284,10 @@ body {
   border-color: #ddcccc;
 }
 
-/* a {
+#navbar a {
   text-decoration: none;
   color: black;
-} */
+}
 
 #kontaktKnapp {
   border-radius: 0px;
