@@ -24,8 +24,10 @@ const bilder = {
         'bilder/om7.jpg'
     ],
     sponsors:{
-        bekkevold:'bilder/bækkvold.png'
-    }
+        bekkevold:'bilder/bækkvold.png',
+        oxford_gun:'bilder/oxford_gun.png',
+        ny_spons:'bilder/sponsor_deg.png'
+    },
 }
 
 const skyttere = [
@@ -36,7 +38,7 @@ const skyttere = [
         about:{
             surName:'Pål',
             lastName:'Hembre',
-    
+
             birthYear:1963,
             birthDay:20,
             birthMonth:4,
@@ -57,13 +59,13 @@ const skyttere = [
                 ['Mattis','mattishembre'],
                 ['Ludvik','ludvikhembre'],
                 ['Tim Leo','timleohembre'],
-                ['Leonel','leonelhembre']               
+                ['Leonel','leonelhembre']
             ],
             parents:[
-                
+
             ],
             siblings:[
-                
+
             ]
         },
 
@@ -183,12 +185,12 @@ const skyttere = [
                     ind:{
                         gold:3,
                         silver:3,
-                        bronse:3    
+                        bronse:3
                     },
                     team:{
                         gold:3,
                         silver:7,
-                        bronse:4    
+                        bronse:4
                     }
                 }
             },
@@ -199,12 +201,12 @@ const skyttere = [
                     ind:{
                         gold:30,
                         silver:14,
-                        bronse:9    
+                        bronse:9
                     },
                     team:{
                         gold:47,
                         silver:13,
-                        bronse:null    
+                        bronse:null
                     }
                 }
             },
@@ -214,12 +216,12 @@ const skyttere = [
                     ind:{
                         gold:1,
                         silver:2,
-                        bronse:1    
+                        bronse:1
                     },
                     team:{
                         gold:null,
                         silver:2,
-                        bronse:null    
+                        bronse:null
                     }
                 }
             },
@@ -229,12 +231,12 @@ const skyttere = [
                     ind:{
                         gold:2,
                         silver:1,
-                        bronse:1    
+                        bronse:1
                     },
                     team:{
                         gold:5,
                         silver:5,
-                        bronse:2    
+                        bronse:2
                     }
                 }
             },
@@ -244,12 +246,12 @@ const skyttere = [
                     ind:{
                         gold:5,
                         silver:4,
-                        bronse:2    
+                        bronse:2
                     },
                     team:{
                         gold:null,
                         silver:null,
-                        bronse:null    
+                        bronse:null
                     }
                 }
             },
@@ -259,7 +261,7 @@ const skyttere = [
                     ind:{
                         gold:12,
                         silver:7,
-                        bronse:3    
+                        bronse:3
                     },
                     team:{
                         gold:null,
@@ -274,7 +276,7 @@ const skyttere = [
                     ind:{
                         gold:5,
                         silver:null,
-                        bronse:null   
+                        bronse:null
                     },
                     team:{
                         gold:8,
@@ -289,7 +291,7 @@ const skyttere = [
                     ind:{
                         gold:144,
                         silver:null,
-                        bronse:null   
+                        bronse:null
                     },
                     team:{
                         gold:8,
@@ -309,7 +311,7 @@ const skyttere = [
         about:{
             surName:'Mattis',
             lastName:'Hembre',
-    
+
             birthYear:2001,
             birthDay:29,
             birthMonth:9,
@@ -335,7 +337,7 @@ const skyttere = [
                 ['Ludvik','ludvikhembre'],
                 ['Tim Leo','timleohembre'],
                 ['Leonel','leonelhembre']
-                
+
             ]
         },
 
@@ -422,7 +424,7 @@ const skyttere = [
                     ind:{
                         gold:12,
                         silver:null,
-                        bronse:null   
+                        bronse:null
                     },
                     team:{
                         gold:null,
@@ -437,7 +439,7 @@ const skyttere = [
                     ind:{
                         gold:2,
                         silver:null,
-                        bronse:null   
+                        bronse:null
                     },
                     team:{
                         gold:null,
@@ -452,7 +454,7 @@ const skyttere = [
                     ind:{
                         gold:null,
                         silver:null,
-                        bronse:1   
+                        bronse:1
                     },
                     team:{
                         gold:null,
@@ -473,7 +475,7 @@ const skyttere = [
         about:{
             surName:'Ludvik',
             lastName:'Hembre',
-    
+
             birthYear:2001,
             birthDay:29,
             birthMonth:9,
@@ -499,7 +501,7 @@ const skyttere = [
                 ['Mattis','mattishembre'],
                 ['Tim Leo','timleohembre'],
                 ['Leonel','leonelhembre']
-                
+
             ]
         },
 
@@ -520,7 +522,7 @@ const skyttere = [
             ['http://fsu.no/issf/2011/sk/st_ludvikh.htm','2011'],
             ['http://fsu.no/issf/2010/sk/st_ludvikh.htm','2010']
         ],
-        
+
         bestStatistics:[
             {
                 event:'Luft 40 skudd',
@@ -586,7 +588,7 @@ const skyttere = [
                     ind:{
                         gold:7,
                         silver:null,
-                        bronse:null   
+                        bronse:null
                     },
                     team:{
                         gold:null,
@@ -601,7 +603,7 @@ const skyttere = [
                     ind:{
                         gold:7,
                         silver:null,
-                        bronse:null   
+                        bronse:null
                     },
                     team:{
                         gold:null,
@@ -616,7 +618,7 @@ const skyttere = [
                     ind:{
                         gold:null,
                         silver:1,
-                        bronse:null   
+                        bronse:null
                     },
                     team:{
                         gold:null,
@@ -636,7 +638,7 @@ const skyttere = [
         about:{
             surName:'Tim Leo',
             lastName:'Hembre',
-    
+
             birthYear:2006,
             birthDay:27,
             birthMonth:9,
@@ -745,7 +747,7 @@ const skyttere = [
                     ind:{
                         gold:1,
                         silver:null,
-                        bronse:null   
+                        bronse:null
                     },
                     team:{
                         gold:null,
@@ -760,11 +762,11 @@ const skyttere = [
     {
         id:'leonelhembre',
         isShown:false,
-        
+
         about:{
             surName:'Leonel',
             lastName:'Hembre',
-    
+
             birthYear:2016,
             birthDay:14,
             birthMonth:1,
@@ -790,7 +792,7 @@ const skyttere = [
                 ['Mattis','mattishembre'],
                 ['Ludvik','ludvikhembre'],
                 ['Tim Leo','timleohembre']
-                
+
             ]
         },
 
@@ -866,11 +868,42 @@ const skyttere = [
 
     }
 ]
+const stottespillere = [
+{
+  name: 'Petter Nydalen',
+  alder: 'Age: 28',
+  klubb: 'Club: Bærum PK',
+  meritter: 'Merits: 2 NM gold'
+},
+{
+  name: 'Ola Nordmann ',
+  alder: 'Age: 36',
+  klubb: 'Club: Fredrikstad PK',
+  meritter: 'Merits: 1 NM gold'
+},
+{
+  name: 'This can be you!!',
+  alder: '??',
+  klubb: '??',
+  meritter: '??'
+}
+]
 
 const sponsors = [
     {
         name:'Bækkevolds Våpenservice',
         img:bilder.sponsors.bekkevold,
         link:'https://www.pardininorge.no/'
+    },
+    {
+      name:'The Oxford Gun Company',
+      img:bilder.sponsors.oxford_gun,
+      link:'https://www.oxfordguncompany.co.uk/'
+    },
+    {
+      name:'DETTE KAN VÆRE DIN BEDRIFT',
+      img:bilder.sponsors.ny_spons,
+      link:'../kontakt.html'
     }
+
 ]

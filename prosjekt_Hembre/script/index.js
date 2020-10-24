@@ -8,10 +8,12 @@ function main() {
     const sponsors = document.createElement('div')
     sponsors.id = 'sponsors'
     sponsors.appendChild(createSponsors())
-    
-    
+
+
     gch.appendChild(sponsors)
-    
+
+
+
 //Center--------------------------------------------------
     const center = document.createElement('div')
     center.id = 'center'
@@ -20,6 +22,15 @@ function main() {
     center.appendChild(createSlideshowButtons())
     center.appendChild(createAtletes())
     gch.appendChild(center)
+
+    //Støttespillere------------------------------------------------
+        const  stottespillere = document.createElement('div')
+         stottespillere.id = ' stottespillere'
+         stottespillere.appendChild(createStottespillere())
+
+
+        gch.appendChild(stottespillere)
+
 
 //Supporters----------------------------------------------
      const supporters = document.createElement('div')
@@ -37,7 +48,6 @@ function main() {
 
 }
 
-
 //Sponsors functions--------------------------------------
 function createSponsors() {
     const container = document.createElement('div')
@@ -50,13 +60,13 @@ function createSponsors() {
     for (let i = 0; i < sponsors.length; i++) {
         container.appendChild(makeSponsor(i))
     }
-    return container    
+    return container
 }
 function makeSponsor(i) {
     const sponsor = sponsors[i]
     const a = document.createElement('a')
     a.href = sponsor.link
-    
+
     const div = document.createElement('div')
     div.className = 'sponsor'
 
@@ -70,7 +80,7 @@ function makeSponsor(i) {
     a.appendChild(img)
     div.appendChild(a)
     return div
-    
+
 }
 
 
@@ -92,19 +102,19 @@ function createAtletes() {
 }
 function makeAthlete(i) {
     const skytter = skyttere[i]
-    
-    
+
+
     const img = document.createElement('img')
     img.src = skytter.image.mainImage
-    
+
     const textDiv = document.createElement('div')
     textDiv.className = 'text'
     textDiv.innerHTML = skytter.about.surName + ' ' + skytter.about.lastName
-    
+
     const divAthlete = document.createElement('div')
     divAthlete.appendChild(img)
     divAthlete.appendChild(textDiv)
-    
+
     const a = document.createElement('a')
     a.className = 'athlete'
     a.href = 'skyttere.html?skytter='+skytter.id
@@ -125,31 +135,31 @@ function createSlideshow() {
 }
 function makeSlide(i) {
     const src = bilder.slideShow[i]
-    
+
     const divSlides = document.createElement('div')
     divSlides.className = 'slides fade'
 
     const img = document.createElement('img')
     img.src = src
-    
+
     const textDiv = document.createElement('div')
     textDiv.className = 'text'
     textDiv.innerHTML = 'Tekst her'
-    
+
     divSlides.appendChild(img)
     divSlides.appendChild(textDiv)
-    
+
     return divSlides
 }
 function createSlideshowButtons() {
-    
+
     const buttonSlidesDiv = document.createElement('div')
     buttonSlidesDiv.className = 'buttonsSlides'
 
     const prevSpan = document.createElement('span')
     prevSpan.innerHTML = '<'
     prevSpan.id = 'prev'
-    
+
     buttonSlidesDiv.appendChild(prevSpan)
 
     const nextSpan = document.createElement('span')
@@ -159,5 +169,48 @@ function createSlideshowButtons() {
     buttonSlidesDiv.appendChild(nextSpan)
 
     return buttonSlidesDiv
+
+}
+
+
+
+// stottespillere functions--------------------------------------
+function createStottespillere() {
+    const container = document.createElement('div')
+    container.className = 'grid-container- stottespillere'
+
+    const h1 = document.createElement('h1')
+    h1.innerHTML = ' stottespillere'
+    container.appendChild(h1)
+
+    for (let i = 0; i <  stottespillere.length; i++) {
+        container.appendChild(makestottespiller(i))
+    }
+    return container
+}
+function makestottespiller(i) {
+    const stottespiller =  stottespillere[i]
+    const a = document.createElement('a')
+
+    const div = document.createElement('div')
+    div.className = 'stottespiller'
+
+    const h3 = document.createElement('h3')
+    h3.innerHTML = stottespiller.name
+
+    const alder = document.createElement('h5')
+    alder.innerHTML = stottespiller.alder
+    const klubb = document.createElement('h5')
+    klubb.innerHTML = stottespiller.klubb
+    const meritter = document.createElement('h5')
+    meritter.innerHTML = stottespiller.meritter
+
+
+    a.appendChild(h3)
+    a.appendChild(alder)
+    a.appendChild(klubb)
+    a.appendChild(meritter)
+    div.appendChild(a)
+    return div
 
 }

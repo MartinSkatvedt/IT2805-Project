@@ -16,19 +16,19 @@ function createSite(skytterIndex) {
 //MAKING THE BOTTOM DIV-----------------------------------------------------
     const divBottom = makeBottomDiv(skytter)
     main.appendChild(divBottom)
-}    
+}
 
 function changeTitle(skytter) {//CHANGING THE TOP DIV-----------------------------
-    document.title = skytter.about.surName + ' ' + skytter.about.lastName    
+    document.title = skytter.about.surName + ' ' + skytter.about.lastName
 }
 function maketopDiv(skytter) {//CREATING THE TOP DIV
 //MAIKNG TOP-DIV-ELEMNT--------------------------------------------------------
     const topDiv = document.createElement('div')
     topDiv.id = 'person_side_top'
-    
+
 //MAKING THE ABOUTDIV----------------------------------------------------------
     const aboutDiv = makeAboutDiv(skytter)
-    
+
 //MAKING 'person_side_info' DIV--------------------------------------------------------
     const infoDiv = makeInfoDiv(skytter)
 
@@ -48,12 +48,11 @@ function makeBottomDiv(skytter) {
    statsDiv.appendChild(meritsDiv)
 
 //PERSONAL RECORDS----------------------------------------
-
     const recordsDiv = makeRecordsDiv(skytter)
     statsDiv.appendChild(recordsDiv)
 
     return statsDiv
-    
+
 }
 
 //Functions for topDiv--------------------------------------------------
@@ -65,7 +64,7 @@ function getYears(skytter) {//cALCUTATING THE AGE FOR THE BIRTHDAY--------------
 
     if (mm<0) if (mm<1 || dd<0) yyyy--
     return yyyy
-     
+
 }
 function makeAboutDiv(skytter,local = false) {
 //CREATING ABOUTDIV-----------------------------------------
@@ -85,28 +84,28 @@ function makeInfoDiv(skytter) {//Ikke ferdig
     //MAKING 'person_side_info' DIV--------------------------------------------------------
         const infoDiv = document.createElement('div')
         infoDiv.id = 'person_side_info'
-        
+
     //Overskrift--------------------------------------------------------
         const overskrift = document.createElement('h1')
         overskrift.innerHTML = skytter.about.surName + ' ' + skytter.about.lastName
         infoDiv.appendChild(overskrift)
-        
+
     //Beskrivelse kort--------------------------------------------------------
         const descritonP = document.createElement('p')
         descritonP.innerHTML = skytter.description.short
         infoDiv.appendChild(descritonP)
-            
+
     //Alder--------------------------------------------------------
         const age = getYears(skytter)
         const ageP = document.createElement('p')
         ageP.innerHTML = 'Age: ' + age + ' years'
         infoDiv.appendChild(ageP)
-        
+
     //Bithday--------------------------------------------------------
         const brithdayP = document.createElement('p')
         brithdayP.innerHTML = 'Birth: ' + skytter.about.birthDay +'/'+ skytter.about.birthMonth +'/'+ skytter.about.birthYear + ', ' + skytter.about.birthPlace
         infoDiv.appendChild(brithdayP)
-    
+
     //medlem i bpk med linken--------------------------------------------------------
         const memberShipP = document.createElement('p')
         memberShipP.innerHTML = 'membership: '
@@ -117,17 +116,17 @@ function makeInfoDiv(skytter) {//Ikke ferdig
         link.target = '_blank'
         memberShipP.appendChild(link)
         infoDiv.appendChild(memberShipP)
-    
+
     //legger til select-element------------------------------------------------------
         const select = document.createElement('select')
         select.id = 'dp_meny'
-    
+
         let opt = document.createElement('option')
         opt.disabled = true
         opt.selected = true
         opt.innerHTML = 'Competition Statistics'
         select.appendChild(opt)
-    
+
         for (const stat of skytter.yearlyStatistics) {
             opt = document.createElement('option')
             opt.value = stat[0]
@@ -135,13 +134,13 @@ function makeInfoDiv(skytter) {//Ikke ferdig
             select.appendChild(opt)
         }
         infoDiv.appendChild(select)
-    
+
         select.onchange = function () {
             const valgt = this.options[this.selectedIndex] // js property
             window.open(valgt.value)
         }
         return infoDiv
-}    
+}
 function makeMainImage(skytter) {
     const img = document.createElement('img')
     img.src = skytter.image.mainImage
@@ -163,7 +162,7 @@ function makeFamilyDiv(skytter, local) {
 
             familyTypeDiv.appendChild(makeFamilyTypeLinks(familyType, local))
 
-            familyDiv.appendChild(familyTypeDiv)            
+            familyDiv.appendChild(familyTypeDiv)
         }
     }
     return familyDiv
@@ -174,7 +173,7 @@ function makeFamilyTypeLinks(familyType, local) {
     for (let i = 0; i < familyType.length; i++) {
         const individual = familyType[i];
         const a = makePersonLink(individual, local)
-        div.appendChild(a)            
+        div.appendChild(a)
     }
     return div
 }
@@ -190,24 +189,24 @@ function makePersonLink(individual, local) {
 function makeMeritsDiv(skytter) {
     meritsDiv = document.createElement('div')
     meritsDiv.id = 'merits'
- 
+
     const meritsTitle = document.createElement('h1')
     meritsTitle.innerHTML = 'MERITS'
     meritsDiv.appendChild(meritsTitle)
- 
+
  //WRITING OUT ALL THE MERITS
     for (let i = 0; i < skytter.merits.length; i++) {
         const element = skytter.merits[i]
         const div = document.createElement('div')
         div.id = 'merit'
- 
+
         const kursive = document.createElement('i')
         kursive.innerHTML = element.merit
         div.appendChild(kursive)
- 
+
         let strengInd = '<b>Ind:</b>'
         let tomStreng = true
- 
+
         for (let medalje in element.results.ind){
             const antallMedaljer = element.results.ind[medalje]
             if (antallMedaljer > 0) {
@@ -220,10 +219,10 @@ function makeMeritsDiv(skytter) {
             p.innerHTML = strengInd
             div.appendChild(p)
         }
- 
+
         let strengTeam = '<b>Team:</b>'
         tomStreng = true
- 
+
         for (let medalje in element.results.team){
             const antallMedaljer = element.results.team[medalje]
             if (antallMedaljer > 0) {
@@ -234,52 +233,52 @@ function makeMeritsDiv(skytter) {
         if (!tomStreng) {
             p = document.createElement('p')
             p.innerHTML = strengTeam
-            div.appendChild(p)            
+            div.appendChild(p)
         }
         meritsDiv.appendChild(div)
     }
     return meritsDiv
- 
+
 }
 function makeRecordsDiv(skytter) {
     const recordsDiv = document.createElement('div')
     recordsDiv.id = 'personal-records'
-    
+
     const titlereDiv = document.createElement('h1')
     titlereDiv.innerHTML = 'PERSONAL RECORDS'
     recordsDiv.appendChild(titlereDiv)
-    
+
     const recordsTable = document.createElement('table')
     recordsTable.id = 'person_rekorder'
     recordsDiv.appendChild(recordsTable)
-    
+
     const headerTableRow = document.createElement('tr')
     const eventTableHeader = document.createElement('th')
     eventTableHeader.innerHTML = 'Event'
-    
+
     const scoreTableHeader = document.createElement('th')
     scoreTableHeader.innerHTML = 'Score'
-    
+
     const yearTableHeader = document.createElement('th')
     yearTableHeader.innerHTML = 'Year'
-    
+
     headerTableRow.appendChild(eventTableHeader)
     headerTableRow.appendChild(scoreTableHeader)
     headerTableRow.appendChild(yearTableHeader)
-    
+
     recordsTable.appendChild(headerTableRow)
-    
+
     for (let i = 0; i < skytter.bestStatistics.length; i++) {
         const obj = skytter.bestStatistics[i]
         let tr = document.createElement('tr')
-        
+
         for (const ovelse in obj) {
             if (obj.hasOwnProperty(ovelse)) {
                 const element = obj[ovelse];
                 let td = document.createElement('td')
                 td.innerHTML = element
                 tr.appendChild(td)
-                
+
             }
         }
         recordsTable.appendChild(tr)
@@ -312,7 +311,7 @@ const alleSpillere = document.querySelectorAll('#alle_spillere')
 for (let i = 0; i < persons.length; i++) {
     const skytter = skyttere[findIndex(persons[i].id)]
     const person = persons[i]
-    
+
     const infoDiv = makeInfoDiv(skytter)
     infoDiv.appendChild(makeAthleteLink(skytter))
 
