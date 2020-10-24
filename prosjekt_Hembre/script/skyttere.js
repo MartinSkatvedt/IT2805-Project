@@ -67,7 +67,7 @@ function getYears(skytter) {//cALCUTATING THE AGE FOR THE BIRTHDAY--------------
     return yyyy
      
 }
-function makeAboutDiv(skytter) {
+function makeAboutDiv(skytter,local = false) {
 //CREATING ABOUTDIV-----------------------------------------
     const aboutDiv = document.createElement('div')
     aboutDiv.id = 'person_bilder'
@@ -77,7 +77,7 @@ function makeAboutDiv(skytter) {
 
 //FAMILY----------------------------------------------------------
 
-    const familyDiv = makeFamilyDiv(skytter)
+    const familyDiv = makeFamilyDiv(skytter,local)
     aboutDiv.appendChild(familyDiv)
     return aboutDiv
 }
@@ -147,7 +147,7 @@ function makeMainImage(skytter) {
     img.src = skytter.image.mainImage
     return img
 }
-function makeFamilyDiv(skytter) {
+function makeFamilyDiv(skytter, local) {
     const familyDiv = document.createElement('div')
     familyDiv.id = 'familyDiv'
 
@@ -161,26 +161,27 @@ function makeFamilyDiv(skytter) {
             p.innerHTML = obj.charAt(0).toUpperCase() + obj.substring(1) + ' who compete:' //For å for føste bokstav Stor
             familyTypeDiv.appendChild(p)
 
-            familyTypeDiv.appendChild(makeFamilyTypeLinks(familyType))
+            familyTypeDiv.appendChild(makeFamilyTypeLinks(familyType, local))
 
             familyDiv.appendChild(familyTypeDiv)            
         }
     }
     return familyDiv
 }
-function makeFamilyTypeLinks(familyType) {
+function makeFamilyTypeLinks(familyType, local) {
     const div = document.createElement('div')
     div.id = 'familyTypeLinks'
     for (let i = 0; i < familyType.length; i++) {
         const individual = familyType[i];
-        const a = makePersonLink(individual)
+        const a = makePersonLink(individual, local)
         div.appendChild(a)            
     }
     return div
 }
-function makePersonLink(individual) {
+function makePersonLink(individual, local) {
     const a = document.createElement('a')
     a.href = 'skyttere.html?skytter='+ individual[1]
+    if (local) a.href = '#'+individual[1]
     a.innerHTML = individual[0]
     return a
 }
@@ -316,7 +317,7 @@ for (let i = 0; i < persons.length; i++) {
     infoDiv.appendChild(makeAthleteLink(skytter))
 
     person.appendChild(infoDiv)
-    person.appendChild(makeAboutDiv(skytter))
+    person.appendChild(makeAboutDiv(skytter,true))
   }
 }
 function makeAthleteLink(skytter) {//OBS ikke komplett************************************************
