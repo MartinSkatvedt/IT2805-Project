@@ -378,6 +378,9 @@ main {
   margin: 0% auto;
 }
 
+.index_body{
+  text-align: center
+}
 /*css for hele delen over søkemotoren av header når den er større enn 600px starter under her*/
 .header_øverst {
   text-align: center;
