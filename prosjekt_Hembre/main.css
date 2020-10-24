@@ -421,7 +421,7 @@ main {
   text-align: center;
   width: 15%;
   margin: auto;
-  margin-top: 20vh;
+  margin-top: 13vh;
   color: white;
   padding: 10px;
   font-size: 40px;
@@ -771,7 +771,7 @@ textarea {
 }
 
 
-.main_sponsor h3 {
+.main_sponsor h1 {
   padding-top: 10px;
   text-align: center;
 }
@@ -796,12 +796,17 @@ textarea {
 .spons-grid-one {
   display: grid;
   grid-template-columns: 50% 50%;
+  height: 80vh;
 }
 .spons-grid-one  .spons {
   padding-top: 10px;
   margin: auto;
-  height: 200px;
+  height: 40vh;
   width: 100%;
+}
+.spons_navn{
+  padding-top: 20px;
+  font-size: 28px;
 }
 .kryss_farge_1 {
   background-color: #a0e6ff;
@@ -814,13 +819,14 @@ textarea {
   height: 50%;
   margin-left: 30%;
 }
+
 .spons .pil {
-  height: 40px;
+  height: 80px;
   width: 20%;
   margin-left: 40%
 }
 .fyll {
-  height: 50%;
+  height: 40%;
   width: 40%;
   background-color: white;
   margin-left: 30%;
@@ -828,23 +834,27 @@ textarea {
   border-radius: 2000px
 }
 .fyll p {
-padding-top: 35px;
+padding-top: 50px;
 }
 .spons-grid-two {
-  width: 60%;
+  width: 70%;
   margin: auto;
+  margin-top: 90px;
 }
+.spons-grid-two>div{
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
 .spons-grid-two .spons img {
   margin-left: 5%;
-  width: 90%
+  width: 70%;
+  padding-bottom: 15px;
 }
 .spons-grid-two .spons {
   height: 500px;
 }
-.spons-grid-two .tom .fyll {
-
-}
-
 
 .footer-container-one {
   display: grid;
