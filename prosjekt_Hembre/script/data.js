@@ -24,7 +24,7 @@ const bilder = {
         'bilder/om7.jpg'
     ],
     sponsors:{
-        bekkevold:'bilder/bækkvold.png',
+        bekkevold:'bilder/bakkevold.png',
         oxford_gun:'bilder/oxford_gun.png',
         ny_spons:'bilder/sponsor_deg.png'
     },
