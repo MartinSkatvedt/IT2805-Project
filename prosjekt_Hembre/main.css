@@ -858,6 +858,18 @@ padding-top: 50px;
 .spons-grid-two .spons {
   height: 500px;
 }
+.spons-grid-two .tom .fyll {
+
+}
+
+@media only screen and (min-width: 1100px) {
+  .main_sponsor {
+    width: 900px;
+    background-color: blue;
+  }
+}
+
+
 
 .footer-container-one {
   display: grid;
