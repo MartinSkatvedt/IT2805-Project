@@ -96,7 +96,7 @@
   <div id="alle_spillere">
 
     <div id="palhembre" class="hembre">
-      <div id="pal_info">
+      <!-- <div id="pal_info">
         <h1>PÅL HEMBRE</h1>
         <h3>Former Second Lieutenant for the Norwegian army</h3>
         <ul>
@@ -122,21 +122,21 @@
         <img src=" bilder/paal.png" alt="">
         <h3><a href="skyttere.html?skytter=palhembre">click here for more about Pål</a> </h3>
 
-      </div>
+      </div> -->
 
     </div>
 
     <div id="mattishembre" class="hembre">
-      <h2>MATTIS HEMBRE</h2>
+      <!-- <h2>MATTIS HEMBRE</h2> -->
 
     </div>
 
     <div id="timleohembre" class="hembre">
-      <h2>TIM LEO HEMBRE</h2>
+      <!-- <h2>TIM LEO HEMBRE</h2> -->
 
     </div>
     <div id="ludvikhembre" class="hembre">
-      <h2>LUDVIK HEMBRE</h2>
+      <!-- <h2>LUDVIK HEMBRE</h2> -->
 
     </div>
 
@@ -149,18 +149,7 @@
     <script src="script/data.js"></script>
     <script src="script/skyttere.js"></script>
     <script>
-
-function writeStats() {
-  const persons = document.querySelectorAll('.hembre')
-  const alleSpillere = document.querySelectorAll('#alle_spillere')
-  for (let i = 0; i < persons.length; i++) {
-    const skytter = skyttere[findIndex(persons[i].id)]
-    const merits = getMeritsDiv(skytter)
-    console.log(merits);
-    
-  }
-}
-writeStats()
+writeStatsOmOss()
   </script>
 </body>
 

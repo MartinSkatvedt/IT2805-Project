@@ -81,7 +81,7 @@ th, #merit i{
   font-size: 12px;
 }
 
-#gull > h1 {
+/* #gull > h1 {
   color: #e68a00;
 }
 #ol-deltat > h1 {
@@ -89,7 +89,7 @@ th, #merit i{
 }
 #norge_rekorder > h1 {
   color: blue;
-}
+} */
 
 #personer_underliggende_bilder {
   display: grid;

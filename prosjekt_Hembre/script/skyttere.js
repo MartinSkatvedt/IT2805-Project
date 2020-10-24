@@ -81,6 +81,67 @@ function makeAboutDiv(skytter) {
     aboutDiv.appendChild(familyDiv)
     return aboutDiv
 }
+function makeInfoDiv(skytter) {//Ikke ferdig
+    //MAKING 'person_side_info' DIV--------------------------------------------------------
+        const infoDiv = document.createElement('div')
+        infoDiv.id = 'person_side_info'
+        
+    //Overskrift--------------------------------------------------------
+        const overskrift = document.createElement('h1')
+        overskrift.innerHTML = skytter.about.surName + ' ' + skytter.about.lastName
+        infoDiv.appendChild(overskrift)
+        
+    //Beskrivelse kort--------------------------------------------------------
+        const descritonP = document.createElement('p')
+        descritonP.innerHTML = skytter.description.short
+        infoDiv.appendChild(descritonP)
+            
+    //Alder--------------------------------------------------------
+        const age = getYears(skytter)
+        const ageP = document.createElement('p')
+        ageP.innerHTML = 'Age: ' + age + ' years'
+        infoDiv.appendChild(ageP)
+        
+    //Bithday--------------------------------------------------------
+        const brithdayP = document.createElement('p')
+        brithdayP.innerHTML = 'Birth: ' + skytter.about.birthDay +'/'+ skytter.about.birthMonth +'/'+ skytter.about.birthYear + ', ' + skytter.about.birthPlace
+        infoDiv.appendChild(brithdayP)
+    
+    //medlem i bpk med linken--------------------------------------------------------
+        const memberShipP = document.createElement('p')
+        memberShipP.innerHTML = 'membership: '
+        const link = document.createElement('a')
+        link.id = 'medlemskap'
+        link.href = skytter.memberShip.link
+        link.innerHTML = skytter.memberShip.name
+        link.target = '_blank'
+        memberShipP.appendChild(link)
+        infoDiv.appendChild(memberShipP)
+    
+    //legger til select-element------------------------------------------------------
+        const select = document.createElement('select')
+        select.id = 'dp_meny'
+    
+        let opt = document.createElement('option')
+        opt.disabled = true
+        opt.selected = true
+        opt.innerHTML = 'Competition Statistics'
+        select.appendChild(opt)
+    
+        for (const stat of skytter.yearlyStatistics) {
+            opt = document.createElement('option')
+            opt.value = stat[0]
+            opt.innerHTML = 'Events in ' + stat[1]
+            select.appendChild(opt)
+        }
+        infoDiv.appendChild(select)
+    
+        select.onchange = function () {
+            const valgt = this.options[this.selectedIndex] // js property
+            window.open(valgt.value)
+        }
+        return infoDiv
+}    
 function makeMainImage(skytter) {
     const img = document.createElement('img')
     img.src = skytter.image.mainImage
@@ -119,70 +180,9 @@ function makeFamilyTypeLinks(familyType) {
 }
 function makePersonLink(individual) {
     const a = document.createElement('a')
-    a.href = '?skytter='+ individual[1]
+    a.href = 'skyttere.html?skytter='+ individual[1]
     a.innerHTML = individual[0]
     return a
-}
-function makeInfoDiv(skytter) {
-//MAKING 'person_side_info' DIV--------------------------------------------------------
-    const infoDiv = document.createElement('div')
-    infoDiv.id = 'person_side_info'
-    
-//Overskrift--------------------------------------------------------
-    const overskrift = document.createElement('h1')
-    overskrift.innerHTML = skytter.about.surName + ' ' + skytter.about.lastName
-    infoDiv.appendChild(overskrift)
-    
-//Beskrivelse kort--------------------------------------------------------
-    const descritonP = document.createElement('p')
-    descritonP.innerHTML = skytter.description.short
-    infoDiv.appendChild(descritonP)
-        
-//Alder--------------------------------------------------------
-    const age = getYears(skytter)
-    const ageP = document.createElement('p')
-    ageP.innerHTML = 'Age: ' + age + ' years'
-    infoDiv.appendChild(ageP)
-    
-//Bithday--------------------------------------------------------
-    const brithdayP = document.createElement('p')
-    brithdayP.innerHTML = 'Birth: ' + skytter.about.birthDay +'/'+ skytter.about.birthMonth +'/'+ skytter.about.birthYear + ', ' + skytter.about.birthPlace
-    infoDiv.appendChild(brithdayP)
-
-//medlem i bpk med linken--------------------------------------------------------
-    const memberShipP = document.createElement('p')
-    memberShipP.innerHTML = 'membership: '
-    const link = document.createElement('a')
-    link.id = 'medlemskap'
-    link.href = skytter.memberShip.link
-    link.innerHTML = skytter.memberShip.name
-    link.target = '_blank'
-    memberShipP.appendChild(link)
-    infoDiv.appendChild(memberShipP)
-
-//legger til select-element------------------------------------------------------
-    const select = document.createElement('select')
-    select.id = 'dp_meny'
-
-    let opt = document.createElement('option')
-    opt.disabled = true
-    opt.selected = true
-    opt.innerHTML = 'Competition Statistics'
-    select.appendChild(opt)
-
-    for (const stat of skytter.yearlyStatistics) {
-        opt = document.createElement('option')
-        opt.value = stat[0]
-        opt.innerHTML = 'Events in ' + stat[1]
-        select.appendChild(opt)
-    }
-    infoDiv.appendChild(select)
-
-    select.onchange = function () {
-        const valgt = this.options[this.selectedIndex] // js property
-        window.open(valgt.value)
-    }
-    return infoDiv
 }
 
 //Functions for bottomDiv-------------------------------------------------------
@@ -302,4 +302,26 @@ function findIndex(id) {
         }
     }
     return -1
+}
+
+
+function writeStatsOmOss() {
+const persons = document.querySelectorAll('.hembre')
+const alleSpillere = document.querySelectorAll('#alle_spillere')
+for (let i = 0; i < persons.length; i++) {
+    const skytter = skyttere[findIndex(persons[i].id)]
+    const person = persons[i]
+    
+    const infoDiv = makeInfoDiv(skytter)
+    infoDiv.appendChild(makeAthleteLink(skytter))
+
+    person.appendChild(infoDiv)
+    person.appendChild(makeAboutDiv(skytter))
+  }
+}
+function makeAthleteLink(skytter) {//OBS ikke komplett************************************************
+    const a = document.createElement('a')
+    a.href = 'skyttere.html?skytter='+skytter.id
+    a.innerHTML = 'Mer om ' +skytter.about.surName + ' ' + skytter.about.lastName
+    return a
 }
