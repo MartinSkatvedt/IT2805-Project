@@ -2,6 +2,7 @@
 const bilder = {
     pal: {
         mainImgage: 'bilder/pal.jpg',
+        mainImgage2: 'bilder/pal.png',
       },
     mattis: {
         mainImgage: 'bilder/mattis.jpg',
