@@ -88,11 +88,10 @@ display: none;
 .logo>img{
   width: 30%;
 }
-
 .hele_følg_meg {
   position: relative;
   display: flex;
-  padding-top: 20px;
+  padding-top: 30px;
   float: right;
   margin-right: 15px;
 }
@@ -103,10 +102,8 @@ display: none;
   font-family: fantasy;
 }
 
-/* Style all font awesome icons */
 .fa {
   font-size: 30px;
-  margin-top: 15px;
   width: 30px;
   text-align: right;
   text-decoration: none;

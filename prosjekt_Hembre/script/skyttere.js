@@ -75,7 +75,6 @@ function makeAboutDiv(skytter,local = false) {
     aboutDiv.appendChild(img)
 
 //FAMILY----------------------------------------------------------
-
     const familyDiv = makeFamilyDiv(skytter,local)
     aboutDiv.appendChild(familyDiv)
     return aboutDiv
