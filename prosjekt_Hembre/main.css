@@ -512,6 +512,7 @@ main {
 }
 
 .link {
+<<<<<<< HEAD
 background-color: #555;
 color: white;
 cursor: pointer;
@@ -521,6 +522,18 @@ width: 25%;
 bottom: 0px;
 text-decoration: none;
 position: absolute;
+=======
+  background-color: #555;
+  color: white;
+  float: left;
+  cursor: pointer;
+  padding: 24px 16px;
+  margin: 0px;
+  font-size: 17px;
+  width: 25%;
+  bottom: 0px;
+  position: absolute;
+>>>>>>> 1fe3d21560a96fb3fc46f265eb7bd20ed94104b2
 }
 
 
@@ -880,6 +893,7 @@ textarea {
   width: 70%;
   margin: auto;
   margin-top: 90px;
+<<<<<<< HEAD
 }
 
 .spons-grid-two>div {
@@ -888,6 +902,16 @@ textarea {
   margin-bottom: 30px;
 }
 
+=======
+}
+
+.spons-grid-two>div {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+>>>>>>> 1fe3d21560a96fb3fc46f265eb7bd20ed94104b2
 .spons-grid-two .spons img {
   margin-left: 5%;
   width: 70%;
@@ -899,12 +923,21 @@ textarea {
 }
 
 .spons-grid-two .tom .fyll {}
+<<<<<<< HEAD
 
 @media only screen and (max-width: 900px) {
   .pil {
     display: none;
   }
 
+=======
+
+@media only screen and (max-width: 900px) {
+  .pil {
+    display: none;
+  }
+
+>>>>>>> 1fe3d21560a96fb3fc46f265eb7bd20ed94104b2
   .main_sponsor {
     width: 100%;
   }
