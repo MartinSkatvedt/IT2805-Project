@@ -724,11 +724,15 @@ h3 > a:hover {
 #formContainer {
   background-color: #fff0f0;
   width: 50%;
+  margin-top: 30px;
   border: 1px solid black;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   padding: 2%;
+}
+#formContainer>p{
+  color: grey;
 }
 
 #contactForm {
@@ -736,12 +740,16 @@ h3 > a:hover {
 }
 
 .gridElement {
-  margin-top: 1%;
+  margin-top: 4%;
   width: 60%;
   text-align: left;
   display: flex;
   flex-direction: column;
 }
+.gridElement>input{
+  padding-top: 10px;
+}
+
 
 input,
 textarea {
@@ -791,6 +799,15 @@ textarea {
   width: 10%;
   margin-left: auto;
   margin-right: auto;
+}
+#f_submit>button {
+  background-color:orange;
+  padding: 5px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  font-size: 19px
+
 }
 
 .subFolder {
@@ -925,7 +942,7 @@ textarea {
 
 footer{
   margin-top: 20px;
-  background-color: #0DDBD8;
+  background-color: #E8FFFF;
 }
 
 .logo_footer {
@@ -967,13 +984,20 @@ p {
   margin: 0;
 }
 
-.footer-container-two div {
+.footer-container-two>div {
   font-size: 14px;
   border: solid 1px black;
+}
+.footer-container-two>div>a{
+  color:black;
+  text-decoration: none;
+  margin:auto;
 }
 
 #footer_contact {
   text-align: center;
+  margin-right: 40px;
+  margin-top: 30px;
   padding: 10px;
   background-color: orange;
   border-radius: 20px;
