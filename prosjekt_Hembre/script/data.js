@@ -869,6 +869,7 @@ const skyttere = [
 
     }
 ]
+
 const stottespillere = [
 {
   name: 'Petter Nydalen',
@@ -907,4 +908,8 @@ const sponsors = [
       link:'../kontakt.html'
     }
 
+]
+
+const news = [
+    
 ]
