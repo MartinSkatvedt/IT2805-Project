@@ -1,7 +1,7 @@
 
 const bilder = {
     pal: {
-        mainImgage: 'bilder/pal.png',
+        mainImgage: 'bilder/pal.jpg',
       },
     mattis: {
         mainImgage: 'bilder/mattis.jpg',
