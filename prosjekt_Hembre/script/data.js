@@ -870,7 +870,7 @@ const skyttere = [
     }
 ]
 
-const stottespillere = [
+const supporters = [
 {
   name: 'Petter Nydalen',
   alder: 'Age: 28',
@@ -911,5 +911,5 @@ const sponsors = [
 ]
 
 const news = [
-    
+
 ]
