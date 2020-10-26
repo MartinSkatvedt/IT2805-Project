@@ -278,7 +278,8 @@ a>h5{
 
 .navBarElement {
   transition: 0.5s;
-  height: 75px;
+  height:
+   75px;
   padding-top: 25px;
   position: relative;
   width: 16.677%
@@ -597,7 +598,7 @@ main {
 #alle_spillere {
   text-align: left;
   background-color: #ffaf37;
-  margin: 5%;
+  margin: 5% 20%;
   margin-top: 20px;
   height: 70vh;
   overflow-y: scroll;
