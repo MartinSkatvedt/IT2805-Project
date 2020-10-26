@@ -1,5 +1,5 @@
 function createSite(skytterIndex) {
-    const index = getIndex()//GETING THE INDEX OF THE SHOOTER
+    const index = getIndexFromUrl()//GETING THE INDEX OF THE SHOOTER
     if (index == -1) return //Retruns if it doesnt find an index
 
     const skytter = skyttere[skytterIndex]
@@ -287,7 +287,7 @@ function makeRecordsDiv(skytter) {
 }
 
 //Getting index functions
-function getIndex() {//FUNCTION TO FETCH THE SHOOTER INDEX FOR SHOOTER ID---
+function getIndexFromUrl() {//FUNCTION TO FETCH THE SHOOTER INDEX FOR SHOOTER ID---
     const url_string = window.location.href //window.location.href
     const url = new URL(url_string)
     const personId = url.searchParams.get('skytter')
