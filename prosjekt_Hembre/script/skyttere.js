@@ -4,7 +4,7 @@ function createSite(skytterIndex) {
 
     const skytter = skyttere[skytterIndex]
     const main = document.querySelector('main')
-    main.innerHTML = ''
+//    main.innerHTML = ''
 
 //CHANGING TITLE------------------------------------------------------------
     changeTitle(skytter)
