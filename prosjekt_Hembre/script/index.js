@@ -36,9 +36,8 @@ function main() {
      const supporters = document.createElement('div')
      supporters.id = 'supporters'
 
+
 //Ikke ferdig
-
-
     gch.appendChild(supporters)
 
 //Main----------------------------------------------------

@@ -883,9 +883,9 @@ const stottespillere = [
 },
 {
   name: 'This can be you!!',
-  alder: '??',
-  klubb: '??',
-  meritter: '??'
+  alder: 'Age',
+  klubb: 'Club',
+  meritter: 'Merits'
 }
 ]
 

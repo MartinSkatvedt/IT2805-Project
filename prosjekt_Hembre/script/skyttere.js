@@ -4,7 +4,7 @@ function createSite(skytterIndex) {
 
     const skytter = skyttere[skytterIndex]
     const main = document.querySelector('main')
-    main.innerHTML = ''
+//    main.innerHTML = ''
 
 //CHANGING TITLE------------------------------------------------------------
     changeTitle(skytter)
@@ -75,7 +75,6 @@ function makeAboutDiv(skytter,local = false) {
     aboutDiv.appendChild(img)
 
 //FAMILY----------------------------------------------------------
-
     const familyDiv = makeFamilyDiv(skytter,local)
     aboutDiv.appendChild(familyDiv)
     return aboutDiv
