@@ -4,7 +4,6 @@ document.write(`
 <a href="index.html"><img src="bilder/logo2.svg" alt=""></a>
 
 </div>
-
   <div class="navBarElement" id="utoverElement">
     <a href="#">Athletes</a>
   </div>

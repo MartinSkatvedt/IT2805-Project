@@ -3,7 +3,7 @@ document.write(`
 
       <div class="footer-container-one">
 
-        <img src="bilder/logo2.svg" alt="">
+        <img class="logo_footer" src="bilder/logo2.svg" alt="">
 
         <div class="listePaal">
 

@@ -1,7 +1,6 @@
 :root {
   --background-color: #d3ebeb;
   --nav-color: #e8ffff;
-  --element-background: #c4c4c4;
   --element-background: #d1d1d1;
   --text-color: #000;
   --background-text-color: none;
@@ -14,7 +13,7 @@
 }
 
 body {
-  font-family: "Arial", "Times new roman", sans-serif;
+  font-family: "Arial", "Times new roman", "sans-serif";
   background-color: var(--background-color);
   color: var(--text-color);
   width: 100%;
@@ -26,12 +25,12 @@ body {
   margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-column-gap: 2%;
+  grid-column-gap: 1%;
 }
 
 .grid-container-hjem>div {
   background-color: var(--element-background);
-  padding: 2%;
+  padding: 3%;
   border: 1px solid black;
 }
 
@@ -72,19 +71,35 @@ body {
 
 .sponsor {
   margin: auto;
-  width: 96%;
+  width: 100%;
+  height: 240px;
   border: 1px solid black;
+  padding-bottom: 5%;
+  margin-bottom: 20px;
+  background-color: white;
   text-align: center;
 }
 
-.sponsor h4 {
+.sponsor>a {
+  color: black;
+text-decoration: none;
   margin: 0;
-  padding: 5%;
+
 }
 
 .sponsor img {
-  width: 100%;
+width: 100%;
 }
+.sponsor:last-child img{
+  height: 150px;
+}
+
+
+a>h5{
+  text-align: left;
+  padding-left: 20px;
+}
+
 
 /*Slideshow*/
 .slideshow-container * {
@@ -191,9 +206,8 @@ body {
   }
 }
 
-@media (max-width: 1200px) {
-  /*Tablets [601px -> 1200px]*/
-}
+
+
 
 @media (max-width: 600px) {
 
@@ -271,14 +285,15 @@ body {
 }
 
 .logo_nav {
-  width: 16.6%;
-  margin: 20px;
+  width: 25%;
+  margin: 0px;
   padding: 0px;
 }
 
 .logo_nav>a>img {
   height: 100%;
 }
+
 
 #kontaktKnapp {
   background-color: orange;
@@ -373,7 +388,6 @@ html {
     margin: 0px;
     top: 0px;
     /*gir body en bakgrunnsfarge*/
-    background-color: #dbdde0;
   }
 }
 
@@ -512,18 +526,7 @@ main {
 }
 
 .link {
-<<<<<<< HEAD
-background-color: #555;
-color: white;
-cursor: pointer;
-padding: 24px 16px;
-font-size: 17px;
-width: 25%;
-bottom: 0px;
-text-decoration: none;
-position: absolute;
-=======
-  background-color: #555;
+  background-color: darkgrey;;
   color: white;
   float: left;
   cursor: pointer;
@@ -533,7 +536,6 @@ position: absolute;
   width: 25%;
   bottom: 0px;
   position: absolute;
->>>>>>> 1fe3d21560a96fb3fc46f265eb7bd20ed94104b2
 }
 
 
@@ -717,9 +719,7 @@ h3 > a:hover {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-body {
-  background-color: #c9d3d3;
-}
+
 
 #formContainer {
   background-color: #fff0f0;
@@ -893,7 +893,6 @@ textarea {
   width: 70%;
   margin: auto;
   margin-top: 90px;
-<<<<<<< HEAD
 }
 
 .spons-grid-two>div {
@@ -902,16 +901,6 @@ textarea {
   margin-bottom: 30px;
 }
 
-=======
-}
-
-.spons-grid-two>div {
-  text-align: center;
-  padding: 10px;
-  margin-bottom: 30px;
-}
-
->>>>>>> 1fe3d21560a96fb3fc46f265eb7bd20ed94104b2
 .spons-grid-two .spons img {
   margin-left: 5%;
   width: 70%;
@@ -923,24 +912,26 @@ textarea {
 }
 
 .spons-grid-two .tom .fyll {}
-<<<<<<< HEAD
 
 @media only screen and (max-width: 900px) {
   .pil {
     display: none;
   }
 
-=======
-
-@media only screen and (max-width: 900px) {
-  .pil {
-    display: none;
-  }
-
->>>>>>> 1fe3d21560a96fb3fc46f265eb7bd20ed94104b2
   .main_sponsor {
     width: 100%;
   }
+}
+
+footer{
+  margin-top: 20px;
+  background-color: #0DDBD8;
+}
+
+.logo_footer {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
 }
 
 .footer-container-one {
@@ -952,7 +943,7 @@ textarea {
 .footer-container-one ul li a {
   text-decoration: none;
   color: black;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .footer-container-one ul li {
@@ -960,7 +951,7 @@ textarea {
 }
 
 .footer-container-one ul li p a {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .footer-container-two {
@@ -968,6 +959,8 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20%;
+  margin-bottom:0px;
+  padding: 10px
 }
 
 p {
@@ -975,8 +968,7 @@ p {
 }
 
 .footer-container-two div {
-  font-size: 12px;
-  padding: 10px;
+  font-size: 14px;
   border: solid 1px black;
 }
 
