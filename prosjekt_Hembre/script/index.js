@@ -174,15 +174,15 @@ function createSupporters() {
     container.className = 'grid-container- supporters'
 
     const h1 = document.createElement('h1')
-    h1.innerHTML = ' supporters'
+    h1.innerHTML = 'Supporters'
     container.appendChild(h1)
 
     for (let i = 0; i <  supporters.length; i++) {
-        container.appendChild(makestottespiller(i))
+        container.appendChild(makeSupporters(i))
     }
     return container
 }
-function makestottespiller(i) {
+function makeSupporters(i) {
     const stottespiller =  supporters[i]
     const a = document.createElement('a')
 
