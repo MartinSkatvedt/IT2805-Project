@@ -85,12 +85,11 @@ document.write(`
 
     function editLink(){
       for (let i in skyttere){
-        console.log(i)
         let links = document.querySelector(`.liste${i}`).querySelectorAll("a")
           links[0].href = "skyttere.html?skytter="+ skyttere[i].id
-          links[1].href = skyttere[i].stasticsLinks.bestResults
-          links[2].href = skyttere[i].stasticsLinks.average
-          links[3].href = skyttere[i].stasticsLinks.totalStarts
+          links[1].href = skyttere[i].stasticsLinks.bestResults[0]
+          links[2].href = skyttere[i].stasticsLinks.average[0]
+          links[3].href = skyttere[i].stasticsLinks.totalStarts[0]
           links[4].href ="#"
       }
     }
