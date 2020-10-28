@@ -4,20 +4,10 @@ let navn_header = document.querySelectorAll(".navn_header");
 let link = document.querySelectorAll(".link");
 
 
-for navn of link{
-link.inn
+for (let navn of skytter.about.surName){
+link.innerHTML+= navn
 }
 
-for løkke gjennom family.about.surName
-
-for (let i = 0; i < skyttere.length; i++) {
-
-}
- for person in family.about.surName{
-   const textDiv = document.createElement('button')
-   textDiv.className = 'link'
-   navn_header.innerHTML = skytter.about.surName
- }
 
 function makeAthlete(i) {
     const skytter = skyttere[i]
