@@ -5,7 +5,7 @@ document.write(`
 
         <img class="logo_footer" src="bilder/logo2.svg" alt="">
 
-        <div class="listePaal">
+        <div class="liste0 listeFooter">
 
           <ul>
             <li><p><a href="0">Pål Hembre</a></p></li>
@@ -17,7 +17,7 @@ document.write(`
 
         </div>
 
-        <div class="listeLudvik">
+        <div class="liste1 listeFooter">
 
           <ul>
             <li><p><a href="0">Mattis Hembre</a></p></li>
@@ -29,7 +29,7 @@ document.write(`
 
         </div>
 
-        <div class="listeMattis">
+        <div class="liste2 listeFooter">
 
           <ul>
             <li><p><a href="0">Ludvik Hembre</a></p></li>
@@ -41,7 +41,7 @@ document.write(`
 
         </div>
 
-        <div class="listeTim">
+        <div class="liste3 listeFooter">
 
           <ul>
             <li><p><a href="0"> Tim Leo Hembre</a></p></li>
@@ -83,32 +83,15 @@ document.write(`
 
     </footer>`)
 
-    let athletesArray = ["palhembre","mattishembre","ludvikhembre","timleohembre"]
-    athleteCount = 0
-    let div = document.querySelector("div")
-    let ul = document.querySelector("ul")
-
-    function editLink() {
-      console.log("asdas")
-        for(let a in document.getElementsByTagName("a")){
-          console.log("adas")
-          a.href="asda"
-          if (a.href == "0") {
-            a.href = 'skyttere.html?skytter='+ athletesArray[athleteCount]
-          }
-          else if (true) {
-
-          }
-          else if (true) {
-
-          }
-          else if (true) {
-
-          }
-          else if (true) {
-
-          }
-
-        }
+    function editLink(){
+      for (let i in skyttere){
+        console.log(i)
+        let links = document.querySelector(`.liste${i}`).querySelectorAll("a")
+          links[0].href = "skyttere.html?skytter="+ skyttere[i].id
+          links[1].href = skyttere[i].stasticsLinks.bestResults
+          links[2].href = skyttere[i].stasticsLinks.average
+          links[3].href = skyttere[i].stasticsLinks.totalStarts
+          links[4].href ="#"
+      }
     }
     editLink()
