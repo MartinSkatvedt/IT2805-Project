@@ -33,12 +33,12 @@ function maketopDiv(skytter) {//CREATING THE TOP DIV
 
 //MAKING 'person_side_info' DIV--------------------------------------------------------
     const infoDiv = makeInfoDiv(skytter)
-    
+
     //Making familydiv------------------------------------------------
     const familyDiv = makeFamilyDiv(skytter)
 
-    
-    
+
+
 //APPENDING------------------------------------------------------------------------
     topDiv.appendChild(aboutDiv)
     topDiv.appendChild(infoDiv)
@@ -322,10 +322,10 @@ for (let i = 0; i < persons.length; i++) {
 
     const infoDiv = makeInfoDiv(skytter)
     infoDiv.appendChild(makeAthleteLink(skytter))
-    
+
     const familyDiv = makeFamilyDiv(skytter,true)
     const img = makeMainImage(skytter)
-    
+
     person.appendChild(infoDiv)
     person.appendChild(familyDiv)
     person.appendChild(img)
