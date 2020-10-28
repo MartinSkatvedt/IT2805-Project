@@ -23,20 +23,10 @@ function main() {
     center.appendChild(createAtletes())
     gch.appendChild(center)
 
-    //Støttespillere------------------------------------------------
-        const  stottespillere = document.createElement('div')
-         stottespillere.id = ' stottespillere'
-         stottespillere.appendChild(createStottespillere())
-
-
-        gch.appendChild(stottespillere)
-
-
 //Supporters----------------------------------------------
-     const supporters = document.createElement('div')
-     supporters.id = 'supporters'
-
-//Ikke ferdig
+    const  supporters = document.createElement('div')
+    supporters.id = 'supporters'
+    supporters.appendChild(createSupporters())
 
 
     gch.appendChild(supporters)
@@ -102,7 +92,6 @@ function createAtletes() {
 }
 function makeAthlete(i) {
     const skytter = skyttere[i]
-
 
     const img = document.createElement('img')
     img.src = skytter.image.mainImage
@@ -174,22 +163,22 @@ function createSlideshowButtons() {
 
 
 
-// stottespillere functions--------------------------------------
-function createStottespillere() {
+// supporters functions--------------------------------------
+function createSupporters() {
     const container = document.createElement('div')
-    container.className = 'grid-container- stottespillere'
+    container.className = 'grid-container- supporters'
 
     const h1 = document.createElement('h1')
-    h1.innerHTML = ' stottespillere'
+    h1.innerHTML = 'Supporters'
     container.appendChild(h1)
 
-    for (let i = 0; i <  stottespillere.length; i++) {
-        container.appendChild(makestottespiller(i))
+    for (let i = 0; i <  supporters.length; i++) {
+        container.appendChild(makeSupporters(i))
     }
     return container
 }
-function makestottespiller(i) {
-    const stottespiller =  stottespillere[i]
+function makeSupporters(i) {
+    const stottespiller =  supporters[i]
     const a = document.createElement('a')
 
     const div = document.createElement('div')

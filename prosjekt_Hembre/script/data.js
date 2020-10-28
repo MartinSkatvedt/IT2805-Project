@@ -1,7 +1,8 @@
 
 const bilder = {
     pal: {
-        mainImgage: 'bilder/pal.png',
+        mainImgage: 'bilder/pal.jpg',
+        mainImgage2: 'bilder/pal.png',
       },
     mattis: {
         mainImgage: 'bilder/mattis.jpg',
@@ -56,10 +57,10 @@ const skyttere = [
 
         family:{
             children:[
-                ['Mattis','mattishembre'],
-                ['Ludvik','ludvikhembre'],
-                ['Tim Leo','timleohembre'],
-                ['Leonel','leonelhembre']
+                'mattishembre',
+                'ludvikhembre',
+                'timleohembre',
+                'leonelhembre'
             ],
             parents:[
 
@@ -118,6 +119,13 @@ const skyttere = [
             ['http://fsu.no/skyttere/stat/paalh1979.htm','1979'],
             ['http://fsu.no/skyttere/stat/paalh1978.htm','1978']
 
+        ],
+
+        stasticsLinks:[
+                ['http://fsu.no/issf/alle/tp/tp_paalh.htm','Best resuls'],
+                ['http://fsu.no/issf/alle/sn/sn_paalh.htm','Average'],
+                ['http://fsu.no/issf/alle/ant/st_paalh.htm','Total starts'],
+                ['http://www.fsu.no/issf/iaar/sk/st_mattish.htm','Starts this year']
         ],
 
         bestStatistics:[
@@ -331,12 +339,12 @@ const skyttere = [
             children:[
             ],
             parents:[
-                ['Pål','palhembre']
+                'palhembre'
             ],
             siblings:[
-                ['Ludvik','ludvikhembre'],
-                ['Tim Leo','timleohembre'],
-                ['Leonel','leonelhembre']
+                'ludvikhembre',
+                'timleohembre',
+                'leonelhembre'
 
             ]
         },
@@ -357,6 +365,12 @@ const skyttere = [
             ['http://fsu.no/issf/2012/sk/st_mattish.htm','2012'],
             ['http://fsu.no/issf/2011/sk/st_mattish.htm','2011'],
             ['http://fsu.no/issf/2010/sk/st_mattish.htm','2010']
+        ],
+        stasticsLinks:[
+                ['http://fsu.no/issf/alle/tp/tp_paalh.htm','Best resuls'],
+                ['http://fsu.no/issf/alle/sn/sn_paalh.htm','Average'],
+                ['http://fsu.no/issf/alle/ant/st_paalh.htm','Total starts'],
+                ['http://www.fsu.no/issf/iaar/sk/st_mattish.htm','Starts this year']
         ],
 
         bestStatistics:[
@@ -495,12 +509,12 @@ const skyttere = [
             children:[
             ],
             parents:[
-                ['Pål','palhembre']
+                'palhembre'
             ],
             siblings:[
-                ['Mattis','mattishembre'],
-                ['Tim Leo','timleohembre'],
-                ['Leonel','leonelhembre']
+                'mattishembre',
+                'timleohembre',
+                'leonelhembre'
 
             ]
         },
@@ -521,6 +535,12 @@ const skyttere = [
             ['http://fsu.no/issf/2012/sk/st_ludvikh.htm','2012'],
             ['http://fsu.no/issf/2011/sk/st_ludvikh.htm','2011'],
             ['http://fsu.no/issf/2010/sk/st_ludvikh.htm','2010']
+        ],
+        stasticsLinks:[
+                ['http://fsu.no/issf/alle/tp/tp_paalh.htm','Best resuls'],
+                ['http://fsu.no/issf/alle/sn/sn_paalh.htm','Average'],
+                ['http://fsu.no/issf/alle/ant/st_paalh.htm','Total starts'],
+                ['http://www.fsu.no/issf/iaar/sk/st_mattish.htm','Starts this year']
         ],
 
         bestStatistics:[
@@ -658,12 +678,12 @@ const skyttere = [
             children:[
             ],
             parents:[
-                ['Pål','palhembre']
+                'palhembre'
             ],
             siblings:[
-                ['Mattis','mattishembre'],
-                ['Ludvik','ludvikhembre'],
-                ['Leonel','leonelhembre']
+                'mattishembre',
+                'ludvikhembre',
+                'leonelhembre'
             ]
         },
 
@@ -679,6 +699,12 @@ const skyttere = [
             ['http://fsu.no/2016/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2016'],
             ['http://fsu.no/2015/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2015'],
             ['http://fsu.no/2014/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2014']
+        ],
+        stasticsLinks:[
+                ['http://fsu.no/issf/alle/tp/tp_paalh.htm','Best resuls'],
+                ['http://fsu.no/issf/alle/sn/sn_paalh.htm','Average'],
+                ['http://fsu.no/issf/alle/ant/st_paalh.htm','Total starts'],
+                ['http://www.fsu.no/issf/iaar/sk/st_mattish.htm','Starts this year']
         ],
 
         bestStatistics:[
@@ -786,12 +812,12 @@ const skyttere = [
             children:[
             ],
             parents:[
-                ['Pål','palhembre']
+                'palhembre'
             ],
             siblings:[
-                ['Mattis','mattishembre'],
-                ['Ludvik','ludvikhembre'],
-                ['Tim Leo','timleohembre']
+                'mattishembre',
+                'ludvikhembre',
+                'timleohembre'
 
             ]
         },
@@ -802,6 +828,12 @@ const skyttere = [
         },
 
         yearlyStatistics:[
+        ],
+        stasticsLinks:[
+                ['http://fsu.no/issf/alle/tp/tp_paalh.htm','Best resuls'],
+                ['http://fsu.no/issf/alle/sn/sn_paalh.htm','Average'],
+                ['http://fsu.no/issf/alle/ant/st_paalh.htm','Total starts'],
+                ['http://www.fsu.no/issf/iaar/sk/st_mattish.htm','Starts this year']
         ],
 
         bestStatistics:[
@@ -868,7 +900,8 @@ const skyttere = [
 
     }
 ]
-const stottespillere = [
+
+const supporters = [
 {
   name: 'Petter Nydalen',
   alder: 'Age: 28',
@@ -883,9 +916,9 @@ const stottespillere = [
 },
 {
   name: 'This can be you!!',
-  alder: '??',
-  klubb: '??',
-  meritter: '??'
+  alder: 'Age',
+  klubb: 'Club',
+  meritter: 'Merits'
 }
 ]
 
@@ -906,4 +939,32 @@ const sponsors = [
       link:'../kontakt.html'
     }
 
+]
+
+const news = [
+    {
+        header:'Hei egil',
+        text:[
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia',
+            'sfsd'
+        ],
+        img:'bilder/om_oss.png'
+    },
+
+    {
+        header:'Hei egil',
+        text:[
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia',
+            'Egil er boomer'
+        ],
+        img:'bilder/om_oss.png'
+    },
+
+    {
+        header:'Ny førsteplass',
+        text:[
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia'
+        ],
+        img:'bilder/om_oss.png'
+    }
 ]
