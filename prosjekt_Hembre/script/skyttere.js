@@ -322,10 +322,14 @@ for (let i = 0; i < persons.length; i++) {
 
     const infoDiv = makeInfoDiv(skytter)
     infoDiv.appendChild(makeAthleteLink(skytter))
-
+    
+    const familyDiv = makeFamilyDiv(skytter,true)
+    const img = makeMainImage(skytter)
+    
     person.appendChild(infoDiv)
-    person.appendChild(makeAboutDiv(skytter,true))
-  }
+    person.appendChild(familyDiv)
+    person.appendChild(img)
+}
 }
 function makeAthleteLink(skytter) {//OBS ikke komplett************************************************
     const a = document.createElement('a')
