@@ -1172,6 +1172,16 @@ p {
   background-color: orange;
   border-radius: 20px;
 }
+.nasjonalStat{
+padding:15px;
+
+}
+.nasjonalStat>a{
+  margin:15px;
+  text-decoration: underline;
+}
+
+
 
 /* Fikse news, og støtttespillere kommer opp som athelete */
 
