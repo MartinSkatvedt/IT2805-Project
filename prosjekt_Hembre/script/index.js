@@ -93,7 +93,6 @@ function createAtletes() {
 function makeAthlete(i) {
     const skytter = skyttere[i]
 
-
     const img = document.createElement('img')
     img.src = skytter.image.mainImage
 
