@@ -122,11 +122,10 @@ const skyttere = [
         ],
 
         stasticsLinks:[
-            {
-                bestResults:'http://fsu.no/issf/alle/tp/tp_paalh.htm',
-                average:'http://fsu.no/issf/alle/sn/sn_paalh.htm',
-                totalStarts:'http://fsu.no/issf/alle/ant/st_paalh.htm'
-            }
+                ['http://fsu.no/issf/alle/tp/tp_paalh.htm','Best resuls'],
+                ['http://fsu.no/issf/alle/sn/sn_paalh.htm','Average'],
+                ['http://fsu.no/issf/alle/ant/st_paalh.htm','Total starts'],
+                ['http://www.fsu.no/issf/iaar/sk/st_mattish.htm','Starts this year']
         ],
 
         bestStatistics:[
@@ -368,11 +367,10 @@ const skyttere = [
             ['http://fsu.no/issf/2010/sk/st_mattish.htm','2010']
         ],
         stasticsLinks:[
-            {
-                bestResults:'http://fsu.no/issf/alle/tp/tp_paalh.htm',
-                average:'http://fsu.no/issf/alle/sn/sn_paalh.htm',
-                totalStarts:'http://fsu.no/issf/alle/ant/st_paalh.htm'
-            }
+                ['http://fsu.no/issf/alle/tp/tp_paalh.htm','Best resuls'],
+                ['http://fsu.no/issf/alle/sn/sn_paalh.htm','Average'],
+                ['http://fsu.no/issf/alle/ant/st_paalh.htm','Total starts'],
+                ['http://www.fsu.no/issf/iaar/sk/st_mattish.htm','Starts this year']
         ],
 
         bestStatistics:[
@@ -539,11 +537,10 @@ const skyttere = [
             ['http://fsu.no/issf/2010/sk/st_ludvikh.htm','2010']
         ],
         stasticsLinks:[
-            {
-                bestResults:'http://fsu.no/issf/alle/tp/tp_paalh.htm',
-                average:'http://fsu.no/issf/alle/sn/sn_paalh.htm',
-                totalStarts:'http://fsu.no/issf/alle/ant/st_paalh.htm'
-            }
+                ['http://fsu.no/issf/alle/tp/tp_paalh.htm','Best resuls'],
+                ['http://fsu.no/issf/alle/sn/sn_paalh.htm','Average'],
+                ['http://fsu.no/issf/alle/ant/st_paalh.htm','Total starts'],
+                ['http://www.fsu.no/issf/iaar/sk/st_mattish.htm','Starts this year']
         ],
 
         bestStatistics:[
@@ -704,11 +701,10 @@ const skyttere = [
             ['http://fsu.no/2014/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm','2014']
         ],
         stasticsLinks:[
-            {
-                bestResults:'http://fsu.no/issf/alle/tp/tp_paalh.htm',
-                average:'http://fsu.no/issf/alle/sn/sn_paalh.htm',
-                totalStarts:'http://fsu.no/issf/alle/ant/st_paalh.htm'
-            }
+                ['http://fsu.no/issf/alle/tp/tp_paalh.htm','Best resuls'],
+                ['http://fsu.no/issf/alle/sn/sn_paalh.htm','Average'],
+                ['http://fsu.no/issf/alle/ant/st_paalh.htm','Total starts'],
+                ['http://www.fsu.no/issf/iaar/sk/st_mattish.htm','Starts this year']
         ],
 
         bestStatistics:[
@@ -834,11 +830,10 @@ const skyttere = [
         yearlyStatistics:[
         ],
         stasticsLinks:[
-            {
-                bestResults:'http://fsu.no/issf/alle/tp/tp_paalh.htm',
-                average:'http://fsu.no/issf/alle/sn/sn_paalh.htm',
-                totalStarts:'http://fsu.no/issf/alle/ant/st_paalh.htm'
-            }
+                ['http://fsu.no/issf/alle/tp/tp_paalh.htm','Best resuls'],
+                ['http://fsu.no/issf/alle/sn/sn_paalh.htm','Average'],
+                ['http://fsu.no/issf/alle/ant/st_paalh.htm','Total starts'],
+                ['http://www.fsu.no/issf/iaar/sk/st_mattish.htm','Starts this year']
         ],
 
         bestStatistics:[

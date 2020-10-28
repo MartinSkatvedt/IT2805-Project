@@ -1313,7 +1313,7 @@ body::-webkit-scrollbar-thumb {
 #familyDiv{
   margin: auto auto auto 0;
 }
-#skytter #familyDiv a {
+#skytter #familyDiv a, #skytter #divLinks a{
   display: block;
 }
 #skytter #familyType > p {

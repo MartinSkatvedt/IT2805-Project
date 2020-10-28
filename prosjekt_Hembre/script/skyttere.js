@@ -37,7 +37,7 @@ function maketopDiv(skytter) {//CREATING THE TOP DIV
 //MAKING 'person_side_info' DIV--------------------------------------------------------
     const infoDiv = makeInfoDiv(skytter)
 
-    //Making familydiv------------------------------------------------
+//Making familydiv------------------------------------------------
     const familyDiv = makeFamilyDiv(skytter)
 
 
@@ -150,7 +150,24 @@ function makeInfoDiv(skytter) {//Ikke ferdig
             const valgt = this.options[this.selectedIndex] // js property
             window.open(valgt.value)
         }
+
+
+        const linker = makeStatLinks(skytter)
+        infoDiv.appendChild(linker)
         return infoDiv
+}
+function makeStatLinks(skytter) {
+    const divLinks = document.createElement('div')
+    divLinks.id = 'divLinks'
+    for (let i = 0; i < skytter.stasticsLinks.length; i++) {
+        const element = skytter.stasticsLinks[i];
+        const a = document.createElement('a')
+        a.target = '_blank'
+        a.innerHTML = element[1]
+        a.href = element[0]
+        divLinks.append(a)        
+    }
+    return divLinks       
 }
 function makeMainImage(skytter) {
     const img = document.createElement('img')
