@@ -31,15 +31,6 @@ function main() {
 
         gch.appendChild(stottespillere)
 
-
-//Supporters----------------------------------------------
-     const supporters = document.createElement('div')
-     supporters.id = 'supporters'
-
-
-//Ikke ferdig
-    gch.appendChild(supporters)
-
 //Main----------------------------------------------------
     main.appendChild(gch)
 
@@ -179,7 +170,7 @@ function createStottespillere() {
     container.className = 'grid-container- stottespillere'
 
     const h1 = document.createElement('h1')
-    h1.innerHTML = ' stottespillere'
+    h1.innerHTML = ' Stottespillere'
     container.appendChild(h1)
 
     for (let i = 0; i <  stottespillere.length; i++) {
