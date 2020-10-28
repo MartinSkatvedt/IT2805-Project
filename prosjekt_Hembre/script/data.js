@@ -57,10 +57,10 @@ const skyttere = [
 
         family:{
             children:[
-                ['Mattis','mattishembre'],
-                ['Ludvik','ludvikhembre'],
-                ['Tim Leo','timleohembre'],
-                ['Leonel','leonelhembre']
+                'mattishembre',
+                'ludvikhembre',
+                'timleohembre',
+                'leonelhembre'
             ],
             parents:[
 
@@ -335,9 +335,9 @@ const skyttere = [
                 ['Pål','palhembre']
             ],
             siblings:[
-                ['Ludvik','ludvikhembre'],
-                ['Tim Leo','timleohembre'],
-                ['Leonel','leonelhembre']
+                'ludvikhembre',
+                'timleohembre',
+                'leonelhembre'
 
             ]
         },
@@ -499,9 +499,9 @@ const skyttere = [
                 ['Pål','palhembre']
             ],
             siblings:[
-                ['Mattis','mattishembre'],
-                ['Tim Leo','timleohembre'],
-                ['Leonel','leonelhembre']
+                'mattishembre',
+                'timleohembre',
+                'leonelhembre'
 
             ]
         },
@@ -662,9 +662,9 @@ const skyttere = [
                 ['Pål','palhembre']
             ],
             siblings:[
-                ['Mattis','mattishembre'],
-                ['Ludvik','ludvikhembre'],
-                ['Leonel','leonelhembre']
+                'mattishembre',
+                'ludvikhembre',
+                'leonelhembre'
             ]
         },
 
@@ -790,9 +790,9 @@ const skyttere = [
                 ['Pål','palhembre']
             ],
             siblings:[
-                ['Mattis','mattishembre'],
-                ['Ludvik','ludvikhembre'],
-                ['Tim Leo','timleohembre']
+                'mattishembre',
+                'ludvikhembre',
+                'timleohembre'
 
             ]
         },
