@@ -1,8 +1,11 @@
-function createSite(skytterIndex) {
-    const index = getIndex()//GETING THE INDEX OF THE SHOOTER
-    if (index == -1) return //Retruns if it doesnt find an index
+function createSite() {
+    let index = getIndex()//GETING THE INDEX OF THE SHOOTER
+    if (index == -1) {
+        index = 0
+    }
+    //Retruns if it doesnt find an index
 
-    const skytter = skyttere[skytterIndex]
+    const skytter = skyttere[index]
     const main = document.querySelector('main')
     main.id = 'skytter'
 //    main.innerHTML = ''
