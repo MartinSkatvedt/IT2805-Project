@@ -1207,7 +1207,7 @@ p {
   
 }
 
-.flex-container-news {
+#flex-container-news {
   display: flex;
   flex-flow: column wrap;
   width: 90%;
@@ -1274,7 +1274,7 @@ p {
 }
 
 /* nederste nyhetsbokser */
-.grid-container-newsbox{
+#news-div{
   display: grid;
   grid-template-rows: 50% 50%;
   grid-template-columns: 50% 50%;
@@ -1282,54 +1282,41 @@ p {
   height: 800px;
   margin-left: auto;
   margin-right: auto;
-  column-gap: 20px;
   background-color: rgb(170, 168, 168);
   border-radius: 3px 3px 0 0;
+  margin-top: 10%;
 
 }
 
 
-.box_img {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
 
-.box_img>img {
+#news-img {
   display: block;
-  width: 80%;
+  width: 85%;
   height: 85%;
   margin-top: 10%;
   margin-right: 15%;
   margin-left: auto;
   border: 2px solid var(--element-background);
-  
-
-}
-
-
-.box_text {
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
-  text-align: center;
-  margin-left: 15%;
-  margin-top: 15%;
 
 }
 
-.news_text {
+#textbox {
   font-size: 30px;
   line-height: 150%;
+  margin-left: 10%;
 
 }
 
-.news_headline {
-  position: relative;
-  font-size: 50px;
+#textbox > h2 {
+  font-size: 40px;
 }
+
+
 
 .nasjonalStat{
 padding:15px;

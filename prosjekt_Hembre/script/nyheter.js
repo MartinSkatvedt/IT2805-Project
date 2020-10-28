@@ -1,36 +1,34 @@
+function writeNews() {
+    const main = document.querySelector('main')
+    const newsContainer = document.createElement('div')
+    newsContainer.id = 'news-container'
+    for (let i = 0; i < news.length; i++) {
+        const element = news[i];
+        const newsDiv = document.createElement('div')
+        newsDiv.id = 'news-div'
 
-const bilder = {
-    
-    slideShow:[
-        'bilder/om1.jpg',
-        'bilder/om2.jpg',
-        'bilder/om4.jpg',
-        'bilder/om5.jpg',
-        'bilder/om6.jpg',
-        'bilder/om7.jpg'
-    ],
+        const header = document.createElement('h2')
+        header.innerHTML = element.header 
+
+        const img = document.createElement('img')
+        img.src = element.img
+        img.id = 'news-img'
+
+        const textDiv = document.createElement('div')
+        textDiv.id = 'textbox'
+        
+        textDiv.appendChild(header)
+        for (const paragraph of element.text) {
+            const p = document.createElement('p')
+            p.innerHTML = paragraph
+            textDiv.appendChild(p)
+        }
+
+        newsDiv.appendChild(img)
+        newsDiv.appendChild(textDiv)
+
+        newsContainer.appendChild(newsDiv)
+        main.appendChild(newsContainer)
+    }
+
 }
-
-const news = [
-    {
-        img: "bilder/om oss....",
-
-        text: [
-            'fsdfksamfsfmagdfsagmsa',
-            'sfsaffsaf'
-        ]
-
-        article:{
-            news_headline:"?????"
-            news_text: "?????"
-
-        },
-
-        class: "box_img",
-            
-        imgage:{
-            ??????
-        },
-
-    },
-]
