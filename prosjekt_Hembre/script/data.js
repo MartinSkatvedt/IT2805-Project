@@ -955,7 +955,7 @@ const news = [
         header:'Hei egil',
         text:[
             'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia',
-            'sfsd'
+            'Egil er boomer'
         ],
         img:'bilder/om_oss.png'
     },
