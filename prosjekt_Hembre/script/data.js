@@ -942,5 +942,29 @@ const sponsors = [
 ]
 
 const news = [
+    {
+        header:'Hei egil',
+        text:[
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia',
+            'sfsd'
+        ],
+        img:'bilder/om_oss.png'
+    },
 
+    {
+        header:'Hei egil',
+        text:[
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia',
+            'sfsd'
+        ],
+        img:'bilder/om_oss.png'
+    },
+
+    {
+        header:'Ny førsteplass',
+        text:[
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia'
+        ],
+        img:'bilder/om_oss.png'
+    }
 ]

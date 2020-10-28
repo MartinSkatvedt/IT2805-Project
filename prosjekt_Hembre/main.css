@@ -1328,3 +1328,15 @@ body::-webkit-scrollbar-thumb {
 #skytter #familyType:first-child {
   margin-top: 0;
 }
+
+
+
+/* Egil news---------------------- */
+
+#news-div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#new-div img{
+  width: 80%;
+}
