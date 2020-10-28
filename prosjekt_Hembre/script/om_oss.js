@@ -5,7 +5,7 @@ let link = document.querySelectorAll(".link");
 
 
 for navn of link{
-
+link.inn
 }
 
 for løkke gjennom family.about.surName
