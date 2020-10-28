@@ -332,7 +332,7 @@ const skyttere = [
             children:[
             ],
             parents:[
-                ['Pål','palhembre']
+                'palhembre'
             ],
             siblings:[
                 'ludvikhembre',
@@ -496,7 +496,7 @@ const skyttere = [
             children:[
             ],
             parents:[
-                ['Pål','palhembre']
+                'palhembre'
             ],
             siblings:[
                 'mattishembre',
@@ -659,7 +659,7 @@ const skyttere = [
             children:[
             ],
             parents:[
-                ['Pål','palhembre']
+                'palhembre'
             ],
             siblings:[
                 'mattishembre',
@@ -787,7 +787,7 @@ const skyttere = [
             children:[
             ],
             parents:[
-                ['Pål','palhembre']
+                'palhembre'
             ],
             siblings:[
                 'mattishembre',

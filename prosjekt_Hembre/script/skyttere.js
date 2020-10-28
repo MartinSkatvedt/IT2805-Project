@@ -186,11 +186,12 @@ function makeFamilyTypeLinks(familyType, local) {
     return div
 }
 function makePersonLink(individual, local) {
-    const familyIndex = findIndex(individual)
-    const name = skyttere[familyIndex].about.surName
+    const family = skyttere[findIndex(individual)]
+    const name = family.about.surName
+    const familyId = family.id
     const a = document.createElement('a')
-    a.href = 'skyttere.html?skytter='+ individual[1]
-    if (local) a.href = '#'+individual[1]
+    a.href = 'skyttere.html?skytter='+ familyId
+    if (local) a.href = '#'+familyId
     a.innerHTML = name
     return a
 }
