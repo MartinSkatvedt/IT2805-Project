@@ -2,6 +2,7 @@
 const bilder = {
     pal: {
         mainImgage: 'bilder/pal.jpg',
+        mainImgage2: 'bilder/pal.png',
       },
     mattis: {
         mainImgage: 'bilder/mattis.jpg',
@@ -868,7 +869,8 @@ const skyttere = [
 
     }
 ]
-const stottespillere = [
+
+const supporters = [
 {
   name: 'Petter Nydalen',
   alder: 'Age: 28',
@@ -905,5 +907,9 @@ const sponsors = [
       img:bilder.sponsors.ny_spons,
       link:'../kontakt.html'
     }
+
+]
+
+const news = [
 
 ]

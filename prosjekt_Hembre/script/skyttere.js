@@ -4,6 +4,7 @@ function createSite(skytterIndex) {
 
     const skytter = skyttere[skytterIndex]
     const main = document.querySelector('main')
+    main.id = 'skytter'
 //    main.innerHTML = ''
 
 //CHANGING TITLE------------------------------------------------------------
@@ -29,12 +30,20 @@ function maketopDiv(skytter) {//CREATING THE TOP DIV
 //MAKING THE ABOUTDIV----------------------------------------------------------
     const aboutDiv = makeAboutDiv(skytter)
 
+
 //MAKING 'person_side_info' DIV--------------------------------------------------------
     const infoDiv = makeInfoDiv(skytter)
+    
+    //Making familydiv------------------------------------------------
+    const familyDiv = makeFamilyDiv(skytter)
 
+    
+    
 //APPENDING------------------------------------------------------------------------
     topDiv.appendChild(aboutDiv)
     topDiv.appendChild(infoDiv)
+    topDiv.appendChild(familyDiv)
+
 
     return topDiv
 }
@@ -75,8 +84,8 @@ function makeAboutDiv(skytter,local = false) {
     aboutDiv.appendChild(img)
 
 //FAMILY----------------------------------------------------------
-    const familyDiv = makeFamilyDiv(skytter,local)
-    aboutDiv.appendChild(familyDiv)
+    // const familyDiv = makeFamilyDiv(skytter,local)
+    // aboutDiv.appendChild(familyDiv)
     return aboutDiv
 }
 function makeInfoDiv(skytter) {//Ikke ferdig
@@ -313,10 +322,14 @@ for (let i = 0; i < persons.length; i++) {
 
     const infoDiv = makeInfoDiv(skytter)
     infoDiv.appendChild(makeAthleteLink(skytter))
-
+    
+    const familyDiv = makeFamilyDiv(skytter,true)
+    const img = makeMainImage(skytter)
+    
     person.appendChild(infoDiv)
-    person.appendChild(makeAboutDiv(skytter,true))
-  }
+    person.appendChild(familyDiv)
+    person.appendChild(img)
+}
 }
 function makeAthleteLink(skytter) {//OBS ikke komplett************************************************
     const a = document.createElement('a')
