@@ -4,6 +4,7 @@ function createSite(skytterIndex) {
 
     const skytter = skyttere[skytterIndex]
     const main = document.querySelector('main')
+    main.id = 'skytter'
 //    main.innerHTML = ''
 
 //CHANGING TITLE------------------------------------------------------------
@@ -29,12 +30,20 @@ function maketopDiv(skytter) {//CREATING THE TOP DIV
 //MAKING THE ABOUTDIV----------------------------------------------------------
     const aboutDiv = makeAboutDiv(skytter)
 
+
 //MAKING 'person_side_info' DIV--------------------------------------------------------
     const infoDiv = makeInfoDiv(skytter)
+    
+    //Making familydiv------------------------------------------------
+    const familyDiv = makeFamilyDiv(skytter)
 
+    
+    
 //APPENDING------------------------------------------------------------------------
     topDiv.appendChild(aboutDiv)
     topDiv.appendChild(infoDiv)
+    topDiv.appendChild(familyDiv)
+
 
     return topDiv
 }
@@ -75,8 +84,8 @@ function makeAboutDiv(skytter,local = false) {
     aboutDiv.appendChild(img)
 
 //FAMILY----------------------------------------------------------
-    const familyDiv = makeFamilyDiv(skytter,local)
-    aboutDiv.appendChild(familyDiv)
+    // const familyDiv = makeFamilyDiv(skytter,local)
+    // aboutDiv.appendChild(familyDiv)
     return aboutDiv
 }
 function makeInfoDiv(skytter) {//Ikke ferdig
