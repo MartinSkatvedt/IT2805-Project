@@ -2,7 +2,6 @@ document.write(`
 <div id="navbar">
 <div class="logo_nav" >
 <a href="./index.html"><img src="bilder/logo2.svg" alt=""></a>
-
 </div>
   <div class="navBarElement" id="utoverElement">
     <a href="#">Athletes</a>
