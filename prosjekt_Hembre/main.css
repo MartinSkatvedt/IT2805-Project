@@ -1134,6 +1134,9 @@ footer{
   /* margin-top: 20px; */
   background-color: var(--nav-color);
 }
+footer a{
+  display: block;
+}
 
 .logo_footer {
   margin: 0px;
@@ -1287,9 +1290,6 @@ body::-webkit-scrollbar-thumb {
   background-color: grey;    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 3px solid ;  /* creates padding around scroll thumb */
-}
-footer a{
-  display: block;
 }
 
 #skytter #grid_container_stats {
