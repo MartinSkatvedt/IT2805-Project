@@ -1288,7 +1288,9 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 3px solid ;  /* creates padding around scroll thumb */
 }
-
+footer a{
+  display: block;
+}
 
 #skytter #grid_container_stats {
   margin-top: 20px;
