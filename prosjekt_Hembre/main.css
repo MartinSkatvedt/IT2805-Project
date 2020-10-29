@@ -23,9 +23,10 @@ body {
 }
 
 .grid-container-hjem {
-  /* margin-top: 30px;  */
+   margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 20px;
   /* grid-column-gap: 1%; */
 }
 
@@ -545,12 +546,12 @@ main {
 }
 
 /* Style the tab buttons */
-.navn_header {
+.navn_header>div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.navn_header{
+.navn_header>div{
 width: 100%;
 bottom:0px;
 position: absolute;
@@ -566,8 +567,6 @@ position: absolute;
     cursor: pointer;
     padding: 24px 16px;
     font-size: 17px;
-
-
 }
 
 @media only screen and (max-width: 900px) {
@@ -742,7 +741,7 @@ main {
 }
 
 /* #pal_info>ul {
-  list-style-type: none;
+  -style-type: none;
   font-size: 22px;
   margin: 0px;
 }

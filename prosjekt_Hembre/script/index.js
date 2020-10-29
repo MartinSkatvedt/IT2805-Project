@@ -70,7 +70,6 @@ function makeSponsor(i) {
     a.appendChild(img)
     div.appendChild(a)
     return div
-
 }
 
 
