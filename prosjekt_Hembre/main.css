@@ -1134,6 +1134,9 @@ footer{
   /* margin-top: 20px; */
   background-color: var(--nav-color);
 }
+footer a{
+  display: block;
+}
 
 .logo_footer {
   margin: 0px;
@@ -1143,7 +1146,7 @@ footer{
 
 .footer-container-one {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   border-bottom: var(--border-color) 0.4px solid;
 }
 
@@ -1192,6 +1195,129 @@ p {
   background-color: orange;
   border-radius: 20px;
 }
+
+/* Lagt til fra news.css. Noe av slideshow gjentas her og kan fjernes. */
+
+.news_body {
+  font-family: "Arial","Times new roman", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--font-size);
+  text-align: center;
+  
+}
+
+#flex-container-news {
+  display: flex;
+  flex-flow: column wrap;
+  width: 90%;
+  margin: auto;
+  background-color:var(--element-background);
+}
+
+
+.flex-container-news>div {
+  background-color: var(--element-background);
+  padding: 2%;
+}
+
+
+.slides {
+  /* for at siden skal lastes bedre/finere */
+  display: hidden;
+  
+}
+
+.slides>img {
+  /* vertical-align: middle; */
+  height: 100%;
+  width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container-news {
+  position: relative;
+  overflow: hidden;
+  height: 30vw;
+  background-color: var(--secondary-background-color);
+  border-radius: 3px 3px 0 0;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+/* Caption text */
+.slides>.text {
+  color: var(--secondary-teks-color);
+  background-color: var(--secondary-background-color);
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+.buttonsSlides * {
+  padding: 0 2ch;
+  cursor: pointer;
+  font-weight: 900;
+  border-radius: 10%;
+  border-radius: 0 0 10px 10px;
+  margin: 0 10%;
+}
+
+.buttonsSlides>*:hover{
+  background-color: var(--button-color);
+  cursor: pointer;
+}
+
+/* nederste nyhetsbokser */
+#news-div{
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  width: 90%;
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(170, 168, 168);
+  border-radius: 3px 3px 0 0;
+  margin-top: 10%;
+
+}
+
+
+
+#news-img {
+  display: block;
+  width: 85%;
+  height: 85%;
+  margin-top: 10%;
+  margin-right: 15%;
+  margin-left: auto;
+  border: 2px solid var(--element-background);
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+}
+
+#textbox {
+  font-size: 30px;
+  line-height: 150%;
+  margin-left: 10%;
+
+}
+
+#textbox > h2 {
+  font-size: 40px;
+}
+
+
+
 .nasjonalStat{
 padding:15px;
 
@@ -1289,7 +1415,6 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid ;  /* creates padding around scroll thumb */
 }
 
-
 #skytter #grid_container_stats {
   margin-top: 20px;
   padding-top: 20px;
@@ -1325,4 +1450,16 @@ body::-webkit-scrollbar-thumb {
 }
 #skytter #familyType:first-child {
   margin-top: 0;
+}
+
+
+
+/* Egil news---------------------- */
+
+#news-div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#new-div img{
+  width: 80%;
 }
