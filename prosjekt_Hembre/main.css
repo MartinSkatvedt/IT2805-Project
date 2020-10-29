@@ -1,3 +1,8 @@
+/*
+START GLOBALE CSS FUNKSJONER
+ */
+
+
 :root {
   --background-color: #d3ebeb;
   --nav-color: #e8ffff;
@@ -21,6 +26,36 @@ body {
   margin: auto;
   font-size: var(--font-size);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+main {
+  font-family: "Arial", "Times new roman", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  width: 100%;
+  margin: auto;
+  font-size: var(--font-size);
+  margin: 0% auto;
+}
+main {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  width: 90%;
+  margin: auto;
+}
+/*
+SLUTT GLOBALE CSS FUNKSJONER
+ */
+
+/*
+START INDEX
+ */
+
 
 .grid-container-hjem {
    margin-top: 30px;
@@ -93,7 +128,7 @@ text-decoration: none;
 width: 100%;
 }
 .sponsor:last-child img{
-  height: 150px;
+  height: 10vh;
 }
 
 
@@ -224,34 +259,11 @@ text-decoration: none;
     opacity: 1;
   }
 }
-
-
-
-
-@media (max-width: 600px) {
-
-  /*Big smartphones [426px -> 600px]*/
-  #center {
-    grid-row: 1;
-  }
-
-  .grid-container-athletes {
-    grid-gap: 5px;
-  }
-
-  .grid-container-hjem {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 425px) {
-
-  /*Small smartphones [325px -> 425px]*/
-  .grid-container-athletes {
-    grid-template-columns: 1fr;
-  }
-}
-
+/*
+SLUTT INDEX*/
+/*
+START NAVBAR
+ */
 #navbar {
   display: flex;
   text-align: left;
@@ -406,33 +418,18 @@ text-decoration: none;
   height: 50%;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
-/*css for hele body når den er større enn 600px starter under her*/
-@media only screen and (min-width: 600px) {
-  body {
-    /*gjør slik at det ikke er noe avstand mellom body og det som er utenfor*/
-    margin: 0px;
-    top: 0px;
-    /*gir body en bakgrunnsfarge*/
-  }
-}
-
-main {
-  font-family: "Arial", "Times new roman", sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  width: 100%;
-  margin: auto;
-  font-size: var(--font-size);
-  margin: 0% auto;
-}
 
 .index_body {
   text-align: center
 }
+/*
+SLUTT NAVBAR
+ */
+
+/*
+START OM OSS
+*/
 
 /*css for hele delen over søkemotoren av header når den er større enn 600px starter under her*/
 .header_øverst {
@@ -455,12 +452,6 @@ main {
   padding: 12px 28px;
   font-style: monospace;
   text-decoration: none;
-}
-
-@media only screen and (max-height: 660px) {
-  .knapp_header {
-    display: none;
-  }
 }
 
 .knapp_header>a:hover {
@@ -575,22 +566,6 @@ position: absolute;
     font-size: 17px;
 }
 
-@media only screen and (max-width: 900px) {
-.knapp_header{
-  display: none;
-}
-#header_om_oss{
-  height: 20vh;
-  background-image: none;
-}
-.navn_header{
-  display: none;
-}
-.header_øverst{
-  display: none;
-}
-}
-
 /* Change background color of buttons on hover */
 .link:hover {
   background-color: #777;
@@ -600,17 +575,12 @@ h1 {
   font-size: 3vw;
 }
 
+
 /* Style each tab content individually */
 .tekst_om {
   margin-bottom: 50px;
 }
 
-main {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  width: 90%;
-  margin: auto;
-}
 
 #vunnet {
   display: grid;
@@ -659,16 +629,7 @@ main {
   margin: 0;
   width: 100%;
 }
-@media only screen and (max-width: 1200px) {
-  #pal_info>ul>li {
-    font-size: 1.5vw;
-  }
 
-  #alle_utovere>div>img {
-    width: 150px;
-    height: 250px;
-  }
-}
 .hembre {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -746,43 +707,6 @@ main {
   margin: 0px;
 }
 
-/* #pal_info>ul {
-  -style-type: none;
-  font-size: 22px;
-  margin: 0px;
-}
-
-#pal_bilder {
-  display: block;
-  margin: auto;
-  text-align: center;
-} */
-
-/* #pal_info > ul > li > a,
-#pal_info > p > a {
-  color: black;
-  text-decoration: none;
-}
-#pal_info > ul > li > a:hover,
-#pal_info > p > a:hover {
-  text-decoration: underline;
-} */
-/* h3 > a {
-  color: black;
-  text-decoration: none;
-  padding: 7px;
-  border-style: ridge;
-  font-size: 1.5vw;
-  background-color: lightblue;
-  border-color: lightblue;
-  border-radius: 2px;
-}
-h3 > a:hover {
-  background-color: green;
-  border-color: green;
-  transition-duration: 1s;
-} */
-
 #dp_meny {
   background-color: inherit;
   border-color: var(--text-color);
@@ -796,8 +720,6 @@ h3 > a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-
-
 
 #formContainer {
   background-color: #fff0f0;
@@ -819,7 +741,6 @@ h3 > a:hover {
 #contactForm {
   display: grid;
 }
-
 .gridElement {
   margin-top: 4%;
   width: 60%;
@@ -830,6 +751,9 @@ h3 > a:hover {
 .gridElement>input{
   padding-top: 10px;
 }
+/*
+SLUTT OM OSS:
+*/
 
 /*
 SKYTER UNDERSIDENE:
@@ -948,7 +872,9 @@ td {
 SLUTT UNDERSKYTESIDER
 */
 
-
+/*
+START KONTAKT OSS
+*/
 input,
 textarea {
   border: 2px solid var(--border-color);
@@ -1025,6 +951,13 @@ textarea {
   height: 100px;
   width: 100%;
 }
+/*
+SLUTT KONTAKT OSS
+*/
+
+/*
+START SPONSOR
+*/
 
 .main_sponsor h1 {
   padding-top: 10px;
@@ -1128,15 +1061,13 @@ textarea {
 
 .spons-grid-two .tom .fyll {}
 
-@media only screen and (max-width: 900px) {
-  .pil {
-    display: none;
-  }
+  /*
+  SLUTT SPONSOR
+  */
 
-  .main_sponsor {
-    width: 100%;
-  }
-}
+  /*
+  START FOOTER
+  */
 
 footer{
   /* margin-top: 20px; */
@@ -1203,7 +1134,13 @@ p {
   background-color: orange;
   border-radius: 20px;
 }
+/*
+SLUTT FOOTER
+*/
 
+/*
+START NYHETER
+*/
 /* Lagt til fra news.css. Noe av slideshow gjentas her og kan fjernes. */
 
 .news_body {
@@ -1471,3 +1408,108 @@ body::-webkit-scrollbar-thumb {
 #new-div img{
   width: 80%;
 }
+
+
+/*
+START RESPONSIVE MEDIAQUERYS
+*/
+
+
+
+@media (max-width: 405px) {
+
+  /*Small smartphones [325px -> 425px]*/
+  .grid-container-athletes {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/*css for hele body når den er større enn 600px starter under her*/
+@media only screen and (min-width: 600px) {
+  body {
+    /*gjør slik at det ikke er noe avstand mellom body og det som er utenfor*/
+    margin: 0px;
+    top: 0px;
+    /*gir body en bakgrunnsfarge*/
+  }
+  .knapp_header {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+.knapp_header{
+  display: none;
+}
+#header_om_oss{
+  height: 20vh;
+  background-image: none;
+}
+.navn_header{
+  display: none;
+}
+.header_øverst{
+  display: none;
+}
+.logo_footer{
+  display: none;
+}
+
+.footer-container-one>ul{
+  display: none
+}
+
+.footer-container-one ul li p a{
+  font-size: 14px;
+}
+
+/*Big smartphones [426px -> 600px]*/
+#center {
+  grid-row: 1;
+}
+
+.grid-container-athletes {
+  grid-gap: 5px;
+}
+
+.grid-container-hjem {
+  grid-template-columns: 1fr;
+}
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+  #pal_info>ul>li {
+    font-size: 1.5vw;
+  }
+
+  #alle_utovere>div>img {
+    width: 150px;
+    height: 250px;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 4vh;
+  }
+  .pil {
+    display: none;
+  }
+
+  .main_sponsor {
+    width: 100%;
+  }
+}
+
+
+
+
+
+/*
+SLUTT RESPONSIVE MEDIAQUERYS
+*/
