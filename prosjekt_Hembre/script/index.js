@@ -25,8 +25,8 @@ function main() {
 
 //Supporters----------------------------------------------
     const  supporters = document.createElement('div')
-        supporters.id = 'supporters'
-        supporters.appendChild(createSupporters())
+    supporters.id = 'supporters'
+    supporters.appendChild(createSupporters())
 
 
     gch.appendChild(supporters)
