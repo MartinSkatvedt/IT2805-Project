@@ -1,5 +1,5 @@
-document.write(`
-    <footer>
+// document.write(`
+//     <footer>
 
       <div class="footer-container-one">
       </div>
@@ -13,7 +13,7 @@ document.write(`
           <p>Phone: +47 42069666</p>
           <p>Fax: +47 323 555 1234</p>
 
-        </div>
+//         </div>
 
         <p></p>
 
@@ -21,10 +21,10 @@ document.write(`
 
           <a href="#">Link til nasjonal pistol statistikk: fsu.no</a>
 
-        </div>
+//         </div>
 
 
-      </div>
+//       </div>
 
     </footer>`)
 
@@ -51,7 +51,7 @@ document.write(`
             <li><a href="${skyttere[i].stasticsLinks[3][0]}">${skyttere[i].stasticsLinks[3][1]}</a></li>
           </ul>
 
-        </div>
+//         </div>
 
 
         `
