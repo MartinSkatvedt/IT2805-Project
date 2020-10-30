@@ -19,7 +19,7 @@
 
         <div class="nasjonalStat">
 
-          <a href="#">Link til nasjonal pistol statistikk: fsu.no</a>
+          <a href="http://www.fsu.no/issf/index.htm">Link til nasjonal pistol statistikk: fsu.no</a>
 
          </div>
 
@@ -60,7 +60,7 @@
         </div>
 
           <ul>
-            <li><p id="footer_contact"><a href="./kontakt.html">Contact Us</a></p></li>
+            <li><p id="footer_contact"><a href="kontakt.html">Contact Us</a></p></li>
           </ul>
 
         </div>
