@@ -635,14 +635,14 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.hembre:nth-child(1n) {
+.hembre:nth-child(2n) {
   background-color: #ffcc99;
 }
 
-.hembre:nth-child(2n) {
+.hembre:nth-child(2n-1) {
   background-color: #ffb366;
 }
-
+/* 
 .hembre:nth-child(3n) {
   background-color: #ff9933;
 }
@@ -652,7 +652,7 @@ h1 {
 }
 .hembre:nth-child(5n) {
   background-color: #ff7000;
-}
+} */
 
 .hembre a {
   display: block;
@@ -1059,7 +1059,6 @@ START SPONSOR
   height: 500px;
 }
 
-.spons-grid-two .tom .fyll {}
 
   /*
   SLUTT SPONSOR
@@ -1269,7 +1268,7 @@ padding:15px;
 }
 .nasjonalStat>a{
   margin:15px;
-  text-decoration: underline;
+  text-decoration: underline;
 }
 
 
