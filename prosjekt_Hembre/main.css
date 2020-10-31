@@ -1181,7 +1181,7 @@ START NYHETER
   grid-template-rows: 50% 50%;
   grid-template-columns: 50% 50%;
   width: 90%;
-  height: 600px;
+  height: 700px;
   margin-left: auto;
   margin-right: auto;
   background-color: rgb(182, 181, 181);
@@ -1195,8 +1195,8 @@ START NYHETER
   display: block;
   width: 85%;
   height: 85%;
-  margin-top: 10%;
-  margin-right: 15%;
+  margin-top: 8%;
+  margin-right: 10%;
   margin-left: auto;
   border: 2px solid var(--element-background);
   grid-column-start: 2;
