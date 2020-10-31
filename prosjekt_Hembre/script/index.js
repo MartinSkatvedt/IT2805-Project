@@ -115,6 +115,7 @@ function makeAthlete(i) {
 function createSlideshow() {
     const container = document.createElement('div')
     container.className = 'slideshow-container'
+    
 
     for (let i = 0; i < bilder.slideShow.length; i++) {
         container.appendChild(makeSlide(i))
@@ -124,8 +125,9 @@ function createSlideshow() {
 function makeSlide(i) {
     const src = bilder.slideShow[i]
 
-    const divSlides = document.createElement('div')
-    divSlides.className = 'slides fade'
+    const aSlides = document.createElement('a')
+    aSlides.className = 'slides fade'
+    aSlides.id = 
 
     const img = document.createElement('img')
     img.src = src
@@ -134,10 +136,10 @@ function makeSlide(i) {
     textDiv.className = 'text'
     textDiv.innerHTML = 'Tekst her'
 
-    divSlides.appendChild(img)
-    divSlides.appendChild(textDiv)
+    aSlides.appendChild(img)
+    aSlides.appendChild(textDiv)
 
-    return divSlides
+    return aSlides
 }
 function createSlideshowButtons() {
 
