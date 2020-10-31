@@ -5,11 +5,11 @@ function writeNews() {
     for (let i = 0; i < news.length; i++) {
         const element = news[i];
         const newsDiv = document.createElement('div')
-        newsDiv.id = 'news-div'
+        newsDiv.className = 'news-div'
+        newsDiv.id = element.id
 
         const header = document.createElement('h2')
         header.innerHTML = element.header
-        header.id = element.id
 
         const img = document.createElement('img')
         img.src = element.img

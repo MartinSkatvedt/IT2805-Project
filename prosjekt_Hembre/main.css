@@ -1176,7 +1176,7 @@ START NYHETER
 
 
 /* nederste nyhetsbokser */
-#news-div{
+.news-div{
   display: grid;
   grid-template-rows: 50% 50%;
   grid-template-columns: 50% 50%;
