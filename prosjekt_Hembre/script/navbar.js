@@ -25,19 +25,27 @@ document.write(`
 <div id="submenus">
   <div class="submenu" id="submenu_1">
     <div class="submenuElement_1">
-      <a href="./skyttere.html?skytter=palhembre">Pål Hembre</a>
+      <a href="./skyttere.html?skytter=palhembre">${
+        skyttere[0].about.surName + " " + skyttere[0].about.lastName
+      }</a>
       <hr class="underline" />
     </div>
     <div class="submenuElement_1">
-      <a href="./skyttere.html?skytter=mattishembre">Mattis Hembre</a>
+      <a href="./skyttere.html?skytter=mattishembre">${
+        skyttere[1].about.surName + " " + skyttere[1].about.lastName
+      }</a>
       <hr class="underline" />
     </div>
     <div class="submenuElement_1">
-      <a href="./skyttere.html?skytter=ludvikhembre">Ludvik Hembre</a>
+      <a href="./skyttere.html?skytter=ludvikhembre">${
+        skyttere[2].about.surName + " " + skyttere[2].about.lastName
+      }</a>
       <hr class="underline" />
     </div>
     <div class="submenuElement_1">
-      <a href="./skyttere.html?skytter=timleohembre">Tim Leo Hembre</a>
+      <a href="./skyttere.html?skytter=timleohembre">${
+        skyttere[3].about.surName + " " + skyttere[3].about.lastName
+      }</a>
     </div>
   </div>
 
