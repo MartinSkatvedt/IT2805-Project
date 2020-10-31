@@ -117,24 +117,25 @@ function createSlideshow() {
     container.className = 'slideshow-container'
     
 
-    for (let i = 0; i < bilder.slideShow.length; i++) {
+    for (let i = 0; i < news.length; i++) {
         container.appendChild(makeSlide(i))
     }
+    console.log(container);
     return container
 }
 function makeSlide(i) {
-    const src = bilder.slideShow[i]
-
+    const article = news[i]
     const aSlides = document.createElement('a')
     aSlides.className = 'slides fade'
-    aSlides.id = 
+    aSlides.href = 'nyheter.html#'+article.id
 
+    
     const img = document.createElement('img')
-    img.src = src
+    img.src = article.img
 
     const textDiv = document.createElement('div')
     textDiv.className = 'text'
-    textDiv.innerHTML = 'Tekst her'
+    textDiv.innerHTML = article.header
 
     aSlides.appendChild(img)
     aSlides.appendChild(textDiv)

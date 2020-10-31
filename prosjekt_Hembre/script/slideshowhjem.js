@@ -29,6 +29,8 @@ function nextSlide(n) {
     }
 
     slideIndex += n
+    console.log(slides);
+    console.log(slideIndex);
 
     if (slideIndex >= slides.length) {
         slideIndex = 0
