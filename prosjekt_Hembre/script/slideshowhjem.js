@@ -29,13 +29,15 @@ function nextSlide(n) {
     }
 
     slideIndex += n
+    console.log(slides);
+    console.log(slideIndex);
 
     if (slideIndex >= slides.length) {
         slideIndex = 0
     }
 
-    if (slideIndex < 0) {
-        slideIndex = slides.length - 1
-    }
+    // if (slideIndex < 0) {
+    //     slideIndex = slides.length - 1
+    // }
     slides[slideIndex].style.display = "block";
 }

@@ -15,7 +15,7 @@ const bilder = {
   leonel: {
     mainImgage: "bilder/leonel.jpg",
   },
-  slideShow: [
+  newsImg: [
     "bilder/om1.jpg",
     "bilder/om2.jpg",
     "bilder/om4.jpg",
@@ -920,28 +920,31 @@ const sponsors = [
 
 const news = [
   {
+    id:'001',
     header: "Hei egil",
     text: [
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
       "sfsd",
     ],
-    img: "bilder/om_oss.png",
+    img: bilder.newsImg[0],
   },
 
   {
+    id:'002',
     header: "Hei egil",
     text: [
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
       "Egil er boomer",
     ],
-    img: "bilder/om_oss.png",
+    img: bilder.newsImg[1],
   },
 
   {
+    id:'003',
     header: "Ny førsteplass",
     text: [
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
     ],
-    img: "bilder/om_oss.png",
-  },
+    img: bilder.newsImg[2]
+  }
 ];
