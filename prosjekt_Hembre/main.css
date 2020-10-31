@@ -1165,58 +1165,6 @@ START NYHETER
   padding: 2%;
 }
 
-
-.slides {
-  /* for at siden skal lastes bedre/finere */
-  display: hidden;
-
-}
-
-.slides>img {
-  /* vertical-align: middle; */
-  height: 100%;
-  width: 100%;
-}
-
-/* Slideshow container */
-.slideshow-container-news {
-  position: relative;
-  overflow: hidden;
-  height: 30vw;
-  background-color: var(--secondary-background-color);
-  border-radius: 3px 3px 0 0;
-  margin-top: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-}
-
-/* Caption text */
-.slides>.text {
-  color: var(--secondary-teks-color);
-  background-color: var(--secondary-background-color);
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-
-
-.buttonsSlides * {
-  padding: 0 2ch;
-  cursor: pointer;
-  font-weight: 900;
-  border-radius: 10%;
-  border-radius: 0 0 10px 10px;
-  margin: 0 10%;
-}
-
-.buttonsSlides>*:hover{
-  background-color: var(--button-color);
-  cursor: pointer;
-}
-
 /* nederste nyhetsbokser */
 #news-div{
   display: grid;
@@ -1231,8 +1179,6 @@ START NYHETER
   margin-top: 10%;
 
 }
-
-
 
 #news-img {
   display: block;
@@ -1397,16 +1343,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-
-/* Egil news---------------------- */
-
-#news-div{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-#new-div img{
-  width: 80%;
-}
 
 
 /*
