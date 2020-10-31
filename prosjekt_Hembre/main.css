@@ -1140,7 +1140,6 @@ SLUTT FOOTER
 /*
 START NYHETER
 */
-/* Lagt til fra news.css. Noe av slideshow gjentas her og kan fjernes. */
 
 .news_body {
   font-family: "Arial","Times new roman", sans-serif;
@@ -1151,19 +1150,30 @@ START NYHETER
 
 }
 
-#flex-container-news {
+#flex-container-news{
+  background-color: rgb(124, 122, 122);
+  width: 90%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+
+#news-container {
   display: flex;
   flex-flow: column wrap;
-  width: 90%;
+  width: 100%;
   margin: auto;
-  background-color:var(--element-background);
+  background-color: rgb(124, 122, 122);
+
 }
 
 
-.flex-container-news>div {
-  background-color: var(--element-background);
-  padding: 2%;
+#news-site-headline {
+  font-size: 60px;
+  padding: 3%;
+
 }
+
 
 /* nederste nyhetsbokser */
 #news-div{
@@ -1171,14 +1181,15 @@ START NYHETER
   grid-template-rows: 50% 50%;
   grid-template-columns: 50% 50%;
   width: 90%;
-  height: 800px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(170, 168, 168);
+  background-color: rgb(182, 181, 181);
   border-radius: 3px 3px 0 0;
-  margin-top: 10%;
+  margin-bottom: 5%;
 
 }
+
 
 #news-img {
   display: block;
@@ -1205,7 +1216,7 @@ START NYHETER
 #textbox > h2 {
   font-size: 40px;
 }
-
+/*SLUTT NYHETER*/
 
 
 .nasjonalStat{
