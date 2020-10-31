@@ -1140,7 +1140,6 @@ SLUTT FOOTER
 /*
 START NYHETER
 */
-/* Lagt til fra news.css. Noe av slideshow gjentas her og kan fjernes. */
 
 .news_body {
   font-family: "Arial","Times new roman", sans-serif;
@@ -1151,71 +1150,30 @@ START NYHETER
 
 }
 
-#flex-container-news {
+#flex-container-news{
+  background-color: rgb(124, 122, 122);
+  width: 90%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+
+#news-container {
   display: flex;
   flex-flow: column wrap;
-  width: 90%;
+  width: 100%;
   margin: auto;
-  background-color:var(--element-background);
-}
-
-
-.flex-container-news>div {
-  background-color: var(--element-background);
-  padding: 2%;
-}
-
-
-.slides {
-  /* for at siden skal lastes bedre/finere */
-  display: hidden;
+  background-color: rgb(124, 122, 122);
 
 }
 
-.slides>img {
-  /* vertical-align: middle; */
-  height: 100%;
-  width: 100%;
+
+#news-site-headline {
+  font-size: 60px;
+  padding: 3%;
+
 }
 
-/* Slideshow container */
-.slideshow-container-news {
-  position: relative;
-  overflow: hidden;
-  height: 30vw;
-  background-color: var(--secondary-background-color);
-  border-radius: 3px 3px 0 0;
-  margin-top: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-}
-
-/* Caption text */
-.slides>.text {
-  color: var(--secondary-teks-color);
-  background-color: var(--secondary-background-color);
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-
-
-.buttonsSlides * {
-  padding: 0 2ch;
-  cursor: pointer;
-  font-weight: 900;
-  border-radius: 10%;
-  border-radius: 0 0 10px 10px;
-  margin: 0 10%;
-}
-
-.buttonsSlides>*:hover{
-  background-color: var(--button-color);
-  cursor: pointer;
-}
 
 /* nederste nyhetsbokser */
 #news-div{
@@ -1223,15 +1181,14 @@ START NYHETER
   grid-template-rows: 50% 50%;
   grid-template-columns: 50% 50%;
   width: 90%;
-  height: 800px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(170, 168, 168);
+  background-color: rgb(182, 181, 181);
   border-radius: 3px 3px 0 0;
-  margin-top: 10%;
+  margin-bottom: 5%;
 
 }
-
 
 
 #news-img {
@@ -1259,7 +1216,7 @@ START NYHETER
 #textbox > h2 {
   font-size: 40px;
 }
-
+/*SLUTT NYHETER*/
 
 
 .nasjonalStat{
@@ -1397,16 +1354,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-
-/* Egil news---------------------- */
-
-#news-div{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-#new-div img{
-  width: 80%;
-}
 
 
 /*
