@@ -135,7 +135,7 @@ function makeSlide(i) {
 
     const textDiv = document.createElement('div')
     textDiv.className = 'text'
-    textDiv.innerHTML = 'Tekst her'
+    textDiv.innerHTML = article.header
 
     aSlides.appendChild(img)
     aSlides.appendChild(textDiv)
