@@ -127,8 +127,8 @@ function makeSlide(i) {
 
     const aSlides = document.createElement('a')
     aSlides.className = 'slides fade'
-    aSlides.id = 
 
+    
     const img = document.createElement('img')
     img.src = src
 
