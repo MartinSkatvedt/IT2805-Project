@@ -8,7 +8,8 @@ function writeNews() {
         newsDiv.id = 'news-div'
 
         const header = document.createElement('h2')
-        header.innerHTML = element.header 
+        header.innerHTML = element.header
+        header.id = element.id
 
         const img = document.createElement('img')
         img.src = element.img
