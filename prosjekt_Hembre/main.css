@@ -1433,9 +1433,7 @@ START RESPONSIVE MEDIAQUERYS
     top: 0px;
     /*gir body en bakgrunnsfarge*/
   }
-  .knapp_header {
-    display: none;
-  }
+
 }
 
 
@@ -1477,23 +1475,6 @@ START RESPONSIVE MEDIAQUERYS
 .grid-container-hjem {
   grid-template-columns: 1fr;
 }
-
-}
-
-
-@media only screen and (max-width: 1200px) {
-  #pal_info>ul>li {
-    font-size: 1.5vw;
-  }
-
-  #alle_utovere>div>img {
-    width: 150px;
-    height: 250px;
-  }
-}
-
-
-@media only screen and (max-width: 900px) {
   h1 {
     font-size: 4vh;
   }
@@ -1504,8 +1485,29 @@ START RESPONSIVE MEDIAQUERYS
   .main_sponsor {
     width: 100%;
   }
+#alle_utovere>div>img{
+display: none;
 }
+#alle_utovere>div{
+  padding: 100px 0px;
+}
+#alle_utovere{
+  margin:100px;
+}
+}
+@media only screen and (max-width: 1200px) {
+  #pal_info>ul>li {
+    font-size: 1.5vw;
+  }
 
+  #alle_utovere>div>img {
+    width: 150px;
+    height: 250px;
+  }
+  #alle_utovere>div{
+    font-size: 2vh;
+  }
+}
 
 
 
