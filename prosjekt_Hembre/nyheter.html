@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>News</title>
+    <link rel="shortcut icon" href="bilder/logo2.svg" />
+   <link rel="stylesheet" href="main.css">
+  </head>
+
+
+  <body class = "news_body">
+    <script src="script/data.js" charset="utf-8"></script>
+    <script src="script/navbar.js" charset="utf-8"></script>
+
+    <main id="flex-container-news">
+      <h1 id="news-site-headline">NEWS</h1> 
+    </main>
+
+      <!-- <script>
+        var slideIndex = 1;
+               showDivs(slideIndex);
+
+       function plusDivs(n) {
+       showDivs(slideIndex += n);
+       }
+
+       function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("slides");
+           if (n > x.length) {slideIndex = 1}
+           if (n < 1) {slideIndex = x.length} ;
+           for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+           }
+           x[slideIndex-1].style.display = "block";
+           }
+       </script> -->
+
+
+      <script src="script/skyttere.js"></script>
+    <script src="script/nyheter.js"></script>
+    <script src="script/footer.js" charset="utf-8"></script>
+    <script>
+      writeNews()
+    </script>
+  </body>
+</html>

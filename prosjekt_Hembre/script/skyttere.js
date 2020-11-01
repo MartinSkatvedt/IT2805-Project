@@ -1,10 +1,14 @@
-function createSite(skytterIndex) {
-    const index = getIndex()//GETING THE INDEX OF THE SHOOTER
-    if (index == -1) return //Retruns if it doesnt find an index
+function createSite() {
+    let index = getIndex()//GETING THE INDEX OF THE SHOOTER
+    if (index == -1) {
+        index = 0
+    }
+    //Retruns if it doesnt find an index
 
-    const skytter = skyttere[skytterIndex]
+    const skytter = skyttere[index]
     const main = document.querySelector('main')
-    main.innerHTML = ''
+    main.id = 'skytter'
+//    main.innerHTML = ''
 
 //CHANGING TITLE------------------------------------------------------------
     changeTitle(skytter)
@@ -29,12 +33,20 @@ function maketopDiv(skytter) {//CREATING THE TOP DIV
 //MAKING THE ABOUTDIV----------------------------------------------------------
     const aboutDiv = makeAboutDiv(skytter)
 
+
 //MAKING 'person_side_info' DIV--------------------------------------------------------
     const infoDiv = makeInfoDiv(skytter)
+
+//Making familydiv------------------------------------------------
+    const familyDiv = makeFamilyDiv(skytter)
+
+
 
 //APPENDING------------------------------------------------------------------------
     topDiv.appendChild(aboutDiv)
     topDiv.appendChild(infoDiv)
+    topDiv.appendChild(familyDiv)
+
 
     return topDiv
 }
@@ -75,9 +87,8 @@ function makeAboutDiv(skytter,local = false) {
     aboutDiv.appendChild(img)
 
 //FAMILY----------------------------------------------------------
-
-    const familyDiv = makeFamilyDiv(skytter,local)
-    aboutDiv.appendChild(familyDiv)
+    // const familyDiv = makeFamilyDiv(skytter,local)
+    // aboutDiv.appendChild(familyDiv)
     return aboutDiv
 }
 function makeInfoDiv(skytter) {//Ikke ferdig
@@ -139,7 +150,24 @@ function makeInfoDiv(skytter) {//Ikke ferdig
             const valgt = this.options[this.selectedIndex] // js property
             window.open(valgt.value)
         }
+
+
+        const linker = makeStatLinks(skytter)
+        infoDiv.appendChild(linker)
         return infoDiv
+}
+function makeStatLinks(skytter) {
+    const divLinks = document.createElement('div')
+    divLinks.id = 'divLinks'
+    for (let i = 0; i < skytter.stasticsLinks.length; i++) {
+        const element = skytter.stasticsLinks[i];
+        const a = document.createElement('a')
+        a.target = '_blank'
+        a.innerHTML = element[1]
+        a.href = element[0]
+        divLinks.append(a)        
+    }
+    return divLinks       
 }
 function makeMainImage(skytter) {
     const img = document.createElement('img')
@@ -178,10 +206,13 @@ function makeFamilyTypeLinks(familyType, local) {
     return div
 }
 function makePersonLink(individual, local) {
+    const family = skyttere[findIndex(individual)]
+    const name = family.about.surName
+    const familyId = family.id
     const a = document.createElement('a')
-    a.href = 'skyttere.html?skytter='+ individual[1]
-    if (local) a.href = '#'+individual[1]
-    a.innerHTML = individual[0]
+    a.href = 'skyttere.html?skytter='+ familyId
+    if (local) a.href = '#'+familyId
+    a.innerHTML = name
     return a
 }
 
@@ -315,9 +346,13 @@ for (let i = 0; i < persons.length; i++) {
     const infoDiv = makeInfoDiv(skytter)
     infoDiv.appendChild(makeAthleteLink(skytter))
 
+    const familyDiv = makeFamilyDiv(skytter,true)
+    const img = makeMainImage(skytter)
+
     person.appendChild(infoDiv)
-    person.appendChild(makeAboutDiv(skytter,true))
-  }
+    person.appendChild(familyDiv)
+    person.appendChild(img)
+}
 }
 function makeAthleteLink(skytter) {//OBS ikke komplett************************************************
     const a = document.createElement('a')

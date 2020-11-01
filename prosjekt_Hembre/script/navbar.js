@@ -1,18 +1,16 @@
 document.write(`
 <div id="navbar">
 <div class="logo_nav" >
-<a href="index.html"><img src="bilder/logo.svg" alt=""></a>
-
+<a href="./index.html"><img src="bilder/logo2.svg" alt=""></a>
 </div>
-
   <div class="navBarElement" id="utoverElement">
-    <a href="#">Athletes</a>
+    <a href="skyttere.html">Athletes</a>
   </div>
   <div class="navBarElement">
     <a href="./sponsor.html">Sponsors</a>
   </div>
   <div class="navBarElement">
-    <a href="./news.html">News</a>
+    <a href="./nyheter.html">News</a>
   </div>
   <div class="navBarElement">
     <a href="./om_oss.html">About us</a>
@@ -27,19 +25,27 @@ document.write(`
 <div id="submenus">
   <div class="submenu" id="submenu_1">
     <div class="submenuElement_1">
-      <a href="./skyttere.html?skytter=palhembre">Pål Hembre</a>
+      <a href="./skyttere.html?skytter=palhembre">${
+        skyttere[0].about.surName + " " + skyttere[0].about.lastName
+      }</a>
       <hr class="underline" />
     </div>
     <div class="submenuElement_1">
-      <a href="./skyttere.html?skytter=mattishembre">Mattis Hembre</a>
+      <a href="./skyttere.html?skytter=mattishembre">${
+        skyttere[1].about.surName + " " + skyttere[1].about.lastName
+      }</a>
       <hr class="underline" />
     </div>
     <div class="submenuElement_1">
-      <a href="./skyttere.html?skytter=ludvikhembre">Ludvik Hembre</a>
+      <a href="./skyttere.html?skytter=ludvikhembre">${
+        skyttere[2].about.surName + " " + skyttere[2].about.lastName
+      }</a>
       <hr class="underline" />
     </div>
     <div class="submenuElement_1">
-      <a href="./skyttere.html?skytter=timleohembre">Tim Leo Hembre</a>
+      <a href="./skyttere.html?skytter=timleohembre">${
+        skyttere[3].about.surName + " " + skyttere[3].about.lastName
+      }</a>
     </div>
   </div>
 

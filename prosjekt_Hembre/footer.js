@@ -8,11 +8,11 @@ document.write(`
         <div class="listePaal">
 
           <ul>
-            <li><p><a href="#">Pål Hembre</a></p></li>
-            <li><a href="#">Best results</a></li>
-            <li><a href="#">Average</a></li>
-            <li><a href="#">Nr of starts</a></li>
-            <li><a href="#">Events this year</a></li>
+            <li><p><a href="0">Pål Hembre</a></p></li>
+            <li><a href="1">Best results</a></li>
+            <li><a href="2">Average</a></li>
+            <li><a href="3">Nr of starts</a></li>
+            <li><a href="4">Events this year</a></li>
           </ul>
 
         </div>
@@ -20,11 +20,11 @@ document.write(`
         <div class="listeLudvik">
 
           <ul>
-            <li><p><a href="#">Mattis Hembre</a></p></li>
-            <li><a href="#">Best results</a></li>
-            <li><a href="#">Average</a></li>
-            <li><a href="#">Nr of starts</a></li>
-            <li><a href="#">Events this year</a></li>
+            <li><p><a href="0">Mattis Hembre</a></p></li>
+            <li><a href="1">Best results</a></li>
+            <li><a href="2">Average</a></li>
+            <li><a href="3">Nr of starts</a></li>
+            <li><a href="4">Events this year</a></li>
           </ul>
 
         </div>
@@ -32,11 +32,11 @@ document.write(`
         <div class="listeMattis">
 
           <ul>
-            <li><p><a href="#">Ludvik Hembre</a></p></li>
-            <li><a href="#">Best results</a></li>
-            <li><a href="#">Average</a></li>
-            <li><a href="#">Nr of starts</a></li>
-            <li><a href="#">Events this year</a></li>
+            <li><p><a href="0">Ludvik Hembre</a></p></li>
+            <li><a href="1">Best results</a></li>
+            <li><a href="2">Average</a></li>
+            <li><a href="3">Nr of starts</a></li>
+            <li><a href="4">Events this year</a></li>
           </ul>
 
         </div>
@@ -44,11 +44,11 @@ document.write(`
         <div class="listeTim">
 
           <ul>
-            <li><p><a href="#"> Tim Leo Hembre</a></p></li>
-            <li><a href="#">Best results</a></li>
-            <li><a href="#">Average</a></li>
-            <li><a href="#">Nr of starts</a></li>
-            <li><a href="#">Events this year</a></li>
+            <li><p><a href="0"> Tim Leo Hembre</a></p></li>
+            <li><a href="1">Best results</a></li>
+            <li><a href="2">Average</a></li>
+            <li><a href="3">Nr of starts</a></li>
+            <li><a href="4">Events this year</a></li>
           </ul>
 
         </div>
@@ -82,3 +82,33 @@ document.write(`
       </div>
 
     </footer>`)
+
+    let athletesArray = ["palhembre","mattishembre","ludvikhembre","timleohembre"]
+    athleteCount = 0
+    let div = document.querySelector("div")
+    let ul = document.querySelector("ul")
+
+    function editLink() {
+      console.log("asdas")
+        for(let a in document.getElementsByTagName("a")){
+          console.log("adas")
+          a.href="asda"
+          if (a.href == "0") {
+            a.href = 'skyttere.html?skytter='+ athletesArray[athleteCount]
+          }
+          else if (true) {
+
+          }
+          else if (true) {
+
+          }
+          else if (true) {
+
+          }
+          else if (true) {
+
+          }
+
+        }
+    }
+    editLink()

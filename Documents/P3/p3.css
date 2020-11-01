@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  background-color: #e3e3e3;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 1309px) {
+  .nav_ul {
+    display: none;
+  }
+}
+
+.flexContainer>.flexBox>img{
+  margin: auto;
+  display: block;
+}
+
+.nav_ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav_ul > li {
+  display: inline;
+  color: black;
+  padding: 5px 10px;
+  border-style: groove;
+}
+
+li > a {
+  color: black;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+li > a:hover {
+  color: grey;
+  transition-duration: 0.5s;
+}
+
+
+.start > .logo {
+  width: 30%;
+  margin: 0px;
+}
+.start {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 60%;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexBox {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 60%;
+  border-bottom-style: ridge;
+  border-bottom-color: red;
+  border-left-style: ridge;
+  border-left-color: salmon;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 3px;
+  border-radius: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+.grid-container > .file_big {
+  grid-column: span 2;
+}
+
+.grid-del {
+  border-radius: 1px;
+  border-color: black;
+  border-style: solid;
+  padding: 4px;
+  margin: 2px;
+  text-align: center;
+}
+
+.over_grid {
+  font-size: 25px;
+}
+
+.liste>.overskkrift_li {
+  margin-left: -40px;
+  list-style: none;
+}
+
+.liste>.underlying_li {
+  margin-left: 0px;
+  list-style: square;
+}
+
+#struktur {
+  width: 100%;
+}
+
+.liste > li {
+  margin-left: 40px;
+}
+.infoP+img{
+  height: 50vh;
+}
