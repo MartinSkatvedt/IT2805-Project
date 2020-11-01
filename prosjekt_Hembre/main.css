@@ -1084,7 +1084,7 @@ footer a{
 
 .footer-container-one {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(7, 1fr);
   border-bottom: var(--border-color) 0.4px solid;
 }
 
@@ -1362,24 +1362,24 @@ START RESPONSIVE MEDIAQUERYS
 
 
 
-@media (max-width: 405px) {
 
-  /*Small smartphones [325px -> 425px]*/
-  .grid-container-athletes {
-    grid-template-columns: 1fr;
-  }
-}
 
 
 /*css for hele body når den er større enn 600px starter under her*/
-@media only screen and (min-width: 600px) {
-  body {
-    /*gjør slik at det ikke er noe avstand mellom body og det som er utenfor*/
-    margin: 0px;
-    top: 0px;
-    /*gir body en bakgrunnsfarge*/
+
+
+@media only screen and (max-width: 1200px) {
+  #pal_info>ul>li {
+    font-size: 1.5vw;
   }
 
+  #alle_utovere>div>img {
+    width: 150px;
+    height: 250px;
+  }
+  #alle_utovere>div{
+    font-size: 2vh;
+  }
 }
 
 
@@ -1401,12 +1401,8 @@ START RESPONSIVE MEDIAQUERYS
   display: none;
 }
 
-.footer-container-one>ul{
-  display: none
-}
-
-.footer-container-one ul li p a{
-  font-size: 14px;
+.footer-container-one {
+  grid-template-columns: repeat(6,1fr)
 }
 
 /*Big smartphones [426px -> 600px]*/
@@ -1441,21 +1437,43 @@ display: none;
   margin:100px;
 }
 }
-@media only screen and (max-width: 1200px) {
-  #pal_info>ul>li {
-    font-size: 1.5vw;
+
+@media only screen and (min-width: 600px) {
+  body {
+    /*gjør slik at det ikke er noe avstand mellom body og det som er utenfor*/
+    margin: 0px;
+    top: 0px;
+    /*gir body en bakgrunnsfarge*/
   }
 
-  #alle_utovere>div>img {
-    width: 150px;
-    height: 250px;
+}
+
+@media only screen and (max-width:600px){
+  .footer-container-one {
+    grid-template-columns: 1fr
   }
-  #alle_utovere>div{
-    font-size: 2vh;
+  .logo_footer {
+    display: block;
+    height: 200px;
+    padding-left: 20px;
   }
 }
 
+@media (max-width: 405px) {
 
+  /*Small smartphones [325px -> 425px]*/
+  .grid-container-athletes {
+    grid-template-columns: 1fr;
+  }
+  .footer-container-two{
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .footer-container-two>p {
+    display: none;
+  }
+
+}
 
 
 /*
