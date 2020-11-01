@@ -274,6 +274,10 @@ START NAVBAR
   font-size: 30px;
   width: 100%;
   font-family: Montserrat;
+  position:-webkit-sticky;
+  position:sticky;
+  z-index: 9;
+  top:0;
 }
 
 
@@ -1182,28 +1186,26 @@ START NYHETER
   grid-template-rows: 50% 50%;
   grid-template-columns: 50% 50%;
   width: 90%;
-  height: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background-color: rgb(182, 181, 181);
   border-radius: 3px 3px 0 0;
   margin-bottom: 5%;
 
 }
-
-
+.news-div:target{
+   border: 4px solid var(--button-color);
+   
+}
 #news-img {
   display: block;
-  width: 85%;
-  height: 85%;
-  margin-top: 8%;
-  margin-right: 10%;
+  width: 90%;
+  padding: 5%;
   margin-left: auto;
-  border: 2px solid var(--element-background);
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  /* border: 2px solid var(--element-background); */
+  /* grid-column-start: 2; */
+  /* grid-column-end: 3; */
+  /* grid-row-start: 1; */
+  /* grid-row-end: 3;  */
 
 }
 
