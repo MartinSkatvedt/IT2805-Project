@@ -925,6 +925,7 @@ const news = [
     text: [
       "Oktoberfest hos Ørland Pistolklubbs tredagers pistolfesival i Brekstad var preget av et klassisk tilfelle 'Hembre-dominanse'.",
       "Pål Hembre vant sammenlagt da han gikk av med seieren i fem av de åtte konkurransene. Mattis Hembre vant to, imens klubbkamerat Ingar Woll også tok hjem en seier for Bærum PK.",
+      "Tvillingene Ludvik og Mattis tok også dobbelt i Juniorklassen, imens yngstemann Tim Leo vant en sprintluftkonkurranse i klasse U16.",
     ],
     img: bilder.newsImg[0],
   },
