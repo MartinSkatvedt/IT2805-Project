@@ -322,7 +322,6 @@ START NAVBAR
 
 .logo_nav {
   width: 15%;
-  position: right;
   margin-left: 10%;
   padding: 0px;
 }
@@ -432,7 +431,7 @@ START OM OSS
 */
 
 /*css for hele delen over søkemotoren av header når den er større enn 600px starter under her*/
-.header_øverst {
+.header_overst {
   text-align: center;
   /* styler tekst*/
   text-decoration: none;
@@ -450,7 +449,6 @@ START OM OSS
   border-color: white;
   border-width: 5px;
   padding: 12px 28px;
-  font-style: monospace;
   text-decoration: none;
 }
 
@@ -480,7 +478,7 @@ START OM OSS
   width: 30%;
 }
 
-.hele_følg_meg {
+.hele_folg_meg {
   position: relative;
   display: flex;
   padding-top: 20px;
@@ -488,7 +486,7 @@ START OM OSS
   margin-right: 15px;
 }
 
-.følg_meg {
+.folg_oss {
   font-size: 16px;
   color: white;
   font-family: fantasy;
@@ -642,7 +640,7 @@ h1 {
 .hembre:nth-child(2n-1) {
   background-color: #ffb366;
 }
-/* 
+/*
 .hembre:nth-child(3n) {
   background-color: #ff9933;
 }
@@ -1394,7 +1392,7 @@ START RESPONSIVE MEDIAQUERYS
 .navn_header{
   display: none;
 }
-.header_øverst{
+.header_overst{
   display: none;
 }
 .logo_footer{
