@@ -1118,6 +1118,7 @@ p {
 .footer-container-two>div {
   font-size: 14px;
   border: solid 1px var(--border-color);
+  background-color: #D8F5F6
 }
 .footer-container-two>div>a{
   color:var(--text-color);
