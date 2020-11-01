@@ -921,7 +921,7 @@ const sponsors = [
 const news = [
   {
     id:'001',
-    header: "Hembre-dominans i Oktoberfest",
+    header: "Hembre-dominans under Oktoberfest",
     text: [
       "Oktoberfest hos Ørland Pistolklubbs tredagers pistolfesival i Brekstad var preget av et klassisk tilfelle 'Hembre-dominanse'.",
       "Pål Hembre vant sammenlagt da han gikk av med seieren i fem av de åtte konkurransene. Mattis Hembre vant to, imens klubbkamerat Ingar Woll også tok hjem en seier for Bærum PK.",
