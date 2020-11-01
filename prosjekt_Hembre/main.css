@@ -1400,9 +1400,12 @@ START RESPONSIVE MEDIAQUERYS
 .logo_footer{
   display: none;
 }
+.footer-container-one>ul{
+  display: none;
+}
 
 .footer-container-one {
-  grid-template-columns: repeat(6,1fr)
+  grid-template-columns: repeat(5,1fr)
 }
 
 /*Big smartphones [426px -> 600px]*/
@@ -1447,6 +1450,7 @@ display: none;
   }
 
 }
+
 
 @media only screen and (max-width:600px){
   .footer-container-one {
