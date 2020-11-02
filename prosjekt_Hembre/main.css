@@ -528,8 +528,8 @@ START OM OSS
 }
 
 .logo>img:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
   transform: scale(1.2);
   transition-duration: 0.5s;
 
@@ -1031,12 +1031,31 @@ START SPONSOR
   width: 40%;
   height: 50%;
   margin-left: 30%;
+  -moz-transform: scale(1.0);
+  -webkit-transform: scale(1.0);
+  transform: scale(1.0);
+  transition-duration: 0.5s;
+}
+#bakkevold, #oxford{
+  cursor: pointer;
+}
+#bakkevold:active, #oxford:active{
+  opacity:0.5;
 }
 
-.spons .pil {
+.logo_liten:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+
+}
+
+.pil {
   height: 50px;
-  width: 20%;
-  margin-left: 40%
+  width: 10%;
+  display: block;
+  margin: auto;
 }
 
 .fyll {
@@ -1535,5 +1554,3 @@ display: none;
 /*
 SLUTT RESPONSIVE MEDIAQUERYS
 */
-
-
