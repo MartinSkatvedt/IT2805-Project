@@ -65,8 +65,6 @@ for (let skytter of skyttere) {
   containerDiv.appendChild(anchorElement);
   containerDiv.appendChild(hr);
   submenu_1.appendChild(containerDiv);
-
-  console.log(skytter);
 }
 
 let submenuElement_1 = document.getElementsByClassName("submenuElement_1");
@@ -85,7 +83,7 @@ function hideSubmenus() {
   submenu_2.style.display = "none";
 }
 
-function showSub1() {
+function showSub1(event) {
   let rect = utoverElement.getBoundingClientRect();
   submenu_1.style.display = "flex";
   submenu_1.style.left = rect.x + "px";
