@@ -811,10 +811,10 @@ const skyttere = [
 
     yearlyStatistics: [],
     stasticsLinks: [
-      ["http://fsu.no/issf/alle/tp/tp_paalh.htm", "Best resuls"],
-      ["http://fsu.no/issf/alle/sn/sn_paalh.htm", "Average"],
-      ["http://fsu.no/issf/alle/ant/st_paalh.htm", "Total starts"],
-      ["http://www.fsu.no/issf/iaar/sk/st_mattish.htm", "Starts this year"],
+      // ["http://fsu.no/issf/alle/tp/tp_paalh.htm", "Best resuls"],
+      // ["http://fsu.no/issf/alle/sn/sn_paalh.htm", "Average"],
+      // ["http://fsu.no/issf/alle/ant/st_paalh.htm", "Total starts"],
+      // ["http://www.fsu.no/issf/iaar/sk/st_mattish.htm", "Starts this year"],
     ],
 
     bestStatistics: [
