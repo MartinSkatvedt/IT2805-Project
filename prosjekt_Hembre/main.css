@@ -591,17 +591,27 @@ h1 {
   margin: 5% 25%;
   padding: 1%;
 }
-
-#gull > h1 {
+ #vunnet {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  background-color: #f0fff0;
+  color: black;
+  margin: 5% 25%;
+  margin-top: 5px;
+  padding: 1%;
+  font-size: 12px;
+}
+#gold {
   color: #e68a00;
 }
 
-#ol-deltat > h1 {
-  color: red;
+#silver{
+  color: silver;
 }
 
-#norge_rekorder > h1 {
-  color: blue;
+#bronze {
+  color:#ba3b09;
 }
 
 /* #alle_utovere>div>h2 {
@@ -1302,27 +1312,7 @@ START NYHETER
 #merit i {
   border-bottom: dashed 1px var(--text-color);
 }
-/* #vunnet {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-  background-color: #f0fff0;
-  color: black;
-  margin: 5% 25%;
-  margin-top: 5px;
-  padding: 1%;
-  font-size: 12px;
-} */
 
-/* #gull > h1 {
-  color: #e68a00;
-}
-#ol-deltat > h1 {
-  color: red;
-}
-#norge_rekorder > h1 {
-  color: blue;
-} */
 
 #skytter #personer_underliggende_bilder {
   display: grid;
