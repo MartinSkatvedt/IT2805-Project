@@ -544,26 +544,28 @@ START OM OSS
 }
 
 /* Style the tab buttons */
+.navn_header{
+  background-color: #555;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 .navn_header > div {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
 }
 
-.navn_header > div {
-  width: 100%;
-  bottom: 0px;
-  position: absolute;
-}
 
 .link {
-  width: 100%;
   background-color: #555;
   color: white;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 24px 16px;
-  font-size: 17px;
+  padding: 24px 60px;
 }
 
 /* Change background color of buttons on hover */
@@ -1089,7 +1091,6 @@ footer a {
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  text-align: left;
   margin: 5%;
   border-bottom: var(--border-color) 0.4px solid;
   text-align: left;
