@@ -279,7 +279,7 @@ START NAVBAR
   font-family: Montserrat;
   position:-webkit-sticky;
   position:sticky;
-  z-index: 9;
+  z-index: 90;
   top:0;
 }
 
@@ -735,7 +735,13 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+/*
+SLUTT OM OSS:
+*/
 
+/*
+START KONTAKT OSS:
+*/
 #formContainer {
   background-color: #fff0f0;
   width: 50%;
@@ -756,19 +762,25 @@ h1 {
 #contactForm {
   display: grid;
 }
+#mapContainer{
+  z-index: 10;
+}
+
 .gridElement {
   margin-top: 4%;
-  width: 60%;
+  width: 60vh;
   text-align: left;
   display: flex;
   flex-direction: column;
 }
 .gridElement>input{
+  width: 50vh
   padding-top: 10px;
 }
 /*
-SLUTT OM OSS:
+SLUTT KONTAKT
 */
+
 
 /*
 SKYTER UNDERSIDENE:
@@ -1427,6 +1439,14 @@ START RESPONSIVE MEDIAQUERYS
   #alle_utovere>div{
     font-size: 2vh;
   }
+.gridElement{
+  width: 30vh;
+  align-items: center;
+}
+#contactForm{
+
+}
+
 }
 
 
@@ -1502,6 +1522,8 @@ display: none;
     height: 200px;
     padding-left: 20px;
   }
+
+
 }
 
 @media (max-width: 405px) {
