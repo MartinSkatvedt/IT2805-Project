@@ -215,8 +215,8 @@ function makeFamilyTypeLinks(familyType, local) {
   }
   return div;
 }
-function makePersonLink(individual, local) {
-  const family = skyttere[findIndex(individual)];
+function makePersonLink(id, local) {
+  const family = skyttere[findIndex(id)];
   const name = family.about.surName;
   const familyId = family.id;
   const a = document.createElement("a");
