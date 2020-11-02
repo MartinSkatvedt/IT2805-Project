@@ -42,17 +42,17 @@
 
   <div id="vunnet">
     <div id="gull">
-      <h1>34</h1>
+      <h1 id="gold">34</h1>
       <h2>GOLDS</h2>
     </div>
     <div id="ol-deltat">
-      <h1>4</h1>
-      <h2>OLYMPICS</h2>
+      <h1 id="silver">4</h1>
+      <h2>SILVER</h2>
     </div>
 
     <div id="norge_rekorder">
-      <h1>46</h1>
-      <h2>NORWEGIAN RECORD</h2>
+      <h1 id="bronse">46</h1>
+      <h2>BRONZE</h2>
     </div>
   </div>
 
@@ -115,7 +115,16 @@
 
 
   <script>
-    writeStatsOmOss();
+    makeNavnHeader()
+    writeStatsOmOss() 
+    const gold = document.querySelector('#gold')
+    const silver = document.querySelector('#silver')
+    const bronse = document.querySelector('#bronse')
+    totalMedals = getTotalMealds()
+    console.log(totalMedals);
+    gold.innerHTML = totalMedals[0]
+    silver.innerHTML = totalMedals[1]
+    bronse.innerHTML = totalMedals[2]
   </script>
 </body>
 
