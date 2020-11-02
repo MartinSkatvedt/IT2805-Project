@@ -45,8 +45,7 @@ document.write(`
 </div>`); //Skriver ut siden fra js for å slippe å ha mye repetiv HTML
 
 let submenu_1 = document.getElementById("submenu_1");
-if (screen.width < 500) {
-}
+
 //Lager elementer til navbaren(athletes)
 for (let skytter of skyttere) {
   if (!skytter.isShown) continue;
