@@ -31,12 +31,12 @@
     function makeFooter(){
       const footer = document.querySelector(".footer-container-one")
       footer.innerHTML = ""
-      footer.innerHTML += `
+      // footer.innerHTML += `
+      // <div>
+      // <img class="logo_footer" src="bilder/logo2.svg" alt="">
+      // </div>
 
-      <img class="logo_footer" src="bilder/logo2.svg" alt="">
-
-
-      `
+      // `
       
       for(i in skyttere){
         // console.log(i);

@@ -1096,15 +1096,20 @@ footer a{
 .logo_footer {
   margin: 0px;
   padding: 0px;
-  width: 100%;
+  width: 10%;
 }
 
 .footer-container-one {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  width: 100%;
+  /* display: grid;
+  grid-template-columns: repeat(6, 1fr); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  text-align: left;
+  margin: 5%;
   border-bottom: var(--border-color) 0.4px solid;
-  text-align: left
 }
 
 .footer-container-one ul li a {
@@ -1476,6 +1481,7 @@ display: none;
 
 @media only screen and (max-width:600px){
   .footer-container-one {
+    display: grid;
     grid-template-columns: 1fr
   }
   .logo_footer {
