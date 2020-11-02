@@ -957,5 +957,5 @@ const news = [
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
     ],
     img: bilder.newsImg[3],
-  },
+  }
 ];
