@@ -846,17 +846,6 @@ th,
   display: block;
   margin: auto;
 }
-#grid_container_stats {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid var(--text-color);
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-column-gap: 30px;
-}
-#grid_container_stats > * {
-  margin: 0 auto;
-}
 #merit {
   margin-bottom: 10px;
 }
@@ -1340,7 +1329,7 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid; /* creates padding around scroll thumb */
 }
 
-#skytter #grid_container_stats {
+#grid_container_stats {
   margin-top: 20px;
   padding-top: 20px;
   border-top: 1px solid var(--text-color);
@@ -1348,7 +1337,7 @@ body::-webkit-scrollbar-thumb {
   grid-template-columns: 1fr 2fr;
   grid-column-gap: 30px;
 }
-#skytter #grid_container_stats > * {
+#grid_container_stats > * {
   margin: 0 auto 10px auto;
 }
 #skytter #merit {
@@ -1508,8 +1497,15 @@ font-size: 1.8vh;
   #formContainer{
     width: 90%;
   }
-  #grid_container_stats{
-    grid-template-columns: 1fr 1fr 1fr;
+  /* #skytter #grid_container_stats{
+    grid-template-columns: 1fr;
+  
+  } */
+  #skytter > *{
+    grid-template-columns: 1fr;
+  }
+  #skytter>*>*{
+    margin: auto;
   }
 
 }
