@@ -1164,8 +1164,8 @@ START NYHETER
 }
 
 #news-container {
-  display: flex;
-  flex-flow: column wrap;
+  /* display: flex;
+  flex-flow: column wrap; */
   width: 100%;
   margin: auto;
   background-color: rgb(124, 122, 122);
@@ -1190,17 +1190,17 @@ START NYHETER
   background-color: rgb(182, 181, 181);
   border-radius: 3px 3px 0 0;
   margin-bottom: 5%;
+  position: relative;
   /* display: none; */
 
 }
 .news-div a{
   visibility: hidden;
+  /* grid-column:-1; */
 }
 .news-div a:target{
-   /* border: 4px solid var(--button-color); */
-   position: relative;
-   top: -350px;
-   /* display: block; */
+   position: absolute;
+   top: 0;
 
 }
 #news-img {
