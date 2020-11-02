@@ -87,7 +87,7 @@ for (element of navBarElements_Array) {
 }
 
 logo_navigationbar.addEventListener("mouseover", hideSubmenus);
-utoverElement.addEventListener("mouseover", showSub1);
+utoverElement.children[0].addEventListener("mouseover", showSub1);
 
 function hideSubmenus() {
   submenu_1.style.display = "none";
