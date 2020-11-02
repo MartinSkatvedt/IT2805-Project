@@ -1,8 +1,8 @@
 document.write(`
 <div id="navbar">
-<div class="logo_nav", id="logo_navigationbar" >
-<a href="./index.html"><img src="bilder/logo2.svg" alt=""></a>
-</div>
+  <div class="logo_nav" id="logo_navigationbar" >
+    <a href="./index.html"><img src="bilder/logo2.svg" alt=""></a>
+  </div>
   <div class="navBarElement" id="utoverElement">
     <a href="skyttere.html">Athletes</a>
   </div>
@@ -45,7 +45,8 @@ document.write(`
 </div>`); //Skriver ut siden fra js for å slippe å ha mye repetiv HTML
 
 let submenu_1 = document.getElementById("submenu_1");
-
+if (screen.width < 500) {
+}
 //Lager elementer til navbaren(athletes)
 for (let skytter of skyttere) {
   if (!skytter.isShown) continue;
