@@ -54,7 +54,6 @@ SLUTT GLOBALE CSS FUNKSJONER
 /*
 START INDEX
  */
-
 .grid-container-hjem {
   margin-top: 30px;
   display: grid;
@@ -1484,7 +1483,7 @@ font-size: 1.8vh;
   margin: 0px 5vh;
   }
   #formContainer{
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -1501,8 +1500,18 @@ font-size: 1.8vh;
     display: none;
   }
   #f_fornavn>input, #f_etternavn>input{
-  width: 40px;
+  width: 70px;
   font-size: 1.8vh;
+  }
+  .gridElement>label{
+    font-size:1.8vh;
+  }
+  h1 {
+    font-size: 3vh;
+  }
+  p{
+    font-size: 2vh;
+
   }
 
 }
