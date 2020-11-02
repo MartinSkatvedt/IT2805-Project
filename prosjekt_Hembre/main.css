@@ -25,6 +25,9 @@ body {
   width: 100%;
   margin: auto;
   font-size: var(--font-size);
+  margin: 0px;
+  top: 0px;
+
 }
 
 html {
@@ -128,7 +131,7 @@ text-decoration: none;
 width: 100%;
 }
 .sponsor:last-child img{
-  height: 10vh;
+  height: 15vh;
 }
 
 
@@ -297,6 +300,7 @@ START NAVBAR
   left: 0;
   background-color: #000;
 
+
 }
 
 .navBarElement>a:hover::before {
@@ -321,17 +325,21 @@ START NAVBAR
    75px;
   padding-top: 25px;
   position: relative;
-  width: 16.677%
+  width: 16.677%;
+
 }
 
 .logo_nav {
   width: 15%;
   margin-left: 5%;
   padding: 0px;
+
 }
 
 .logo_nav>a>img {
   height: 100%;
+  transition-duration: 0.5s;
+
 }
 
 .logo_nav>a>img:hover{
@@ -481,6 +489,8 @@ START OM OSS
 
 .logo>img {
   width: 30%;
+  transition-duration: 0.5s;
+
 }
 
 .hele_folg_meg {
@@ -518,9 +528,11 @@ START OM OSS
 }
 
 .logo>img:hover {
-  -moz-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+
 }
 
 #bilder_team>div {
@@ -1089,7 +1101,8 @@ footer a{
 
 .footer-container-one {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
   border-bottom: var(--border-color) 0.4px solid;
   text-align: left
 }
@@ -1428,6 +1441,10 @@ START RESPONSIVE MEDIAQUERYS
   grid-row: 1;
 }
 
+.sponsor img {
+width: 74%;
+}
+
 .grid-container-athletes {
   grid-gap: 5px;
 }
@@ -1454,16 +1471,6 @@ display: none;
 #alle_utovere{
   margin:100px;
 }
-}
-
-@media only screen and (min-width: 600px) {
-  body {
-    /*gjør slik at det ikke er noe avstand mellom body og det som er utenfor*/
-    margin: 0px;
-    top: 0px;
-    /*gir body en bakgrunnsfarge*/
-  }
-
 }
 
 
@@ -1515,6 +1522,7 @@ display: none;
   .news-div{
     grid-template-columns: 1fr;
   }
+
 
 }
 

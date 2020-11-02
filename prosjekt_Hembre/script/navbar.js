@@ -23,31 +23,7 @@ document.write(`
 </div>
 
 <div id="submenus">
-  <div class="submenu" id="submenu_1">
-    <div class="submenuElement_1">
-      <a href="./skyttere.html?skytter=palhembre">${
-        skyttere[0].about.surName + " " + skyttere[0].about.lastName
-      }</a>
-      <hr class="underline" />
-    </div>
-    <div class="submenuElement_1">
-      <a href="./skyttere.html?skytter=mattishembre">${
-        skyttere[1].about.surName + " " + skyttere[1].about.lastName
-      }</a>
-      <hr class="underline" />
-    </div>
-    <div class="submenuElement_1">
-      <a href="./skyttere.html?skytter=ludvikhembre">${
-        skyttere[2].about.surName + " " + skyttere[2].about.lastName
-      }</a>
-      <hr class="underline" />
-    </div>
-    <div class="submenuElement_1">
-      <a href="./skyttere.html?skytter=timleohembre">${
-        skyttere[3].about.surName + " " + skyttere[3].about.lastName
-      }</a>
-    </div>
-  </div>
+  <div class="submenu" id="submenu_1"></div>
 
   <div class="submenu" id="submenu_2">
     <div class="submenuElement_2" id="resultat">
@@ -66,8 +42,33 @@ document.write(`
       <a href="#">Events this year</a>
     </div>
   </div>
-</div>`);
+</div>`); //Skriver ut siden fra js for å slippe å ha mye repetiv HTML
+
 let submenu_1 = document.getElementById("submenu_1");
+
+//Lager elementer til navbaren(athletes)
+for (let skytter of skyttere) {
+  if (!skytter.isShown) continue;
+  let containerDiv = document.createElement("div");
+  containerDiv.classList += "submenuElement_1";
+
+  let anchorElement = document.createElement("a");
+
+  let fullname = skytter.about.surName + skytter.about.lastName;
+  anchorElement.href = "./skyttere.html?skytter=" + skytter.id;
+  anchorElement.innerText =
+    skytter.about.surName + " " + skytter.about.lastName;
+
+  let hr = document.createElement("hr");
+  hr.classList += "underline";
+
+  containerDiv.appendChild(anchorElement);
+  containerDiv.appendChild(hr);
+  submenu_1.appendChild(containerDiv);
+
+  console.log(skytter);
+}
+
 let submenuElement_1 = document.getElementsByClassName("submenuElement_1");
 let submenu_2 = document.getElementById("submenu_2");
 let submenuElement_2 = document.getElementsByClassName("submenuElement_2");
@@ -79,7 +80,6 @@ let submenuElement_2_Array = Array.from(submenuElement_2);
 
 submenusElement.addEventListener("mouseleave", hideSubmenus);
 utoverElement.addEventListener("mouseover", showSub1);
-//test
 function hideSubmenus() {
   submenu_1.style.display = "none";
   submenu_2.style.display = "none";
@@ -98,13 +98,21 @@ for (let element of submenuElement_1_Array) {
     submenu_2.style.display = "flex";
     submenu_2.style.left = rect.x + rect.width + "px";
     submenu_2.style.top = rect.y + "px";
-    for (i of submenuElement_2_Array) {
-      i.children[0].href = fixHref(element.children[0].href, i.id);
+    let shooter = getShooterobject(element.children[0]);
+    for (i in submenuElement_2_Array) {
+      submenuElement_2_Array[i].children[0].href = shooter.stasticsLinks[i][0];
     }
   };
 }
 
-function fixHref(parentHref, childId) {
-  let slicedHref = parentHref.slice(0, parentHref.length - 11);
-  return slicedHref + "/" + childId + ".html";
+function getShooterobject(href) {
+  let strHref = String(href);
+  index = strHref.search("=");
+  id = strHref.slice(index + 1);
+
+  for (skytter of skyttere) {
+    if (skytter.id == id) {
+      return skytter;
+    }
+  }
 }

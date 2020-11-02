@@ -120,7 +120,6 @@ function createSlideshow() {
     for (let i = 0; i < news.length; i++) {
         container.appendChild(makeSlide(i))
     }
-    console.log(container);
     return container
 }
 function makeSlide(i) {
