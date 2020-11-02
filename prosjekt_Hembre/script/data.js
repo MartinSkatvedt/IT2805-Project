@@ -776,7 +776,7 @@ const skyttere = [
 
   {
     id: "leonelhembre",
-    isShown: true,
+    isShown: false,
 
     about: {
       surName: "Leonel",
