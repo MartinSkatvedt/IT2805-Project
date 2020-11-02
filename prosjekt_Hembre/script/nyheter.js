@@ -31,7 +31,6 @@ function writeNews() {
 //Lager ett anker for å referere til den lokale linken på riktig posisjon
         const ancor = document.createElement('a')
         ancor.id = element.id
-        ancor.innerHTML = 'ANKER'
         ancor.className = 'ancor'
         newsDiv.appendChild(ancor)
 
