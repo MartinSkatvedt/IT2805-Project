@@ -1223,9 +1223,9 @@ START NYHETER
   /* display: none; */
 }
 
-.news-div a:target {
+.news-div .ancor:target {
   position: absolute;
-  top: -140px;
+  top: -50px;
 }
 #news-img {
   display: block;
