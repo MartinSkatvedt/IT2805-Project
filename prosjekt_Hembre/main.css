@@ -558,7 +558,9 @@ START OM OSS
   width: 100%;
 }
 
-
+#divLinks{
+  display: none;
+}
 .link {
   background-color: #555;
   color: white;
