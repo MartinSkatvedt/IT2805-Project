@@ -776,7 +776,7 @@ const skyttere = [
 
   {
     id: "leonelhembre",
-    isShown: false,
+    isShown: true,
 
     about: {
       surName: "Leonel",
@@ -920,7 +920,7 @@ const sponsors = [
 
 const news = [
   {
-    id:001,
+    id: 001,
     header: "Hembre domination during Octoberfest",
     text: [
       'Octoberfest in Ørland Pistolklubbs three day pistol festival in Brekstad was struch by a classic case of "Hembre domination".',
@@ -931,7 +931,7 @@ const news = [
   },
 
   {
-    id:002,
+    id: 002,
     header: "Hei egil",
     text: [
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
@@ -941,19 +941,19 @@ const news = [
   },
 
   {
-    id:003,
+    id: 003,
     header: "Ny førsteplass",
     text: [
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
     ],
-    img: bilder.newsImg[2]
+    img: bilder.newsImg[2],
   },
   {
-    id:004,
+    id: 004,
     header: "Ny førsteplass",
     text: [
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
     ],
-    img: bilder.newsImg[3]
-  }
+    img: bilder.newsImg[3],
+  },
 ];
