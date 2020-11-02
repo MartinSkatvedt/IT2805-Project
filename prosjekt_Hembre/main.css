@@ -1589,7 +1589,7 @@ font-size: 1vh;
   height: 30%;
 }
 
-
+}
 @media only screen and (max-width: 1000px) {
   .news-site-headline {
     font-size: 30px;
