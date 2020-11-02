@@ -345,21 +345,26 @@ function findIndex(id) {
 }
 
 function writeStatsOmOss() {
-  const persons = document.querySelectorAll(".hembre");
-  const alleSpillere = document.querySelectorAll("#alle_spillere");
-  for (let i = 0; i < persons.length; i++) {
-    const skytter = skyttere[findIndex(persons[i].id)];
-    const person = persons[i];
+  const alleSpillere = document.querySelector("#alle_utovere");
+  
+  for (let i = 0; i < skyttere.length; i++) {
+    if (skyttere[i].isShown) {
+      const hembreDiv = document.createElement('div')
+      hembreDiv.className = 'hembre'
 
-    const infoDiv = makeInfoDiv(skytter);
-    infoDiv.appendChild(makeAthleteLink(skytter));
-
-    const familyDiv = makeFamilyDiv(skytter, true);
-    const img = makeMainImage(skytter);
-
-    person.appendChild(infoDiv);
-    person.appendChild(familyDiv);
-    person.appendChild(img);
+      const skytter = skyttere[i]
+      
+      const infoDiv = makeInfoDiv(skytter);
+      infoDiv.appendChild(makeAthleteLink(skytter));
+      
+      const familyDiv = makeFamilyDiv(skytter, true);
+      const img = makeMainImage(skytter);
+      
+      hembreDiv.appendChild(infoDiv);
+      hembreDiv.appendChild(familyDiv);
+      hembreDiv.appendChild(img);
+      alleSpillere.appendChild(hembreDiv)
+    }
   }
 }
 function makeAthleteLink(skytter) {
