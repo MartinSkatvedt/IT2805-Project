@@ -1501,7 +1501,7 @@ display: none;
 
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:700px){
 
   .news-site-headline {
     font-size: 30px;
@@ -1512,7 +1512,6 @@ display: none;
   .textbox {
     font-size: 15px;
     line-height: 150%;
-    margin-left: 10%;
   }
 
   .textbox > h2 {
