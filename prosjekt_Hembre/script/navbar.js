@@ -1,6 +1,6 @@
 document.write(`
 <div id="navbar">
-<div class="logo_nav" >
+<div class="logo_nav", id="logo_navigationbar" >
 <a href="./index.html"><img src="bilder/logo2.svg" alt=""></a>
 </div>
   <div class="navBarElement" id="utoverElement">
@@ -65,8 +65,6 @@ for (let skytter of skyttere) {
   containerDiv.appendChild(anchorElement);
   containerDiv.appendChild(hr);
   submenu_1.appendChild(containerDiv);
-
-  console.log(skytter);
 }
 
 let submenuElement_1 = document.getElementsByClassName("submenuElement_1");
@@ -74,18 +72,29 @@ let submenu_2 = document.getElementById("submenu_2");
 let submenuElement_2 = document.getElementsByClassName("submenuElement_2");
 let utoverElement = document.getElementById("utoverElement");
 let submenusElement = document.getElementById("submenus");
+let navBarElements = document.getElementsByClassName("navBarElement");
+let logo_navigationbar = document.getElementById("logo_navigationbar");
 
 let submenuElement_1_Array = Array.from(submenuElement_1);
 let submenuElement_2_Array = Array.from(submenuElement_2);
+let navBarElements_Array = Array.from(navBarElements);
 
 submenusElement.addEventListener("mouseleave", hideSubmenus);
-utoverElement.addEventListener("mouseover", showSub1);
+
+for (element of navBarElements_Array) {
+  if (element.id == "utoverElement") continue;
+  element.addEventListener("mouseover", hideSubmenus);
+}
+
+logo_navigationbar.addEventListener("mouseover", hideSubmenus);
+utoverElement.children[0].addEventListener("mouseover", showSub1);
+
 function hideSubmenus() {
   submenu_1.style.display = "none";
   submenu_2.style.display = "none";
 }
 
-function showSub1() {
+function showSub1(event) {
   let rect = utoverElement.getBoundingClientRect();
   submenu_1.style.display = "flex";
   submenu_1.style.left = rect.x + "px";
