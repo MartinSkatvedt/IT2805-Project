@@ -272,7 +272,6 @@ START NAVBAR
   z-index: 9;
   top: 0;
 }
-
 .navBarElement > a::before {
   /* funksjoner for å skalere elementer og overgangs tid*/
   visibility: hidden;
@@ -1506,6 +1505,10 @@ font-size: 1.8vh;
   #formContainer{
     width: 90%;
   }
+  #grid_container_stats{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
 }
 
 @media (max-width: 405px) {
@@ -1537,33 +1540,34 @@ font-size: 1.8vh;
   #bilder_team{
     display: none;
   }
-#alle_utovere{
-  margin:2vh;
-  height: 51vh;
+  #alle_utovere{
+    margin:2vh;
+    height: 51vh;
 
-}
-#alle_utovere>div{
-  padding: 10px;
-  height: 50vh;
-}
-#alle_utovere>div>div{
-  margin-right: 10px;
-}
-#person_side_info{
-  margin-top:20px;
-}
-#person_side_info>*{
-  margin-bottom:15px;
-}
-#vunnet>div>h2{
-font-size: 1vh;
-}
-#vunnet>div>h1{
-  font-size: 2vh;
-}
-.slideshow-container{
-  height: 200px;
-}
+  }
+  #alle_utovere>div{
+    padding: 10px;
+    height: 50vh;
+  }
+  #alle_utovere>div>div{
+    margin-right: 10px;
+  }
+  #person_side_info{
+    margin-top:20px;
+  }
+  #person_side_info>*{
+    margin-bottom:15px;
+  }
+  #vunnet>div>h2{
+  font-size: 1vh;
+  }
+  #vunnet>div>h1{
+    font-size: 2vh;
+  }
+  .slideshow-container{
+    height: 200px;
+  }
+
 }
 
 @media only screen and (max-width: 1000px) {
