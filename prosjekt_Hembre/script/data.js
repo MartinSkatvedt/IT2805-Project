@@ -355,9 +355,9 @@ const skyttere = [
       ["http://fsu.no/issf/2010/sk/st_mattish.htm", "2010"],
     ],
     stasticsLinks: [
-      ["http://fsu.no/issf/alle/tp/tp_paalh.htm", "Best resuls"],
-      ["http://fsu.no/issf/alle/sn/sn_paalh.htm", "Average"],
-      ["http://fsu.no/issf/alle/ant/st_paalh.htm", "Total starts"],
+      ["http://fsu.no/issf/alle/tp/tp_mattish.htm", "Best resuls"],
+      ["http://fsu.no/issf/alle/sn/sn_mattish.htm", "Average"],
+      ["http://fsu.no/issf/alle/ant/st_mattish.htm", "Total starts"],
       ["http://www.fsu.no/issf/iaar/sk/st_mattish.htm", "Starts this year"],
     ],
 
@@ -516,10 +516,10 @@ const skyttere = [
       ["http://fsu.no/issf/2010/sk/st_ludvikh.htm", "2010"],
     ],
     stasticsLinks: [
-      ["http://fsu.no/issf/alle/tp/tp_paalh.htm", "Best resuls"],
-      ["http://fsu.no/issf/alle/sn/sn_paalh.htm", "Average"],
-      ["http://fsu.no/issf/alle/ant/st_paalh.htm", "Total starts"],
-      ["http://www.fsu.no/issf/iaar/sk/st_mattish.htm", "Starts this year"],
+      ["http://fsu.no/issf/alle/tp/tp_ludvikh.htm", "Best resuls"],
+      ["http://fsu.no/issf/alle/sn/sn_ludvikh.htm", "Average"],
+      ["http://fsu.no/issf/alle/ant/st_ludvikh.htm", "Total starts"],
+      ["http://www.fsu.no/issf/iaar/sk/st_ludvikh.htm", "Starts this year"],
     ],
 
     bestStatistics: [
@@ -691,10 +691,10 @@ const skyttere = [
       ],
     ],
     stasticsLinks: [
-      ["http://fsu.no/issf/alle/tp/tp_paalh.htm", "Best resuls"],
-      ["http://fsu.no/issf/alle/sn/sn_paalh.htm", "Average"],
-      ["http://fsu.no/issf/alle/ant/st_paalh.htm", "Total starts"],
-      ["http://www.fsu.no/issf/iaar/sk/st_mattish.htm", "Starts this year"],
+      ["http://fsu.no/issf/alle/tp/tp_timleoh.htm", "Best resuls"],
+      ["http://fsu.no/issf/alle/sn/sn_timleoh.htm", "Average"],
+      ["http://fsu.no/issf/alle/ant/st_timleoh.htm", "Total starts"],
+      ["http://www.fsu.no/issf/iaar/sk/st_timleoh.htm", "Starts this year"],
     ],
 
     bestStatistics: [
@@ -914,7 +914,7 @@ const sponsors = [
   {
     name: "DETTE KAN VÆRE DIN BEDRIFT",
     img: bilder.sponsors.ny_spons,
-    link: "../kontakt.html",
+    link: "./kontakt.html",
   },
 ];
 
