@@ -932,26 +932,28 @@ const news = [
 
   {
     id: 002,
-    header: "Hei egil",
+    header: "Header her",
     text: [
+      "Paragrafer...",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
-      "Egil er boomer",
     ],
     img: bilder.newsImg[1],
   },
 
   {
     id: 003,
-    header: "Ny førsteplass",
+    header: "Header her",
     text: [
+      "Paragrafer...",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
     ],
     img: bilder.newsImg[2],
   },
   {
     id: 004,
-    header: "Ny førsteplass",
+    header: "Header her",
     text: [
+      "Paragrafer...",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
     ],
     img: bilder.newsImg[3],
