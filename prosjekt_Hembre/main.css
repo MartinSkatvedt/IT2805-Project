@@ -272,7 +272,6 @@ START NAVBAR
   z-index: 9;
   top: 0;
 }
-
 .navBarElement > a::before {
   /* funksjoner for å skalere elementer og overgangs tid*/
   visibility: hidden;
@@ -847,17 +846,6 @@ th,
   display: block;
   margin: auto;
 }
-#grid_container_stats {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid var(--text-color);
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-column-gap: 30px;
-}
-#grid_container_stats > * {
-  margin: 0 auto;
-}
 #merit {
   margin-bottom: 10px;
 }
@@ -1053,22 +1041,25 @@ opacity: 0.6;
 }
 
 .spons .pil {
-  height: 50px;
+  height: 20%;
   width: 20%;
   margin-left: 40%;
 }
 
 .fyll {
-  height: 40%;
-  width: 40%;
+  height: 100px;
+  width: 150px;
   background-color: #f4f4f4;
-  margin-left: 30%;
-  margin-top: 10%;
+  margin: auto;
+  margin-top: 8%;
   border-radius: 2000px;
 }
 
 .fyll p {
-  padding-top: 50px;
+  padding-top: 30px;
+}
+.spons-grid-one .fyll {
+  margin-top: 20%;
 }
 
 .spons-grid-two {
@@ -1090,7 +1081,7 @@ opacity: 0.6;
 }
 
 .spons-grid-two .spons {
-  height: auto;
+  height: 100%;
 }
 
 @media only screen and (min-width: 1100px) {
@@ -1345,7 +1336,7 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid; /* creates padding around scroll thumb */
 }
 
-#skytter #grid_container_stats {
+#grid_container_stats {
   margin-top: 20px;
   padding-top: 20px;
   border-top: 1px solid var(--text-color);
@@ -1353,7 +1344,7 @@ body::-webkit-scrollbar-thumb {
   grid-template-columns: 1fr 2fr;
   grid-column-gap: 30px;
 }
-#skytter #grid_container_stats > * {
+#grid_container_stats > * {
   margin: 0 auto 10px auto;
 }
 #skytter #merit {
@@ -1513,6 +1504,17 @@ font-size: 1.8vh;
   #formContainer{
     width: 90%;
   }
+  /* #skytter #grid_container_stats{
+    grid-template-columns: 1fr;
+
+  } */
+  #skytter > *{
+    grid-template-columns: 1fr;
+  }
+  #skytter>*>*{
+    margin: auto;
+  }
+
 }
 
 @media (max-width: 405px) {
@@ -1544,9 +1546,33 @@ font-size: 1.8vh;
   #bilder_team{
     display: none;
   }
-#alle_utovere{
-  margin:2vh;
-  height: 51vh;
+  #alle_utovere{
+    margin:2vh;
+    height: 51vh;
+
+  }
+  #alle_utovere>div{
+    padding: 10px;
+    height: 50vh;
+  }
+  #alle_utovere>div>div{
+    margin-right: 10px;
+  }
+  #person_side_info{
+    margin-top:20px;
+  }
+  #person_side_info>*{
+    margin-bottom:15px;
+  }
+  #vunnet>div>h2{
+  font-size: 1vh;
+  }
+  #vunnet>div>h1{
+    font-size: 2vh;
+  }
+  .slideshow-container{
+    height: 200px;
+  }
 
 }
 #alle_utovere>div{
