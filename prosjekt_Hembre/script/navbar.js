@@ -104,10 +104,12 @@ function showSub1(event) {
 for (let element of submenuElement_1_Array) {
   element.onmouseover = (event) => {
     let shooter = getShooterobject(element.children[0]);
+
     if (shooter.stasticsLinks.length == 0) {
       submenu_2.style.display = "none";
       return;
     }
+
     let rect = element.getBoundingClientRect();
     submenu_2.style.display = "flex";
     submenu_2.style.left = rect.x + rect.width + "px";
@@ -115,6 +117,7 @@ for (let element of submenuElement_1_Array) {
 
     for (i in submenuElement_2_Array) {
       submenuElement_2_Array[i].children[0].href = shooter.stasticsLinks[i][0];
+      submenuElement_2_Array[i].children[0].target = "_blank";
     }
   };
 }
