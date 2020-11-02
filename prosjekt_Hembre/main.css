@@ -2,7 +2,6 @@
 START GLOBALE CSS FUNKSJONER
  */
 
-
 :root {
   --background-color: #d3ebeb;
   --nav-color: #e8ffff;
@@ -27,14 +26,11 @@ body {
   font-size: var(--font-size);
   margin: 0px;
   top: 0px;
-
 }
 
 html {
   scroll-behavior: smooth;
 }
-
-
 
 main {
   font-family: "Arial", "Times new roman", sans-serif;
@@ -59,16 +55,15 @@ SLUTT GLOBALE CSS FUNKSJONER
 START INDEX
  */
 
-
 .grid-container-hjem {
-   margin-top: 30px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   column-gap: 20px;
   /* grid-column-gap: 1%; */
 }
 
-.grid-container-hjem>div {
+.grid-container-hjem > div {
   background-color: var(--element-background);
   padding: 20px;
   /* border: 1px solid black; */
@@ -120,22 +115,20 @@ START INDEX
   text-align: center;
 }
 
-.sponsor>a {
+.sponsor > a {
   color: var(--text-color);
-text-decoration: none;
+  text-decoration: none;
   margin: 0;
-
 }
 
 .sponsor img {
-width: 100%;
+  width: 100%;
 }
-.sponsor:last-child img{
+.sponsor:last-child img {
   height: 15vh;
 }
 
-
-a>h5{
+a > h5 {
   text-align: left;
   padding-left: 20px;
 }
@@ -151,11 +144,10 @@ a>h5{
   text-align: center;
 }
 
-.stottespiller>a {
+.stottespiller > a {
   color: black;
-text-decoration: none;
+  text-decoration: none;
   margin: 0;
-
 }
 
 /*Slideshow*/
@@ -168,7 +160,7 @@ text-decoration: none;
   display: none;
 }
 
-.slides>img {
+.slides > img {
   /* vertical-align: middle; */
   width: 100%;
   height: 400px;
@@ -185,7 +177,7 @@ text-decoration: none;
 }
 
 /* Caption text */
-.slides>.text {
+.slides > .text {
   color: var(--secondary-teks-color);
   background-color: var(--secondary-background-color);
   padding: 8px 12px;
@@ -219,7 +211,7 @@ text-decoration: none;
   margin: 0 10%;
 }
 
-.buttonsSlides>*:hover {
+.buttonsSlides > *:hover {
   background-color: var(--button-color);
   color: var(--secondary-teks-color);
   cursor: pointer;
@@ -231,7 +223,8 @@ text-decoration: none;
   cursor: pointer;
 }
 
-.buttonsSlides>*:active, .athlete:active {
+.buttonsSlides > *:active,
+.athlete:active {
   opacity: 0.7;
 }
 
@@ -277,14 +270,13 @@ START NAVBAR
   font-size: 30px;
   width: 100%;
   font-family: Montserrat;
-  position:-webkit-sticky;
-  position:sticky;
+  position: -webkit-sticky;
+  position: sticky;
   z-index: 9;
-  top:0;
+  top: 0;
 }
 
-
-.navBarElement>a::before {
+.navBarElement > a::before {
   /* funksjoner for å skalere elementer og overgangs tid*/
   visibility: hidden;
   -webkit-transform: scaleX(0);
@@ -299,11 +291,9 @@ START NAVBAR
   bottom: 0;
   left: 0;
   background-color: #000;
-
-
 }
 
-.navBarElement>a:hover::before {
+.navBarElement > a:hover::before {
   /* funksjoner for å skalere elementer*/
   visibility: visible;
   -webkit-transform: scaleX(1);
@@ -311,38 +301,34 @@ START NAVBAR
   -moz-transform: scale(1);
 }
 
-.navBarElement:hover>a {
+.navBarElement:hover > a {
   color: var(--text-color);
 }
 
-.navBarElement>a {
+.navBarElement > a {
   position: relative;
 }
 
 .navBarElement {
   transition: 0.5s;
-  height:
-   75px;
+  height: 75px;
   padding-top: 25px;
   position: relative;
   width: 16.677%;
-
 }
 
 .logo_nav {
   width: 15%;
   margin-left: 5%;
   padding: 0px;
-
 }
 
-.logo_nav>a>img {
+.logo_nav > a > img {
   height: 100%;
   transition-duration: 0.5s;
-
 }
 
-.logo_nav>a>img:hover{
+.logo_nav > a > img:hover {
   transform: scale(1.3);
   transition-duration: 0.4s;
 }
@@ -389,12 +375,17 @@ START NAVBAR
   position: absolute;
   transition: 0.2s;
   color: white;
-
 }
 
 .submenuElement_1,
 .submenuElement_2 {
-  padding: 10px;
+  padding: 10px 3px 10px 3px;
+}
+
+.submenuElement_1 > a,
+.submenuElement_2 > a {
+  display: block;
+  width: 100%;
 }
 
 .submenuElement_1:hover,
@@ -413,7 +404,8 @@ START NAVBAR
   border-color: #ddcccc;
 }
 
-.submenuElement_1 a, .submenuElement_2 a {
+.submenuElement_1 a,
+.submenuElement_2 a {
   text-decoration: none;
 }
 
@@ -430,10 +422,8 @@ START NAVBAR
   height: 50%;
 }
 
-
-
 .index_body {
-  text-align: center
+  text-align: center;
 }
 /*
 SLUTT NAVBAR
@@ -455,7 +445,7 @@ START OM OSS
   height: 755px;
 }
 
-.knapp_header>a {
+.knapp_header > a {
   color: white;
   font-size: 25px;
   border-style: solid;
@@ -465,7 +455,7 @@ START OM OSS
   text-decoration: none;
 }
 
-.knapp_header>a:hover {
+.knapp_header > a:hover {
   transition: all 0.4s ease-in-out;
   border-color: #022c70;
 }
@@ -487,10 +477,9 @@ START OM OSS
   font-size: 40px;
 }
 
-.logo>img {
+.logo > img {
   width: 30%;
   transition-duration: 0.5s;
-
 }
 
 .hele_folg_meg {
@@ -527,22 +516,21 @@ START OM OSS
   color: white;
 }
 
-.logo>img:hover {
+.logo > img:hover {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.2);
   transition-duration: 0.5s;
-
 }
 
-#bilder_team>div {
+#bilder_team > div {
   transform: scale(1);
   -moz-transform: scale(1);
   -webkit-transform: scale(1);
   transition-duration: 0.4s;
 }
 
-#bilder_team>div:hover {
+#bilder_team > div:hover {
   transform: scale(1.2);
   -moz-transform: scale(1.2);
   -webkit-transform: scale(1.2);
@@ -558,27 +546,26 @@ START OM OSS
 }
 
 /* Style the tab buttons */
-.navn_header>div {
+.navn_header > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.navn_header>div{
-width: 100%;
-bottom:0px;
-position: absolute;
-
+.navn_header > div {
+  width: 100%;
+  bottom: 0px;
+  position: absolute;
 }
 
 .link {
   width: 100%;
   background-color: #555;
-    color: white;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 24px 16px;
-    font-size: 17px;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 24px 16px;
+  font-size: 17px;
 }
 
 /* Change background color of buttons on hover */
@@ -590,12 +577,10 @@ h1 {
   font-size: 3vw;
 }
 
-
 /* Style each tab content individually */
 .tekst_om {
   margin-bottom: 50px;
 }
-
 
 #vunnet {
   display: grid;
@@ -607,15 +592,15 @@ h1 {
   padding: 1%;
 }
 
-#gull>h1 {
+#gull > h1 {
   color: #e68a00;
 }
 
-#ol-deltat>h1 {
+#ol-deltat > h1 {
   color: red;
 }
 
-#norge_rekorder>h1 {
+#norge_rekorder > h1 {
   color: blue;
 }
 
@@ -623,7 +608,7 @@ h1 {
   padding-top: 30px;
 } */
 
-#alle_utovere>div {
+#alle_utovere > div {
   padding: 5vh 13vh;
   height: 60vh;
   scroll-snap-align: center;
@@ -639,7 +624,8 @@ h1 {
   scroll-snap-type: y mandatory;
   text-align: left;
 }
-.hembre img, #person_bilder img{
+.hembre img,
+#person_bilder img {
   padding: 0;
   margin: 0;
   width: 100%;
@@ -673,10 +659,10 @@ h1 {
   display: block;
 }
 
-.hembre>*{
+.hembre > * {
   margin: auto;
 }
-.hembre>*>*{
+.hembre > * > * {
   margin: 10px;
 }
 #alle_utovere::-webkit-scrollbar {
@@ -687,7 +673,7 @@ h1 {
 }
 #alle_utovere::-webkit-scrollbar-thumb {
   background: #888;
-  border-radius:5px;
+  border-radius: 5px;
 }
 #alle_utovere::-webkit-scrollbar-thumb:hover {
   background: #555;
@@ -701,7 +687,7 @@ h1 {
   text-align: center;
 }
 
-#bilder_team>div>img {
+#bilder_team > div > img {
   width: 80%;
   height: 80%;
   display: block;
@@ -718,7 +704,7 @@ h1 {
   box-shadow: 0px 2px 8px 4px;
 }
 
-#alle_utovere>div>h1 {
+#alle_utovere > div > h1 {
   margin: 0px;
 }
 
@@ -746,10 +732,10 @@ h1 {
   text-align: center;
   padding: 2%;
 }
-#formContainer>p{
+#formContainer > p {
   color: grey;
 }
-.gridElement>input{
+.gridElement > input {
   font-size: 22px;
 }
 
@@ -763,7 +749,7 @@ h1 {
   display: flex;
   flex-direction: column;
 }
-.gridElement>input{
+.gridElement > input {
   padding-top: 10px;
 }
 /*
@@ -790,7 +776,8 @@ SKYTER UNDERSIDENE:
   font-size: 16px;
   text-align: center;
 }
-.grid_container_stats>h1, .person_side_top>h1 {
+.grid_container_stats > h1,
+.person_side_top > h1 {
   text-align: center;
   font-size: 6vh;
   margin-top: 0px;
@@ -831,7 +818,6 @@ th,
   padding: 1%;
   font-size: 12px;
 }
-
 
 #personer_underliggende_bilder {
   display: grid;
@@ -939,14 +925,13 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
-#f_submit>button {
-  background-color:orange;
+#f_submit > button {
+  background-color: orange;
   padding: 5px;
   width: 100px;
   border: none;
   border-radius: 5px;
-  font-size: 19px
-
+  font-size: 19px;
 }
 
 .subFolder {
@@ -1036,7 +1021,7 @@ START SPONSOR
 .spons .pil {
   height: 50px;
   width: 20%;
-  margin-left: 40%
+  margin-left: 40%;
 }
 
 .fyll {
@@ -1045,7 +1030,7 @@ START SPONSOR
   background-color: white;
   margin-left: 30%;
   margin-top: 10%;
-  border-radius: 2000px
+  border-radius: 2000px;
 }
 
 .fyll p {
@@ -1058,7 +1043,7 @@ START SPONSOR
   margin-top: 90px;
 }
 
-.spons-grid-two>div {
+.spons-grid-two > div {
   text-align: center;
   padding: 10px;
   margin-bottom: 30px;
@@ -1074,22 +1059,21 @@ START SPONSOR
   height: 500px;
 }
 
-
 @media only screen and (min-width: 1100px) {
   .main_sponsor {
     width: 900px;
   }
 }
 
-  /*
+/*
   START FOOTER
   */
 
-footer{
+footer {
   /* margin-top: 20px; */
   background-color: var(--nav-color);
 }
-footer a{
+footer a {
   display: block;
 }
 
@@ -1104,7 +1088,7 @@ footer a{
   grid-template-columns: repeat(6, 1fr);
   width: 100%;
   border-bottom: var(--border-color) 0.4px solid;
-  text-align: left
+  text-align: left;
 }
 
 .footer-container-one ul li a {
@@ -1119,7 +1103,7 @@ footer a{
 }
 
 .footer-container-one ul {
-padding: 0px;
+  padding: 0px;
 }
 
 .footer-container-one ul li p a {
@@ -1131,23 +1115,23 @@ padding: 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20%;
-  margin-bottom:0px;
-  padding: 10px
+  margin-bottom: 0px;
+  padding: 10px;
 }
 
 p {
   margin: 0;
 }
 
-.footer-container-two>div {
+.footer-container-two > div {
   font-size: 14px;
   border: solid 1px var(--border-color);
-  background-color: #D8F5F6
+  background-color: #d8f5f6;
 }
-.footer-container-two>div>a{
-  color:var(--text-color);
+.footer-container-two > div > a {
+  color: var(--text-color);
   text-decoration: none;
-  margin:auto;
+  margin: auto;
 }
 
 #footer_contact {
@@ -1167,20 +1151,18 @@ START NYHETER
 */
 
 .news_body {
-  font-family: "Arial","Times new roman", sans-serif;
+  font-family: "Arial", "Times new roman", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
   font-size: var(--font-size);
   text-align: center;
-
 }
 
-#flex-container-news{
+#flex-container-news {
   background-color: rgb(124, 122, 122);
   width: 90%;
   margin-top: 5%;
   margin-bottom: 5%;
-
 }
 
 #news-container {
@@ -1190,21 +1172,17 @@ START NYHETER
   padding: 3%;
   margin: auto;
   background-color: rgb(124, 122, 122);
-
 }
-
 
 #news-site-headline {
   font-size: 60px;
   padding: 3%;
-
 }
 
-
 /* nederste nyhetsbokser */
-.news-div{
+.news-div {
   display: grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   width: 90%;
   margin: 0 auto;
   background-color: rgb(182, 181, 181);
@@ -1212,14 +1190,13 @@ START NYHETER
   margin-bottom: 5%;
   position: relative;
   /* display: none; */
-
 }
-.news-div a{
+.news-div a {
   visibility: hidden;
 }
-.news-div a:target{
-   position: absolute;
-   top: -140px;
+.news-div a:target {
+  position: absolute;
+  top: -140px;
 }
 #news-img {
   display: block;
@@ -1231,14 +1208,12 @@ START NYHETER
   /* grid-column-end: 3; */
   /* grid-row-start: 1; */
   /* grid-row-end: 3;  */
-
 }
 
 #textbox {
   font-size: 25px;
   line-height: 150%;
   margin-left: 10%;
-
 }
 
 #textbox > h2 {
@@ -1246,35 +1221,32 @@ START NYHETER
 }
 /*SLUTT NYHETER*/
 
-
-.nasjonalStat{
-padding:15px;
-
+.nasjonalStat {
+  padding: 15px;
 }
-.nasjonalStat>a{
-  margin:15px;
+.nasjonalStat > a {
+  margin: 15px;
   text-decoration: underline;
 }
-
 
 /* Fikse news, og støtttespillere kommer opp som athelete */
 
 /* Skyttere.html */
 #person_side_top {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr  ;
+  grid-template-columns: 1fr 2fr 1fr;
 }
-#skytter{
+#skytter {
   width: 95%;
   margin: 1% auto;
   font-size: var(--font-size);
 }
-#person_side_info{
+#person_side_info {
   margin: auto;
-  padding:0 10%;
+  padding: 0 10%;
 }
-#person_side_info>*{
-  margin:10px;
+#person_side_info > * {
+  margin: 10px;
   text-align: left;
 }
 
@@ -1295,10 +1267,12 @@ padding:15px;
   text-align: left;
 }
 
-#personal-records th, #personal-records td {
+#personal-records th,
+#personal-records td {
   padding: 5px;
 }
-#personal-records th, #merit i {
+#personal-records th,
+#merit i {
   border-bottom: dashed 1px var(--text-color);
 }
 /* #vunnet {
@@ -1339,9 +1313,9 @@ padding:15px;
   margin: auto;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: grey;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid ;  /* creates padding around scroll thumb */
+  background-color: grey; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid; /* creates padding around scroll thumb */
 }
 
 #skytter #grid_container_stats {
@@ -1361,13 +1335,15 @@ body::-webkit-scrollbar-thumb {
 #skytter #merit > * {
   margin: 5px;
 }
-#skytter #merit,#skytter td {
+#skytter #merit,
+#skytter td {
   border-bottom: 1px solid var(--text-color);
 }
-#familyDiv{
+#familyDiv {
   margin: auto auto auto 0;
 }
-#skytter #familyDiv a, #skytter #divLinks a{
+#skytter #familyDiv a,
+#skytter #divLinks a {
   display: block;
 }
 #skytter #familyType > p {
@@ -1381,77 +1357,67 @@ body::-webkit-scrollbar-thumb {
   margin-top: 0;
 }
 
-
-
-
 /*
 START RESPONSIVE MEDIAQUERYS
 */
 
-
-
-
-
-
 /*css for hele body når den er større enn 600px starter under her*/
 
-
 @media only screen and (max-width: 1200px) {
-  #pal_info>ul>li {
+  #pal_info > ul > li {
     font-size: 1.5vw;
   }
 
-  #alle_utovere>div>img {
+  #alle_utovere > div > img {
     width: 150px;
     height: 250px;
   }
-  #alle_utovere>div{
+  #alle_utovere > div {
     font-size: 2vh;
   }
 }
 
-
 @media only screen and (max-width: 900px) {
-.knapp_header{
-  display: none;
-}
-#header_om_oss{
-  height: 20vh;
-  background-image: none;
-}
-.navn_header{
-  display: none;
-}
-.header_overst{
-  display: none;
-}
-.logo_footer{
-  display: none;
-}
-.footer-container-one>ul{
-  display: none;
-}
+  .knapp_header {
+    display: none;
+  }
+  #header_om_oss {
+    height: 20vh;
+    background-image: none;
+  }
+  .navn_header {
+    display: none;
+  }
+  .header_overst {
+    display: none;
+  }
+  .logo_footer {
+    display: none;
+  }
+  .footer-container-one > ul {
+    display: none;
+  }
 
-.footer-container-one {
-  grid-template-columns: repeat(5,1fr)
-}
+  .footer-container-one {
+    grid-template-columns: repeat(5, 1fr);
+  }
 
-/*Big smartphones [426px -> 600px]*/
-#center {
-  grid-row: 1;
-}
+  /*Big smartphones [426px -> 600px]*/
+  #center {
+    grid-row: 1;
+  }
 
-.sponsor img {
-width: 74%;
-}
+  .sponsor img {
+    width: 74%;
+  }
 
-.grid-container-athletes {
-  grid-gap: 5px;
-}
+  .grid-container-athletes {
+    grid-gap: 5px;
+  }
 
-.grid-container-hjem {
-  grid-template-columns: 1fr;
-}
+  .grid-container-hjem {
+    grid-template-columns: 1fr;
+  }
   h1 {
     font-size: 4vh;
   }
@@ -1462,21 +1428,20 @@ width: 74%;
   .main_sponsor {
     width: 100%;
   }
-#alle_utovere>div>img{
-display: none;
-}
-#alle_utovere>div{
-  padding: 100px 0px;
-}
-#alle_utovere{
-  margin:100px;
-}
+  #alle_utovere > div > img {
+    display: none;
+  }
+  #alle_utovere > div {
+    padding: 100px 0px;
+  }
+  #alle_utovere {
+    margin: 100px;
+  }
 }
 
-
-@media only screen and (max-width:600px){
+@media only screen and (max-width: 600px) {
   .footer-container-one {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
   }
   .logo_footer {
     display: block;
@@ -1486,27 +1451,23 @@ display: none;
 }
 
 @media (max-width: 405px) {
-
   /*Small smartphones [325px -> 425px]*/
   .grid-container-athletes {
     grid-template-columns: 1fr;
   }
-  .footer-container-two{
+  .footer-container-two {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
-  .footer-container-two>p {
+  .footer-container-two > p {
     display: none;
   }
-
 }
 
-@media only screen and (max-width:700px){
-
+@media only screen and (max-width: 700px) {
   .news-site-headline {
     font-size: 30px;
     padding: 3%;
-
   }
 
   .textbox {
@@ -1518,16 +1479,11 @@ display: none;
     font-size: 20px;
   }
 
-  .news-div{
+  .news-div {
     grid-template-columns: 1fr;
   }
-
-
 }
-
 
 /*
 SLUTT RESPONSIVE MEDIAQUERYS
 */
-
-
