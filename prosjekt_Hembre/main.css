@@ -270,6 +270,8 @@ START NAVBAR
   font-size: 30px;
   width: 100%;
   font-family: Montserrat;
+  position: -webkit-sticky;
+  position: sticky;
   z-index: 9;
   top: 0;
 }
