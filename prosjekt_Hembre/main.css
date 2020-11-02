@@ -1171,9 +1171,10 @@ START NYHETER
 }
 
 #news-container {
-  display: flex;
-  flex-flow: column wrap;
-  width: 100%;
+  /* display: flex;
+  flex-flow: column wrap; */
+  width: 94%;
+  padding: 3%;
   margin: auto;
   background-color: rgb(124, 122, 122);
 
@@ -1190,18 +1191,22 @@ START NYHETER
 /* nederste nyhetsbokser */
 .news-div{
   display: grid;
-  grid-template-rows: 50% 50%;
-  grid-template-columns: 50% 50%;
+  grid-template-columns:1fr 1fr;
   width: 90%;
   margin: 0 auto;
   background-color: rgb(182, 181, 181);
   border-radius: 3px 3px 0 0;
   margin-bottom: 5%;
+  position: relative;
+  /* display: none; */
 
 }
-.news-div:target{
-   border: 4px solid var(--button-color);
-
+.news-div a{
+  visibility: hidden;
+}
+.news-div a:target{
+   position: absolute;
+   top: -140px;
 }
 #news-img {
   display: block;
@@ -1489,7 +1494,108 @@ display: none;
 
 }
 
+@media only screen and (max-width:600px){
+
+  .news-site-headline {
+    font-size: 30px;
+    padding: 3%;
+
+  }
+
+  .news-img {
+    display: none;
+  }
+
+
+  .textbox {
+    font-size: 15px;
+    line-height: 150%;
+    margin-left: 10%;
+  }
+
+  .textbox > h2 {
+    font-size: 20px;
+  }
+
+.news-div{
+  grid-template-columns: 1fr;
+  }
+
+}
+  /* display: none; */
+
 
 /*
 SLUTT RESPONSIVE MEDIAQUERYS
 */
+
+
+
+
+}
+
+#flex-container-news{
+  background-color: rgb(124, 122, 122);
+  width: 90%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+
+#news-container {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  margin: auto;
+  background-color: rgb(124, 122, 122);
+
+}
+
+
+#news-site-headline {
+  font-size: 60px;
+  padding: 3%;
+
+}
+
+.news-div{
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgb(182, 181, 181);
+  border-radius: 3px 3px 0 0;
+  margin-bottom: 5%;
+  /* display: none; */
+
+}
+
+.news-div a{
+  visibility: hidden;
+}
+
+.news-div a:target{
+   /* border: 4px solid var(--button-color); */
+   position: relative;
+   top: -350px;
+   /* display: block; */
+
+}
+#news-img {
+  display: block;
+  width: 90%;
+  padding: 5%;
+  margin-left: auto;
+}
+
+#textbox {
+  font-size: 25px;
+  line-height: 150%;
+  margin-left: 10%;
+
+}
+
+#textbox > h2 {
+  font-size: 40px;
+}
