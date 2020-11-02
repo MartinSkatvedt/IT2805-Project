@@ -921,11 +921,11 @@ const sponsors = [
 const news = [
   {
     id:'001',
-    header: "Hembre-dominans under Oktoberfest",
+    header: "Hembre domination during Octoberfest",
     text: [
-      "Oktoberfest hos Ørland Pistolklubbs tredagers pistolfesival i Brekstad var preget av et klassisk tilfelle 'Hembre-dominanse'.",
-      "Pål Hembre vant sammenlagt da han gikk av med seieren i fem av de åtte konkurransene. Mattis Hembre vant to, imens klubbkamerat Ingar Woll også tok hjem en seier for Bærum PK.",
-      "Tvillingene Ludvik og Mattis tok også dobbelt i Juniorklassen, imens yngstemann Tim Leo vant en sprintluftkonkurranse i klasse U16.",
+      'Octoberfest in Ørland Pistolklubbs three day pistol festival in Brekstad was struch by a classic case of "Hembre domination".',
+      "Pål Hembre went home with first place after he bested the competition in five of eight events. Mattis Hembre won two, while another member of Berum PK, Ingar Woll, also took home a win.",
+      "The twins Ludvik and Mattis also won a double in the junior class, while the youngest of the Teams participants, Tim Leo, won a event in the U16 class.",
     ],
     img: bilder.newsImg[0],
   },
