@@ -35,5 +35,5 @@ function writeNews() {
         newsContainer.appendChild(newsDiv)
         main.appendChild(newsContainer)
     }
-
+    document.documentElement.setAttribute('lang','no')
 }
