@@ -36,6 +36,7 @@ function writeNews() {
         ancor.className = 'ancor'
         newsDiv.appendChild(ancor)
 
+
         newsContainer.appendChild(newsDiv)
         main.appendChild(newsContainer)
     }

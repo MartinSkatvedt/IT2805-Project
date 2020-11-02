@@ -1164,9 +1164,10 @@ START NYHETER
 }
 
 #news-container {
-  display: flex;
-  flex-flow: column wrap;
-  width: 100%;
+  /* display: flex;
+  flex-flow: column wrap; */
+  width: 94%;
+  padding: 3%;
   margin: auto;
   background-color: rgb(124, 122, 122);
 
@@ -1183,13 +1184,13 @@ START NYHETER
 /* nederste nyhetsbokser */
 .news-div{
   display: grid;
-  grid-template-rows: 50% 50%;
-  grid-template-columns: 50% 50%;
+  grid-template-columns:1fr 1fr;
   width: 90%;
   margin: 0 auto;
   background-color: rgb(182, 181, 181);
   border-radius: 3px 3px 0 0;
   margin-bottom: 5%;
+  position: relative;
   /* display: none; */
 
 }
@@ -1197,11 +1198,8 @@ START NYHETER
   visibility: hidden;
 }
 .news-div a:target{
-   /* border: 4px solid var(--button-color); */
-   position: relative;
-   top: -350px;
-   /* display: block; */
-
+   position: absolute;
+   top: -140px;
 }
 #news-img {
   display: block;
