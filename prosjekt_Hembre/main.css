@@ -1184,6 +1184,7 @@ START NYHETER
 .news_body {
   font-family: "Arial", "Times new roman", sans-serif;
   background-color: var(--background-color);
+  color: black;
   font-size: var(--font-size);
   text-align: center;
 }
