@@ -6,11 +6,8 @@ function writeNews() {
         const element = news[i];
         const newsDiv = document.createElement('div')
         newsDiv.className = 'news-div'
-        newsDiv.id = element.id
-        // const ancor = document.createElement('a')
-        // ancor.id = element.id
-        // ancor.className = 'ancor'
-        // newsDiv.appendChild(ancor)
+        // newsDiv.id = element.id
+        
         
         const header = document.createElement('h2')
         header.innerHTML = element.header
@@ -32,6 +29,13 @@ function writeNews() {
         newsDiv.appendChild(textDiv)
         newsDiv.appendChild(img)
         
+
+        const ancor = document.createElement('a')
+        ancor.id = element.id
+        ancor.innerHTML = 'ANKER'
+        ancor.className = 'ancor'
+        newsDiv.appendChild(ancor)
+
         newsContainer.appendChild(newsDiv)
         main.appendChild(newsContainer)
     }
