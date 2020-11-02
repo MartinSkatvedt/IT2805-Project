@@ -612,7 +612,7 @@ h1 {
   color: silver;
 }
 
-#bronze {
+#bronse {
   color:#ba3b09;
 }
 
@@ -1416,7 +1416,7 @@ font-size: 1.8vh;
     display: none;
   }
   #header_om_oss {
-    height: 20vh;
+    height: 15vh;
     background-image: none;
   }
   .navn_header {
@@ -1528,8 +1528,28 @@ font-size: 1.8vh;
   }
 #alle_utovere{
   margin:2vh;
-}
+  height: 51vh;
 
+}
+#alle_utovere>div{
+  padding: 10px;
+  height: 50vh;
+}
+#alle_utovere>div>div{
+  margin-right: 10px;
+}
+#person_side_info{
+  margin-top:20px;
+}
+#person_side_info>*{
+  margin-bottom:15px;
+}
+#vunnet>div>h2{
+font-size: 1vh;
+}
+#vunnet>div>h1{
+  font-size: 2vh;
+}
 }
 
 @media only screen and (max-width: 700px) {
