@@ -54,6 +54,10 @@ SLUTT GLOBALE CSS FUNKSJONER
 /*
 START INDEX
  */
+<<<<<<< HEAD
+
+=======
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 .grid-container-hjem {
   margin-top: 30px;
   display: grid;
@@ -269,9 +273,17 @@ START NAVBAR
   font-size: 30px;
   width: 100%;
   font-family: Montserrat;
+<<<<<<< HEAD
+
   z-index: 9;
   top: 0;
 }
+
+=======
+  z-index: 9;
+  top: 0;
+}
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 .navBarElement > a::before {
   /* funksjoner for å skalere elementer og overgangs tid*/
   visibility: hidden;
@@ -311,7 +323,10 @@ START NAVBAR
   padding-top: 25px;
   position: relative;
   width: 16.677%;
+<<<<<<< HEAD
+=======
   text-align: center;
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 .logo_nav {
@@ -514,8 +529,13 @@ START OM OSS
 }
 
 .logo > img:hover {
+<<<<<<< HEAD
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+=======
   -moz-transform: scale(1.2);
   -webkit-transform: scale(1.2);
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
   transform: scale(1.2);
   transition-duration: 0.5s;
 }
@@ -543,6 +563,17 @@ START OM OSS
 }
 
 /* Style the tab buttons */
+<<<<<<< HEAD
+.navn_header > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.navn_header > div {
+  width: 100%;
+  bottom: 0px;
+  position: absolute;
+=======
 .navn_header{
   background-color: #555;
   position: absolute;
@@ -555,6 +586,7 @@ START OM OSS
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 #divLinks{
@@ -566,7 +598,12 @@ START OM OSS
   border: none;
   outline: none;
   cursor: pointer;
+<<<<<<< HEAD
+  padding: 24px 16px;
+  font-size: 17px;
+=======
   padding: 24px 60px;
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 /* Change background color of buttons on hover */
@@ -592,6 +629,19 @@ h1 {
   margin: 5% 25%;
   padding: 1%;
 }
+<<<<<<< HEAD
+
+#gull > h1 {
+  color: #e68a00;
+}
+
+#ol-deltat > h1 {
+  color: red;
+}
+
+#norge_rekorder > h1 {
+  color: blue;
+=======
  #vunnet {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -613,6 +663,7 @@ h1 {
 
 #bronze {
   color:#ba3b09;
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 /* #alle_utovere>div>h2 {
@@ -733,7 +784,13 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+/*
+SLUTT OM OSS:
+*/
 
+/*
+START KONTAKT OSS:
+*/
 #formContainer {
   background-color: #fff0f0;
   width: 50%;
@@ -754,19 +811,29 @@ h1 {
 #contactForm {
   display: grid;
 }
+#mapContainer{
+  z-index: 10;
+}
+
 .gridElement {
   margin-top: 4%;
-  width: 60%;
+  width: 60vh;
   text-align: left;
   display: flex;
   flex-direction: column;
 }
+<<<<<<< HEAD
+.gridElement>input{
+  width: 50vh
+=======
 .gridElement > input {
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
   padding-top: 10px;
 }
 /*
-SLUTT OM OSS:
+SLUTT KONTAKT
 */
+
 
 /*
 SKYTER UNDERSIDENE:
@@ -933,11 +1000,14 @@ textarea {
   border: none;
   border-radius: 5px;
   font-size: 19px;
+<<<<<<< HEAD
+=======
   display: block;
   margin:auto;
   margin-top: 20px;
 
 
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 .subFolder {
@@ -1047,11 +1117,19 @@ opacity: 0.6;
 }
 
 .fyll {
+<<<<<<< HEAD
+  height: 40%;
+  width: 40%;
+  background-color: white;
+  margin-left: 30%;
+  margin-top: 10%;
+=======
   height: 100px;
   width: 150px;
   background-color: #f4f4f4;
   margin: auto;
   margin-top: 8%;
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
   border-radius: 2000px;
 }
 
@@ -1067,6 +1145,9 @@ opacity: 0.6;
   margin: auto;
   margin-top: 90px;
 }
+<<<<<<< HEAD
+
+=======
 .spons-grid-two .spons:hover {
   cursor: pointer;
 }
@@ -1074,6 +1155,7 @@ opacity: 0.6;
   background-color: orange;
   border-radius: 10px;
 }
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 .spons-grid-two > div {
   text-align: center;
   padding: 10px;
@@ -1187,16 +1269,32 @@ SLUTT FOOTER
 START NYHETER
 */
 
+<<<<<<< HEAD
+.news_body {
+  font-family: "Arial", "Times new roman", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--font-size);
+  text-align: center;
+}
 
 #flex-container-news {
+  background-color: rgb(124, 122, 122);
+=======
+
+#flex-container-news {
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
   width: 90%;
   text-align: center;
   color: var(--text-color);
   margin-top: 5%;
   margin-bottom: 5%;
+<<<<<<< HEAD
+=======
   background-color: #555;
 
 
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 #news-container {
@@ -1205,15 +1303,22 @@ START NYHETER
   width: 94%;
   padding: 3%;
   margin: auto;
+<<<<<<< HEAD
+  background-color: rgb(124, 122, 122);
+=======
 
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 #news-site-headline {
   font-size: 60px;
   padding: 3%;
+<<<<<<< HEAD
+=======
   margin-bottom: 0px;
   color:var(--text-color);
   background-color: #555;
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 /* nederste nyhetsbokser */
@@ -1227,16 +1332,35 @@ START NYHETER
   margin-bottom: 5%;
   position: relative;
   /* display: none; */
+<<<<<<< HEAD
+}
+.news-div a {
+  visibility: hidden;
+}
+.news-div a:target {
+  position: absolute;
+  top: -140px;
+=======
 }
 
 .news-div .ancor:target {
   position: absolute;
   top: -50px;
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 #news-img {
   display: block;
   width: 90%;
   padding: 5%;
+<<<<<<< HEAD
+  margin-left: auto;
+  /* border: 2px solid var(--element-background); */
+  /* grid-column-start: 2; */
+  /* grid-column-end: 3; */
+  /* grid-row-start: 1; */
+  /* grid-row-end: 3;  */
+=======
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 #textbox {
@@ -1386,8 +1510,15 @@ START RESPONSIVE MEDIAQUERYS
   }
 .gridElement{
   width: 30vh;
+<<<<<<< HEAD
+  align-items: center;
+=======
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
+#contactForm{
 
+<<<<<<< HEAD
+=======
 .gridElement>input{
   width: 30vh;
 }
@@ -1403,6 +1534,7 @@ font-size: 1.8vh;
 }
 .footer-container-one>ul>li>a {
   font-size: 2vh;
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 }
@@ -1412,7 +1544,11 @@ font-size: 1.8vh;
     display: none;
   }
   #header_om_oss {
+<<<<<<< HEAD
+    height: 20vh;
+=======
     height: 15vh;
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
     background-image: none;
   }
   .navn_header {
@@ -1427,9 +1563,12 @@ font-size: 1.8vh;
   .footer-container-one > ul {
     display: none;
   }
+<<<<<<< HEAD
+=======
   .footer-container-one>div{
     margin:auto;
   }
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 
   .footer-container-one {
     grid-template-columns: repeat(5, 1fr);
@@ -1474,12 +1613,28 @@ font-size: 1.8vh;
   #alle_utovere {
     margin: 100px;
   }
+<<<<<<< HEAD
+  #alle_utovere > div > img {
+    display: none;
+  }
+  #alle_utovere > div {
+    padding: 100px 0px;
+  }
+  #alle_utovere {
+    margin: 100px;
+  }
+=======
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 @media only screen and (max-width: 600px) {
   .footer-container-one {
+<<<<<<< HEAD
+    grid-template-columns: 1fr;
+=======
     display: grid;
     grid-template-columns: 1fr
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
   }
   .footer-container-one>div{
     margin:auto;
@@ -1489,6 +1644,9 @@ font-size: 1.8vh;
     height: 200px;
     padding-left: 20px;
   }
+<<<<<<< HEAD
+
+=======
   #f_fornavn, #f_etternavn{
   margin: 0px 5vh;
   }
@@ -1505,6 +1663,7 @@ font-size: 1.8vh;
   #skytter>*>*{
     margin: auto;
   }
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 
 }
 
@@ -1518,6 +1677,10 @@ font-size: 1.8vh;
     grid-gap: 10px;
   }
   .footer-container-two > p {
+<<<<<<< HEAD
+    display: none;
+  }
+=======
     display: none;
   }
   #f_fornavn>input, #f_etternavn>input{
@@ -1587,6 +1750,7 @@ font-size: 1vh;
 }
 .slideshow-container{
   height: 200px;
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 #oxford>.logo_liten, #bakkevold>.logo_liten{
