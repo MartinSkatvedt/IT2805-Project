@@ -1,10 +1,11 @@
 document.write(`
 <div id="navbar">
-<div class="logo_nav", id="logo_navigationbar" >
-<a href="./index.html"><img src="bilder/logo2.svg" alt=""></a>
-</div>
+  <div class="logo_nav" id="logo_navigationbar" >
+    <a href="./index.html"><img src="bilder/logo2.svg" alt=""></a>
+  </div>
   <div class="navBarElement" id="utoverElement">
-    <a href="skyttere.html">Athletes</a>
+    <a>Athletes</a>
+
   </div>
   <div class="navBarElement">
     <a href="./sponsor.html">Sponsors</a>
@@ -87,7 +88,32 @@ for (element of navBarElements_Array) {
 }
 
 logo_navigationbar.addEventListener("mouseover", hideSubmenus);
-utoverElement.children[0].addEventListener("mouseover", showSub1);
+
+if (screen.width > 500) {
+  utoverElement.children[0].addEventListener("mouseover", showSub1);
+
+  for (let element of submenuElement_1_Array) {
+    element.onmouseover = (event) => {
+      let shooter = getShooterobject(element.children[0]);
+
+      if (shooter.stasticsLinks.length == 0) {
+        submenu_2.style.display = "none";
+        return;
+      }
+
+      let rect = element.getBoundingClientRect();
+      submenu_2.style.display = "flex";
+      submenu_2.style.left = rect.x + rect.width + "px";
+      submenu_2.style.top = rect.y + "px";
+
+      for (i in submenuElement_2_Array) {
+        submenuElement_2_Array[i].children[0].href =
+          shooter.stasticsLinks[i][0];
+        submenuElement_2_Array[i].children[0].target = "_blank";
+      }
+    };
+  }
+} else utoverElement.children[0].addEventListener("click", showSub1);
 
 function hideSubmenus() {
   submenu_1.style.display = "none";
@@ -99,19 +125,6 @@ function showSub1(event) {
   submenu_1.style.display = "flex";
   submenu_1.style.left = rect.x + "px";
   submenu_1.style.top = rect.y + rect.height + 2 + "px";
-}
-
-for (let element of submenuElement_1_Array) {
-  element.onmouseover = (event) => {
-    let rect = element.getBoundingClientRect();
-    submenu_2.style.display = "flex";
-    submenu_2.style.left = rect.x + rect.width + "px";
-    submenu_2.style.top = rect.y + "px";
-    let shooter = getShooterobject(element.children[0]);
-    for (i in submenuElement_2_Array) {
-      submenuElement_2_Array[i].children[0].href = shooter.stasticsLinks[i][0];
-    }
-  };
 }
 
 function getShooterobject(href) {

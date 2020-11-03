@@ -912,7 +912,7 @@ const sponsors = [
     link: "https://www.oxfordguncompany.co.uk/",
   },
   {
-    name: "DETTE KAN VÆRE DIN BEDRIFT",
+    name: "THIS CAN BE YOUR COMPANY",
     img: bilder.sponsors.ny_spons,
     link: "./kontakt.html",
   },
@@ -920,7 +920,7 @@ const sponsors = [
 
 const news = [
   {
-    id:001,
+    id: 001,
     header: "Hembre domination during Octoberfest",
     text: [
       'Octoberfest in Ørland Pistolklubbs three day pistol festival in Brekstad was struch by a classic case of "Hembre domination".',
@@ -931,29 +931,31 @@ const news = [
   },
 
   {
-    id:002,
-    header: "Hei egil",
+    id: 002,
+    header: "Header her",
     text: [
+      "Paragrafer...",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
-      "Egil er boomer",
     ],
     img: bilder.newsImg[1],
   },
 
   {
-    id:003,
-    header: "Ny førsteplass",
+    id: 003,
+    header: "Header her",
     text: [
+      "Paragrafer...",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
     ],
-    img: bilder.newsImg[2]
+    img: bilder.newsImg[2],
   },
   {
-    id:004,
-    header: "Ny førsteplass",
+    id: 004,
+    header: "Header her",
     text: [
+      "Paragrafer...",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
     ],
-    img: bilder.newsImg[3]
+    img: bilder.newsImg[3],
   }
 ];

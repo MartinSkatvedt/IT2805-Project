@@ -6,7 +6,6 @@ function writeNews() {
         const element = news[i];
         const newsDiv = document.createElement('div')
         newsDiv.className = 'news-div'
-        // newsDiv.id = element.id
         
         
         const header = document.createElement('h2')
@@ -29,10 +28,9 @@ function writeNews() {
         newsDiv.appendChild(textDiv)
         newsDiv.appendChild(img)
         
-
+//Lager ett anker for å referere til den lokale linken på riktig posisjon
         const ancor = document.createElement('a')
         ancor.id = element.id
-        ancor.innerHTML = 'ANKER'
         ancor.className = 'ancor'
         newsDiv.appendChild(ancor)
 

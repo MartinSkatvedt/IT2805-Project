@@ -54,7 +54,10 @@ SLUTT GLOBALE CSS FUNKSJONER
 /*
 START INDEX
  */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 .grid-container-hjem {
   margin-top: 30px;
   display: grid;
@@ -163,7 +166,6 @@ a > h5 {
 .slides > img {
   /* vertical-align: middle; */
   width: 100%;
-  height: 400px;
 }
 
 /* Slideshow container */
@@ -173,7 +175,8 @@ a > h5 {
   overflow: hidden;
   background-color: var(--secondary-background-color);
   border-radius: 3px 3px 0 0;
-  width: 100%;
+  width: 70%;
+  height:300px;
 }
 
 /* Caption text */
@@ -270,11 +273,17 @@ START NAVBAR
   font-size: 30px;
   width: 100%;
   font-family: Montserrat;
+<<<<<<< HEAD
 
   z-index: 9;
   top: 0;
 }
 
+=======
+  z-index: 9;
+  top: 0;
+}
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 .navBarElement > a::before {
   /* funksjoner for å skalere elementer og overgangs tid*/
   visibility: hidden;
@@ -314,6 +323,10 @@ START NAVBAR
   padding-top: 25px;
   position: relative;
   width: 16.677%;
+<<<<<<< HEAD
+=======
+  text-align: center;
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 .logo_nav {
@@ -378,7 +391,13 @@ START NAVBAR
 
 .submenuElement_1,
 .submenuElement_2 {
-  padding: 10px;
+  padding: 10px 3px 10px 3px;
+}
+
+.submenuElement_1 > a,
+.submenuElement_2 > a {
+  display: block;
+  width: 100%;
 }
 
 .submenuElement_1:hover,
@@ -510,8 +529,13 @@ START OM OSS
 }
 
 .logo > img:hover {
+<<<<<<< HEAD
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
+=======
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
   transform: scale(1.2);
   transition-duration: 0.5s;
 }
@@ -539,6 +563,7 @@ START OM OSS
 }
 
 /* Style the tab buttons */
+<<<<<<< HEAD
 .navn_header > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -548,17 +573,37 @@ START OM OSS
   width: 100%;
   bottom: 0px;
   position: absolute;
+=======
+.navn_header{
+  background-color: #555;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.navn_header > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
+#divLinks{
+  display: none;
+}
 .link {
-  width: 100%;
   background-color: #555;
   color: white;
   border: none;
   outline: none;
   cursor: pointer;
+<<<<<<< HEAD
   padding: 24px 16px;
   font-size: 17px;
+=======
+  padding: 24px 60px;
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 /* Change background color of buttons on hover */
@@ -584,6 +629,7 @@ h1 {
   margin: 5% 25%;
   padding: 1%;
 }
+<<<<<<< HEAD
 
 #gull > h1 {
   color: #e68a00;
@@ -595,6 +641,29 @@ h1 {
 
 #norge_rekorder > h1 {
   color: blue;
+=======
+ #vunnet {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  background-color: #f0fff0;
+  color: black;
+  margin: 5% 25%;
+  margin-top: 5px;
+  padding: 1%;
+  font-size: 12px;
+}
+#gold {
+  color: #e68a00;
+}
+
+#silver{
+  color: silver;
+}
+
+#bronze {
+  color:#ba3b09;
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 /* #alle_utovere>div>h2 {
@@ -625,6 +694,7 @@ h1 {
 }
 
 .hembre {
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -752,8 +822,12 @@ START KONTAKT OSS:
   display: flex;
   flex-direction: column;
 }
+<<<<<<< HEAD
 .gridElement>input{
   width: 50vh
+=======
+.gridElement > input {
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
   padding-top: 10px;
 }
 /*
@@ -839,17 +913,6 @@ th,
   display: block;
   margin: auto;
 }
-#grid_container_stats {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid var(--text-color);
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-column-gap: 30px;
-}
-#grid_container_stats > * {
-  margin: 0 auto;
-}
 #merit {
   margin-bottom: 10px;
 }
@@ -926,9 +989,9 @@ textarea {
 #f_submit {
   grid-column: 1 / span 2;
   grid-row: 5;
-  width: 10%;
-  margin-left: auto;
-  margin-right: auto;
+  margin:auto;
+
+
 }
 #f_submit > button {
   background-color: orange;
@@ -937,6 +1000,14 @@ textarea {
   border: none;
   border-radius: 5px;
   font-size: 19px;
+<<<<<<< HEAD
+=======
+  display: block;
+  margin:auto;
+  margin-top: 20px;
+
+
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 .subFolder {
@@ -982,7 +1053,7 @@ START SPONSOR
 }
 
 .spons-grid-container {
-  background-color: lightgrey;
+  background-color: var(--background-color);;
 }
 
 .main_sponsor {
@@ -994,7 +1065,6 @@ START SPONSOR
 .spons-grid-one {
   display: grid;
   grid-template-columns: 50% 50%;
-  height: 80vh;
 }
 
 .spons-grid-one .spons {
@@ -1014,32 +1084,60 @@ START SPONSOR
 }
 
 .kryss_farge_2 {
-  background-color: #de785d;
+  background-color: #eeaf93;
 }
 
 .spons .logo_liten {
   width: 40%;
   height: 50%;
   margin-left: 30%;
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition-duration: 0.5s;
+}
+.logo_liten:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+
+}
+#bakkevold, #oxford{
+  cursor: pointer;
+}
+#bakkevold:active, #oxford:active{
+opacity: 0.6;
 }
 
 .spons .pil {
-  height: 50px;
+  height: 20%;
   width: 20%;
   margin-left: 40%;
 }
 
 .fyll {
+<<<<<<< HEAD
   height: 40%;
   width: 40%;
   background-color: white;
   margin-left: 30%;
   margin-top: 10%;
+=======
+  height: 100px;
+  width: 150px;
+  background-color: #f4f4f4;
+  margin: auto;
+  margin-top: 8%;
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
   border-radius: 2000px;
 }
 
 .fyll p {
-  padding-top: 50px;
+  padding-top: 30px;
+}
+.spons-grid-one .fyll {
+  margin-top: 20%;
 }
 
 .spons-grid-two {
@@ -1047,7 +1145,17 @@ START SPONSOR
   margin: auto;
   margin-top: 90px;
 }
+<<<<<<< HEAD
 
+=======
+.spons-grid-two .spons:hover {
+  cursor: pointer;
+}
+.spons_click {
+  background-color: orange;
+  border-radius: 10px;
+}
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 .spons-grid-two > div {
   text-align: center;
   padding: 10px;
@@ -1061,7 +1169,7 @@ START SPONSOR
 }
 
 .spons-grid-two .spons {
-  height: 500px;
+  height: 100%;
 }
 
 @media only screen and (min-width: 1100px) {
@@ -1085,13 +1193,18 @@ footer a {
 .logo_footer {
   margin: 0px;
   padding: 0px;
-  width: 100%;
+  width: 10%;
 }
 
 .footer-container-one {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  width: 100%;
+  /* display: grid;
+  grid-template-columns: repeat(6, 1fr); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 5%;
   border-bottom: var(--border-color) 0.4px solid;
   text-align: left;
 }
@@ -1113,6 +1226,7 @@ footer a {
 
 .footer-container-one ul li p a {
   font-size: 3vh;
+  font-weight: bold;
 }
 
 .footer-container-two {
@@ -1142,7 +1256,7 @@ p {
 #footer_contact {
   text-align: center;
   margin-right: 40px;
-  margin-top: 30px;
+
   padding: 10px;
   background-color: orange;
   border-radius: 20px;
@@ -1155,6 +1269,7 @@ SLUTT FOOTER
 START NYHETER
 */
 
+<<<<<<< HEAD
 .news_body {
   font-family: "Arial", "Times new roman", sans-serif;
   background-color: var(--background-color);
@@ -1165,9 +1280,21 @@ START NYHETER
 
 #flex-container-news {
   background-color: rgb(124, 122, 122);
+=======
+
+#flex-container-news {
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
   width: 90%;
+  text-align: center;
+  color: var(--text-color);
   margin-top: 5%;
   margin-bottom: 5%;
+<<<<<<< HEAD
+=======
+  background-color: #555;
+
+
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 #news-container {
@@ -1176,12 +1303,22 @@ START NYHETER
   width: 94%;
   padding: 3%;
   margin: auto;
+<<<<<<< HEAD
   background-color: rgb(124, 122, 122);
+=======
+
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 #news-site-headline {
   font-size: 60px;
   padding: 3%;
+<<<<<<< HEAD
+=======
+  margin-bottom: 0px;
+  color:var(--text-color);
+  background-color: #555;
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 /* nederste nyhetsbokser */
@@ -1190,11 +1327,12 @@ START NYHETER
   grid-template-columns: 1fr 1fr;
   width: 90%;
   margin: 0 auto;
-  background-color: rgb(182, 181, 181);
+  background-color: var(--element-background);
   border-radius: 3px 3px 0 0;
   margin-bottom: 5%;
   position: relative;
   /* display: none; */
+<<<<<<< HEAD
 }
 .news-div a {
   visibility: hidden;
@@ -1202,17 +1340,27 @@ START NYHETER
 .news-div a:target {
   position: absolute;
   top: -140px;
+=======
+}
+
+.news-div .ancor:target {
+  position: absolute;
+  top: -50px;
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 #news-img {
   display: block;
   width: 90%;
   padding: 5%;
+<<<<<<< HEAD
   margin-left: auto;
   /* border: 2px solid var(--element-background); */
   /* grid-column-start: 2; */
   /* grid-column-end: 3; */
   /* grid-row-start: 1; */
   /* grid-row-end: 3;  */
+=======
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 #textbox {
@@ -1280,27 +1428,7 @@ START NYHETER
 #merit i {
   border-bottom: dashed 1px var(--text-color);
 }
-/* #vunnet {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-  background-color: #f0fff0;
-  color: black;
-  margin: 5% 25%;
-  margin-top: 5px;
-  padding: 1%;
-  font-size: 12px;
-} */
 
-/* #gull > h1 {
-  color: #e68a00;
-}
-#ol-deltat > h1 {
-  color: red;
-}
-#norge_rekorder > h1 {
-  color: blue;
-} */
 
 #skytter #personer_underliggende_bilder {
   display: grid;
@@ -1323,7 +1451,7 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid; /* creates padding around scroll thumb */
 }
 
-#skytter #grid_container_stats {
+#grid_container_stats {
   margin-top: 20px;
   padding-top: 20px;
   border-top: 1px solid var(--text-color);
@@ -1331,7 +1459,7 @@ body::-webkit-scrollbar-thumb {
   grid-template-columns: 1fr 2fr;
   grid-column-gap: 30px;
 }
-#skytter #grid_container_stats > * {
+#grid_container_stats > * {
   margin: 0 auto 10px auto;
 }
 #skytter #merit {
@@ -1382,10 +1510,31 @@ START RESPONSIVE MEDIAQUERYS
   }
 .gridElement{
   width: 30vh;
+<<<<<<< HEAD
   align-items: center;
+=======
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 #contactForm{
 
+<<<<<<< HEAD
+=======
+.gridElement>input{
+  width: 30vh;
+}
+.gridElement>label{
+  font-size:2.4vh;
+}
+#f_fornavn>input, #f_etternavn>input{
+width: 100px;
+font-size: 1.8vh;
+}
+.footer-container-one ul li p a {
+  font-size: 2.5vh;
+}
+.footer-container-one>ul>li>a {
+  font-size: 2vh;
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 }
@@ -1395,7 +1544,11 @@ START RESPONSIVE MEDIAQUERYS
     display: none;
   }
   #header_om_oss {
+<<<<<<< HEAD
     height: 20vh;
+=======
+    height: 15vh;
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
     background-image: none;
   }
   .navn_header {
@@ -1410,6 +1563,12 @@ START RESPONSIVE MEDIAQUERYS
   .footer-container-one > ul {
     display: none;
   }
+<<<<<<< HEAD
+=======
+  .footer-container-one>div{
+    margin:auto;
+  }
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 
   .footer-container-one {
     grid-template-columns: repeat(5, 1fr);
@@ -1434,12 +1593,16 @@ START RESPONSIVE MEDIAQUERYS
   h1 {
     font-size: 4vh;
   }
-  .pil {
+  .main_sponsor .spons-grid-one .tom {
     display: none;
   }
 
-  .main_sponsor {
-    width: 100%;
+  .main_sponsor .spons-grid-one {
+    grid-template-columns: 1fr;
+  }
+  .main_sponsor .spons-grid-container {
+    display: grid;
+    grid-template-columns: 1fr
   }
   #alle_utovere > div > img {
     display: none;
@@ -1450,18 +1613,57 @@ START RESPONSIVE MEDIAQUERYS
   #alle_utovere {
     margin: 100px;
   }
+<<<<<<< HEAD
+  #alle_utovere > div > img {
+    display: none;
+  }
+  #alle_utovere > div {
+    padding: 100px 0px;
+  }
+  #alle_utovere {
+    margin: 100px;
+  }
+=======
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
 @media only screen and (max-width: 600px) {
   .footer-container-one {
+<<<<<<< HEAD
     grid-template-columns: 1fr;
+=======
+    display: grid;
+    grid-template-columns: 1fr
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
+  }
+  .footer-container-one>div{
+    margin:auto;
   }
   .logo_footer {
     display: block;
     height: 200px;
     padding-left: 20px;
   }
+<<<<<<< HEAD
 
+=======
+  #f_fornavn, #f_etternavn{
+  margin: 0px 5vh;
+  }
+  #formContainer{
+    width: 90%;
+  }
+  /* #skytter #grid_container_stats{
+    grid-template-columns: 1fr;
+
+  } */
+  #skytter > *{
+    grid-template-columns: 1fr;
+  }
+  #skytter>*>*{
+    margin: auto;
+  }
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 
 }
 
@@ -1475,12 +1677,88 @@ START RESPONSIVE MEDIAQUERYS
     grid-gap: 10px;
   }
   .footer-container-two > p {
+<<<<<<< HEAD
     display: none;
   }
+=======
+    display: none;
+  }
+  #f_fornavn>input, #f_etternavn>input{
+  width: 70px;
+  font-size: 1.8vh;
+  }
+  .gridElement>label{
+    font-size:1.8vh;
+  }
+  h1 {
+    font-size: 3vh;
+  }
+  p{
+    font-size: 2vh;
+
+  }
+  #bilder_team{
+    display: none;
+  }
+  #alle_utovere{
+    margin:2vh;
+    height: 51vh;
+
+  }
+  #alle_utovere>div{
+    padding: 120px 10px;
+    height: 50vh;
+  }
+  #alle_utovere>div>div{
+    margin-right: 10px;
+  }
+  #person_side_info{
+    margin-top:20px;
+  }
+  #person_side_info>*{
+    margin-bottom:15px;
+  }
+  #vunnet>div>h2{
+  font-size: 1vh;
+  }
+  #vunnet>div>h1{
+    font-size: 2vh;
+  }
+  .slideshow-container{
+    height: 200px;
+  }
+
+
+#alle_utovere>div{
+  padding: 10px;
+  height: 50vh;
+}
+#alle_utovere>div>div{
+  margin-right: 10px;
+}
+#person_side_info{
+  margin-top:20px;
+}
+#person_side_info>*{
+  margin-bottom:15px;
+}
+#vunnet>div>h2{
+font-size: 1vh;
+}
+#vunnet>div>h1{
+  font-size: 2vh;
+}
+.slideshow-container{
+  height: 200px;
+>>>>>>> 046fded78d3974fda8e60fab738a05e8318cf042
 }
 
-@media only screen and (max-width:700px){
+#oxford>.logo_liten, #bakkevold>.logo_liten{
+  height: 30%;
+}
 
+}
+@media only screen and (max-width: 1000px) {
   .news-site-headline {
     font-size: 30px;
     padding: 3%;
