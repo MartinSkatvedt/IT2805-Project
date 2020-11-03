@@ -1146,6 +1146,12 @@ footer a {
 .contact>p{
   padding: 5px;
 }
+.nasjonalStat{
+  padding: 25px;
+  text-decoration: underline;
+  text-align: center;
+}
+
 
 p {
   margin: 0;
@@ -1226,14 +1232,8 @@ START NYHETER
 }
 
 /*SLUTT NYHETER*/
-.nasjonalStat {
-  padding: 15px;
-}
 
-.nasjonalStat>a {
-  margin: 15px;
-  text-decoration: underline;
-}
+
 
 /* Fikse news, og støtttespillere kommer opp som athelete */
 /* Skyttere.html */
