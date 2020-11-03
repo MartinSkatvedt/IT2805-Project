@@ -11,7 +11,7 @@ function makeNavnHeader() {
     
     if (skytter.isShown) {
       const a = makePersonLink(skytter.id)
-      a.className = 'link'
+      a.className = 'link pointer'
       div.appendChild(a)
     }
   }
