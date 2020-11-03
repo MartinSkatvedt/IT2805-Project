@@ -46,6 +46,7 @@ main {
   width: 90%;
 }
 main#container-news {
+  margin: auto;
   background-color: #555;
 }
 
@@ -1205,14 +1206,6 @@ SLUTT FOOTER
 /*
 START NYHETER
 */
-#flex-container-news {
-  width: 90%;
-  text-align: center;
-  color: var(--text-color);
-  margin-top: 5%;
-  margin-bottom: 5%;
-  background-color: var(--secondary-background-color);
-}
 
 #news-container {
   /* display: flex;
@@ -1227,7 +1220,6 @@ START NYHETER
   padding: 3%;
   margin-bottom: 0px;
   text-align: center;
-  color: var(--text-color);
   background-color: var(--element-background);
   border: 3px solid var(--secondary-background-color);
 }
