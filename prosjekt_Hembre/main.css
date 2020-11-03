@@ -51,6 +51,8 @@ START INDEX
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   column-gap: 20px;
+  box-shadow: 1px 2px 3px;
+
   /* grid-column-gap: 1%; */
 }
 
@@ -1528,7 +1530,6 @@ START RESPONSIVE MEDIAQUERYS
 
   .grid-container-hjem {
     grid-template-columns: 1fr;
-    box-shadow: 1px 2px 3px;
 
   }
 
