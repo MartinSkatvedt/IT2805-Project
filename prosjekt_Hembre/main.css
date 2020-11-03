@@ -1592,7 +1592,10 @@ START RESPONSIVE MEDIAQUERYS
     width: 90%;
   }
 
+  /* #skytter #grid_container_stats{
+    grid-template-columns: 1fr;
 
+  } */
   #skytter>* {
     grid-template-columns: 1fr;
   }
@@ -1600,10 +1603,6 @@ START RESPONSIVE MEDIAQUERYS
   #skytter>*>* {
     margin: auto;
   }
-  #bilder_team {
-    display: none;
-  }
-
 
     #alle_utovere {
       margin: 2vh;
@@ -1669,6 +1668,9 @@ START RESPONSIVE MEDIAQUERYS
     font-size: 2vh;
   }
 
+  #bilder_team {
+    display: none;
+  }
 
   #vunnet>div>h2 {
     font-size: 1vh;
