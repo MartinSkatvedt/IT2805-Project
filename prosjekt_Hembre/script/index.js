@@ -1,6 +1,8 @@
 function main() {
     const main = document.querySelector('main')
     main.id = 'main_index'
+    main.className = 'main_index'
+
 
     const gch =  document.createElement('div')
     gch.className = 'grid-container-hjem'
