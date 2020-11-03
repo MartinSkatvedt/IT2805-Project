@@ -129,7 +129,7 @@ function createSlideshow() {
 function makeSlide(i) {
     const article = news[i]
     const aSlides = document.createElement('a')
-    aSlides.className = 'slides fade'
+    aSlides.className = 'slides fade pointer active'
     aSlides.href = 'nyheter.html#'+article.id
 
 
@@ -160,7 +160,7 @@ function createSlideshowButtons() {
     nextSpan.innerHTML = '>'
     nextSpan.id = 'next'
 
-    nextSpan.className = prevSpan.className = 'pointer'
+    nextSpan.className = prevSpan.className = 'pointer active'
     buttonSlidesDiv.appendChild(nextSpan)
 
     return buttonSlidesDiv

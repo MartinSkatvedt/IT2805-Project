@@ -78,7 +78,9 @@ START INDEX
 .pointer:hover{
   cursor: pointer;
 }
-
+.active:active{
+  opacity: 0.7;
+}
 .grid-container-athletes {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -220,10 +222,6 @@ a>h5 {
   cursor: pointer;
 }
 
-.buttonsSlides>*:active,
-.athlete:active {
-  opacity: 0.7;
-}
 
 /* Fading animation, denne funker ikke */
 .fade {
@@ -914,7 +912,6 @@ textarea {
 
 #f_submit>button {
   background-color: var(--button-color);
-  padding: 5px;
   width: 100px;
   border: none;
   border-radius: 5px;
@@ -954,10 +951,10 @@ SLUTT KONTAKT OSS
 /*
 START SPONSOR
 */
-.main_sponsor{
+.main_sponsor *{
   text-align: center;
 }
-.main_sponsor > * {
+.main_sponsor > *{
   margin-left: auto;
   margin-right: auto;
 }
@@ -973,7 +970,6 @@ START SPONSOR
 .spons-grid-one .spons {
   padding-top: 10px;
   margin: auto;
-  text-align: center;
   height: 100%;
   width: 100%;
 }
@@ -1010,9 +1006,6 @@ START SPONSOR
 }
 
 
-#bakkevold:active, #oxford:active {
-  opacity: 0.6;
-}
 
 .spons .pil {
   height: 20%;
