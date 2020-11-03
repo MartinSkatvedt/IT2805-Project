@@ -1528,6 +1528,8 @@ START RESPONSIVE MEDIAQUERYS
 
   .grid-container-hjem {
     grid-template-columns: 1fr;
+    box-shadow: 1px 2px 3px;
+
   }
 
   h1 {
