@@ -40,6 +40,7 @@
 
       </section>
   </header>
+  <main>
 
   <div id="vunnet">
     <div>
@@ -95,6 +96,7 @@
 
   </div>
 
+</main>
 
 
   <script src="script/skyttere.js"></script>
@@ -104,15 +106,10 @@
 
 
   <script>
+  // Called function outside of om_oss.js so you can use the om_oss.js script functions on other sites if necesary
     makeNavnHeader()
     writeStatsOmOss()
-    const gold = document.querySelector('#gold')
-    const silver = document.querySelector('#silver')
-    const bronse = document.querySelector('#bronse')
-    totalMedals = getTotalMealds()
-    gold.innerHTML = totalMedals[0]
-    silver.innerHTML = totalMedals[1]
-    bronze.innerHTML = totalMedals[2]
+    writeMedals()
   </script>
 </body>
 
