@@ -932,7 +932,7 @@ const news = [
 
   {
     id: 002,
-    header: "Header her",
+    header: " Hembre sønnene er på topp",
     text: [
       "Paragrafer...",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
@@ -942,7 +942,7 @@ const news = [
 
   {
     id: 003,
-    header: "Header her",
+    header: "Ny seier for Pål, Mattis og ludvik i Bergen",
     text: [
       "Paragrafer...",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
@@ -951,7 +951,7 @@ const news = [
   },
   {
     id: 004,
-    header: "Header her",
+    header: "Pål med ny NM Rekord!",
     text: [
       "Paragrafer...",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
