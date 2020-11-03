@@ -943,7 +943,7 @@ textarea {
 }
 
 #f_submit>button {
-  background-color: orange;
+  background-color: var(--button-color);
   padding: 5px;
   width: 100px;
   border: none;
@@ -1090,7 +1090,7 @@ START SPONSOR
 }
 
 .spons_click {
-  background-color: orange;
+  background-color: var(--button-color);
   border-radius: 10px;
 }
 
