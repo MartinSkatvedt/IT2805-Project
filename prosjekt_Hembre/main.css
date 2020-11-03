@@ -28,12 +28,16 @@ body {
   margin: 0px;
   top: 0px;
 }
+.index_body{
+  text-align: center;
+}
 
 html {
   scroll-behavior: smooth;
 }
 
-main {
+
+main{
   background-color: var(--background-color);
   color: var(--text-color);
   margin: auto;
@@ -54,22 +58,18 @@ START INDEX
   grid-template-columns: 1fr 2fr 1fr;
   column-gap: 20px;
 
-  /* grid-column-gap: 1%; */
 }
 
 .grid-container-hjem>div {
   background-color: var(--element-background);
   padding: 20px;
   box-shadow: var(--box-shadow);
-
-  /* border: 1px solid black; */
 }
 
 .grid-container-athletes {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
-  font-size: var(--font-size);
   margin: 5% 0;
 }
 
@@ -184,17 +184,6 @@ a>h5 {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-/*.slides>.numbertext {
-    color: var(--secondary-teks-color);
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}*/
-/* The dots/bullets/indicators */
-/*.active {
-    background-color: var(--background-color);
-}*/
 .buttonsSlides {
   text-align: center;
 }
@@ -421,9 +410,6 @@ START NAVBAR
   height: 50%;
 }
 
-.index_body {
-  text-align: center;
-}
 
 /*
 SLUTT NAVBAR
@@ -591,9 +577,6 @@ h1 {
 #vunnet {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-  background-color: #f0fff0;
-  color: var(--text-color);
   margin: 5% 25%;
   padding: 1%;
 }
@@ -632,8 +615,6 @@ h1 {
 }
 
 #alle_utovere {
-  text-align: left;
-  background-color: #ffaf37;
   margin: 5% 20%;
   margin-top: 20px;
   height: 70vh;
@@ -704,11 +685,9 @@ h1 {
 }
 
 #bare_team {
-  background-color: #ffaf37;
+  background-color: var(--button-color);
   margin: 5%;
-  margin-bottom: 0px;
   padding: 20px 50px;
-  text-align: center;
 }
 
 #bilder_team>div>img {
@@ -1017,16 +996,7 @@ START SPONSOR
   height: 100%;
 }
 
-.spons-grid-container {
-  background-color: var(--background-color);
-  ;
-}
 
-.main_sponsor {
-  width: 80%;
-  margin: auto;
-  background-color: #f4f4f4;
-}
 
 .spons-grid-one {
   display: grid;
@@ -1688,10 +1658,6 @@ START RESPONSIVE MEDIAQUERYS
     margin-bottom: 15px;
   }
 
-#{
-  margin-right:0px;
-
-}
   #vunnet>div>h2 {
     font-size: 1vh;
   }
