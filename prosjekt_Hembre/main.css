@@ -3,7 +3,7 @@ START GLOBALE CSS FUNKSJONER
  */
 :root {
   --background-color: #f7f1e3;
-  --nav-color: #63cdda;
+  --nav-color: #132020;
   --element-background: #d1d1d1;
   --text-color: #000;
   --background-text-color: none;
@@ -281,7 +281,7 @@ START NAVBAR
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: white;
 }
 
 .navBarElement>a:hover::before {
@@ -293,7 +293,7 @@ START NAVBAR
 }
 
 .navBarElement:hover>a {
-  color: var(--text-color);
+  color: white;
 }
 
 .navBarElement>a {
@@ -403,7 +403,7 @@ START NAVBAR
 
 #navbar a {
   text-decoration: none;
-  color: var(--text-color);
+  color: white;
 }
 
 #kontaktKnapp {
@@ -413,7 +413,9 @@ START NAVBAR
   width: 50%;
   height: 50%;
 }
-
+#kontaktKnapp>a{
+  color: black;
+}
 
 /*
 SLUTT NAVBAR
