@@ -1126,8 +1126,8 @@ footer {
   /* margin-top: 20px; */
   background-color: var(--nav-color);
   box-shadow: 0px 0px 5px rgba(10,10,80,0.5);
-
 }
+
 
 footer a {
   display: block;
@@ -1144,14 +1144,14 @@ footer a {
   align-items: center;
   width: 90%;
   margin: 1% 5%;
-  border-bottom: var(--border-color) 0.4px solid;
+  border-bottom: var(--secondary-teks-color) 0.4px solid;
   text-align: left;
 }
 
 
 .footer-container-one ul li a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--secondary-teks-color);
   font-size: 2vh;
   padding-top: 3px;
 }
@@ -1183,8 +1183,10 @@ p {
 
 .footer-container-two>div {
   font-size: 14px;
-  border: solid 1px var(--border-color);
-  background-color: #d8f5f6;
+  border: solid 1px var(--secondary-teks-color);
+  background-color: var(--button-color);
+  color: var(--text-color);
+
 }
 
 .footer-container-two>div>a {
@@ -1197,10 +1199,13 @@ p {
   text-align: center;
   margin-right: 40px;
   padding: 10px;
-  background-color: orange;
+  background-color: var(--button-color);
   border-radius: 20px;
 }
+#footer_contact>a{
+  color: var(--text-color);
 
+}
 /*
 SLUTT FOOTER
 */
