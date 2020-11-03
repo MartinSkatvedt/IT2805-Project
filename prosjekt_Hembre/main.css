@@ -37,8 +37,8 @@ html {
 }
 
 main > *{
-  margin-top: 20%;
-  margin-bottom: 20%;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 main {
   background-color: var(--background-color);
@@ -67,8 +67,9 @@ START INDEX
 
 }
 
-.grid-container-hjem>div, .news-div, #news-container, .main_sponsor .spons-grid-one, .spons-grid-two>.spons, .element_om_oss{
+.grid-container-hjem>div, .news-div, #news-container, .main_sponsor .spons-grid-one, .spons-grid-two>.spons, .element_om_oss, #kontakt-main > *{
   box-shadow: var(--box-shadow);
+
 }
 .grid-container-hjem>div, .news-div{
   background-color: var(--element-background);
@@ -720,19 +721,17 @@ h1 {
 }
 
 #formContainer {
-  background-color: #fff0f0;
+  background-color: var(--button-color);
   width: 50%;
-  margin-top: 30px;
-  border: 1px solid var(--border-color);
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   padding: 2%;
 }
-
-#formContainer>p {
-  color: grey;
+#formContainer *{
+  background-color: inherit;
 }
+
 
 .gridElement>input {
   font-size: 22px;
@@ -932,11 +931,9 @@ textarea {
 }
 
 .subContainers {
-  margin: 0px;
   width: 50%;
   height: 300px;
-  background-color: #f1b04f;
-  border: 1px solid var(--border-color);
+  background-color: var(--button-color);
   text-align: center;
 }
 
@@ -1534,10 +1531,6 @@ START RESPONSIVE MEDIAQUERYS
 
   #f_fornavn, #f_etternavn {
     margin: 0px 5vh;
-  }
-
-  #formContainer {
-    width: 90%;
   }
 
   /* #skytter #grid_container_stats{
