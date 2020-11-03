@@ -967,6 +967,7 @@ START SPONSOR
 
 .main_sponsor p {
   margin: auto;
+  text-align: center;
 }
 
 .main_sponsor a {
