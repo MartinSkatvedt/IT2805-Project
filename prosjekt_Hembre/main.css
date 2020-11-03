@@ -1020,7 +1020,7 @@ START SPONSOR
 }
 
 .kryss_farge_2 {
-  background-color: #de785d;
+  background-color: #eeaf93;
 }
 
 .spons .logo_liten {
@@ -1073,7 +1073,13 @@ opacity: 0.6;
   margin: auto;
   margin-top: 90px;
 }
-
+.spons-grid-two .spons:hover {
+  cursor: pointer;
+}
+.spons_click {
+  background-color: orange;
+  border-radius: 10px;
+}
 .spons-grid-two > div {
   text-align: center;
   padding: 10px;

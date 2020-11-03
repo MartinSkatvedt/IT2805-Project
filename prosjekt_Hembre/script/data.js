@@ -912,7 +912,7 @@ const sponsors = [
     link: "https://www.oxfordguncompany.co.uk/",
   },
   {
-    name: "DETTE KAN VÆRE DIN BEDRIFT",
+    name: "THIS CAN BE YOUR COMPANY",
     img: bilder.sponsors.ny_spons,
     link: "./kontakt.html",
   },
