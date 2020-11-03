@@ -18,7 +18,7 @@ START GLOBALE CSS FUNKSJONER
 }
 
 body {
-  font-family: "Arial", "Times new roman", "sans-serif";
+  font-family: "Arial", "sans-serif" , "Helvetica";
   background-color: var(--background-color);
   color: var(--text-color);
   width: 100%;
@@ -33,7 +33,6 @@ html {
 }
 
 main {
-  font-family: "Arial", "Times new roman", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
   margin: auto;
@@ -264,8 +263,6 @@ START NAVBAR
   height: 100px;
   font-size: 30px;
   width: 100%;
-  font-family: sans-serif, Arial, Helvetica, sans-serif;
-  font-style: Open
   z-index: 9;
   top: 0;
 }
@@ -465,7 +462,7 @@ START OM OSS
   text-align: center;
   width: 15%;
   margin: auto;
-  margin-top: 13vh;
+  margin-top: 6vh;
   color: white;
   padding: 10px;
   font-size: 40px;
