@@ -368,7 +368,6 @@ function writeStatsOmOss() {
   }
 }
 function makeAthleteLink(skytter) {
-  //OBS ikke komplett************************************************
   const a = document.createElement("a");
   a.href = "skyttere.html?skytter=" + skytter.id;
   a.innerHTML =

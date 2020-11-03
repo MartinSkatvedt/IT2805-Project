@@ -1,5 +1,9 @@
 function main() {
     const main = document.querySelector('main')
+    main.id = 'main_index'
+    main.className = 'main_index'
+
+
     const gch =  document.createElement('div')
     gch.className = 'grid-container-hjem'
 
@@ -115,7 +119,7 @@ function makeAthlete(i) {
 function createSlideshow() {
     const container = document.createElement('div')
     container.className = 'slideshow-container'
-    
+
 
     for (let i = 0; i < news.length; i++) {
         container.appendChild(makeSlide(i))
@@ -125,10 +129,10 @@ function createSlideshow() {
 function makeSlide(i) {
     const article = news[i]
     const aSlides = document.createElement('a')
-    aSlides.className = 'slides fade'
+    aSlides.className = 'slides fade pointer active'
     aSlides.href = 'nyheter.html#'+article.id
 
-    
+
     const img = document.createElement('img')
     img.src = article.img
 
@@ -156,6 +160,7 @@ function createSlideshowButtons() {
     nextSpan.innerHTML = '>'
     nextSpan.id = 'next'
 
+    nextSpan.className = prevSpan.className = 'pointer active'
     buttonSlidesDiv.appendChild(nextSpan)
 
     return buttonSlidesDiv

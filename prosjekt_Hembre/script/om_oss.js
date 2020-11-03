@@ -11,7 +11,7 @@ function makeNavnHeader() {
     
     if (skytter.isShown) {
       const a = makePersonLink(skytter.id)
-      a.className = 'link'
+      a.className = 'link pointer active'
       div.appendChild(a)
     }
   }
@@ -32,4 +32,13 @@ function getTotalMealds() {
     }
   }
   return [gold,silver,bronse]
+}
+function writeMedals() { 
+  const gold = document.querySelector('#gold')
+  const silver = document.querySelector('#silver')
+  const bronse = document.querySelector('#bronse')
+  totalMedals = getTotalMealds()
+  gold.innerHTML = totalMedals[0]
+  silver.innerHTML = totalMedals[1]
+  bronze.innerHTML = totalMedals[2]
 }

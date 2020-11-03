@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News</title>
     <link rel="shortcut icon" href="bilder/logo2.svg" />
@@ -13,8 +14,7 @@
     <script src="script/data.js" charset="utf-8"></script>
     <script src="script/navbar.js" charset="utf-8"></script>
 
-    <main id="flex-container-news">
-      <h1 id="news-site-headline">NEWS</h1>
+    <main id="container-news">
     </main>
 
 
@@ -22,6 +22,7 @@
     <script src="script/nyheter.js"></script>
     <script src="script/footer.js" charset="utf-8"></script>
     <script>
+  // Called function outside of nyheter.js so you can use the nyheter.js script functions on other sites if necesary
       writeNews()
     </script>
   </body>

@@ -1,10 +1,9 @@
 /*
 START GLOBALE CSS FUNKSJONER
  */
-
 :root {
-  --background-color: #d3ebeb;
-  --nav-color: #e8ffff;
+  --background-color: #f7f1e3;
+  --nav-color: #132020;
   --element-background: #d1d1d1;
   --text-color: #000;
   --background-text-color: none;
@@ -13,12 +12,14 @@ START GLOBALE CSS FUNKSJONER
   --button-color: #f2994a;
   --font-size-large: 25pt;
   --font-size: 15pt;
-  --font-size-small: 10pt;
+  --font-size-small: 1.8vh;
   --border-color: #000;
+  --box-shadow: 0px 2px 4px rgba(10,10,80,0.5);
+
 }
 
 body {
-  font-family: "Arial", "Times new roman", "sans-serif";
+  font-family: "Arial", "sans-serif", "Helvetica";
   background-color: var(--background-color);
   color: var(--text-color);
   width: 100%;
@@ -27,52 +28,63 @@ body {
   margin: 0px;
   top: 0px;
 }
+.index_body{
+  text-align: center;
+}
 
 html {
   scroll-behavior: smooth;
 }
 
+main > *{
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
 main {
-  font-family: "Arial", "Times new roman", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
-  width: 100%;
   margin: auto;
   font-size: var(--font-size);
-  margin: 0% auto;
-}
-main {
-  background-color: var(--background-color);
-  color: var(--text-color);
+  margin: 0 auto;
   width: 90%;
-  margin: auto;
 }
+
+
 /*
 SLUTT GLOBALE CSS FUNKSJONER
  */
-
 /*
 START INDEX
  */
+.main_index{
+  width: 95%;
+}
+
 .grid-container-hjem {
-  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   column-gap: 20px;
-  /* grid-column-gap: 1%; */
+
 }
 
-.grid-container-hjem > div {
+.grid-container-hjem>div, .news-div, #news-container, .main_sponsor .spons-grid-one, .spons-grid-two>.spons, .element_om_oss, #kontakt-main > *, .spons_click{
+  box-shadow: var(--box-shadow);
+}
+.grid-container-hjem>div, .news-div{
   background-color: var(--element-background);
   padding: 20px;
-  /* border: 1px solid black; */
 }
 
+.pointer:hover{
+  cursor: pointer;
+}
+.active:active{
+  opacity: 0.7;
+}
 .grid-container-athletes {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
-  font-size: var(--font-size);
   margin: 5% 0;
 }
 
@@ -114,7 +126,7 @@ START INDEX
   text-align: center;
 }
 
-.sponsor > a {
+.sponsor>a {
   color: var(--text-color);
   text-decoration: none;
   margin: 0;
@@ -123,11 +135,12 @@ START INDEX
 .sponsor img {
   width: 100%;
 }
+
 .sponsor:last-child img {
   height: 15vh;
 }
 
-a > h5 {
+a>h5 {
   text-align: left;
   padding-left: 20px;
 }
@@ -143,7 +156,7 @@ a > h5 {
   text-align: center;
 }
 
-.stottespiller > a {
+.stottespiller>a {
   color: black;
   text-decoration: none;
   margin: 0;
@@ -159,7 +172,7 @@ a > h5 {
   display: none;
 }
 
-.slides > img {
+.slides>img {
   /* vertical-align: middle; */
   width: 100%;
 }
@@ -171,12 +184,12 @@ a > h5 {
   overflow: hidden;
   background-color: var(--secondary-background-color);
   border-radius: 3px 3px 0 0;
-  width: 70%;
-  height:300px;
+  width: 100%;
+  height: 300px;
 }
 
 /* Caption text */
-.slides > .text {
+.slides>.text {
   color: var(--secondary-teks-color);
   background-color: var(--secondary-background-color);
   padding: 8px 12px;
@@ -186,34 +199,21 @@ a > h5 {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-/*.slides>.numbertext {
-    color: var(--secondary-teks-color);
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}*/
-/* The dots/bullets/indicators */
-/*.active {
-    background-color: var(--background-color);
-}*/
 .buttonsSlides {
   text-align: center;
 }
 
 .buttonsSlides * {
   padding: 0 2ch;
-  cursor: pointer;
   font-weight: 900;
   border-radius: 10%;
   border-radius: 0 0 10px 10px;
   margin: 0 10%;
 }
 
-.buttonsSlides > *:hover {
+.buttonsSlides>*:hover {
   background-color: var(--button-color);
   color: var(--secondary-teks-color);
-  cursor: pointer;
 }
 
 .athlete:hover .text {
@@ -222,10 +222,6 @@ a > h5 {
   cursor: pointer;
 }
 
-.buttonsSlides > *:active,
-.athlete:active {
-  opacity: 0.7;
-}
 
 /* Fading animation, denne funker ikke */
 .fade {
@@ -254,6 +250,7 @@ a > h5 {
     opacity: 1;
   }
 }
+
 /*
 SLUTT INDEX*/
 /*
@@ -265,14 +262,17 @@ START NAVBAR
   border-top: 1px solid;
   padding: 0.5% 0px;
   background-color: var(--nav-color);
-  height: 100px;
-  font-size: 30px;
+  height: 12vh;
+  font-size: 4vh;
   width: 100%;
-  font-family: Montserrat;
   z-index: 9;
   top: 0;
+  box-shadow: var(--box-shadow);
+
 }
-.navBarElement > a::before {
+
+.navBarElement>a::before {
+  /* hentet inspirasjon fra https://css-tricks.com/having-fun-with-link-hover-effects/ */
   /* funksjoner for å skalere elementer og overgangs tid*/
   visibility: hidden;
   -webkit-transform: scaleX(0);
@@ -286,10 +286,10 @@ START NAVBAR
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: var(--secondary-teks-color);
 }
 
-.navBarElement > a:hover::before {
+.navBarElement>a:hover::before {
   /* funksjoner for å skalere elementer*/
   visibility: visible;
   -webkit-transform: scaleX(1);
@@ -297,11 +297,8 @@ START NAVBAR
   -moz-transform: scale(1);
 }
 
-.navBarElement:hover > a {
-  color: var(--text-color);
-}
 
-.navBarElement > a {
+.navBarElement>a {
   position: relative;
 }
 
@@ -320,18 +317,18 @@ START NAVBAR
   padding: 0px;
 }
 
-.logo_nav > a > img {
+.logo_nav>a>img {
   height: 100%;
   transition-duration: 0.5s;
 }
 
-.logo_nav > a > img:hover {
+.logo_nav>a>img:hover {
   transform: scale(1.3);
   transition-duration: 0.4s;
 }
 
 #kontaktKnapp {
-  background-color: orange;
+  background-color: var(--button-color);
   border-radius: 0px;
   border: 0px;
   width: 50%;
@@ -358,6 +355,7 @@ START NAVBAR
 .submenuElement_1 a,
 .submenuElement_2 a {
   color: #ddcccc;
+
 }
 
 .submenu {
@@ -371,7 +369,6 @@ START NAVBAR
   width: 20%;
   position: absolute;
   transition: 0.2s;
-  color: white;
 }
 
 .submenuElement_1,
@@ -379,8 +376,8 @@ START NAVBAR
   padding: 10px 3px 10px 3px;
 }
 
-.submenuElement_1 > a,
-.submenuElement_2 > a {
+.submenuElement_1>a,
+.submenuElement_2>a {
   display: block;
   width: 100%;
 }
@@ -408,28 +405,26 @@ START NAVBAR
 
 #navbar a {
   text-decoration: none;
-  color: var(--text-color);
+  color: white;
 }
 
 #kontaktKnapp {
   border-radius: 0px;
-  background-color: orange;
+  background-color: var(--button-color);
   border: 0px;
   width: 50%;
   height: 50%;
 }
-
-.index_body {
-  text-align: center;
+#kontaktKnapp>a{
+  color: black;
 }
+
 /*
 SLUTT NAVBAR
  */
-
 /*
 START OM OSS
 */
-
 /*css for hele delen over søkemotoren av header når den er større enn 600px starter under her*/
 .header_overst {
   text-align: center;
@@ -439,10 +434,12 @@ START OM OSS
   font-size: 20px;
   font-weight: bold;
   margin: 0px;
-  height: 755px;
+}
+.knapp_header{
+  margin-top: 10vh;
 }
 
-.knapp_header > a {
+.knapp_header>a {
   color: white;
   font-size: 25px;
   border-style: solid;
@@ -452,34 +449,34 @@ START OM OSS
   text-decoration: none;
 }
 
-.knapp_header > a:hover {
+.knapp_header>a:hover {
   transition: all 0.4s ease-in-out;
   border-color: #022c70;
 }
 
 .logo {
-  padding-top: 20px;
+  padding-top: 00px;
   text-align: center;
   margin-top: 0px;
   padding-left: 30px;
 }
 
-.header_over_mitt_navn {
+.header_over_om_oss {
   text-align: center;
   width: 15%;
   margin: auto;
-  margin-top: 13vh;
+  margin-top: 3vh;
   color: white;
   padding: 10px;
   font-size: 40px;
 }
 
-.logo > img {
+.logo>img {
   width: 30%;
   transition-duration: 0.5s;
 }
 
-.hele_folg_meg {
+.hele_folg_oss {
   position: relative;
   display: flex;
   padding-top: 20px;
@@ -513,21 +510,21 @@ START OM OSS
   color: white;
 }
 
-.logo > img:hover {
+.logo>img:hover {
   -moz-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
   transition-duration: 0.5s;
 }
 
-#bilder_team > div {
+#bilder_team>div {
   transform: scale(1);
   -moz-transform: scale(1);
   -webkit-transform: scale(1);
   transition-duration: 0.4s;
 }
 
-#bilder_team > div:hover {
+#bilder_team>div:hover {
   transform: scale(1.2);
   -moz-transform: scale(1.2);
   -webkit-transform: scale(1.2);
@@ -543,13 +540,14 @@ START OM OSS
 }
 
 /* Style the tab buttons */
-.navn_header{
+.navn_header {
   background-color: #555;
   position: absolute;
   bottom: 0;
   width: 100%;
 }
-.navn_header > div {
+
+.navn_header>div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -557,15 +555,15 @@ START OM OSS
   width: 100%;
 }
 
-#divLinks{
+#divLinks {
   display: none;
 }
+
 .link {
   background-color: #555;
   color: white;
   border: none;
   outline: none;
-  cursor: pointer;
   padding: 24px 60px;
 }
 
@@ -574,67 +572,52 @@ START OM OSS
   background-color: #777;
 }
 
-h1 {
-  font-size: 3vw;
-}
 
 /* Style each tab content individually */
 .tekst_om {
   margin-bottom: 50px;
 }
 
+
 #vunnet {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
   background-color: #f0fff0;
-  color: var(--text-color);
-  margin: 5% 25%;
-  padding: 1%;
-}
- #vunnet {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-  background-color: #f0fff0;
   color: black;
-  margin: 5% 25%;
-  margin-top: 5px;
+  margin-left:25%;
+  margin-right: 25%;
   padding: 1%;
   font-size: 12px;
 }
+
 #gold {
   color: #e68a00;
 }
 
-#silver{
+#silver {
   color: silver;
 }
 
 #bronze {
-  color:#ba3b09;
+  color: #ba3b09;
 }
 
-/* #alle_utovere>div>h2 {
-  padding-top: 30px;
-} */
-
-#alle_utovere > div {
+#alle_utovere>div {
   padding: 5vh 13vh;
   height: 60vh;
   scroll-snap-align: center;
 }
 
 #alle_utovere {
-  text-align: left;
-  background-color: #ffaf37;
-  margin: 5% 20%;
-  margin-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
   height: 70vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   text-align: left;
 }
+
 .hembre img,
 #person_bilder img {
   padding: 0;
@@ -655,6 +638,7 @@ h1 {
 .hembre:nth-child(2n-1) {
   background-color: #ffb366;
 }
+
 /*
 .hembre:nth-child(3n) {
   background-color: #ff9933;
@@ -666,40 +650,41 @@ h1 {
 .hembre:nth-child(5n) {
   background-color: #ff7000;
 } */
-
 .hembre a {
   display: block;
 }
 
-.hembre > * {
+.hembre>* {
   margin: auto;
 }
-.hembre > * > * {
+
+.hembre>*>* {
   margin: 10px;
 }
+
 #alle_utovere::-webkit-scrollbar {
   width: 8px;
 }
+
 #alle_utovere::-webkit-scrollbar-track {
   background: var(--background-color);
 }
+
 #alle_utovere::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 5px;
 }
+
 #alle_utovere::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
 #bare_team {
-  background-color: #ffaf37;
-  margin: 5%;
-  margin-bottom: 0px;
+  background-color: var(--button-color);
   padding: 20px 50px;
-  text-align: center;
 }
 
-#bilder_team > div > img {
+#bilder_team>div>img {
   width: 80%;
   height: 80%;
   display: block;
@@ -716,9 +701,6 @@ h1 {
   box-shadow: 0px 2px 8px 4px;
 }
 
-#alle_utovere > div > h1 {
-  margin: 0px;
-}
 
 #dp_meny {
   background-color: inherit;
@@ -734,36 +716,6 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-#formContainer {
-  background-color: #fff0f0;
-  width: 50%;
-  margin-top: 30px;
-  border: 1px solid var(--border-color);
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding: 2%;
-}
-#formContainer > p {
-  color: grey;
-}
-.gridElement > input {
-  font-size: 22px;
-}
-
-#contactForm {
-  display: grid;
-}
-.gridElement {
-  margin-top: 4%;
-  width: 60%;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-}
-.gridElement > input {
-  padding-top: 10px;
-}
 /*
 SLUTT OM OSS:
 */
@@ -776,7 +728,7 @@ SKYTER UNDERSIDENE:
   grid-template-columns: 1fr 2fr;
 }
 
-#person_bilder > img {
+#person_bilder>img {
   width: 90%;
   border-radius: 10px;
 }
@@ -788,15 +740,18 @@ SKYTER UNDERSIDENE:
   font-size: 16px;
   text-align: center;
 }
-.grid_container_stats > h1,
-.person_side_top > h1 {
+
+.grid_container_stats>h1,
+.person_side_top>h1 {
   text-align: center;
   font-size: 6vh;
   margin-top: 0px;
 }
+
 #medlemskap {
   text-decoration: underline;
 }
+
 #person_rekorder {
   /* background-color: #ff8080; */
   width: 100%;
@@ -806,6 +761,7 @@ SKYTER UNDERSIDENE:
   border-collapse: collapse;
   border-radius: 10px;
 }
+
 td:first-child,
 th:first-child {
   text-align: left;
@@ -815,20 +771,10 @@ th,
 td {
   padding: 5px;
 }
+
 th,
 #merit i {
   border-bottom: dashed 1px var(--text-color);
-}
-#vunnet {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-  background-color: #f0fff0;
-  color: black;
-  margin: 5% 25%;
-  margin-top: 5px;
-  padding: 1%;
-  font-size: 12px;
 }
 
 #personer_underliggende_bilder {
@@ -836,22 +782,27 @@ th,
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 20px;
 }
-#person_bilder_vid > img {
+
+#person_bilder_vid>img {
   width: 10%;
   height: 50px;
   display: block;
   margin: auto;
 }
-#person_video > video {
+
+#person_video>video {
   display: block;
   margin: auto;
 }
+
 #merit {
   margin-bottom: 10px;
 }
-#merit > * {
+
+#merit>* {
   margin: 5px;
 }
+
 #merit,
 td {
   border-bottom: 1px solid var(--text-color);
@@ -860,12 +811,15 @@ td {
 #familyDiv a {
   display: block;
 }
-#familyType > p {
+
+#familyType>p {
   display: inline;
 }
+
 #familyType {
   margin-top: 20px;
 }
+
 #familyType:first-child {
   margin-top: 0;
 }
@@ -873,134 +827,96 @@ td {
 /*
 SLUTT UNDERSKYTESIDER
 */
-
 /*
 START KONTAKT OSS
 */
-input,
-textarea {
+
+#formContainer {
+  background-color: var(--element-background);
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 2%;
+}
+
+#formContainer *{
+  background-color: inherit;
+}
+
+#contactForm{
+  width: 100%;
+}
+
+.gridElement>input, .gridElement textarea{
+  font-size: 22px;
+  padding-top: 10px;
+  width: 100%;
   border: 2px solid var(--border-color);
-}
+}  
 
-#f_mail {
-  margin-left: auto;
-  margin-right: auto;
-  grid-column: 1 / span 2;
-  grid-row: 1;
-}
-
-#f_melding {
-  margin-left: auto;
-  margin-right: auto;
-  grid-column: 1 / span 2;
-  grid-row: 2;
-}
-
-#f_fornavn {
-  width: 55%;
-  margin-right: 5%;
-  margin-left: auto;
-  grid-column: 1;
-  grid-row: 3;
-}
-
-#f_etternavn {
-  width: 55%;
-  margin-left: 5%;
-  margin-right: auto;
-  grid-column: 2;
-  grid-row: 3;
-}
-
-#f_telefon {
-  grid-column: 1 / span 2;
-  grid-row: 4;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#f_submit {
-  grid-column: 1 / span 2;
-  grid-row: 5;
-  margin:auto;
+.gridElement {
+  margin: auto;
+  width: 60%;
+}  
 
 
-}
-#f_submit > button {
-  background-color: orange;
-  padding: 5px;
-  width: 100px;
+#f_submit>button {
+  background-color: var(--button-color);
+  width: 80%;
   border: none;
   border-radius: 5px;
-  font-size: 19px;
-  display: block;
-  margin:auto;
+  font-size: var(--font-size);
+  margin: auto;
   margin-top: 20px;
-
-
 }
-
 .subFolder {
   display: flex;
 }
 
 .subContainers {
-  margin: 0px;
   width: 50%;
   height: 300px;
-  background-color: #f1b04f;
-  border: 1px solid var(--border-color);
+  background-color: var(--element-background);
   text-align: center;
 }
 
-.spacer {
-  height: 100px;
-  width: 100%;
+#infoContainer>img {
+  width: 18vh;
+  display: block;
+  margin: auto;
 }
+
+#infoContainer>h4 {
+  margin-top: 0px;
+}
+
 /*
 SLUTT KONTAKT OSS
 */
-
 /*
 START SPONSOR
 */
-
-.main_sponsor h1 {
-  padding-top: 10px;
+.main_sponsor *{
   text-align: center;
 }
-
+.main_sponsor > *{
+  margin-left: auto;
+  margin-right: auto;
+}
 .main_sponsor p {
-  margin: 0;
-  text-align: center;
-}
-
-.main_sponsor a {
-  text-decoration: none;
-  color: var(--text-color);
-  width: 100%;
-  height: 100%;
-}
-
-.spons-grid-container {
-  background-color: var(--background-color);;
-}
-
-.main_sponsor {
-  width: 80%;
   margin: auto;
-  background-color: #f4f4f4;
 }
 
 .spons-grid-one {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
 }
 
 .spons-grid-one .spons {
   padding-top: 10px;
   margin: auto;
-  height: 40vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -1014,7 +930,7 @@ START SPONSOR
 }
 
 .kryss_farge_2 {
-  background-color: #de785d;
+  background-color: #eeaf93;
 }
 
 .spons .logo_liten {
@@ -1025,50 +941,54 @@ START SPONSOR
   -webkit-transform: scale(1);
   transform: scale(1);
   transition-duration: 0.5s;
+  margin: auto;
 }
-.logo_liten:hover{
+
+.logo_liten:hover {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   transition-duration: 0.5s;
+}
 
-}
-#bakkevold, #oxford{
-  cursor: pointer;
-}
-#bakkevold:active, #oxford:active{
-opacity: 0.6;
-}
+
 
 .spons .pil {
   height: 20%;
   width: 20%;
-  margin-left: 40%;
+  margin: auto;
 }
 
 .fyll {
+  position: relative;
+  bottom: 20%;
+  
   height: 100px;
   width: 150px;
-  background-color: #f4f4f4;
-  margin: auto;
-  margin-top: 8%;
+  background-color:var(--element-background);
   border-radius: 2000px;
+  margin: auto;
 }
 
 .fyll p {
   padding-top: 30px;
 }
+
 .spons-grid-one .fyll {
   margin-top: 20%;
 }
 
 .spons-grid-two {
   width: 70%;
-  margin: auto;
-  margin-top: 90px;
 }
 
-.spons-grid-two > div {
+.spons_click {
+  background-color: var(--button-color);
+  border-radius: 5px;
+  width: 50%;
+}
+
+.spons-grid-two>div {
   text-align: center;
   padding: 10px;
   margin-bottom: 30px;
@@ -1093,20 +1013,18 @@ opacity: 0.6;
 /*
   START FOOTER
   */
-
 footer {
   /* margin-top: 20px; */
   background-color: var(--nav-color);
+  box-shadow: 0px 0px 5px rgba(10,10,80,0.5);
 }
+
+
 footer a {
   display: block;
 }
 
-.logo_footer {
-  margin: 0px;
-  padding: 0px;
-  width: 10%;
-}
+
 
 .footer-container-one {
   /* display: grid;
@@ -1116,24 +1034,21 @@ footer a {
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  margin: 5%;
-  border-bottom: var(--border-color) 0.4px solid;
+  margin: 1% 5%;
+  border-bottom: var(--secondary-teks-color) 0.4px solid;
   text-align: left;
 }
 
+
 .footer-container-one ul li a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--secondary-teks-color);
   font-size: 2vh;
   padding-top: 3px;
 }
 
 .footer-container-one ul li {
   list-style-type: none;
-}
-
-.footer-container-one ul {
-  padding: 0px;
 }
 
 .footer-container-one ul li p a {
@@ -1149,17 +1064,29 @@ footer a {
   margin-bottom: 0px;
   padding: 10px;
 }
+.contact>p{
+  padding: 5px;
+}
+.nasjonalStat{
+  padding: 25px;
+  text-decoration: underline;
+  text-align: center;
+}
+
 
 p {
   margin: 0;
 }
 
-.footer-container-two > div {
+.footer-container-two>div {
   font-size: 14px;
-  border: solid 1px var(--border-color);
-  background-color: #d8f5f6;
+  border: solid 1px var(--secondary-teks-color);
+  background-color: var(--button-color);
+  color: var(--text-color);
+
 }
-.footer-container-two > div > a {
+
+.footer-container-two>div>a {
   color: var(--text-color);
   text-decoration: none;
   margin: auto;
@@ -1168,67 +1095,47 @@ p {
 #footer_contact {
   text-align: center;
   margin-right: 40px;
-
   padding: 10px;
-  background-color: orange;
+  background-color: var(--button-color);
   border-radius: 20px;
+}
+#footer_contact>a{
+  color: var(--text-color);
 }
 /*
 SLUTT FOOTER
 */
-
 /*
 START NYHETER
 */
 
-
-#flex-container-news {
-  width: 90%;
-  text-align: center;
-  color: var(--text-color);
-  margin-top: 5%;
-  margin-bottom: 5%;
-  background-color: #555;
-
-
-}
-
 #news-container {
-  /* display: flex;
-  flex-flow: column wrap; */
-  width: 94%;
-  padding: 3%;
-  margin: auto;
-
+  background-color: #555;
+  padding: 20px;
 }
 
+#news-container > *{
+  width: 90%;
+  margin: 0 auto 5% auto;
+}
 #news-site-headline {
   font-size: 60px;
   padding: 3%;
-  margin-bottom: 0px;
-  color:var(--text-color);
-  background-color: #555;
+  text-align: center;
+  background-color: var(--element-background);
+  border: 3px solid var(--secondary-background-color);
 }
-
-/* nederste nyhetsbokser */
-.news-div {
+.news-div{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 90%;
-  margin: 0 auto;
-  background-color: var(--element-background);
-  border-radius: 3px 3px 0 0;
-  margin-bottom: 5%;
   position: relative;
-  /* display: none; */
 }
-.news-div a {
-  visibility: hidden;
-}
-.news-div a:target {
+
+.news-div .ancor:target {
   position: absolute;
-  top: -140px;
+  top: -50px;
 }
+
 #news-img {
   display: block;
   width: 90%;
@@ -1241,36 +1148,33 @@ START NYHETER
   margin-left: 10%;
 }
 
-#textbox > h2 {
+#textbox>h2 {
   font-size: 40px;
 }
+
 /*SLUTT NYHETER*/
 
-.nasjonalStat {
-  padding: 15px;
-}
-.nasjonalStat > a {
-  margin: 15px;
-  text-decoration: underline;
-}
+
 
 /* Fikse news, og støtttespillere kommer opp som athelete */
-
 /* Skyttere.html */
 #person_side_top {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
 }
+
 #skytter {
   width: 95%;
   margin: 1% auto;
   font-size: var(--font-size);
 }
+
 #person_side_info {
   margin: auto;
   padding: 0 10%;
 }
-#person_side_info > * {
+
+#person_side_info>* {
   margin: 10px;
   text-align: left;
 }
@@ -1278,6 +1182,7 @@ START NYHETER
 #skytter #medlemskap {
   text-decoration: underline;
 }
+
 #person_rekorder {
   /* background-color: #ff8080; */
   width: 100%;
@@ -1287,6 +1192,7 @@ START NYHETER
   border-collapse: collapse;
   border-radius: 10px;
 }
+
 #personal-records td:first-child,
 #personal-records th:first-child {
   text-align: left;
@@ -1296,31 +1202,37 @@ START NYHETER
 #personal-records td {
   padding: 5px;
 }
+
 #personal-records th,
 #merit i {
   border-bottom: dashed 1px var(--text-color);
 }
-
 
 #skytter #personer_underliggende_bilder {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 20px;
 }
-#skytter #person_bilder_vid > img {
+
+#skytter #person_bilder_vid>img {
   width: 10%;
   height: 50px;
   display: block;
   margin: auto;
 }
-#skytter #person_video > video {
+
+#skytter #person_video>video {
   display: block;
   margin: auto;
 }
+
 body::-webkit-scrollbar-thumb {
-  background-color: grey; /* color of the scroll thumb */
-  border-radius: 20px; /* roundness of the scroll thumb */
-  border: 3px solid; /* creates padding around scroll thumb */
+  background-color: grey;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid;
+  /* creates padding around scroll thumb */
 }
 
 #grid_container_stats {
@@ -1331,33 +1243,42 @@ body::-webkit-scrollbar-thumb {
   grid-template-columns: 1fr 2fr;
   grid-column-gap: 30px;
 }
-#grid_container_stats > * {
+
+#grid_container_stats>* {
   margin: 0 auto 10px auto;
 }
+
 #skytter #merit {
   margin-bottom: 10px;
 }
-#skytter #merit > * {
+
+#skytter #merit>* {
   margin: 5px;
 }
+
 #skytter #merit,
 #skytter td {
   border-bottom: 1px solid var(--text-color);
 }
+
 #familyDiv {
   margin: auto auto auto 0;
 }
+
 #skytter #familyDiv a,
 #skytter #divLinks a {
   display: block;
 }
-#skytter #familyType > p {
+
+#skytter #familyType>p {
   margin: 0;
   display: inline;
 }
+
 #skytter #familyType {
   margin-top: 20px;
 }
+
 #skytter #familyType:first-child {
   margin-top: 0;
 }
@@ -1365,66 +1286,87 @@ body::-webkit-scrollbar-thumb {
 /*
 START RESPONSIVE MEDIAQUERYS
 */
-
 /*css for hele body når den er større enn 600px starter under her*/
-
 @media only screen and (max-width: 1200px) {
-  #pal_info > ul > li {
+  #pal_info>ul>li {
     font-size: 1.5vw;
   }
 
-  #alle_utovere > div > img {
+  #alle_utovere>div>img {
     width: 150px;
     height: 250px;
   }
-  #alle_utovere > div {
+
+  #alle_utovere>div {
     font-size: 2vh;
   }
-.gridElement{
-  width: 30vh;
+
+
+  .gridElement>label {
+    font-size: 2.4vh;
+  }
+
+  #f_fornavn>input, #f_etternavn>input, #f_submit>button{
+    font-size: var(--font-size-small);
+  }
+
+  .footer-container-one ul li p a {
+    font-size: 2.5vh;
+  }
+
+  .footer-container-one>ul>li>a {
+    font-size: 2vh;
+  }
 }
 
-.gridElement>input{
-  width: 30vh;
-}
-.gridElement>label{
-  font-size:2.4vh;
-}
-#f_fornavn>input, #f_etternavn>input{
-width: 100px;
-font-size: 1.8vh;
-}
-.footer-container-one ul li p a {
-  font-size: 2.5vh;
-}
-.footer-container-one>ul>li>a {
-  font-size: 2vh;
-}
+@media only screen and (max-width: 1000px) {
+  .news-site-headline {
+    font-size: 30px;
+    padding: 3%;
+  }
 
+
+  .textbox {
+    font-size: 15px;
+    line-height: 150%;
+  }
+
+  .textbox>h2 {
+    font-size: 20px;
+  }
+
+  .news-div {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media only screen and (max-width: 900px) {
-  .knapp_header {
-    display: none;
+  #navbar{
+    font-size: 3vh;
+    height: 8vh;
   }
-  #header_om_oss {
-    height: 15vh;
+  .submenuElement_1 a, .submenuElement_2 a{
+    font-size: 4vh;
+  }
+  .submenu1{
+  left: 0px;
+  }
+
+#header_om_oss {
     background-image: none;
+    height:auto;
   }
-  .navn_header {
+.header_overst{
+    display:none;
+  }
+
+
+  .footer-container-one>ul {
     display: none;
   }
-  .header_overst {
-    display: none;
-  }
-  .logo_footer {
-    display: none;
-  }
-  .footer-container-one > ul {
-    display: none;
-  }
-  .footer-container-one>div{
-    margin:auto;
+
+  .footer-container-one>div {
+    margin: auto;
   }
 
   .footer-container-one {
@@ -1446,10 +1388,13 @@ font-size: 1.8vh;
 
   .grid-container-hjem {
     grid-template-columns: 1fr;
+
   }
+
   h1 {
     font-size: 4vh;
   }
+
   .main_sponsor .spons-grid-one .tom {
     display: none;
   }
@@ -1457,160 +1402,168 @@ font-size: 1.8vh;
   .main_sponsor .spons-grid-one {
     grid-template-columns: 1fr;
   }
+
   .main_sponsor .spons-grid-container {
     display: grid;
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
   }
-  #alle_utovere > div > img {
+  .spons-grid-container > *{
+    margin: auto;
+  }
+
+  #alle_utovere>div>img {
     display: none;
   }
-  #alle_utovere > div {
+
+  #alle_utovere>div {
     padding: 100px 0px;
   }
-  #alle_utovere {
-    margin: 100px;
-  }
+
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 610px) {
+  #navbar{
+    font-size: 2vh
+  }
+  #kontaktKnapp{
+    height: 2vh
+  }
+
   .footer-container-one {
     display: grid;
     grid-template-columns: 1fr
   }
-  .footer-container-one>div{
-    margin:auto;
+
+  .footer-container-one>div {
+    margin: auto;
   }
+
   .logo_footer {
     display: block;
     height: 200px;
     padding-left: 20px;
   }
-  #f_fornavn, #f_etternavn{
-  margin: 0px 5vh;
+
+  #f_fornavn, #f_etternavn {
+    /* margin: 0px 5vh; */
   }
-  #formContainer{
-    width: 90%;
-  }
+
   /* #skytter #grid_container_stats{
     grid-template-columns: 1fr;
 
   } */
-  #skytter > *{
+  #skytter>* {
     grid-template-columns: 1fr;
   }
-  #skytter>*>*{
+
+  #skytter>*>* {
     margin: auto;
   }
+
+    #alle_utovere {
+      margin: 2vh;
+      height: 51vh;
+    }
+
+
+    #alle_utovere>div>div {
+      margin-right: 10px;
+    }
+
+
+      #alle_utovere>div {
+        padding: 10px;
+        height: 50vh;
+      }
+
+      #alle_utovere>div>div {
+        margin-right: 10px;
+      }
+
+    #person_side_info {
+      margin-top: 20px;
+    }
+
+    #person_side_info>* {
+      margin-bottom: 15px;
+    }
+    #bilder_team {
+      display: none;
+    }
 
 }
 
 @media (max-width: 405px) {
+  #navbar{
+    font-size: 1.3vh
+  }
+  .submenuElement_1>a, .submenuElement_2>a{
+    font-size: 1vh;
+  }
+#submenu_2{
+  display: none;
+}
+  .logo_nav>a>img{
+    width: 100%;
+  }
   /*Small smartphones [325px -> 425px]*/
   .grid-container-athletes {
     grid-template-columns: 1fr;
   }
+
   .footer-container-two {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
-  .footer-container-two > p {
+
+  .footer-container-two>p {
     display: none;
   }
-  #f_fornavn>input, #f_etternavn>input{
-  width: 70px;
-  font-size: 1.8vh;
+
+  #f_fornavn>input, #f_etternavn>input {
+    font-size: 1.8vh;
   }
-  .gridElement>label{
-    font-size:1.8vh;
+
+  .gridElement>label {
+    font-size: 1.8vh;
   }
+
   h1 {
     font-size: 3vh;
   }
-  p{
-    font-size: 2vh;
 
-  }
-  #bilder_team{
-    display: none;
-  }
-  #alle_utovere{
-    margin:2vh;
-    height: 51vh;
-
-  }
-  #alle_utovere>div{
-    padding: 120px 10px;
-    height: 50vh;
-  }
-  #alle_utovere>div>div{
-    margin-right: 10px;
-  }
-  #person_side_info{
-    margin-top:20px;
-  }
-  #person_side_info>*{
-    margin-bottom:15px;
-  }
-  #vunnet>div>h2{
-  font-size: 1vh;
-  }
-  #vunnet>div>h1{
+  p {
     font-size: 2vh;
   }
-  .slideshow-container{
-    height: 200px;
+
+
+  #vunnet>div>h2 {
+    font-size: 1vh;
+  }
+
+  #vunnet>div>h1 {
+    font-size: 2vh;
   }
 
 
-#alle_utovere>div{
-  padding: 10px;
-  height: 50vh;
-}
-#alle_utovere>div>div{
-  margin-right: 10px;
-}
-#person_side_info{
-  margin-top:20px;
-}
-#person_side_info>*{
-  margin-bottom:15px;
-}
-#vunnet>div>h2{
-font-size: 1vh;
-}
-#vunnet>div>h1{
-  font-size: 2vh;
-}
-.slideshow-container{
-  height: 200px;
-}
-
-#oxford>.logo_liten, #bakkevold>.logo_liten{
-  height: 30%;
-}
-
-}
-@media only screen and (max-width: 1000px) {
-  .news-site-headline {
-    font-size: 30px;
-    padding: 3%;
+  #person_side_info {
+    margin-top: 20px;
+    padding-right: 5px;
   }
 
-  .textbox {
-    font-size: 15px;
-    line-height: 150%;
+  #person_side_info>* {
+    margin-bottom: 15px;
   }
 
-  .textbox > h2 {
-    font-size: 20px;
+  .slideshow-container {
+    height: 50vw;
   }
 
-  .news-div {
-    grid-template-columns: 1fr;
+  #oxford>.logo_liten, #bakkevold>.logo_liten {
+    height: 30%;
   }
 }
 
 /*
 SLUTT RESPONSIVE MEDIAQUERYS
 */
-}

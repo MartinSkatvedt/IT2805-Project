@@ -2,6 +2,9 @@ function writeNews() {
     const main = document.querySelector('main')
     const newsContainer = document.createElement('div')
     newsContainer.id = 'news-container'
+    newsContainer.innerHTML = `
+    <h1 id="news-site-headline">NEWS</h1>
+    `
     for (let i = 0; i < news.length; i++) {
         const element = news[i];
         const newsDiv = document.createElement('div')
@@ -31,7 +34,6 @@ function writeNews() {
 //Lager ett anker for å referere til den lokale linken på riktig posisjon
         const ancor = document.createElement('a')
         ancor.id = element.id
-        ancor.innerHTML = 'ANKER'
         ancor.className = 'ancor'
         newsDiv.appendChild(ancor)
 
@@ -39,5 +41,4 @@ function writeNews() {
         newsContainer.appendChild(newsDiv)
         main.appendChild(newsContainer)
     }
-    document.documentElement.setAttribute('lang','no')
 }
