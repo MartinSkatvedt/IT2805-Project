@@ -1222,12 +1222,10 @@ START NYHETER
   position: relative;
   /* display: none; */
 }
-.news-div a {
-  visibility: hidden;
-}
-.news-div a:target {
+
+.news-div .ancor:target {
   position: absolute;
-  top: -140px;
+  top: -50px;
 }
 #news-img {
   display: block;
@@ -1613,4 +1611,3 @@ font-size: 1vh;
 /*
 SLUTT RESPONSIVE MEDIAQUERYS
 */
-}
