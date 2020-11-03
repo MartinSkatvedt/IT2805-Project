@@ -357,6 +357,7 @@ START NAVBAR
 .submenuElement_1 a,
 .submenuElement_2 a {
   color: #ddcccc;
+
 }
 
 .submenu {
@@ -1201,7 +1202,6 @@ p {
 }
 #footer_contact>a{
   color: var(--text-color);
-
 }
 /*
 SLUTT FOOTER
@@ -1211,8 +1211,6 @@ START NYHETER
 */
 
 #news-container {
-  /* display: flex;
-  flex-flow: column wrap; */
   width: 95%;
   padding: 3%;
   margin: auto;
@@ -1470,8 +1468,14 @@ START RESPONSIVE MEDIAQUERYS
   #navbar{
     font-size: 3vh;
     height: 8vh;
-
   }
+  .submenuElement_1 a, .submenuElement_2 a{
+    font-size: 4vh;
+  }
+  .submenu1{
+  left: 0px;
+  }
+
   .knapp_header {
     display: none;
   }
@@ -1555,6 +1559,7 @@ START RESPONSIVE MEDIAQUERYS
   #kontaktKnapp{
     height: 2vh
   }
+  
   .footer-container-one {
     display: grid;
     grid-template-columns: 1fr
@@ -1627,6 +1632,12 @@ START RESPONSIVE MEDIAQUERYS
   #navbar{
     font-size: 1.3vh
   }
+  .submenuElement_1>a, .submenuElement_2>a{
+    font-size: 1vh;
+  }
+#submenu_2{
+  display: none;
+}
   .logo_nav>a>img{
     width: 100%;
   }
