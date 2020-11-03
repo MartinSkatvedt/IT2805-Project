@@ -257,8 +257,8 @@ START NAVBAR
   border-top: 1px solid;
   padding: 0.5% 0px;
   background-color: var(--nav-color);
-  height: 100px;
-  font-size: 30px;
+  height: 12vh;
+  font-size: 4vh;
   width: 100%;
   z-index: 9;
   top: 0;
@@ -1465,6 +1465,11 @@ START RESPONSIVE MEDIAQUERYS
 }
 
 @media only screen and (max-width: 900px) {
+  #navbar{
+    font-size: 3vh;
+    height: 8vh;
+
+  }
   .knapp_header {
     display: none;
   }
@@ -1541,7 +1546,13 @@ START RESPONSIVE MEDIAQUERYS
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 610px) {
+  #navbar{
+    font-size: 2vh
+  }
+  #kontaktKnapp{
+    height: 2vh
+  }
   .footer-container-one {
     display: grid;
     grid-template-columns: 1fr
@@ -1611,7 +1622,12 @@ START RESPONSIVE MEDIAQUERYS
 }
 
 @media (max-width: 405px) {
-
+  #navbar{
+    font-size: 1.3vh
+  }
+  .logo_nav>a>img{
+    width: 100%;
+  }
   /*Small smartphones [325px -> 425px]*/
   .grid-container-athletes {
     grid-template-columns: 1fr;
