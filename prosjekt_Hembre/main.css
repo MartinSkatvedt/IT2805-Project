@@ -34,7 +34,6 @@ html {
 
 main {
   font-family: "Arial", "Times new roman", sans-serif;
-  background-color: var(--background-color);
   color: var(--text-color);
   margin: auto;
   font-size: var(--font-size);
@@ -59,7 +58,7 @@ START INDEX
 }
 
 .grid-container-hjem > div {
-  background-color: var(--element-background);
+  background-color: var(--background-color);
   padding: 20px;
   /* border: 1px solid black; */
 }
@@ -418,6 +417,7 @@ START NAVBAR
 
 .index_body {
   text-align: center;
+  background-color: var(--element-background);
 }
 /*
 SLUTT NAVBAR
