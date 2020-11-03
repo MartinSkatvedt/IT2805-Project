@@ -67,7 +67,7 @@ START INDEX
 
 }
 
-.grid-container-hjem>div, .news-div, #news-container, .main_sponsor .spons-grid-one, .spons-grid-two>.spons, .element_om_oss, #kontakt-main > *{
+.grid-container-hjem>div, .news-div, #news-container, .main_sponsor .spons-grid-one, .spons-grid-two>.spons, .element_om_oss, #kontakt-main > *, .spons_click{
   box-shadow: var(--box-shadow);
 
 }
@@ -966,8 +966,7 @@ START SPONSOR
 }
 
 .main_sponsor p {
-  margin: 0;
-  text-align: center;
+  margin: auto;
 }
 
 .main_sponsor a {
@@ -1063,7 +1062,8 @@ START SPONSOR
 
 .spons_click {
   background-color: var(--button-color);
-  border-radius: 10px;
+  border-radius: 5px;
+  width: 50%;
 }
 
 .spons-grid-two>div {
