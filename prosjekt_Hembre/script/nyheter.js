@@ -2,6 +2,9 @@ function writeNews() {
     const main = document.querySelector('main')
     const newsContainer = document.createElement('div')
     newsContainer.id = 'news-container'
+    newsContainer.innerHTML = `
+    <h1 id="news-site-headline">NEWS</h1>
+    `
     for (let i = 0; i < news.length; i++) {
         const element = news[i];
         const newsDiv = document.createElement('div')

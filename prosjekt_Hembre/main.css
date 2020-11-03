@@ -48,10 +48,6 @@ main {
   margin: 0 auto;
   width: 90%;
 }
-main#container-news {
-  margin: auto;
-  background-color: #555;
-}
 
 
 /*
@@ -71,7 +67,7 @@ START INDEX
 
 }
 
-.grid-container-hjem>div, .news-div, #container-news, .main_sponsor .spons-grid-one, .spons-grid-two>.spons, .element_om_oss{
+.grid-container-hjem>div, .news-div, #news-container, .main_sponsor .spons-grid-one, .spons-grid-two>.spons, .element_om_oss{
   box-shadow: var(--box-shadow);
 }
 .grid-container-hjem>div, .news-div{
@@ -1188,31 +1184,25 @@ START NYHETER
 */
 
 #news-container {
-  width: 95%;
-  padding: 3%;
-  margin: auto;
+  background-color: #555;
+  padding: 20px;
 }
 
+#news-container > *{
+  width: 90%;
+  margin: 0 auto 5% auto;
+}
 #news-site-headline {
   font-size: 60px;
   padding: 3%;
-  margin-bottom: 0px;
   text-align: center;
   background-color: var(--element-background);
   border: 3px solid var(--secondary-background-color);
 }
-
-/* nederste nyhetsbokser */
-.news-div {
+.news-div{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 90%;
-  margin: 0 auto;
-  /* background-color: var(--element-background); */
-  border-radius: 3px 3px 0 0;
-  margin-bottom: 5%;
   position: relative;
-  /* display: none; */
 }
 
 .news-div .ancor:target {
