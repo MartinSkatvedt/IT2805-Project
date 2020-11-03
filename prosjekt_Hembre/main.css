@@ -52,6 +52,10 @@ SLUTT GLOBALE CSS FUNKSJONER
 /*
 START INDEX
  */
+.main_index{
+  width: 95%;
+}
+
 .grid-container-hjem {
   margin-top: 30px;
   display: grid;
@@ -1132,7 +1136,7 @@ footer a {
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  margin: 5%;
+  margin: 1% 5%;
   border-bottom: var(--border-color) 0.4px solid;
   text-align: left;
 }
@@ -1163,7 +1167,7 @@ footer a {
   padding: 10px;
 }
 .contact>p{
-  padding: 3px;
+  padding: 5px;
 }
 
 p {
