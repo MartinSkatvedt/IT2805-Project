@@ -932,9 +932,9 @@ const news = [
 
   {
     id: 002,
-    header: " Hembre sønnene er på topp",
+    header: " Hembre boys on top",
     text: [
-      "Paragrafer...",
+      "The Hembre twins Ludvik and Mattis take second and first place respectively. The two bring home even more medals for the allready lavish collection of awards.",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
     ],
     img: bilder.newsImg[1],
@@ -942,18 +942,18 @@ const news = [
 
   {
     id: 003,
-    header: "Ny seier for Pål, Mattis og ludvik i Bergen",
+    header: "Tripple threat in Bergen",
     text: [
-      "Paragrafer...",
+      "Mattis, Ludvik and Pål had an impressive showing in last weeks event in Bergen. The three family members alle won their individual events.",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
     ],
     img: bilder.newsImg[2],
   },
   {
     id: 004,
-    header: "Pål med ny NM Rekord!",
+    header: "Pål with new norwegian championship record",
     text: [
-      "Paragrafer...",
+      "Pål takes an impressive new record in the last norwegian championship.",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
     ],
     img: bilder.newsImg[3],
