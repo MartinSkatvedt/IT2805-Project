@@ -1411,10 +1411,7 @@ START RESPONSIVE MEDIAQUERYS
     font-size: 30px;
     padding: 3%;
   }
-  #header_om_oss {
-    height: 15vh;
-    background-image: none;
-  }
+
 
   .textbox {
     font-size: 15px;
@@ -1442,21 +1439,14 @@ START RESPONSIVE MEDIAQUERYS
   left: 0px;
   }
 
-  .knapp_header {
-    display: none;
+#header_om_oss {
+    background-image: none;
+    height:auto;
+  }
+.header_overst{
+    display:none;
   }
 
-  .navn_header {
-    display: none;
-  }
-
-  .header_overst {
-    display: none;
-  }
-
-  .logo_footer {
-    display: none;
-  }
 
   .footer-container-one>ul {
     display: none;
@@ -1522,7 +1512,7 @@ START RESPONSIVE MEDIAQUERYS
   #kontaktKnapp{
     height: 2vh
   }
-  
+
   .footer-container-one {
     display: grid;
     grid-template-columns: 1fr
