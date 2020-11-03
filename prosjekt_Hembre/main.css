@@ -12,7 +12,7 @@ START GLOBALE CSS FUNKSJONER
   --button-color: #f2994a;
   --font-size-large: 25pt;
   --font-size: 15pt;
-  --font-size-small: 10pt;
+  --font-size-small: 1.8vh;
   --border-color: #000;
   --box-shadow: 0px 2px 4px rgba(10,10,80,0.5);
 
@@ -716,42 +716,10 @@ START OM OSS
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-#formContainer {
-  background-color: var(--element-background);
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding: 2%;
-}
-#formContainer *{
-  background-color: inherit;
-}
-
-
-.gridElement>input {
-  font-size: 22px;
-}
-
-#contactForm {
-  display: grid;
-}
-
-.gridElement {
-  margin-top: 4%;
-  width: 60%;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-}
-
-.gridElement>input {
-  padding-top: 10px;
-}
-
 /*
 SLUTT OM OSS:
 */
+
 /*
 SKYTER UNDERSIDENE:
 */
@@ -862,60 +830,43 @@ SLUTT UNDERSKYTESIDER
 /*
 START KONTAKT OSS
 */
-input,
-textarea {
+
+#formContainer {
+  background-color: var(--element-background);
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 2%;
+}
+
+#formContainer *{
+  background-color: inherit;
+}
+
+#contactForm{
+  width: 100%;
+}
+
+.gridElement>input, .gridElement textarea{
+  font-size: 22px;
+  padding-top: 10px;
+  width: 100%;
   border: 2px solid var(--border-color);
-}
+}  
 
-#f_mail {
-  margin-left: auto;
-  margin-right: auto;
-  grid-column: 1 / span 2;
-  grid-row: 1;
-}
-
-#f_melding {
-  margin-left: auto;
-  margin-right: auto;
-  grid-column: 1 / span 2;
-  grid-row: 2;
-}
-
-#f_fornavn {
-  width: 55%;
-  margin-right: 5%;
-  margin-left: auto;
-  grid-column: 1;
-  grid-row: 3;
-}
-
-#f_etternavn {
-  width: 55%;
-  margin-left: 5%;
-  margin-right: auto;
-  grid-column: 2;
-  grid-row: 3;
-}
-
-#f_telefon {
-  grid-column: 1 / span 2;
-  grid-row: 4;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#f_submit {
-  grid-column: 1 / span 2;
-  grid-row: 5;
+.gridElement {
   margin: auto;
-}
+  width: 60%;
+}  
+
 
 #f_submit>button {
   background-color: var(--button-color);
-  width: 100px;
+  width: 80%;
   border: none;
   border-radius: 5px;
-  font-size: 19px;
+  font-size: var(--font-size);
   margin: auto;
   margin-top: 20px;
 }
@@ -928,11 +879,6 @@ textarea {
   height: 300px;
   background-color: var(--element-background);
   text-align: center;
-}
-
-.spacer {
-  height: 100px;
-  width: 100%;
 }
 
 #infoContainer>img {
@@ -1355,21 +1301,13 @@ START RESPONSIVE MEDIAQUERYS
     font-size: 2vh;
   }
 
-  .gridElement {
-    width: 30vh;
-  }
-
-  .gridElement>input {
-    width: 30vh;
-  }
 
   .gridElement>label {
     font-size: 2.4vh;
   }
 
-  #f_fornavn>input, #f_etternavn>input {
-    width: 100px;
-    font-size: 1.8vh;
+  #f_fornavn>input, #f_etternavn>input, #f_submit>button{
+    font-size: var(--font-size-small);
   }
 
   .footer-container-one ul li p a {
@@ -1507,7 +1445,7 @@ START RESPONSIVE MEDIAQUERYS
   }
 
   #f_fornavn, #f_etternavn {
-    margin: 0px 5vh;
+    /* margin: 0px 5vh; */
   }
 
   /* #skytter #grid_container_stats{
@@ -1583,7 +1521,6 @@ START RESPONSIVE MEDIAQUERYS
   }
 
   #f_fornavn>input, #f_etternavn>input {
-    width: 70px;
     font-size: 1.8vh;
   }
 
