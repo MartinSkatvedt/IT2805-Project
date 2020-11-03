@@ -1472,6 +1472,10 @@ START RESPONSIVE MEDIAQUERYS
     font-size: 30px;
     padding: 3%;
   }
+  #header_om_oss {
+    height: 15vh;
+    background-image: none;
+  }
 
   .textbox {
     font-size: 15px;
@@ -1490,11 +1494,6 @@ START RESPONSIVE MEDIAQUERYS
 @media only screen and (max-width: 900px) {
   .knapp_header {
     display: none;
-  }
-
-  #header_om_oss {
-    height: 15vh;
-    background-image: none;
   }
 
   .navn_header {
@@ -1593,10 +1592,7 @@ START RESPONSIVE MEDIAQUERYS
     width: 90%;
   }
 
-  /* #skytter #grid_container_stats{
-    grid-template-columns: 1fr;
 
-  } */
   #skytter>* {
     grid-template-columns: 1fr;
   }
@@ -1604,6 +1600,40 @@ START RESPONSIVE MEDIAQUERYS
   #skytter>*>* {
     margin: auto;
   }
+  #bilder_team {
+    display: none;
+  }
+
+
+    #alle_utovere {
+      margin: 2vh;
+      height: 51vh;
+    }
+
+
+    #alle_utovere>div>div {
+      margin-right: 10px;
+    }
+
+
+      #alle_utovere>div {
+        padding: 10px;
+        height: 50vh;
+      }
+
+      #alle_utovere>div>div {
+        margin-right: 10px;
+      }
+
+    #person_side_info {
+      margin-top: 20px;
+    }
+
+    #person_side_info>* {
+      margin-bottom: 15px;
+    }
+
+
 }
 
 @media (max-width: 405px) {
@@ -1639,31 +1669,6 @@ START RESPONSIVE MEDIAQUERYS
     font-size: 2vh;
   }
 
-  #bilder_team {
-    display: none;
-  }
-
-  #alle_utovere {
-    margin: 2vh;
-    height: 51vh;
-  }
-
-  #alle_utovere>div {
-    padding: 120px 10px;
-    height: 50vh;
-  }
-
-  #alle_utovere>div>div {
-    margin-right: 10px;
-  }
-
-  #person_side_info {
-    margin-top: 20px;
-  }
-
-  #person_side_info>* {
-    margin-bottom: 15px;
-  }
 
   #vunnet>div>h2 {
     font-size: 1vh;
@@ -1673,18 +1678,6 @@ START RESPONSIVE MEDIAQUERYS
     font-size: 2vh;
   }
 
-  .slideshow-container {
-    height: 200px;
-  }
-
-  #alle_utovere>div {
-    padding: 10px;
-    height: 50vh;
-  }
-
-  #alle_utovere>div>div {
-    margin-right: 10px;
-  }
 
   #person_side_info {
     margin-top: 20px;
