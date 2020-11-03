@@ -69,11 +69,14 @@ START INDEX
 
 .grid-container-hjem>div, .news-div, #news-container, .main_sponsor .spons-grid-one, .spons-grid-two>.spons, .element_om_oss, #kontakt-main > *, .spons_click{
   box-shadow: var(--box-shadow);
-
 }
 .grid-container-hjem>div, .news-div{
   background-color: var(--element-background);
   padding: 20px;
+}
+
+.pointer:hover{
+  cursor: pointer;
 }
 
 .grid-container-athletes {
@@ -200,7 +203,6 @@ a>h5 {
 
 .buttonsSlides * {
   padding: 0 2ch;
-  cursor: pointer;
   font-weight: 900;
   border-radius: 10%;
   border-radius: 0 0 10px 10px;
@@ -210,7 +212,6 @@ a>h5 {
 .buttonsSlides>*:hover {
   background-color: var(--button-color);
   color: var(--secondary-teks-color);
-  cursor: pointer;
 }
 
 .athlete:hover .text {
@@ -565,7 +566,6 @@ START OM OSS
   color: white;
   border: none;
   outline: none;
-  cursor: pointer;
   padding: 24px 60px;
 }
 
@@ -925,9 +925,6 @@ textarea {
   margin: auto;
   margin-top: 20px;
 }
-#f_submit>button:hover{
-  cursor: pointer;
-}
 .subFolder {
   display: flex;
 }
@@ -1020,9 +1017,6 @@ START SPONSOR
   transition-duration: 0.5s;
 }
 
-#bakkevold, #oxford {
-  cursor: pointer;
-}
 
 #bakkevold:active, #oxford:active {
   opacity: 0.6;
@@ -1055,10 +1049,6 @@ START SPONSOR
   width: 70%;
   margin: auto;
   margin-top: 90px;
-}
-
-.spons-grid-two .spons:hover {
-  cursor: pointer;
 }
 
 .spons_click {

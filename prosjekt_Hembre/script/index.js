@@ -160,6 +160,7 @@ function createSlideshowButtons() {
     nextSpan.innerHTML = '>'
     nextSpan.id = 'next'
 
+    nextSpan.className = prevSpan.className = 'pointer'
     buttonSlidesDiv.appendChild(nextSpan)
 
     return buttonSlidesDiv
