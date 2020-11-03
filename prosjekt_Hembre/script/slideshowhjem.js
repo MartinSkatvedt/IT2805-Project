@@ -1,9 +1,10 @@
 let slideIndex = -1;
-showSlides()
 
 
 const next = document.querySelector("#next");
 const prev = document.querySelector("#prev");
+
+let interval;
 
 next.addEventListener("click", btnClick)
 prev.addEventListener("click", btnClick)
@@ -12,15 +13,20 @@ function btnClick(event) {
     eventType = event.target.id
     if (eventType == 'next') {
         nextSlide(1)
+        reset()
     } else {
         nextSlide(-1)
+        reset()
     }
 }
 
-function showSlides() {
-    nextSlide(1)
-    setTimeout(showSlides, 5000); // Change image every 5000 milliseconds
+function reset() {
+    window.clearInterval(interval)
+    interval = window.setInterval(() => {
+        nextSlide(1);
+    }, 5000);
 }
+
 
 function nextSlide(n) {
     const slides = document.getElementsByClassName("slides");
@@ -39,3 +45,10 @@ function nextSlide(n) {
     }
     slides[slideIndex].style.display = "block";
 }
+
+function startSlideShow() {
+    nextSlide(1)
+    reset()
+}
+
+startSlideShow()
