@@ -54,6 +54,8 @@ START INDEX
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   column-gap: 20px;
+  box-shadow: 1px 2px 3px;
+
   /* grid-column-gap: 1%; */
 }
 
@@ -1456,6 +1458,7 @@ font-size: 1.8vh;
 
   .grid-container-hjem {
     grid-template-columns: 1fr;
+
   }
   h1 {
     font-size: 4vh;
