@@ -37,11 +37,11 @@
       // </div>
 
       // `
-      
+
       for(i in skyttere){
         // console.log(i);
         if (skyttere[i].isShown) {
-            
+
           const listeDiv = document.createElement('div')
           // footer.innerHTML += `
 
@@ -78,7 +78,7 @@
           listeDiv.appendChild(ul)
           footer.appendChild(listeDiv)
         }
-      } 
+      }
       footer.innerHTML += `
         </div>
 

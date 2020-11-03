@@ -440,7 +440,9 @@ START OM OSS
   font-size: 20px;
   font-weight: bold;
   margin: 0px;
-  height: 755px;
+}
+.knapp_header{
+  margin-top: 10vh;
 }
 
 .knapp_header>a {
@@ -459,17 +461,17 @@ START OM OSS
 }
 
 .logo {
-  padding-top: 20px;
+  padding-top: 00px;
   text-align: center;
   margin-top: 0px;
   padding-left: 30px;
 }
 
-.header_over_mitt_navn {
+.header_over_om_oss {
   text-align: center;
   width: 15%;
   margin: auto;
-  margin-top: 6vh;
+  margin-top: 3vh;
   color: white;
   padding: 10px;
   font-size: 40px;
@@ -480,7 +482,7 @@ START OM OSS
   transition-duration: 0.5s;
 }
 
-.hele_folg_meg {
+.hele_folg_oss {
   position: relative;
   display: flex;
   padding-top: 20px;
@@ -1149,11 +1151,7 @@ footer a {
   display: block;
 }
 
-.logo_footer {
-  margin: 0px;
-  padding: 0px;
-  width: 10%;
-}
+
 
 .footer-container-one {
   /* display: grid;
@@ -1168,6 +1166,7 @@ footer a {
   text-align: left;
 }
 
+
 .footer-container-one ul li a {
   text-decoration: none;
   color: var(--text-color);
@@ -1177,10 +1176,6 @@ footer a {
 
 .footer-container-one ul li {
   list-style-type: none;
-}
-
-.footer-container-one ul {
-  padding: 0px;
 }
 
 .footer-container-one ul li p a {
@@ -1195,6 +1190,9 @@ footer a {
   grid-gap: 20%;
   margin-bottom: 0px;
   padding: 10px;
+}
+.contact>p{
+  padding: 3px;
 }
 
 p {
@@ -1631,7 +1629,9 @@ START RESPONSIVE MEDIAQUERYS
     #person_side_info>* {
       margin-bottom: 15px;
     }
-
+    #bilder_team {
+      display: none;
+    }
 
 }
 
@@ -1668,9 +1668,6 @@ START RESPONSIVE MEDIAQUERYS
     font-size: 2vh;
   }
 
-  #bilder_team {
-    display: none;
-  }
 
   #vunnet>div>h2 {
     font-size: 1vh;
@@ -1683,12 +1680,17 @@ START RESPONSIVE MEDIAQUERYS
 
   #person_side_info {
     margin-top: 20px;
+    padding-right: 5px;
   }
 
   #person_side_info>* {
     margin-bottom: 15px;
   }
 
+#{
+  margin-right:0px;
+
+}
   #vunnet>div>h2 {
     font-size: 1vh;
   }
