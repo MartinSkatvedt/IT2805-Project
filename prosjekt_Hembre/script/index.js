@@ -1,5 +1,7 @@
 function main() {
     const main = document.querySelector('main')
+    main.id = 'main_index'
+
     const gch =  document.createElement('div')
     gch.className = 'grid-container-hjem'
 
@@ -115,7 +117,7 @@ function makeAthlete(i) {
 function createSlideshow() {
     const container = document.createElement('div')
     container.className = 'slideshow-container'
-    
+
 
     for (let i = 0; i < news.length; i++) {
         container.appendChild(makeSlide(i))
@@ -128,7 +130,7 @@ function makeSlide(i) {
     aSlides.className = 'slides fade'
     aSlides.href = 'nyheter.html#'+article.id
 
-    
+
     const img = document.createElement('img')
     img.src = article.img
 

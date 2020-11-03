@@ -3,7 +3,7 @@ START GLOBALE CSS FUNKSJONER
  */
 
 :root {
-  --background-color: #d3ebeb;
+  --background-color: #f2f2f2;
   --nav-color: #e8ffff;
   --element-background: #d1d1d1;
   --text-color: #000;
@@ -36,17 +36,12 @@ main {
   font-family: "Arial", "Times new roman", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
-  width: 100%;
   margin: auto;
   font-size: var(--font-size);
   margin: 0% auto;
-}
-main {
-  background-color: var(--background-color);
-  color: var(--text-color);
   width: 90%;
-  margin: auto;
 }
+
 /*
 SLUTT GLOBALE CSS FUNKSJONER
  */
@@ -54,6 +49,7 @@ SLUTT GLOBALE CSS FUNKSJONER
 /*
 START INDEX
  */
+
 .grid-container-hjem {
   margin-top: 30px;
   display: grid;
@@ -268,11 +264,12 @@ START NAVBAR
   height: 100px;
   font-size: 30px;
   width: 100%;
-  font-family: Montserrat;
+  font-family: sans-serif, Arial, Helvetica, sans-serif;
+  font-style: Open
   z-index: 9;
   top: 0;
 }
-.navBarElement > a::before {
+.navBarElement > a::before { /* hentet inspirasjon fra https://css-tricks.com/having-fun-with-link-hover-effects/ */
   /* funksjoner for å skalere elementer og overgangs tid*/
   visibility: hidden;
   -webkit-transform: scaleX(0);
@@ -957,6 +954,15 @@ textarea {
   height: 100px;
   width: 100%;
 }
+#infoContainer>img{
+  width: 18vh;
+  display: block;
+  margin: auto;
+}
+#infoContainer>h4{
+  margin-top: 0px;
+}
+
 /*
 SLUTT KONTAKT OSS
 */
@@ -1611,3 +1617,7 @@ font-size: 1vh;
 /*
 SLUTT RESPONSIVE MEDIAQUERYS
 */
+<<<<<<< HEAD
+}
+=======
+>>>>>>> 33f0a22e0b8ebe103a0344d93c4d74506d8863ae
