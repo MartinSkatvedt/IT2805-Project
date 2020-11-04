@@ -1,0 +1,191 @@
+/*
+START INDEX
+ */
+
+ .grid-container-home {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 20px;
+  
+  }
+  
+  .grid-container-home>div, .news-div, #news-container, .main_sponsor .sponsor-grid-one, .sponsor-grid-two>.sponsor_box, .element_about_us, #kontakt-main > *, .sponsor_click{
+    box-shadow: var(--box-shadow);
+  }
+  .grid-container-home>div, .news-div{
+    background-color: var(--element-background);
+    padding: 20px;
+  }
+  
+  .pointer:hover{
+    cursor: pointer;
+  }
+  .active:active{
+    opacity: 0.7;
+  }
+  .grid-container-athletes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: 5% 0;
+  }
+  
+  .athlete {
+    position: relative;
+    width: 100%;
+    background-color: var(--secondary-background-color);
+    overflow: hidden;
+    border-radius: 3px 3px 0 0;
+  }
+  
+  .athlete img {
+    width: 100%;
+  }
+  
+  .athlete a {
+    height: 100%;
+  }
+  
+  .athlete .text {
+    color: var(--secondary-teks-color);
+    background-color: var(--secondary-background-color);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1ch 0;
+  }
+  
+  .sponsor {
+    margin: auto;
+    width: 100%;
+    height: 240px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 5%;
+    padding-bottom: 20px;
+    background-color: white;
+    text-align: center;
+  }
+  .sponsor img{
+    width: 100%;
+  }
+  
+  .sponsor>a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0;
+  }
+  .sponsor>a>p{
+    font-size: var(--font-size-xsmall);
+    padding: 0px 5%;
+    opacity: 0.5;
+  }
+  
+  .supporter {
+    margin: auto;
+    width: 100%;
+    height: 240px;
+    border: 1px solid black;
+    padding-bottom: 5%;
+    margin-bottom: 20px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .supporter>a {
+    color: black;
+    text-decoration: none;
+    margin: 0;
+  }
+  
+  /*Slideshow*/
+  .slideshow-container * {
+    box-sizing: border-box;
+  }
+  
+  .slides {
+    /* for at siden skal lastes bedre/finere */
+    display: none;
+  }
+  
+  .slides>img {
+    width: 100%;
+  }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    background-color: var(--secondary-background-color);
+    border-radius: 3px 3px 0 0;
+    width: 100%;
+    height: 300px;
+  }
+  
+  /* Caption text */
+  .slides>.text {
+    color: var(--secondary-teks-color);
+    background-color: var(--secondary-background-color);
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .buttonsSlides {
+    text-align: center;
+  }
+  
+  .buttonsSlides * {
+    padding: 0 2ch;
+    font-weight: 900;
+    border-radius: 10%;
+    border-radius: 0 0 10px 10px;
+    margin: 0 10%;
+  }
+  
+  .buttonsSlides>*:hover {
+    background-color: var(--button-color);
+    color: var(--secondary-teks-color);
+  }
+  
+  .athlete:hover .text {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  
+  
+  /* Fading animation, denne funker ikke */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.6;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.6;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /*
+  SLUTT INDEX*/
+  
