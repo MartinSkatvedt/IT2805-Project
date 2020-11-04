@@ -70,8 +70,13 @@ function makeSponsor(i) {
     const h4 = document.createElement('h4')
     h4.innerHTML = sponsor.name
 
-    a.appendChild(h4)
+    const p = document.createElement('p')
+    p.innerHTML = sponsor.text
+
+
     a.appendChild(img)
+    a.appendChild(h4)
+    a.appendChild(p)
     div.appendChild(a)
     return div
 }
