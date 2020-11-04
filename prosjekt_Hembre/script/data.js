@@ -876,16 +876,21 @@ const sponsors = [
     name: "Bækkevolds Våpenservice",
     img: pictures.sponsors.bekkevold,
     link: "https://www.pardininorge.no/",
+    text: "The best service you can give your weapons, available in Norway"
   },
   {
     name: "The Oxford Gun Company",
     img: pictures.sponsors.oxford_gun,
     link: "https://www.oxfordguncompany.co.uk/",
+    text: "For the a great varity of guns, available in Norway and England"
+
   },
   {
     name: "THIS CAN BE YOUR COMPANY",
     img: pictures.sponsors.ny_spons,
     link: "./contact.html",
+    text: " "
+
   },
 ];
 
