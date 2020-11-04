@@ -882,7 +882,7 @@ const sponsors = [
     name: "The Oxford Gun Company",
     img: pictures.sponsors.oxford_gun,
     link: "https://www.oxfordguncompany.co.uk/",
-    text: "For the a great varity of guns, available in Norway and England"
+    text: "For a great varity of guns, available in Norway and England"
 
   },
   {
