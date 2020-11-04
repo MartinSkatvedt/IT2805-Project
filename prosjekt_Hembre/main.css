@@ -1029,7 +1029,7 @@ footer a {
 }
 
 .footer-container-two {
-  margin: 2%;
+  margin: 2% 4.5%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20%;
