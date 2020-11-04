@@ -1051,7 +1051,7 @@ p {
 }
 
 .footer-container-two>div {
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-xsmall);
   border: solid 1px var(--secondary-teks-color);
   background-color: var(--button-color);
   color: var(--text-color);
