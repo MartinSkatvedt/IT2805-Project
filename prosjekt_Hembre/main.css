@@ -96,7 +96,6 @@ START INDEX
 }
 
 .athlete img {
-  /* vertical-align: middle; */
   width: 100%;
 }
 
@@ -175,7 +174,6 @@ a>h5 {
 }
 
 .slides>img {
-  /* vertical-align: middle; */
   width: 100%;
 }
 
