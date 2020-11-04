@@ -363,7 +363,7 @@ START NAVBAR
   text-align: center;
   background-color: #353131;
   font-family: fantasy;
-  font-size: var(--font-size);
+  font-size: var(--font-size-large);
   width: 20%;
   position: absolute;
   transition: 0.2s;
@@ -598,7 +598,6 @@ START OM OSS
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   text-align: left;
-  scroll-margin-bottom: 200px;
 }
 
 .hembre img,
@@ -1307,8 +1306,8 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
     font-size: var(--font-size);
     height: 8vh;
   }
-  .submenuElement_1 a, .submenuElement_2 a{
-    font-size: var(--font-size-small);
+  .submenu, #navbar{
+    font-size: var(--font-size);
   }
 }
 
@@ -1382,10 +1381,15 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
 }
 
 @media only screen and (max-width: 610px) {
-  #navbar, #submenus{
+  #navbar, .submenu{
     font-size: var(--font-size-xsmall)
   }
-
+  #navbar{
+    height: 6vh;
+  }
+  .navBarElement{
+    padding-top: 15px;
+  }
   .footer-container-one {
     display: grid;
     grid-template-columns: 1fr
@@ -1449,15 +1453,15 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
 }
 
 @media (max-width: 405px) {
+  #navbar, .submenu{
+    font-size: var(--font-size-xxsmall)
+  }
   #navbar{
-    font-size: var(--font-size-xxsmall);
+    height: 4vh;
   }
-  .submenuElement_1>a, .submenuElement_2>a{
-    font-size: var(--font-size-xxsmall);
+  .navBarElement{
+    padding-top: 10px;
   }
-#submenu_2{
-  display: none;
-}
   .logo_nav>a>img{
     width: 100%;
   }
