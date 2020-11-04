@@ -27,10 +27,9 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     width: 100%;
-    margin: auto;
     font-size: var(--font-size);
-    margin: 0px;
-    top: 0px;
+    margin: 0;
+    top: 0;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -42,7 +41,6 @@ body::-webkit-scrollbar-thumb {
 main {
     background-color: var(--background-color);
     color: var(--text-color);
-    margin: auto;
     margin: 0 auto;
     width: 85%;
 }
@@ -76,7 +74,7 @@ p {
     display: flex;
     text-align: left;
     border-top: 1px solid;
-    padding: 0.5% 0px;
+    padding: 0.5% 0;
     background-color: var(--nav-color);
     height: 12vh;
     font-size: var(--font-size-large);
@@ -138,7 +136,7 @@ p {
 .logo_nav {
     width: 15%;
     margin-left: 5%;
-    padding: 0px;
+    padding: 0;
 }
 
 .logo_nav>a>img {
@@ -206,7 +204,7 @@ p {
 
 .underline {
     width: 60%;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 2px;
     border-color: #ddcccc;
 }
@@ -227,7 +225,7 @@ p {
 footer {
     /* margin-top: 20px; */
     background-color: var(--nav-color);
-    box-shadow: 0px 0px 5px rgba(10, 10, 80, 0.5);
+    box-shadow: 0 0 5px rgba(10, 10, 80, 0.5);
 }
 
 footer a {
@@ -242,7 +240,7 @@ footer a {
     align-items: center;
     width: 90%;
     margin: 1% 5%;
-    border-bottom: var(--secondary-teks-color) 0.4px solid;
+    border-bottom: var(--secondary-teks-color) 1px solid;
     text-align: left;
 }
 
@@ -264,10 +262,9 @@ footer a {
 }
 
 .footer-container-two {
-    margin: 2% 4.5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 0px;
+    margin: 2% 4.5%;
     padding: 10px;
 }
 
@@ -378,11 +375,10 @@ footer a {
 }
 
 .sponsor {
-    margin: auto;
     width: 90%;
     height: 240px;
     border: 1px solid var(--border-color);
-    margin-bottom: 5%;
+    margin: auto auto 5%;
     padding-bottom: 20px;
     background-color: white;
     text-align: center;
@@ -400,7 +396,7 @@ footer a {
 
 .sponsor>a>p {
     font-size: var(--font-size-xsmall);
-    padding: 0px 5%;
+    padding: 0 5%;
     opacity: 0.5;
 }
 
@@ -414,12 +410,11 @@ footer a {
 }
 
 .supporter {
-    margin: auto;
     width: 90%;
     height: 240px;
     border: 1px solid black;
     padding-bottom: 5%;
-    margin-bottom: 20px;
+    margin: auto auto 20px;
     background-color: white;
     text-align: center;
 }
@@ -447,8 +442,7 @@ footer a {
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    margin: auto;
-    margin-top: 1em;
+    margin: 1em auto auto;
     overflow: hidden;
     background-color: var(--secondary-background-color);
     border-radius: 3px 3px 0 0;
@@ -474,7 +468,6 @@ footer a {
 .buttonsSlides * {
     padding: 0 2ch;
     font-weight: 900;
-    border-radius: 10%;
     border-radius: 0 0 10px 10px;
     margin: 0 10%;
 }
@@ -536,7 +529,6 @@ footer a {
     color: rgb(241, 215, 95);
     font-size: var(--font-size-large);
     border-style: solid;
-    color: rgb(241, 215, 95);
     border-width: 5px;
     padding: 12px 28px;
     text-decoration: none;
@@ -550,15 +542,14 @@ footer a {
 .logo {
     padding-top: 0;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 0;
     padding-left: 30px;
 }
 
 .header_over_om_oss {
     text-align: center;
     width: 20%;
-    margin: auto;
-    margin-top: 2%;
+    margin: 2% auto auto;
     color: rgb(241, 215, 95);
     padding: 10px;
     font-size: var(--font-size-large);
@@ -713,7 +704,6 @@ footer a {
 .hembre img,
 #person_pictures img {
     padding: 0;
-    margin: 0;
     margin: auto;
     width: 100%;
 }
@@ -781,15 +771,15 @@ footer a {
 .picture_info {
     background-color: white;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 0;
     width: 80%;
     display: block;
     margin: auto;
-    box-shadow: 0px 2px 8px 4px;
+    box-shadow: 0 2px 8px 4px;
 }
 
 #pictures_team {
-    margin: 30px 0px;
+    margin: 30px 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -947,8 +937,7 @@ footer a {
     border: none;
     border-radius: 5px;
     font-size: var(--font-size);
-    margin: auto;
-    margin-top: 20px;
+    margin: 20px auto auto;
 }
 
 .subFolder {
@@ -969,7 +958,7 @@ footer a {
 }
 
 #infoContainer>h4 {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 /* END CONTACT */
@@ -1015,7 +1004,6 @@ footer a {
 
 .sponsor_box .logo_small {
     height: 50%;
-    margin-left: 30%;
     -moz-transform: scale(1);
     -webkit-transform: scale(1);
     transform: scale(1);
