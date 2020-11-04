@@ -589,7 +589,7 @@ START OM OSS
 #alle_utovere {
   margin-left: 15%;
   margin-right: 15%;
-  width: 70%; 
+  width: 70%;
   height: 600px;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
@@ -832,7 +832,7 @@ START KONTAKT OSS
 .gridElement {
   margin: auto;
   width: 60%;
-}  
+}
 
 
 #f_submit>button {
@@ -935,7 +935,7 @@ START SPONSOR
 .fyll {
   position: relative;
   bottom: 20%;
-  
+
   height: 100px;
   width: 150px;
   background-color:var(--element-background);
@@ -1257,7 +1257,7 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
   }
   .hembre{
     grid-template-columns: 1fr 1fr;
-  }  
+  }
 
   #alle_utovere>div {
     font-size: var(--font-size-small);
@@ -1342,19 +1342,6 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
 
   }
 
-  .main_sponsor .spons-grid-one .tom {
-    display: none;
-  }
-
-  .main_sponsor .spons-grid-one {
-    grid-template-columns: 1fr;
-  }
-
-  .main_sponsor .spons-grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
   #person_side_top{
     grid-template-columns: 1fr 1fr;
   }
@@ -1429,16 +1416,23 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
     #vunnet{
       display: none;
     }
+
     .hembre #dp_meny{
       display: none;
     }
-    .hembre *{
-      font-size: var(--font-size-small);
+    .main_sponsor .spons-grid-one .tom {
+      display: none;
     }
-    .hembre a{
-      font-size: var(--font-size-xsmall);
+
+    .main_sponsor .spons-grid-one {
+      grid-template-columns: 1fr;
     }
-   
+
+    .main_sponsor .spons-grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
 }
 
 @media (max-width: 405px) {
