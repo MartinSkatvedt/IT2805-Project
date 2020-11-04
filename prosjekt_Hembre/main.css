@@ -128,7 +128,8 @@ START INDEX
   text-align: center;
 }
 .sponsor img{
-  width: 100%;
+  margin-top: 4%;
+  width: 95%;
 }
 
 .sponsor>a {
@@ -323,10 +324,11 @@ START NAVBAR
 }
 #navbar .navBarElement:last-child a{
   background-color: var(--button-color);
-  padding:5px;
+  padding:7px;
   border-radius: 5px;
   box-shadow: 1px 2px 3px black;
   color: black;
+  font-size:var(--font-size-xsmall)
 }
 .logo_nav {
   width: 15%;
@@ -421,11 +423,11 @@ SLUTT NAVBAR
 /*
 START OM OSS
 */
-/*css for hele delen over søkemotoren av header når den er større enn 600px starter under her*/
 .header_top {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+
 }
 .knapp_header{
   margin-top: 10vh;
@@ -457,7 +459,6 @@ START OM OSS
   text-align: center;
   width: 20%;
   margin: auto;
-  margin-top: 2%;
   color: rgb(241, 215, 95);
   padding: 10px;
   font-size: var(--font-size-large);
@@ -524,7 +525,7 @@ START OM OSS
   background-image: url(pictures/about6.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 100vh;
+  height: 82vh;
   position: relative;
 }
 
@@ -1024,6 +1025,10 @@ footer a {
   font-size: var(--font-size-small);
   padding-top: 3px;
 }
+.footer-container-one ul li a:hover{
+  text-decoration:underline;
+
+}
 
 .footer-container-one ul li {
   list-style-type: none;
@@ -1272,12 +1277,7 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
   #contactForm input, #contactForm label, #contactForm textarea{
     font-size: var(--font-size-small);
   }
-  #header_about_us{
-    height: 80vh;
-  }
-  .knapp_header{
-    display: none;
-  }
+
   #won *{
     font-size: var(--font-size-small);
   }
@@ -1305,17 +1305,26 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
   .navBarElement:not(:last-child)>a::before{
     height: 2px;
   }
+  #header_about_us {
+      background-image: none;
+      height:auto;
+    }
+  .header_top{
+      display:none;
+    }
+
+  .name_header{
+    display: none;
+    }
+
+    .knapp_header{
+      display: none;
+    }
 }
 
 @media only screen and (max-width: 900px) {
 
-#header_about_us {
-    background-image: none;
-    height:auto;
-  }
-.header_top{
-    display:none;
-  }
+
 .sponsor>a>img{
 height: 70%;
 }
