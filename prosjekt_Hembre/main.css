@@ -1037,7 +1037,6 @@ footer a {
   margin: 2% 4.5%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20%;
   margin-bottom: 0px;
   padding: 10px;
 }
