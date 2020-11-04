@@ -1,32 +1,32 @@
-const bilder = {
+const pictures = {
   pal: {
-    mainImgage: "bilder/pal.jpg",
-    mainImgage2: "bilder/pal.png",
+    mainImgage: "pictures/pal.jpg",
+    mainImgage2: "pictures/pal.png",
   },
   mattis: {
-    mainImgage: "bilder/mattis.jpg",
+    mainImgage: "pictures/mattis.jpg",
   },
   ludvik: {
-    mainImgage: "bilder/ludvik.jpg",
+    mainImgage: "pictures/ludvik.jpg",
   },
   timleo: {
-    mainImgage: "bilder/timleo.jpg",
+    mainImgage: "pictures/timleo.jpg",
   },
   leonel: {
-    mainImgage: "bilder/leonel.jpg",
+    mainImgage: "pictures/leonel.jpg",
   },
   newsImg: [
-    "bilder/om1.jpg",
-    "bilder/om2.jpg",
-    "bilder/om4.jpg",
-    "bilder/om5.jpg",
-    "bilder/om6.jpg",
-    "bilder/om7.jpg",
+    "pictures/om1.jpg",
+    "pictures/om2.jpg",
+    "pictures/om4.jpg",
+    "pictures/om5.jpg",
+    "pictures/om6.jpg",
+    "pictures/om7.jpg",
   ],
   sponsors: {
-    bekkevold: "bilder/bakkevold.png",
-    oxford_gun: "bilder/oxford_gun.png",
-    ny_spons: "bilder/sponsor_deg.png",
+    bekkevold: "pictures/bakkevold.png",
+    oxford_gun: "pictures/oxford_gun.png",
+    ny_spons: "pictures/sponsor_deg.png",
   },
 };
 
@@ -45,7 +45,7 @@ const shooters = [{
     },
 
     image: {
-      mainImage: bilder.pal.mainImgage,
+      mainImage: pictures.pal.mainImgage,
     },
 
     description: {
@@ -318,7 +318,7 @@ const shooters = [{
     },
 
     image: {
-      mainImage: bilder.mattis.mainImgage,
+      mainImage: pictures.mattis.mainImgage,
     },
 
     description: {
@@ -477,7 +477,7 @@ const shooters = [{
     },
 
     image: {
-      mainImage: bilder.ludvik.mainImgage,
+      mainImage: pictures.ludvik.mainImgage,
     },
 
     description: {
@@ -636,7 +636,7 @@ const shooters = [{
     },
 
     image: {
-      mainImage: bilder.timleo.mainImgage,
+      mainImage: pictures.timleo.mainImgage,
     },
 
     description: {
@@ -760,7 +760,7 @@ const shooters = [{
     },
 
     image: {
-      mainImage: bilder.leonel.mainImgage,
+      mainImage: pictures.leonel.mainImgage,
     },
 
     description: {
@@ -871,17 +871,17 @@ const supporters = [{
 
 const sponsors = [{
     name: "Bækkevolds Våpenservice",
-    img: bilder.sponsors.bekkevold,
+    img: pictures.sponsors.bekkevold,
     link: "https://www.pardininorge.no/",
   },
   {
     name: "The Oxford Gun Company",
-    img: bilder.sponsors.oxford_gun,
+    img: pictures.sponsors.oxford_gun,
     link: "https://www.oxfordguncompany.co.uk/",
   },
   {
     name: "THIS CAN BE YOUR COMPANY",
-    img: bilder.sponsors.ny_spons,
+    img: pictures.sponsors.ny_spons,
     link: "./contact.html",
   },
 ];
@@ -894,7 +894,7 @@ const news = [{
       "Pål Hembre went home with first place after he bested the competition in five of eight events. Mattis Hembre won two, while another member of Berum PK, Ingar Woll, also took home a win.",
       "The twins Ludvik and Mattis also won a double in the junior class, while the youngest of the Teams participants, Tim Leo, won a event in the U16 class.",
     ],
-    img: bilder.newsImg[0],
+    img: pictures.newsImg[0],
   },
 
   {
@@ -904,7 +904,7 @@ const news = [{
       "The Hembre twins Ludvik and Mattis take second and first place respectively. The two bring home even more medals for the allready lavish collection of awards.",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
     ],
-    img: bilder.newsImg[1],
+    img: pictures.newsImg[1],
   },
 
   {
@@ -914,7 +914,7 @@ const news = [{
       "Mattis, Ludvik and Pål had an impressive showing in last weeks event in Bergen. The three family members alle won their individual events.",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
     ],
-    img: bilder.newsImg[2],
+    img: pictures.newsImg[2],
   },
   {
     id: 4,
@@ -923,6 +923,6 @@ const news = [{
       "Pål takes an impressive new record in the last norwegian championship.",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
     ],
-    img: bilder.newsImg[3],
+    img: pictures.newsImg[3],
   }
 ];
