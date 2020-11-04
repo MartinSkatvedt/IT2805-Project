@@ -1381,7 +1381,7 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
 }
 
 @media only screen and (max-width: 610px) {
-  #navbar{
+  #navbar, #submenus{
     font-size: var(--font-size-xsmall)
   }
 
@@ -1486,15 +1486,6 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
   .hembre p {
     font-size:var(--font-size-xsmall);
   }
-
-  #vunnet>div>h2 {
-    font-size: 1vh;
-  }
-
-  #vunnet>div>h1 {
-    font-size: 2vh;
-  }
-
 
   #person_side_info {
     margin-top: 20px;
