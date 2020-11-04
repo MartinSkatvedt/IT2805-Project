@@ -1,8 +1,8 @@
-var bakkevold = document.querySelector("#bakkevold")
-var oxford = document.querySelector("#oxford")
-var bakkevold_info = document.querySelector("#bakkevold_info")
-var oxford_info = document.querySelector("#oxford_info")
-var contact_click = document.querySelector(".spons_contact")
+let bakkevold = document.querySelector("#bakkevold")
+let oxford = document.querySelector("#oxford")
+let bakkevold_info = document.querySelector("#bakkevold_info")
+let oxford_info = document.querySelector("#oxford_info")
+let contact_click = document.querySelector(".spons_contact")
 
 bakkevold.onclick=()=>bakkevoldS()
 oxford.onclick=()=>oxfordS()

@@ -17,7 +17,7 @@
 
         <p></p>
 
-        <div class="nasjonalStat">
+        <div class="nationalStat">
 
           <a href="http://www.fsu.no/issf/index.htm">Link to national pistol statistics: fsu.no</a>
 
@@ -31,7 +31,7 @@
     function makeFooter(){
       const footer = document.querySelector(".footer-container-one")
       footer.innerHTML = ""
-      for(i in shooters){
+      for(let i in shooters){
         if (shooters[i].isShown) {
 
           const listDiv = document.createElement('div')
@@ -42,7 +42,7 @@
           liName.appendChild(p)
           ul.appendChild(liName)
 
-          for (j in shooters[i].stasticsLinks){
+          for (let j in shooters[i].stasticsLinks){
             const element = shooters[i].stasticsLinks[j]
             const a = document.createElement('a')
             const liLinks = document.createElement('li')

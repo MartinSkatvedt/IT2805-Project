@@ -32,10 +32,10 @@ function writeNews() {
         newsDiv.appendChild(img)
         
 //Lager ett anker for å referere til den lokale linken på riktig posisjon
-        const ancor = document.createElement('a')
-        ancor.id = element.id
-        ancor.className = 'ancor'
-        newsDiv.appendChild(ancor)
+        const anchor = document.createElement('a')
+        anchor.id = element.id
+        anchor.className = 'anchor'
+        newsDiv.appendChild(anchor)
 
 
         newsContainer.appendChild(newsDiv)

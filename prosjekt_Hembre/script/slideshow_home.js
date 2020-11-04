@@ -10,8 +10,8 @@ next.addEventListener("click", btnClick)
 prev.addEventListener("click", btnClick)
 
 function btnClick(event) {
-    eventType = event.target.id
-    if (eventType == 'next') {
+    const eventType = event.target.id
+    if (eventType === 'next') {
         nextSlide(1)
         reset()
     } else {
