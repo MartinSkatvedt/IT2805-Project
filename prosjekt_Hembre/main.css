@@ -14,6 +14,7 @@ START GLOBALE CSS FUNKSJONER
   --font-size: 1.2em;
   --font-size-small:1em;
   --font-size-xsmall:0.8em;
+  --font-size-xxsmall:0.5em;
   --border-color: #000;
   --box-shadow: 0px 2px 4px rgba(10,10,80,0.5);
 
@@ -314,7 +315,6 @@ START NAVBAR
   background-color: var(--button-color);
   padding:5px;
   border-radius: 5px;
-  /* font-size: var(--font-size-large);-------------------------------------------------------------------------------------------------------------------------- */
   box-shadow: 1px 2px 3px black;
 }
 
@@ -714,6 +714,7 @@ SKYTER UNDERSIDENE:
   padding: 8px;
   font-size: var(--font-size-small);
   text-align: center;
+  max-width: 100%;
 }
 
 #skytter h1{
@@ -1004,8 +1005,7 @@ footer a {
 
 
 .footer-container-one {
-  /* display: grid;
-  grid-template-columns: repeat(6, 1fr); */
+  grid-template-columns: repeat(6, 1fr);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1131,8 +1131,6 @@ START NYHETER
 
 
 
-/* Fikse news, og støtttespillere kommer opp som athelete */
-/* Skyttere.html */
 #person_side_top {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -1384,7 +1382,7 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
 
 @media only screen and (max-width: 610px) {
   #navbar{
-    font-size: var(--font-size-small)
+    font-size: var(--font-size-xsmall)
   }
 
   .footer-container-one {
@@ -1443,14 +1441,18 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
       display: none;
     }
   
+    #dp_meny{
+      display: none;
+    }
+  
 }
 
 @media (max-width: 405px) {
   #navbar{
-    font-size: 1.3vh
+    font-size: var(--font-size-xxsmall);
   }
   .submenuElement_1>a, .submenuElement_2>a{
-    font-size: 1vh;
+    font-size: var(--font-size-xxsmall);
   }
 #submenu_2{
   display: none;
@@ -1472,22 +1474,18 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
     display: none;
   }
 
-  #f_fornavn>input, #f_etternavn>input {
-    font-size: 1.8vh;
+  #f_fornavn>input, #f_etternavn>input, .gridElement>label {
+    font-size: var(--font-size-xsmall);
   }
 
-  .gridElement>label {
-    font-size: 1.8vh;
+
+  .hembre h1 {
+    font-size: var(--font-size-small);
   }
 
-  h1 {
-    font-size: 3vh;
+  .hembre p {
+    font-size:var(--font-size-xsmall);
   }
-
-  p {
-    font-size: 2vh;
-  }
-
 
   #vunnet>div>h2 {
     font-size: 1vh;
