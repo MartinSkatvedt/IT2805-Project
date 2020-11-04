@@ -4,20 +4,20 @@ document.write(`
     <a href="./index.html"><img src="bilder/logo2.svg" alt=""></a>
   </div>
   <div class="navBarElement" id="utoverElement">
-    <a href="./skyttere.html">Athletes</a>
+    <a href="./shooters.html">Athletes</a>
 
   </div>
   <div class="navBarElement">
-    <a href="./sponsor.html">Sponsors</a>
+    <a href="./sponsors.html">Sponsors</a>
   </div>
   <div class="navBarElement">
-    <a href="./nyheter.html">News</a>
+    <a href="./news.html">News</a>
   </div>
   <div class="navBarElement">
-    <a href="./om_oss.html">About us</a>
+    <a href="./about_us.html">About us</a>
   </div>
   <div class="navBarElement">
-      <a href="./kontakt.html">Contact</a>
+      <a href="./contact.html">Contact</a>
   </div>
 </div>
 
