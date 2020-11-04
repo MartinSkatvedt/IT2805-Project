@@ -57,6 +57,9 @@ SLUTT GLOBALE CSS FUNKSJONER
 /*
 START INDEX
  */
+#center>*{
+  width: 95%;
+}
 
 .grid-container-home {
   display: grid;
@@ -69,11 +72,11 @@ START INDEX
 }
 .grid-container-home>div, .news-div{
   background-color: var(--element-background);
-  padding: 20px;
 }
-.grid-container-home>div{
-  margin: 3%;
+.grid-container-home h1{
+
 }
+
 .pointer:hover{
   cursor: pointer;
 }
@@ -115,7 +118,7 @@ START INDEX
 
 .sponsor {
   margin: auto;
-  width: 100%;
+  width: 90%;
   height: 240px;
   border: 1px solid var(--border-color);
   margin-bottom: 5%;
@@ -154,7 +157,7 @@ a>h5 {
 
 .supporter {
   margin: auto;
-  width: 100%;
+  width: 90%;
   height: 240px;
   border: 1px solid black;
   padding-bottom: 5%;
@@ -187,6 +190,7 @@ a>h5 {
 .slideshow-container {
   position: relative;
   margin: auto;
+  margin-top: 1em;
   overflow: hidden;
   background-color: var(--secondary-background-color);
   border-radius: 3px 3px 0 0;
