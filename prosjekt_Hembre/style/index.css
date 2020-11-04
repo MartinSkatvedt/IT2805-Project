@@ -1,0 +1,84 @@
+/*
+START INDEX
+ */
+
+ .grid-container-home {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 20px;
+  
+  }
+  
+  .grid-container-home>div, .news-div, #news-container, .main_sponsor .sponsor-grid-one, .sponsor-grid-two>.sponsor_box, .element_about_us, #kontakt-main > *, .sponsor_click{
+    box-shadow: var(--box-shadow);
+  }
+  .grid-container-home>div, .news-div{
+    background-color: var(--element-background);
+    padding: 20px;
+  }
+  
+  .pointer:hover{
+    cursor: pointer;
+  }
+  .active:active{
+    opacity: 0.7;
+  }
+  .grid-container-athletes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: 5% 0;
+  }
+  
+  .athlete {
+    position: relative;
+    width: 100%;
+    background-color: var(--secondary-background-color);
+    overflow: hidden;
+    border-radius: 3px 3px 0 0;
+  }
+  
+  .athlete img {
+    width: 100%;
+  }
+  
+  .athlete a {
+    height: 100%;
+  }
+  
+  .athlete .text {
+    color: var(--secondary-teks-color);
+    background-color: var(--secondary-background-color);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1ch 0;
+  }
+  
+  .sponsor {
+    margin: auto;
+    width: 100%;
+    height: 240px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 5%;
+    padding-bottom: 20px;
+    background-color: white;
+    text-align: center;
+  }
+  .sponsor img{
+    width: 100%;
+  }
+  
+  .sponsor>a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0;
+  }
+  .sponsor>a>p{
+    font-size: var(--font-size-xsmall);
+    padding: 0px 5%;
+    opacity: 0.5;
+  }
+  
+  
