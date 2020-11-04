@@ -14,6 +14,7 @@ START GLOBALE CSS FUNKSJONER
   --font-size: 1.2em;
   --font-size-small:1em;
   --font-size-xsmall:0.8em;
+  --font-size-xxsmall:0.5em;
   --border-color: #000;
   --box-shadow: 0px 2px 4px rgba(10,10,80,0.5);
 
@@ -314,7 +315,6 @@ START NAVBAR
   background-color: var(--button-color);
   padding:5px;
   border-radius: 5px;
-  /* font-size: var(--font-size-large);-------------------------------------------------------------------------------------------------------------------------- */
   box-shadow: 1px 2px 3px black;
 }
 
@@ -363,7 +363,7 @@ START NAVBAR
   text-align: center;
   background-color: #353131;
   font-family: fantasy;
-  font-size: var(--font-size);
+  font-size: var(--font-size-large);
   width: 20%;
   position: absolute;
   transition: 0.2s;
@@ -585,7 +585,7 @@ START OM OSS
 }
 
 #alle_utovere>div {
-  padding: 2%;
+  padding: 0 2%;
   height: 600px;
   scroll-snap-align: center;
 }
@@ -714,6 +714,7 @@ SKYTER UNDERSIDENE:
   padding: 8px;
   font-size: var(--font-size-small);
   text-align: center;
+  max-width: 100%;
 }
 
 #skytter h1{
@@ -1004,8 +1005,7 @@ footer a {
 
 
 .footer-container-one {
-  /* display: grid;
-  grid-template-columns: repeat(6, 1fr); */
+  grid-template-columns: repeat(6, 1fr);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1131,8 +1131,6 @@ START NYHETER
 
 
 
-/* Fikse news, og støtttespillere kommer opp som athelete */
-/* Skyttere.html */
 #person_side_top {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -1308,8 +1306,8 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
     font-size: var(--font-size);
     height: 8vh;
   }
-  .submenuElement_1 a, .submenuElement_2 a{
-    font-size: var(--font-size-small);
+  .submenu, #navbar{
+    font-size: var(--font-size);
   }
 }
 
@@ -1383,10 +1381,15 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
 }
 
 @media only screen and (max-width: 610px) {
-  #navbar{
-    font-size: var(--font-size-small)
+  #navbar, .submenu{
+    font-size: var(--font-size-xsmall)
   }
-
+  #navbar{
+    height: 6vh;
+  }
+  .navBarElement{
+    padding-top: 15px;
+  }
   .footer-container-one {
     display: grid;
     grid-template-columns: 1fr
@@ -1443,18 +1446,22 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
       display: none;
     }
   
+    .hembre #dp_meny{
+      display: none;
+    }
+  
 }
 
 @media (max-width: 405px) {
+  #navbar, .submenu{
+    font-size: var(--font-size-xxsmall)
+  }
   #navbar{
-    font-size: 1.3vh
+    height: 4vh;
   }
-  .submenuElement_1>a, .submenuElement_2>a{
-    font-size: 1vh;
+  .navBarElement{
+    padding-top: 10px;
   }
-#submenu_2{
-  display: none;
-}
   .logo_nav>a>img{
     width: 100%;
   }
@@ -1472,31 +1479,18 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
     display: none;
   }
 
-  #f_fornavn>input, #f_etternavn>input {
-    font-size: 1.8vh;
-  }
-
-  .gridElement>label {
-    font-size: 1.8vh;
-  }
-
-  h1 {
-    font-size: 3vh;
-  }
-
-  p {
-    font-size: 2vh;
+  #f_fornavn>input, #f_etternavn>input, .gridElement>label {
+    font-size: var(--font-size-xsmall);
   }
 
 
-  #vunnet>div>h2 {
-    font-size: 1vh;
+  .hembre h1 {
+    font-size: var(--font-size-small);
   }
 
-  #vunnet>div>h1 {
-    font-size: 2vh;
+  .hembre p {
+    font-size:var(--font-size-xsmall);
   }
-
 
   #person_side_info {
     margin-top: 20px;
