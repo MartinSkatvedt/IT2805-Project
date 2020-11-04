@@ -64,7 +64,6 @@ START INDEX
   column-gap: 20px;
 
 }
-
 .grid-container-home>div, .news-div, #news-container, .main_sponsor .sponsor-grid-one, .sponsor-grid-two>.sponsor_box, .element_about_us, #kontakt-main > *, .sponsor_click{
   box-shadow: var(--box-shadow);
 }
@@ -72,7 +71,9 @@ START INDEX
   background-color: var(--element-background);
   padding: 20px;
 }
-
+.grid-container-home>div{
+  margin: 3%;
+}
 .pointer:hover{
   cursor: pointer;
 }
