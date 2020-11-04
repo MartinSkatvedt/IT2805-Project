@@ -60,7 +60,7 @@
         </div>
 
           <ul>
-            <li><p id="footer_contact"><a href="contact.html">Contact Us</a></p></li>
+            <li><p id="footer_contact"><a href="contact.html">Contact</a></p></li>
           </ul>
 
         </div>
