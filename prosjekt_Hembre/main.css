@@ -717,7 +717,7 @@ SKYTER UNDERSIDENE:
   max-width: 100%;
 }
 
-#skytter h1{
+#shooter h1{
   text-align: center;
   font-size: var(--font-size-large);
   margin-top: 0;
@@ -1136,7 +1136,7 @@ START NYHETER
   text-align: left;
 }
 
-#skytter #medlemskap {
+#shooter #medlemskap {
   text-decoration: underline;
 }
 
@@ -1165,20 +1165,20 @@ START NYHETER
   border-bottom: dashed 1px var(--text-color);
 }
 
-#skytter #personer_underliggende_bilder {
+#shooter #personer_underliggende_bilder {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 20px;
 }
 
-#skytter #person_bilder_vid>img {
+#shooter #person_bilder_vid>img {
   width: 10%;
   height: 50px;
   display: block;
   margin: auto;
 }
 
-#skytter #person_video>video {
+#shooter #person_video>video {
   display: block;
   margin: auto;
 }
@@ -1205,35 +1205,35 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto 10px auto;
 }
 
-#skytter #merit {
+#shooter #merit {
   margin-bottom: 10px;
 }
 
-#skytter #merit>* {
+#shooter #merit>* {
   margin: 5px;
 }
 
-#skytter #merit,
-#skytter td {
+#shooter #merit,
+#shooter td {
   border-bottom: 1px solid var(--text-color);
 }
 
 
-#skytter #familyDiv a,
-#skytter #divLinks a {
+#shooter #familyDiv a,
+#shooter #divLinks a {
   display: block;
 }
 
-#skytter #familyType>p {
+#shooter #familyType>p {
   margin: 0;
   display: inline;
 }
 
-#skytter #familyType {
+#shooter #familyType {
   margin-top: 20px;
 }
 
-#skytter #familyType:first-child {
+#shooter #familyType:first-child {
   margin-top: 0;
 }
 
@@ -1386,11 +1386,11 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
     padding-left: 20px;
   }
 
- #skytter>* {
+ #shooter>* {
     grid-template-columns: 1fr;
   }
 
-  #skytter>*>* {
+  #shooter>*>* {
     margin: auto;
   }
 

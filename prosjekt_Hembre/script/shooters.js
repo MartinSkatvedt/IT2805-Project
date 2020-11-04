@@ -5,20 +5,20 @@ function createSite() {
   }
   //Retruns if it doesnt find an index
 
-  const skytter = shooters[index];
+  const shooter = shooters[index];
   const main = document.querySelector("main");
-  main.id = "skytter";
+  main.id = "shooter";
   //    main.innerHTML = ''
 
   //CHANGING TITLE------------------------------------------------------------
-  changeTitle(skytter);
+  changeTitle(shooter);
 
   //MAKING THE TOP DIV--------------------------------------------------------
-  const divtop = maketopDiv(skytter);
+  const divtop = maketopDiv(shooter);
   main.appendChild(divtop);
 
   //MAKING THE BOTTOM DIV-----------------------------------------------------
-  const divBottom = makeBottomDiv(skytter);
+  const divBottom = makeBottomDiv(shooter);
   main.appendChild(divBottom);
 }
 
