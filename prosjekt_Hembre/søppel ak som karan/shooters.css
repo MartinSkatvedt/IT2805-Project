@@ -1,0 +1,81 @@
+/*
+SKYTER UNDERSIDENE:
+*/
+#person_side_top {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  #familyDiv {
+    margin: auto;
+  }
+  
+  #person_pictures>img {
+    width: 90%;
+    border-radius: 10px;
+  }
+  
+  #dp_menu {
+    background-color: inherit;
+    border-color: black;
+    padding: 8px;
+    font-size: var(--font-size-small);
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  #shooter h1{
+    text-align: center;
+    font-size: var(--font-size-large);
+    margin-top: 0;
+  }
+  
+#grid_container_stats {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--text-color);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 30px;
+  }
+  
+  #grid_container_stats>* {
+    margin: 0 auto 10px auto;
+  }
+  
+  #shooter #merit {
+    margin-bottom: 10px;
+  }
+  
+  #shooter #merit>* {
+    margin: 5px;
+  }
+  
+  #shooter #merit,
+  #shooter td {
+    border-bottom: 1px solid var(--text-color);
+  }
+  
+  
+  #shooter #familyDiv a,
+  #shooter #divLinks a {
+    display: block;
+  }
+  
+  #shooter #familyType>p {
+    margin: 0;
+    display: inline;
+  }
+  
+  #shooter #familyType {
+    margin-top: 20px;
+  }
+  
+  #shooter #familyType:first-child {
+    margin-top: 0;
+  }
+  
+  
+  
+  /*
+  SLUTT UNDERSKYTESIDER
+  */
