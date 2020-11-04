@@ -9,8 +9,9 @@ START GLOBALE CSS FUNKSJONER
   --background-text-color: none;
   --secondary-teks-color: #f2f2f2;
   --secondary-background-color: #000000bf;
-  --button-color: #f2994a;
-  --font-size-large: 2em;
+  --button-color: #e1c354;
+
+  --font-size-large: 1.8em;
   --font-size: 1.2em;
   --font-size-small:1em;
   --font-size-xsmall:0.8em;
@@ -47,7 +48,7 @@ main {
   color: var(--text-color);
   margin: auto;
   margin: 0 auto;
-  width: 90%;
+  width: 75%;
 }
 
 
@@ -57,9 +58,6 @@ SLUTT GLOBALE CSS FUNKSJONER
 /*
 START INDEX
  */
-.main_index{
-  width: 95%;
-}
 
 .grid-container-hjem {
   display: grid;
@@ -347,7 +345,6 @@ START NAVBAR
 #submenu_2 {
   z-index: 2;
   display: none;
-  font-family: Montserrat;
 }
 
 .submenuElement_1 a,
@@ -362,7 +359,6 @@ START NAVBAR
   border: 1px solid var(--border-color);
   text-align: center;
   background-color: #353131;
-  font-family: fantasy;
   font-size: var(--font-size-large);
   width: 20%;
   position: absolute;
@@ -439,7 +435,7 @@ START OM OSS
 }
 
 .logo {
-  padding-top: 00px;
+  padding-top: 0;
   text-align: center;
   margin-top: 0px;
   padding-left: 30px;
@@ -892,7 +888,6 @@ START SPONSOR
 }
 
 .spons-grid-one .spons {
-  padding-top: 10px;
   margin: auto;
   height: 100%;
   width: 100%;
@@ -982,7 +977,7 @@ START SPONSOR
   height: 100%;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1600px) {
   .main_sponsor {
     width: 900px;
   }
@@ -1135,13 +1130,6 @@ START NYHETER
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
 }
-
-#skytter {
-  width: 95%;
-  margin: 1% auto;
-  font-size: var(--font-size);
-}
-
 
 #person_side_info>* {
   margin: 10px;
@@ -1410,20 +1398,10 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
       height: 51vh;
     }
 
-
-    #alle_utovere>div>div {
-      margin-right: 10px;
+    #alle_utovere>div {
+      padding: 10px;
+      height: 50vh;
     }
-
-
-      #alle_utovere>div {
-        padding: 10px;
-        height: 50vh;
-      }
-
-      #alle_utovere>div>div {
-        margin-right: 10px;
-      }
 
     #person_side_info {
       margin-top: 20px;
@@ -1487,12 +1465,6 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
   #f_fornavn>input, #f_etternavn>input, .gridElement>label {
     font-size: var(--font-size-xsmall);
   }
-
-
-  .hembre h1 {
-    font-size: var(--font-size-small);
-  }
-
   .hembre p {
     font-size:var(--font-size-xsmall);
   }
