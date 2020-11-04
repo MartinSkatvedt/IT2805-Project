@@ -22,9 +22,9 @@ function createSite() {
   main.appendChild(divBottom);
 }
 
-function changeTitle(skytter) {
+function changeTitle(shooter) {
   //CHANGING THE TOP DIV-----------------------------
-  document.title = skytter.about.firstName + " " + skytter.about.lastName;
+  document.title = shooter.about.firstName + " " + shooter.about.lastName;
 }
 function maketopDiv(skytter) {
   //CREATING THE TOP DIV
