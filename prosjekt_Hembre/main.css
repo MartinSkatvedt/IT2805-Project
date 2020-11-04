@@ -60,6 +60,8 @@ START INDEX
  */
 #center>*{
   width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .grid-container-home {
@@ -1360,6 +1362,9 @@ height: 70%;
 
   .grid-container-home {
     grid-template-columns: 1fr;
+  }
+  .grid-container-home > *{
+    margin: 3%;
   }
 
   #person_side_top{
