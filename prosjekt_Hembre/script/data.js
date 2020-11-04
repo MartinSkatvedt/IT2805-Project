@@ -4,16 +4,16 @@ const pictures = {
     mainImage2: "pictures/pal.png",
   },
   mattis: {
-    mainImgage: "pictures/mattis.jpg",
+    mainImage: "pictures/mattis.jpg",
   },
   ludvik: {
-    mainImgage: "pictures/ludvik.jpg",
+    mainImage: "pictures/ludvik.jpg",
   },
   timleo: {
-    mainImgage: "pictures/timleo.jpg",
+    mainImage: "pictures/timleo.jpg",
   },
   leonel: {
-    mainImgage: "pictures/leonel.jpg",
+    mainImage: "pictures/leonel.jpg",
   },
   newsImg: [
     "pictures/om1.jpg",
@@ -319,7 +319,7 @@ const shooters = [
     },
 
     image: {
-      mainImage: pictures.mattis.mainImgage,
+      mainImage: pictures.mattis.mainImage,
     },
 
     description: {
@@ -478,7 +478,7 @@ const shooters = [
     },
 
     image: {
-      mainImage: pictures.ludvik.mainImgage,
+      mainImage: pictures.ludvik.mainImage,
     },
 
     description: {
@@ -637,7 +637,7 @@ const shooters = [
     },
 
     image: {
-      mainImage: pictures.timleo.mainImgage,
+      mainImage: pictures.timleo.mainImage,
     },
 
     description: {
@@ -761,7 +761,7 @@ const shooters = [
     },
 
     image: {
-      mainImage: pictures.leonel.mainImgage,
+      mainImage: pictures.leonel.mainImage,
     },
 
     description: {
