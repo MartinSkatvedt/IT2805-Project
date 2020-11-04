@@ -41,7 +41,8 @@ document.write(`
     </div>
     <div class="submenuElement_2" id="stevner">
       <a href="#">Events this year</a>
-    </div>
+      <hr class="underline" />
+      </div>
   </div>
 </div>`); //Skriver ut siden fra js for å slippe å ha mye repetiv HTML
 

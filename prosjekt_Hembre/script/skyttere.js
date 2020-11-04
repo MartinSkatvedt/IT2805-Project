@@ -137,7 +137,9 @@ function makeInfoDiv(skytter) {
   link.target = "_blank";
   memberShipP.appendChild(link);
   infoDiv.appendChild(memberShipP);
-
+  
+  const linker = makeStatLinks(skytter);
+  infoDiv.appendChild(linker);
   //legger til select-element------------------------------------------------------
   const select = document.createElement("select");
   select.id = "dp_meny";
@@ -161,8 +163,6 @@ function makeInfoDiv(skytter) {
     window.open(valgt.value);
   };
 
-  const linker = makeStatLinks(skytter);
-  infoDiv.appendChild(linker);
   return infoDiv;
 }
 function makeStatLinks(skytter) {
