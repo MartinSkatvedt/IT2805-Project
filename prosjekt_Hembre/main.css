@@ -9,7 +9,8 @@ START GLOBALE CSS FUNKSJONER
   --background-text-color: none;
   --secondary-teks-color: #f2f2f2;
   --secondary-background-color: #000000bf;
-  --button-color: #f2994a;
+  --button-color: #e1c354;
+
   --font-size-large: 1.8em;
   --font-size: 1.2em;
   --font-size-small:1em;
@@ -47,7 +48,7 @@ main {
   color: var(--text-color);
   margin: auto;
   margin: 0 auto;
-  width: 85%;
+  width: 75%;
 }
 
 
@@ -434,7 +435,7 @@ START OM OSS
 }
 
 .logo {
-  padding-top: 00px;
+  padding-top: 0;
   text-align: center;
   margin-top: 0px;
   padding-left: 30px;
@@ -887,7 +888,6 @@ START SPONSOR
 }
 
 .spons-grid-one .spons {
-  padding-top: 10px;
   margin: auto;
   height: 100%;
   width: 100%;

@@ -357,7 +357,7 @@ function writeStatsOmOss() {
       const infoDiv = makeInfoDiv(skytter);
       infoDiv.appendChild(makeAthleteLink(skytter));
       
-      const familyDiv = makeFamilyDiv(skytter, true);
+      const familyDiv = makeFamilyDiv(skytter, false);
       const img = makeMainImage(skytter);
       
       hembreDiv.appendChild(infoDiv);
