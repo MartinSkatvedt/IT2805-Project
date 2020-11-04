@@ -132,7 +132,7 @@ START INDEX
 }
 
 .sponsor img {
-  width: 100%;
+  width: 90%;
 }
 
 .sponsor:last-child img {
@@ -420,10 +420,10 @@ START OM OSS
 }
 
 .knapp_header>a {
-  color: white;
+  color: rgb(241, 215, 95);
   font-size: var(--font-size-large);
   border-style: solid;
-  border-color: white;
+  color: rgb(241, 215, 95);
   border-width: 5px;
   padding: 12px 28px;
   text-decoration: none;
@@ -446,7 +446,7 @@ START OM OSS
   width: 20%;
   margin: auto;
   margin-top: 2%;
-  color: white;
+  color: rgb(241, 215, 95);
   padding: 10px;
   font-size: var(--font-size-large);
 }
