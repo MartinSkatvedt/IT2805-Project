@@ -598,7 +598,7 @@ START OM OSS
 }
 
 .hembre img,
-#person_bilder img {
+#person_pictures img {
   padding: 0;
   margin: 0;
   margin: auto;
@@ -703,12 +703,12 @@ SKYTER UNDERSIDENE:
   margin: auto;
 }
 
-#person_bilder>img {
+#person_pictures>img {
   width: 90%;
   border-radius: 10px;
 }
 
-#dp_meny {
+#dp_menu {
   background-color: inherit;
   border-color: black;
   padding: 8px;
@@ -723,19 +723,10 @@ SKYTER UNDERSIDENE:
   margin-top: 0;
 }
 
-#medlemskap {
+#membership {
   text-decoration: underline;
 }
 
-#person_rekorder {
-  /* background-color: #ff8080; */
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  padding: 15px;
-  border-collapse: collapse;
-  border-radius: 10px;
-}
 
 td:first-child,
 th:first-child {
@@ -1137,11 +1128,11 @@ START NYHETER
   text-align: left;
 }
 
-#shooter #medlemskap {
+#shooter #membership {
   text-decoration: underline;
 }
 
-#person_rekorder {
+#person_records {
   /* background-color: #ff8080; */
   width: 100%;
   margin: auto;
@@ -1418,7 +1409,7 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
       display: none;
     }
 
-    .hembre #dp_meny{
+    .hembre #dp_menu{
       display: none;
     }
     .main_sponsor .sponsor-grid-one .tom {
@@ -1429,7 +1420,7 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
       grid-template-columns: 1fr;
     }
 
-    .main_sponsor .spons-grid-container {
+    .main_sponsor .sponsor-grid-container {
       display: grid;
       grid-template-columns: 1fr;
     }

@@ -14,8 +14,8 @@ function createSite() {
   changeTitle(shooter);
 
   //MAKING THE TOP DIV--------------------------------------------------------
-  const divtop = maketopDiv(shooter);
-  main.appendChild(divtop);
+  const divTop = makeTopDiv(shooter);
+  main.appendChild(divTop);
 
   //MAKING THE BOTTOM DIV-----------------------------------------------------
   const divBottom = makeBottomDiv(shooter);
@@ -26,9 +26,9 @@ function changeTitle(shooter) {
   //CHANGING THE TOP DIV-----------------------------
   document.title = shooter.about.firstName + " " + shooter.about.lastName;
 }
-function maketopDiv(shooter) {
+function makeTopDiv(shooter) {
   //CREATING THE TOP DIV
-  //MAIKNG TOP-DIV-ELEMNT--------------------------------------------------------
+  //MAKING TOP-DIV-ELEMENT--------------------------------------------------------
   const topDiv = document.createElement("div");
   topDiv.id = "person_side_top";
 
@@ -38,7 +38,7 @@ function maketopDiv(shooter) {
   //MAKING 'person_side_info' DIV--------------------------------------------------------
   const infoDiv = makeInfoDiv(shooter);
 
-  //Making familydiv------------------------------------------------
+  //Making familyDiv------------------------------------------------
   const familyDiv = makeFamilyDiv(shooter);
 
   //APPENDING------------------------------------------------------------------------
@@ -66,7 +66,7 @@ function makeBottomDiv(shooter) {
 
 //Functions for topDiv--------------------------------------------------
 function getYears(shooter) {
-  //cALCUTATING THE AGE FOR THE BIRTHDAY----------------
+  //CALCULATING THE AGE FOR THE BIRTHDAY----------------
   let today = new Date();
   let dd =
     Number(String(today.getDate() + 1).padStart(2, "0")) -
@@ -82,7 +82,7 @@ function getYears(shooter) {
 function makeAboutDiv(shooter, local = false) {//Local makes the links local, else it will refer to the shooters site
   //CREATING ABOUTDIV-----------------------------------------
   const aboutDiv = document.createElement("div");
-  aboutDiv.id = "person_bilder";
+  aboutDiv.id = "person_pictures";
   //IMG---------------------------------------------------
   const img = makeMainImage(shooter);
   aboutDiv.appendChild(img);
@@ -99,14 +99,14 @@ function makeInfoDiv(shooter) {
   infoDiv.id = "person_side_info";
 
   //Overskrift--------------------------------------------------------
-  const overskrift = document.createElement("h1");
-  overskrift.innerHTML = shooter.about.firstName + " " + shooter.about.lastName;
-  infoDiv.appendChild(overskrift);
+  const header = document.createElement("h1");
+  header.innerHTML = shooter.about.firstName + " " + shooter.about.lastName;
+  infoDiv.appendChild(header);
 
   //Beskrivelse kort--------------------------------------------------------
-  const descritonP = document.createElement("p");
-  descritonP.innerHTML = shooter.description.short;
-  infoDiv.appendChild(descritonP);
+  const descriptionP = document.createElement("p");
+  descriptionP.innerHTML = shooter.description.short;
+  infoDiv.appendChild(descriptionP);
 
   //Alder--------------------------------------------------------
   const age = getYears(shooter);
@@ -114,9 +114,9 @@ function makeInfoDiv(shooter) {
   ageP.innerHTML = "Age: " + age + " years";
   infoDiv.appendChild(ageP);
 
-  //Bithday--------------------------------------------------------
-  const brithdayP = document.createElement("p");
-  brithdayP.innerHTML =
+  //Birthday--------------------------------------------------------
+  const birthdayP = document.createElement("p");
+  birthdayP.innerHTML =
     "Birth: " +
     shooter.about.birthDay +
     "/" +
@@ -125,13 +125,13 @@ function makeInfoDiv(shooter) {
     shooter.about.birthYear +
     ", " +
     shooter.about.birthPlace;
-  infoDiv.appendChild(brithdayP);
+  infoDiv.appendChild(birthdayP);
 
   //medlem i bpk med linken--------------------------------------------------------
   const memberShipP = document.createElement("p");
   memberShipP.innerHTML = "membership: ";
   const link = document.createElement("a");
-  link.id = "medlemskap";
+  link.id = "membership";
   link.href = shooter.memberShip.link;
   link.innerHTML = shooter.memberShip.name;
   link.target = "_blank";
@@ -142,7 +142,7 @@ function makeInfoDiv(shooter) {
   infoDiv.appendChild(linker);
   //legger til select-element------------------------------------------------------
   const select = document.createElement("select");
-  select.id = "dp_meny";
+  select.id = "dp_menu";
 
   let opt = document.createElement("option");
   opt.disabled = true;
@@ -159,8 +159,8 @@ function makeInfoDiv(shooter) {
   infoDiv.appendChild(select);
 
   select.onchange = function () {
-    const valgt = this.options[this.selectedIndex]; // js property
-    window.open(valgt.value);
+    const chosen_opt = this.options[this.selectedIndex]; // js property
+    window.open(chosen_opt.value);
   };
 
   return infoDiv;
@@ -227,7 +227,7 @@ function makePersonLink(id, local) {
 
 //Functions for bottomDiv-------------------------------------------------------
 function makeMeritsDiv(shooter) {
-  meritsDiv = document.createElement("div");
+  const meritsDiv = document.createElement("div");
   meritsDiv.id = "merits";
 
   const meritsTitle = document.createElement("h1");
@@ -244,35 +244,35 @@ function makeMeritsDiv(shooter) {
     cursive.innerHTML = element.merit;
     div.appendChild(cursive);
 
-    let strengInd = "<b>Ind:</b>";
+    let stringInd = "<b>Ind:</b>";
     let emptyString = true;
 
     for (let medal in element.results.ind) {
       const totalMedals = element.results.ind[medal];
       if (totalMedals > 0) {
-        strengInd += " | " + totalMedals + " " + medal;
+        stringInd += " | " + totalMedals + " " + medal;
         emptyString = false;
       }
     }
     if (!emptyString) {
-      p = document.createElement("p");
-      p.innerHTML = strengInd;
+      const p = document.createElement("p");
+      p.innerHTML = stringInd;
       div.appendChild(p);
     }
 
-    let strengTeam = "<b>Team:</b>";
+    let stringTeam = "<b>Team:</b>";
     emptyString = true;
 
     for (let medal in element.results.team) {
       const totalMedals = element.results.team[medal];
       if (totalMedals > 0) {
-        strengTeam += " | " + totalMedals + " " + medal;
+        stringTeam += " | " + totalMedals + " " + medal;
         emptyString = false;
       }
     }
     if (!emptyString) {
-      p = document.createElement("p");
-      p.innerHTML = strengTeam;
+      const p = document.createElement("p");
+      p.innerHTML = stringTeam;
       div.appendChild(p);
     }
     meritsDiv.appendChild(div);
@@ -288,7 +288,7 @@ function makeRecordsDiv(shooter) {
   recordsDiv.appendChild(titleDiv);
 
   const recordsTable = document.createElement("table");
-  recordsTable.id = "person_rekorder";
+  recordsTable.id = "person_records";
   recordsDiv.appendChild(recordsTable);
 
   const headerTableRow = document.createElement("tr");
@@ -311,9 +311,9 @@ function makeRecordsDiv(shooter) {
     const obj = shooter.bestStatistics[i];
     let tr = document.createElement("tr");
 
-    for (const ovelse in obj) {
-      if (obj.hasOwnProperty(ovelse)) {
-        const element = obj[ovelse];
+    for (const event in obj) {
+      if (obj.hasOwnProperty(event)) {
+        const element = obj[event];
         let td = document.createElement("td");
         td.innerHTML = element;
         tr.appendChild(td);
