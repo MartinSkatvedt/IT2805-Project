@@ -12,6 +12,7 @@ START GLOBALE CSS FUNKSJONER
   --button-color: #e1c354;
 
   --font-size-large: 1.8em;
+  --font-size-half-large: 1.4em;
   --font-size: 1.2em;
   --font-size-small:1em;
   --font-size-xsmall:0.8em;
@@ -365,7 +366,7 @@ START NAVBAR
   border: 1px solid var(--border-color);
   text-align: center;
   background-color: #353131;
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-half-large);
   width: 20%;
   position: absolute;
   transition: 0.2s;
@@ -1311,8 +1312,15 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
 .header_top{
     display:none;
   }
-
-
+.sponsor>a>img{
+height: 70%;
+}
+.sponsor:last-child img {
+  height: 25vh;
+}
+.sponsor>a>p{
+  display: none;
+}
   .footer-container-one>ul {
     display: none;
   }
@@ -1339,7 +1347,6 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
 
   .grid-container-home {
     grid-template-columns: 1fr;
-
   }
 
   #person_side_top{
@@ -1348,7 +1355,6 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
   #familyDiv {
     display: none;
   }
-
   #all_athletes>.hembre{
     grid-template-columns: 1fr;
     padding-left: 10%;
