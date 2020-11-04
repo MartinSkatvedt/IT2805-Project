@@ -1420,7 +1420,7 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
       grid-template-columns: 1fr;
     }
 
-    .main_sponsor .spons-grid-container {
+    .main_sponsor .sponsor-grid-container {
       display: grid;
       grid-template-columns: 1fr;
     }
