@@ -34,7 +34,7 @@
       for(i in shooters){
         if (shooters[i].isShown) {
 
-          const listeDiv = document.createElement('div')
+          const listDiv = document.createElement('div')
           const ul = document.createElement('ul')
           const p = document.createElement('p')
           const liName = document.createElement('li')
@@ -52,15 +52,15 @@
             liLinks.appendChild(a)
             ul.appendChild(liLinks)
           }
-          listeDiv.appendChild(ul)
-          footer.appendChild(listeDiv)
+          listDiv.appendChild(ul)
+          footer.appendChild(listDiv)
         }
       }
       footer.innerHTML += `
         </div>
 
           <ul>
-            <li><p id="footer_contact"><a href="kontakt.html">Contact Us</a></p></li>
+            <li><p id="footer_contact"><a href="contact.html">Contact Us</a></p></li>
           </ul>
 
         </div>
