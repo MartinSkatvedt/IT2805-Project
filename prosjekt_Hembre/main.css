@@ -1444,8 +1444,7 @@ START RESPONSIVE MEDIAQUERYS
     padding-left: 20px;
   }
 
-
-   #skytter>* {
+ #skytter>* {
     grid-template-columns: 1fr;
   }
 
