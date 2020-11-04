@@ -5,44 +5,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Team Hembre</title>
-  <link rel="shortcut icon" href="bilder/logo2.svg" />
+  <link rel="shortcut icon" href="pictures/logo2.svg" />
   <link rel="stylesheet" href="main.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+  <script src="script/data.js" charset="utf-8"></script>
+  <script src="script/navbar.js" charset="utf-8"></script>
+  
+  <main>
+  <header id="header_about_us">
 
-  <header id="header_om_oss">
-    <script src="script/data.js" charset="utf-8"></script>
-    <script src="script/navbar.js" charset="utf-8"></script>
+    <section class="header_top">
 
-    <section class="header_overst">
+      <section class="follow_us_container">
 
-      <section class="hele_folg_oss">
-
-        <p class="folg_oss">Follow us:</p>
+        <p class="follow_us">Follow us:</p>
         <a href="https://www.facebook.com/teamhembre" class="fa fa-facebook"></a>
 
       </section>
 
       <section class="logo">
         <h3 class="header_over_om_oss">We are</h3>
-        <img src=" bilder/logo2.svg" alt="">
+        <img src="pictures/logo2.svg" alt="">
       </section>
       <section class="knapp_header">
         <a href="#bare_team">MORE ABOUT US ⬇</a>
       </section>
 
 
-      <section class="navn_header element_om_oss">
+      <section class="name_header element_about_us">
       </section>
 
       </section>
   </header>
-  <main>
 
-  <div class="element_om_oss" id="vunnet">
+  <div class="element_about_us" id="won">
     <div>
       <h1 id="gold"></h1>
       <h2>GOLD</h2>
@@ -58,7 +58,7 @@
     </div>
   </div>
 
-  <div class="element_om_oss" id="bare_team"> 
+  <div class="element_about_us" id="about_team_hembre">
     <h1>TEAM HEMBRE</h1>
     <p>
       The Hembre family is a family with incredible skill shooting in several
@@ -76,38 +76,38 @@
       mollit anim id est laborum.
     </p>
 
-    <div id="bilder_team">
-      <div id="bilde1">
-        <img src=" bilder/om6.jpg" alt="" />
-        <div class="bilde_info">Sjøholt - 18/04/2017</div>
+    <div id="pictures_team">
+      <div id="picture1">
+        <img src="pictures/about6.jpg" alt="" />
+        <div class="picture_info">Sjøholt - 18/04/2017</div>
       </div>
-      <div id="bilde2">
-        <img src=" bilder/om2.jpg" alt="" />
-        <div class="bilde_info">Bærum PK - 10/07/2019</div>
+      <div id="picture2">
+        <img src="pictures/about2.jpg" alt="" />
+        <div class="picture_info">Bærum PK - 10/07/2019</div>
       </div>
-      <div id="bilde3">
-        <img src=" bilder/om6.jpg" alt="" />
-        <div class="bilde_info">Molde - 28/05/2018</div>
+      <div id="picture3">
+        <img src="pictures/about6.jpg" alt="" />
+        <div class="picture_info">Molde - 28/05/2018</div>
       </div>
     </div>
   </div>
 
-  <div class="element_om_oss" id="alle_utovere">
+  <div class="element_about_us" id="all_athletes">
 
   </div>
 
 </main>
 
 
-  <script src="script/skyttere.js"></script>
-  <script src="script/om_oss.js"></script>
+  <script src="script/shooters.js"></script>
+  <script src="script/about_us.js"></script>
   <script src="script/footer.js" charset="utf-8"></script>
 
 
 
   <script>
-  // Called function outside of om_oss.js so you can use the om_oss.js script functions on other sites if necesary
-    makeNavnHeader()
+  // Called function outside of about_us.js so you can use the about_us.js script functions on other sites if necesary
+    makeNameHeader()
     writeStatsOmOss()
     writeMedals()
   </script>

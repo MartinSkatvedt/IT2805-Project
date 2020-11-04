@@ -17,7 +17,7 @@
 
         <p></p>
 
-        <div class="nasjonalStat">
+        <div class="nationalStat">
 
           <a href="http://www.fsu.no/issf/index.htm">Link to national pistol statistics: fsu.no</a>
 
@@ -31,42 +31,19 @@
     function makeFooter(){
       const footer = document.querySelector(".footer-container-one")
       footer.innerHTML = ""
-      // footer.innerHTML += `
-      // <div>
-      // <img class="logo_footer" src="bilder/logo2.svg" alt="">
-      // </div>
+      for(let i in shooters){
+        if (shooters[i].isShown) {
 
-      // `
-
-      for(i in skyttere){
-        // console.log(i);
-        if (skyttere[i].isShown) {
-
-          const listeDiv = document.createElement('div')
-          // footer.innerHTML += `
-
-          // <div class="liste${i} listeFooter">
-
-          //   <ul>
-          //     <li><p><a href="skyttere.html?skytter=${skyttere[i].id}">${skyttere[i].about.firstName} ${skyttere[i].about.lastName}</a></p></li>
-          //     <li><a href="${skyttere[i].stasticsLinks[0][0]}">${skyttere[i].stasticsLinks[0][1]}</a></li>
-          //     <li><a href="${skyttere[i].stasticsLinks[1][0]}">${skyttere[i].stasticsLinks[1][1]}</a></li>
-          //     <li><a href="${skyttere[i].stasticsLinks[2][0]}">${skyttere[i].stasticsLinks[2][1]}</a></li>
-          //     <li><a href="${skyttere[i].stasticsLinks[3][0]}">${skyttere[i].stasticsLinks[3][1]}</a></li>
-          //   </ul>
-
-          //  </div>
-
-          // `
+          const listDiv = document.createElement('div')
           const ul = document.createElement('ul')
           const p = document.createElement('p')
           const liName = document.createElement('li')
-          p.appendChild(makePersonLink(skyttere[i].id))
+          p.appendChild(makePersonLink(shooters[i].id))
           liName.appendChild(p)
           ul.appendChild(liName)
 
-          for (j in skyttere[i].stasticsLinks){
-            const element = skyttere[i].stasticsLinks[j]
+          for (let j in shooters[i].stasticsLinks){
+            const element = shooters[i].stasticsLinks[j]
             const a = document.createElement('a')
             const liLinks = document.createElement('li')
 
@@ -75,15 +52,15 @@
             liLinks.appendChild(a)
             ul.appendChild(liLinks)
           }
-          listeDiv.appendChild(ul)
-          footer.appendChild(listeDiv)
+          listDiv.appendChild(ul)
+          footer.appendChild(listDiv)
         }
       }
       footer.innerHTML += `
         </div>
 
           <ul>
-            <li><p id="footer_contact"><a href="kontakt.html">Contact Us</a></p></li>
+            <li><p id="footer_contact"><a href="contact.html">Contact Us</a></p></li>
           </ul>
 
         </div>

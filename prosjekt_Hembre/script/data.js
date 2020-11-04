@@ -1,36 +1,37 @@
-const bilder = {
+const pictures = {
   pal: {
-    mainImgage: "bilder/pal.jpg",
-    mainImgage2: "bilder/pal.png",
+    mainImage: "pictures/pal.jpg",
+    mainImage2: "pictures/pal.png",
   },
   mattis: {
-    mainImgage: "bilder/mattis.jpg",
+    mainImage: "pictures/mattis.jpg",
   },
   ludvik: {
-    mainImgage: "bilder/ludvik.jpg",
+    mainImage: "pictures/ludvik.jpg",
   },
   timleo: {
-    mainImgage: "bilder/timleo.jpg",
+    mainImage: "pictures/timleo.jpg",
   },
   leonel: {
-    mainImgage: "bilder/leonel.jpg",
+    mainImage: "pictures/leonel.jpg",
   },
   newsImg: [
-    "bilder/om1.jpg",
-    "bilder/om2.jpg",
-    "bilder/om4.jpg",
-    "bilder/om5.jpg",
-    "bilder/om6.jpg",
-    "bilder/om7.jpg",
+    "pictures/about1.jpg",
+    "pictures/about2.jpg",
+    "pictures/about4.jpg",
+    "pictures/about5.jpg",
+    "pictures/about6.jpg",
+    "pictures/about7.jpg",
   ],
   sponsors: {
-    bekkevold: "bilder/bakkevold.png",
-    oxford_gun: "bilder/oxford_gun.png",
-    ny_spons: "bilder/sponsor_deg.png",
+    bekkevold: "pictures/bakkevold.png",
+    oxford_gun: "pictures/oxford_gun.png",
+    ny_spons: "pictures/sponsor_deg.png",
   },
 };
 
-const skyttere = [{
+const shooters = [
+    {
     id: "palhembre",
     isShown: true,
 
@@ -45,7 +46,7 @@ const skyttere = [{
     },
 
     image: {
-      mainImage: bilder.pal.mainImgage,
+      mainImage: pictures.pal.mainImage,
     },
 
     description: {
@@ -318,7 +319,7 @@ const skyttere = [{
     },
 
     image: {
-      mainImage: bilder.mattis.mainImgage,
+      mainImage: pictures.mattis.mainImage,
     },
 
     description: {
@@ -477,7 +478,7 @@ const skyttere = [{
     },
 
     image: {
-      mainImage: bilder.ludvik.mainImgage,
+      mainImage: pictures.ludvik.mainImage,
     },
 
     description: {
@@ -636,7 +637,7 @@ const skyttere = [{
     },
 
     image: {
-      mainImage: bilder.timleo.mainImgage,
+      mainImage: pictures.timleo.mainImage,
     },
 
     description: {
@@ -760,7 +761,7 @@ const skyttere = [{
     },
 
     image: {
-      mainImage: bilder.leonel.mainImgage,
+      mainImage: pictures.leonel.mainImage,
     },
 
     description: {
@@ -849,7 +850,8 @@ const skyttere = [{
   },
 ];
 
-const supporters = [{
+const supporters = [
+    {
     name: "Petter Nydalen",
     alder: "Age: 28",
     klubb: "Club: Bærum PK",
@@ -869,60 +871,67 @@ const supporters = [{
   },
 ];
 
-const sponsors = [{
+const sponsors = [
+    {
     name: "Bækkevolds Våpenservice",
-    img: bilder.sponsors.bekkevold,
+    img: pictures.sponsors.bekkevold,
     link: "https://www.pardininorge.no/",
+    text: "The best service you can give your weapons, available in Norway"
   },
   {
     name: "The Oxford Gun Company",
-    img: bilder.sponsors.oxford_gun,
+    img: pictures.sponsors.oxford_gun,
     link: "https://www.oxfordguncompany.co.uk/",
+    text: "For a great varity of guns, available in Norway and England"
+
   },
   {
     name: "THIS CAN BE YOUR COMPANY",
-    img: bilder.sponsors.ny_spons,
-    link: "./kontakt.html",
+    img: pictures.sponsors.ny_spons,
+    link: "./contact.html",
+    text: " "
+
   },
 ];
 
-const news = [{
-    id: 001,
+const news = [
+    {
+    id: 1,
     header: "Hembre domination during Octoberfest",
     text: [
       'Octoberfest in Ørland Pistolklubbs three day pistol festival in Brekstad was struch by a classic case of "Hembre domination".',
       "Pål Hembre went home with first place after he bested the competition in five of eight events. Mattis Hembre won two, while another member of Berum PK, Ingar Woll, also took home a win.",
       "The twins Ludvik and Mattis also won a double in the junior class, while the youngest of the Teams participants, Tim Leo, won a event in the U16 class.",
     ],
-    img: bilder.newsImg[0],
+    img: pictures.newsImg[0],
   },
 
   {
-    id: 002,
+    id: 2,
     header: " Hembre boys on top",
     text: [
       "The Hembre twins Ludvik and Mattis take second and first place respectively. The two bring home even more medals for the allready lavish collection of awards.",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
     ],
-    img: bilder.newsImg[1],
+    img: pictures.newsImg[1],
   },
 
   {
-    id: 003,
+    id: 3,
     header: "Tripple threat in Bergen",
     text: [
       "Mattis, Ludvik and Pål had an impressive showing in last weeks event in Bergen. The three family members alle won their individual events.",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
     ],
-    img: bilder.newsImg[2],
+    img: pictures.newsImg[2],
   },
   {
-    id: 004,
+    id: 4,
     header: "Pål with new norwegian championship record",
     text: [
       "Pål takes an impressive new record in the last norwegian championship.",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ullam sapiente sint vitae esse molestia",
     ],
-    img: bilder.newsImg[3],
+    img: pictures.newsImg[3],
   }
 ];

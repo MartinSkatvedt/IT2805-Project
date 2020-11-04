@@ -1,7 +1,7 @@
 /*
 START GLOBALE CSS FUNKSJONER
  */
-:root {
+ :root {
   --background-color: #f7f1e3;
   --nav-color: #132020;
   --element-background: #d1d1d1;
@@ -9,8 +9,10 @@ START GLOBALE CSS FUNKSJONER
   --background-text-color: none;
   --secondary-teks-color: #f2f2f2;
   --secondary-background-color: #000000bf;
-  --button-color: #f2994a;
-  --font-size-large: 2em;
+  --button-color: #e1c354;
+
+  --font-size-large: 1.8em;
+  --font-size-half-large: 1.4em;
   --font-size: 1.2em;
   --font-size-small:1em;
   --font-size-xsmall:0.8em;
@@ -38,42 +40,42 @@ html {
   scroll-behavior: smooth;
 }
 
-main > *{
-  margin-top: 3%;
-  margin-bottom: 3%;
-}
 main {
   background-color: var(--background-color);
   color: var(--text-color);
   margin: auto;
   margin: 0 auto;
-  width: 90%;
+  width: 85%;
 }
 
-
+main > *{
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
 /*
 SLUTT GLOBALE CSS FUNKSJONER
  */
 /*
 START INDEX
  */
-.main_index{
+#center>*{
   width: 95%;
 }
 
-.grid-container-hjem {
+.grid-container-home {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   column-gap: 20px;
 
 }
-
-.grid-container-hjem>div, .news-div, #news-container, .main_sponsor .spons-grid-one, .spons-grid-two>.spons, .element_om_oss, #kontakt-main > *, .spons_click{
+.grid-container-home>div, .news-div, #news-container, .main_sponsor .sponsor-grid-one, .sponsor-grid-two>.sponsor_box, .element_about_us, #kontakt-main > *, .sponsor_click{
   box-shadow: var(--box-shadow);
 }
-.grid-container-hjem>div, .news-div{
+.grid-container-home>div, .news-div{
   background-color: var(--element-background);
-  padding: 20px;
+}
+.grid-container-home h1{
+
 }
 
 .pointer:hover{
@@ -98,7 +100,6 @@ START INDEX
 }
 
 .athlete img {
-  /* vertical-align: middle; */
   width: 100%;
 }
 
@@ -118,13 +119,16 @@ START INDEX
 
 .sponsor {
   margin: auto;
-  width: 100%;
+  width: 90%;
   height: 240px;
   border: 1px solid var(--border-color);
-  padding-bottom: 5%;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
+  padding-bottom: 20px;
   background-color: white;
   text-align: center;
+}
+.sponsor img{
+  width: 100%;
 }
 
 .sponsor>a {
@@ -132,12 +136,18 @@ START INDEX
   text-decoration: none;
   margin: 0;
 }
+.sponsor>a>p{
+  font-size: var(--font-size-xsmall);
+  padding: 0px 5%;
+  opacity: 0.5;
+}
 
-.sponsor img {
+.sponsor-grid-two img {
+  margin-top: 5%;
   width: 90%;
 }
 
-.sponsor:last-child img {
+.sponsor_box:last-child img {
   height: 15vh;
 }
 
@@ -146,9 +156,9 @@ a>h5 {
   padding-left: 20px;
 }
 
-.stottespiller {
+.supporter {
   margin: auto;
-  width: 100%;
+  width: 90%;
   height: 240px;
   border: 1px solid black;
   padding-bottom: 5%;
@@ -157,7 +167,7 @@ a>h5 {
   text-align: center;
 }
 
-.stottespiller>a {
+.supporter>a {
   color: black;
   text-decoration: none;
   margin: 0;
@@ -174,7 +184,6 @@ a>h5 {
 }
 
 .slides>img {
-  /* vertical-align: middle; */
   width: 100%;
 }
 
@@ -182,6 +191,7 @@ a>h5 {
 .slideshow-container {
   position: relative;
   margin: auto;
+  margin-top: 1em;
   overflow: hidden;
   background-color: var(--secondary-background-color);
   border-radius: 3px 3px 0 0;
@@ -347,7 +357,6 @@ START NAVBAR
 #submenu_2 {
   z-index: 2;
   display: none;
-  font-family: Montserrat;
 }
 
 .submenuElement_1 a,
@@ -362,8 +371,7 @@ START NAVBAR
   border: 1px solid var(--border-color);
   text-align: center;
   background-color: #353131;
-  font-family: fantasy;
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-half-large);
   width: 20%;
   position: absolute;
   transition: 0.2s;
@@ -414,7 +422,7 @@ SLUTT NAVBAR
 START OM OSS
 */
 /*css for hele delen over søkemotoren av header når den er større enn 600px starter under her*/
-.header_overst {
+.header_top {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -439,7 +447,7 @@ START OM OSS
 }
 
 .logo {
-  padding-top: 00px;
+  padding-top: 0;
   text-align: center;
   margin-top: 0px;
   padding-left: 30px;
@@ -460,7 +468,7 @@ START OM OSS
   transition-duration: 0.5s;
 }
 
-.hele_folg_oss {
+.follow_us_container {
   position: relative;
   display: flex;
   padding-top: 20px;
@@ -468,7 +476,7 @@ START OM OSS
   margin-right: 15px;
 }
 
-.folg_oss {
+.follow_us {
   font-size: var(--font-size);
   color: white;
   font-family: fantasy;
@@ -498,22 +506,22 @@ START OM OSS
   transition-duration: 0.5s;
 }
 
-#bilder_team>div {
+#pictures_team>div {
   transform: scale(1);
   -moz-transform: scale(1);
   -webkit-transform: scale(1);
   transition-duration: 0.4s;
 }
 
-#bilder_team>div:hover {
+#pictures_team>div:hover {
   transform: scale(1.2);
   -moz-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transition-duration: 0.5s;
 }
 
-#header_om_oss {
-  background-image: url(bilder/om6.jpg);
+#header_about_us {
+  background-image: url(pictures/about6.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 100vh;
@@ -521,14 +529,14 @@ START OM OSS
 }
 
 /* Style the tab buttons */
-.navn_header {
+.name_header {
   background-color: #555;
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 
-.navn_header>div {
+.name_header>div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -560,7 +568,7 @@ START OM OSS
 }
 
 
-#vunnet {
+#won {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
@@ -584,16 +592,16 @@ START OM OSS
   color: #ba3b09;
 }
 
-#alle_utovere>div {
+#all_athletes>div {
   padding: 0 2%;
   height: 600px;
   scroll-snap-align: center;
 }
 
-#alle_utovere {
+#all_athletes {
   margin-left: 15%;
   margin-right: 15%;
-  width: 70%; 
+  width: 70%;
   height: 600px;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
@@ -602,7 +610,7 @@ START OM OSS
 }
 
 .hembre img,
-#person_bilder img {
+#person_pictures img {
   padding: 0;
   margin: 0;
   margin: auto;
@@ -647,36 +655,39 @@ START OM OSS
   margin: 10px;
 }
 
-#alle_utovere::-webkit-scrollbar {
+#all_athletes::-webkit-scrollbar {
   width: 8px;
 }
 
-#alle_utovere::-webkit-scrollbar-track {
+#all_athletes::-webkit-scrollbar-track {
   background: var(--background-color);
 }
 
-#alle_utovere::-webkit-scrollbar-thumb {
+#all_athletes::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 5px;
 }
 
-#alle_utovere::-webkit-scrollbar-thumb:hover {
+#all_athletes::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
-#bare_team {
+#about_team_hembre {
   background-color: var(--button-color);
   padding: 20px 50px;
 }
+#about_team_hembre h1{
+  text-align: center;
+}
 
-#bilder_team>div>img {
+#pictures_team>div>img {
   width: 80%;
   height: 80%;
   display: block;
   margin: auto;
 }
 
-.bilde_info {
+.picture_info {
   background-color: white;
   text-align: center;
   padding: 10px 0px;
@@ -686,7 +697,7 @@ START OM OSS
   box-shadow: 0px 2px 8px 4px;
 }
 
-#bilder_team {
+#pictures_team {
   margin: 30px 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -707,12 +718,12 @@ SKYTER UNDERSIDENE:
   margin: auto;
 }
 
-#person_bilder>img {
+#person_pictures>img {
   width: 90%;
   border-radius: 10px;
 }
 
-#dp_meny {
+#dp_menu {
   background-color: inherit;
   border-color: black;
   padding: 8px;
@@ -721,25 +732,16 @@ SKYTER UNDERSIDENE:
   max-width: 100%;
 }
 
-#skytter h1{
+#shooter h1{
   text-align: center;
   font-size: var(--font-size-large);
   margin-top: 0;
 }
 
-#medlemskap {
+#membership {
   text-decoration: underline;
 }
 
-#person_rekorder {
-  /* background-color: #ff8080; */
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  padding: 15px;
-  border-collapse: collapse;
-  border-radius: 10px;
-}
 
 td:first-child,
 th:first-child {
@@ -830,13 +832,14 @@ START KONTAKT OSS
   padding: 10px;
   width: 100%;
   border: 2px solid var(--border-color);
+  text-align: left;
 }
 
 
 .gridElement {
   margin: auto;
   width: 60%;
-}  
+}
 
 
 #f_submit>button {
@@ -886,33 +889,31 @@ START SPONSOR
   margin: auto;
 }
 
-.spons-grid-one {
+.sponsor-grid-one {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.spons-grid-one .spons {
-  padding-top: 10px;
+.sponsor-grid-one .sponsor_box {
   margin: auto;
   height: 100%;
   width: 100%;
 }
 
-.spons_navn {
+.sponsor_name {
   padding-top: 20px;
   font-size: var(--font-size);
 }
 
-.kryss_farge_1 {
+.cross_color_1 {
   background-color: #a0e6ff;
 }
 
-.kryss_farge_2 {
+.cross_color_2 {
   background-color: #eeaf93;
 }
 
-.spons .logo_liten {
-  width: 40%;
+.sponsor_box .logo_small {
   height: 50%;
   margin-left: 30%;
   -moz-transform: scale(1);
@@ -922,7 +923,7 @@ START SPONSOR
   margin: auto;
 }
 
-.logo_liten:hover {
+.logo_small:hover {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
@@ -931,16 +932,16 @@ START SPONSOR
 
 
 
-.spons .pil {
+.sponsor_box .pil {
   height: 20%;
   width: 20%;
   margin: auto;
 }
 
-.fyll {
+.fill {
   position: relative;
   bottom: 20%;
-  
+
   height: 100px;
   width: 150px;
   background-color:var(--element-background);
@@ -948,41 +949,41 @@ START SPONSOR
   margin: auto;
 }
 
-.fyll p {
+.fill p {
   padding-top: 30px;
 }
 
-.spons-grid-one .fyll {
+.sponsor-grid-one .fill {
   margin-top: 20%;
 }
 
-.spons-grid-two {
+.sponsor-grid-two {
   width: 70%;
 }
 
-.spons_click {
+.sponsor_click {
   background-color: var(--button-color);
   border-radius: 5px;
   width: 50%;
 }
 
-.spons-grid-two>div {
+.sponsor-grid-two>div {
   text-align: center;
   padding: 10px;
   margin-bottom: 30px;
 }
 
-.spons-grid-two .spons img {
+.sponsor-grid-two .sponsor_box img {
   margin-left: 5%;
   width: 70%;
   padding-bottom: 15px;
 }
 
-.spons-grid-two .spons {
+.sponsor-grid-two .sponsor_box {
   height: 100%;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1600px) {
   .main_sponsor {
     width: 900px;
   }
@@ -1005,9 +1006,9 @@ footer a {
 
 
 .footer-container-one {
-  grid-template-columns: repeat(6, 1fr);
+  /* grid-template-columns: repeat(6, 1fr); */
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   align-items: center;
   width: 90%;
@@ -1034,17 +1035,16 @@ footer a {
 }
 
 .footer-container-two {
-  margin: 2%;
+  margin: 2% 4.5%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20%;
   margin-bottom: 0px;
   padding: 10px;
 }
 .contact>p{
   padding: 5px;
 }
-.nasjonalStat{
+.nationalStat{
   padding: 25px;
   text-decoration: underline;
   text-align: center;
@@ -1056,7 +1056,7 @@ p {
 }
 
 .footer-container-two>div {
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-xsmall);
   border: solid 1px var(--secondary-teks-color);
   background-color: var(--button-color);
   color: var(--text-color);
@@ -1108,7 +1108,7 @@ START NYHETER
   position: relative;
 }
 
-.news-div .ancor:target {
+.news-div .anchor:target {
   position: absolute;
   top: -50px;
 }
@@ -1136,23 +1136,16 @@ START NYHETER
   grid-template-columns: 1fr 2fr 1fr;
 }
 
-#skytter {
-  width: 95%;
-  margin: 1% auto;
-  font-size: var(--font-size);
-}
-
-
 #person_side_info>* {
   margin: 10px;
   text-align: left;
 }
 
-#skytter #medlemskap {
+#shooter #membership {
   text-decoration: underline;
 }
 
-#person_rekorder {
+#person_records {
   /* background-color: #ff8080; */
   width: 100%;
   margin: auto;
@@ -1177,20 +1170,20 @@ START NYHETER
   border-bottom: dashed 1px var(--text-color);
 }
 
-#skytter #personer_underliggende_bilder {
+#shooter #personer_underliggende_bilder {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 20px;
 }
 
-#skytter #person_bilder_vid>img {
+#shooter #person_bilder_vid>img {
   width: 10%;
   height: 50px;
   display: block;
   margin: auto;
 }
 
-#skytter #person_video>video {
+#shooter #person_video>video {
   display: block;
   margin: auto;
 }
@@ -1217,35 +1210,35 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto 10px auto;
 }
 
-#skytter #merit {
+#shooter #merit {
   margin-bottom: 10px;
 }
 
-#skytter #merit>* {
+#shooter #merit>* {
   margin: 5px;
 }
 
-#skytter #merit,
-#skytter td {
+#shooter #merit,
+#shooter td {
   border-bottom: 1px solid var(--text-color);
 }
 
 
-#skytter #familyDiv a,
-#skytter #divLinks a {
+#shooter #familyDiv a,
+#shooter #divLinks a {
   display: block;
 }
 
-#skytter #familyType>p {
+#shooter #familyType>p {
   margin: 0;
   display: inline;
 }
 
-#skytter #familyType {
+#shooter #familyType {
   margin-top: 20px;
 }
 
-#skytter #familyType:first-child {
+#shooter #familyType:first-child {
   margin-top: 0;
 }
 
@@ -1264,14 +1257,14 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
 /*css for hele body når den er større enn 600px starter under her*/
 @media only screen and (max-width: 1200px) {
 
-  #alle_utovere>div>img {
+  #all_athletes>div>img {
     display: none;
   }
   .hembre{
     grid-template-columns: 1fr 1fr;
-  }  
+  }
 
-  #alle_utovere>div {
+  #all_athletes>div {
     font-size: var(--font-size-small);
   }
 
@@ -1279,13 +1272,13 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
   #contactForm input, #contactForm label, #contactForm textarea{
     font-size: var(--font-size-small);
   }
-  #header_om_oss{
+  #header_about_us{
     height: 80vh;
   }
   .knapp_header{
     display: none;
   }
-  #vunnet *{
+  #won *{
     font-size: var(--font-size-small);
   }
 }
@@ -1316,15 +1309,22 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
 
 @media only screen and (max-width: 900px) {
 
-#header_om_oss {
+#header_about_us {
     background-image: none;
     height:auto;
   }
-.header_overst{
+.header_top{
     display:none;
   }
-
-
+.sponsor>a>img{
+height: 70%;
+}
+.sponsor:last-child img {
+  height: 25vh;
+}
+.sponsor>a>p{
+  display: none;
+}
   .footer-container-one>ul {
     display: none;
   }
@@ -1341,7 +1341,7 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
     grid-row: 1;
   }
 
-  .sponsor img {
+  .sponsor-grid-two img {
     width: 74%;
   }
 
@@ -1349,21 +1349,7 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
     grid-gap: 5px;
   }
 
-  .grid-container-hjem {
-    grid-template-columns: 1fr;
-
-  }
-
-  .main_sponsor .spons-grid-one .tom {
-    display: none;
-  }
-
-  .main_sponsor .spons-grid-one {
-    grid-template-columns: 1fr;
-  }
-
-  .main_sponsor .spons-grid-container {
-    display: grid;
+  .grid-container-home {
     grid-template-columns: 1fr;
   }
 
@@ -1373,8 +1359,7 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
   #familyDiv {
     display: none;
   }
-
-  #alle_utovere>.hembre{
+  #all_athletes>.hembre{
     grid-template-columns: 1fr;
     padding-left: 10%;
     padding-right: 10%;
@@ -1411,32 +1396,22 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
     padding-left: 20px;
   }
 
- #skytter>* {
+ #shooter>* {
     grid-template-columns: 1fr;
   }
 
-  #skytter>*>* {
+  #shooter>*>* {
     margin: auto;
   }
 
-    #alle_utovere {
+    #all_athletes {
       height: 51vh;
     }
 
-
-    #alle_utovere>div>div {
-      margin-right: 10px;
+    #all_athletes>div {
+      padding: 10px;
+      height: 50vh;
     }
-
-
-      #alle_utovere>div {
-        padding: 10px;
-        height: 50vh;
-      }
-
-      #alle_utovere>div>div {
-        margin-right: 10px;
-      }
 
     #person_side_info {
       margin-top: 20px;
@@ -1445,17 +1420,29 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
     #person_side_info>* {
       margin-bottom: 15px;
     }
-    #bilder_team {
+    #pictures_team {
       display: none;
     }
-    #vunnet{
+    #won{
       display: none;
     }
-  
-    .hembre #dp_meny{
+
+    .hembre #dp_menu{
       display: none;
     }
-  
+    .main_sponsor .sponsor-grid-one .tom {
+      display: none;
+    }
+
+    .main_sponsor .sponsor-grid-one {
+      grid-template-columns: 1fr;
+    }
+
+    .main_sponsor .sponsor-grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
 }
 
 @media (max-width: 405px) {
@@ -1488,12 +1475,6 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
   #f_fornavn>input, #f_etternavn>input, .gridElement>label {
     font-size: var(--font-size-xsmall);
   }
-
-
-  .hembre h1 {
-    font-size: var(--font-size-small);
-  }
-
   .hembre p {
     font-size:var(--font-size-xsmall);
   }
@@ -1511,7 +1492,7 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
     height: 50vw;
   }
 
-  #oxford>.logo_liten, #bakkevold>.logo_liten {
+  #oxford>.logo_small, #bakkevold>.logo_small {
     height: 30%;
   }
 }
