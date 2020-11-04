@@ -30,7 +30,8 @@ const pictures = {
   },
 };
 
-const shooters = [{
+const shooters = [
+    {
     id: "palhembre",
     isShown: true,
 
@@ -849,7 +850,8 @@ const shooters = [{
   },
 ];
 
-const supporters = [{
+const supporters = [
+    {
     name: "Petter Nydalen",
     alder: "Age: 28",
     klubb: "Club: Bærum PK",
@@ -869,7 +871,8 @@ const supporters = [{
   },
 ];
 
-const sponsors = [{
+const sponsors = [
+    {
     name: "Bækkevolds Våpenservice",
     img: pictures.sponsors.bekkevold,
     link: "https://www.pardininorge.no/",
@@ -886,7 +889,8 @@ const sponsors = [{
   },
 ];
 
-const news = [{
+const news = [
+    {
     id: 1,
     header: "Hembre domination during Octoberfest",
     text: [
