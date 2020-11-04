@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kontakt</title>
-  <link rel="shortcut icon" href="pictures/logo2.svg" />
+  <link rel="shortcut icon" href="bilder/logo2.svg" />
 
   <link rel="stylesheet" href="./main.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -16,7 +16,6 @@
 <body>
   <script src="script/data.js" charset="utf-8"></script>
   <script src="script/navbar.js" charset="utf-8"></script>
-  <div class="form_response"></div>
   <main id="kontakt-main">
 
     <div id="formContainer">
@@ -25,7 +24,7 @@
         Fill out the form, and we'll take contact as soon as we can.
       </p>
 
-      <form id="contactForm" action="#" method="get">
+      <form id="contactForm" action="index.html" method="post">
         <div class="gridElement" id="f_mail">
           <label for="email">Mail:</label>
           <input type="email" required name="email" id="email" />
@@ -33,7 +32,8 @@
 
         <div class="gridElement" id="f_melding">
           <label for="melding">Message (max 400 letters ):</label>
-          <textarea name="melding" id="melding" maxlength="400"></textarea>
+          <textarea name="melding" recuired id="melding" maxlength="400">
+            </textarea>
         </div>
 
         <div class="gridElement" id="f_fornavn">
@@ -59,7 +59,7 @@
     <div class="subFolder">
       <div id="mapContainer" class="subContainers"></div>
         <div id="infoContainer" class="subContainers">
-          <img src="pictures/logo2.svg" alt="">
+          <img src="bilder/logo2.svg" alt="">
           <h4>We train at </h4>
           <p>BÆRUM PISTOLKLUBB</p>
           <p>1344 Haslum</p>
@@ -76,16 +76,8 @@
   </script>
 
   <script src="script/map.js"></script>
-  <script src="script/shooters.js"></script>
+  <script src="script/skyttere.js"></script>
   <script src="script/footer.js"></script>
-  <script type="text/javascript">
-    response = document.querySelector(".form_response")
-    if (window.location.href.indexOf("?email")>0){
-      console.log(window.location.href)
-      response.innerHTML = "Your message has been delivered, thank you!"
-    }
-
-  </script>
 </body>
 
 </html>

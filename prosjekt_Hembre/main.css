@@ -826,6 +826,7 @@ START KONTAKT OSS
   padding: 10px;
   width: 100%;
   border: 2px solid var(--border-color);
+  text-align: left;
 }
 
 
