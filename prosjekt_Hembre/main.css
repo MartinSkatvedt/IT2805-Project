@@ -272,7 +272,7 @@ START NAVBAR
 
 }
 
-.navBarElement>a::before {
+.navBarElement:not(:last-child)>a::before {
   /* hentet inspirasjon fra https://css-tricks.com/having-fun-with-link-hover-effects/ */
   /* funksjoner for å skalere elementer og overgangs tid*/
   visibility: hidden;
@@ -290,7 +290,7 @@ START NAVBAR
   background-color: var(--secondary-teks-color);
 }
 
-.navBarElement>a:hover::before {
+.navBarElement:not(:last-child)>a:hover::before {
   /* funksjoner for å skalere elementer*/
   visibility: visible;
   -webkit-transform: scaleX(1);
@@ -311,13 +311,13 @@ START NAVBAR
   width: 16.677%;
   text-align: center;
 }
-.navBarElement:last-child a{
+#navbar .navBarElement:last-child a{
   background-color: var(--button-color);
   padding:5px;
   border-radius: 5px;
   box-shadow: 1px 2px 3px black;
+  color: black;
 }
-
 .logo_nav {
   width: 15%;
   margin-left: 5%;
@@ -598,6 +598,7 @@ START OM OSS
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   text-align: left;
+  -webkit-overflow-scrolling: touch
 }
 
 .hembre img,
@@ -701,6 +702,9 @@ SKYTER UNDERSIDENE:
 #person_side_top {
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
+#familyDiv {
+  margin: auto;
 }
 
 #person_bilder>img {
@@ -1309,6 +1313,9 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
   .submenu, #navbar{
     font-size: var(--font-size);
   }
+  .navBarElement:not(:last-child)>a::before{
+    height: 2px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -1389,6 +1396,9 @@ START RESPONSIVE MEDIAQUERYS----------------------------------------------------
   }
   .navBarElement{
     padding-top: 15px;
+  }
+  .navBarElement:not(:last-child)>a::before{
+    height: 1px;
   }
   .footer-container-one {
     display: grid;
