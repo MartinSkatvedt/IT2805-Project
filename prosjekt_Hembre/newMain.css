@@ -125,14 +125,6 @@ p {
     text-align: center;
 }
 
-#navbar .navBarElement:last-child a, #footer_contact a{
-    background-color: var(--button-color);
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 1px 2px 3px black;
-    color: black;
-    font-weight: normal;
-}
 
 .logo_nav {
     width: 15%;
@@ -221,6 +213,15 @@ p {
 }
 
 /* END NAVBAR */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+#navbar .navBarElement:last-child a, #footer_contact a{
+    background-color: var(--button-color);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px black;
+    color: black;
+    font-weight: normal;
+}
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
 /* FOOTER */
 footer {
