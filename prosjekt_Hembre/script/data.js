@@ -1,7 +1,7 @@
 const pictures = {
   pal: {
-    mainImgage: "pictures/pal.jpg",
-    mainImgage2: "pictures/pal.png",
+    mainImage: "pictures/pal.jpg",
+    mainImage2: "pictures/pal.png",
   },
   mattis: {
     mainImgage: "pictures/mattis.jpg",
@@ -46,7 +46,7 @@ const shooters = [
     },
 
     image: {
-      mainImage: pictures.pal.mainImgage,
+      mainImage: pictures.pal.mainImage,
     },
 
     description: {

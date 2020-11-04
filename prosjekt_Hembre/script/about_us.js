@@ -18,7 +18,7 @@ function makeNameHeader() {
 
 
 
-function getTotalMealds() {
+function getTotalMedals() {
   let gold = 0
   let silver = 0
   let bronze = 0
@@ -35,8 +35,8 @@ function writeMedals() {
   const gold = document.querySelector('#gold')
   const silver = document.querySelector('#silver')
   const bronze = document.querySelector('#bronze')
-  totalMedals = getTotalMealds()
-  gold.innerHTML = totalMedals[0]
-  silver.innerHTML = totalMedals[1]
-  bronze.innerHTML = totalMedals[2]
+  const totalMedals = getTotalMedals()
+  gold.innerHTML = String(totalMedals[0])
+  silver.innerHTML = String(totalMedals[1])
+  bronze.innerHTML = String(totalMedals[2])
 }
