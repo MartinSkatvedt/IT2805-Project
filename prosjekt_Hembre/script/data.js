@@ -30,8 +30,7 @@ const bilder = {
   },
 };
 
-const skyttere = [
-  {
+const skyttere = [{
     id: "palhembre",
     isShown: true,
 
@@ -50,10 +49,8 @@ const skyttere = [
     },
 
     description: {
-      short:
-        "Started with pistol shooting in 1978. CISM shooter in 1984/85 and from 1990 to 2018.",
-      long:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam unde excepturi, quaerat sit quasi recusandae id soluta. Voluptas totam debitis, expedita odit quo voluptatum repellat suscipit animi voluptates! Temporibus, qui?",
+      short: "Started with pistol shooting in 1978. CISM shooter in 1984/85 and from 1990 to 2018.",
+      long: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam unde excepturi, quaerat sit quasi recusandae id soluta. Voluptas totam debitis, expedita odit quo voluptatum repellat suscipit animi voluptates! Temporibus, qui?",
     },
 
     family: {
@@ -117,15 +114,15 @@ const skyttere = [
       ["http://fsu.no/skyttere/stat/paalh1978.htm", "1978"],
     ],
 
+    // ['link','navn'],
     stasticsLinks: [
       ["http://fsu.no/issf/alle/tp/tp_paalh.htm", "Best resuls"],
       ["http://fsu.no/issf/alle/sn/sn_paalh.htm", "Average"],
       ["http://fsu.no/issf/alle/ant/st_paalh.htm", "Total starts"],
-      ["http://www.fsu.no/issf/iaar/sk/st_mattish.htm", "Starts this year"],
+      ["http://www.fsu.no/issf/iaar/sk/st_mattish.htm", "Events this year"],
     ],
 
-    bestStatistics: [
-      {
+    bestStatistics: [{
         event: "Center Fire",
         score: 596,
         year: 2000,
@@ -182,8 +179,7 @@ const skyttere = [
       },
     ],
 
-    merits: [
-      {
+    merits: [{
         merit: "Military World Championship",
         results: {
           ind: {
@@ -327,8 +323,7 @@ const skyttere = [
 
     description: {
       short: "Started his career in 2010",
-      long:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam unde excepturi, quaerat sit quasi recusandae id soluta. Voluptas totam debitis, expedita odit quo voluptatum repellat suscipit animi voluptates! Temporibus, qui?",
+      long: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam unde excepturi, quaerat sit quasi recusandae id soluta. Voluptas totam debitis, expedita odit quo voluptatum repellat suscipit animi voluptates! Temporibus, qui?",
     },
 
     family: {
@@ -355,14 +350,14 @@ const skyttere = [
       ["http://fsu.no/issf/2010/sk/st_mattish.htm", "2010"],
     ],
     stasticsLinks: [
+      // ['link','navn'],
       ["http://fsu.no/issf/alle/tp/tp_mattish.htm", "Best resuls"],
       ["http://fsu.no/issf/alle/sn/sn_mattish.htm", "Average"],
       ["http://fsu.no/issf/alle/ant/st_mattish.htm", "Total starts"],
-      ["http://www.fsu.no/issf/iaar/sk/st_mattish.htm", "Starts this year"],
+      ["http://www.fsu.no/issf/iaar/sk/st_mattish.htm", "Events this year"],
     ],
 
-    bestStatistics: [
-      {
+    bestStatistics: [{
         event: "Luft 60 skudd",
         score: 582,
         year: 2020,
@@ -419,8 +414,7 @@ const skyttere = [
       },
     ],
 
-    merits: [
-      {
+    merits: [{
         merit: "NM klasse Junior",
         results: {
           ind: {
@@ -488,8 +482,7 @@ const skyttere = [
 
     description: {
       short: "Started his career in 2010",
-      long:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam unde excepturi, quaerat sit quasi recusandae id soluta. Voluptas totam debitis, expedita odit quo voluptatum repellat suscipit animi voluptates! Temporibus, qui?",
+      long: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam unde excepturi, quaerat sit quasi recusandae id soluta. Voluptas totam debitis, expedita odit quo voluptatum repellat suscipit animi voluptates! Temporibus, qui?",
     },
 
     family: {
@@ -516,14 +509,14 @@ const skyttere = [
       ["http://fsu.no/issf/2010/sk/st_ludvikh.htm", "2010"],
     ],
     stasticsLinks: [
+      // ['link','navn'],
       ["http://fsu.no/issf/alle/tp/tp_ludvikh.htm", "Best resuls"],
       ["http://fsu.no/issf/alle/sn/sn_ludvikh.htm", "Average"],
       ["http://fsu.no/issf/alle/ant/st_ludvikh.htm", "Total starts"],
-      ["http://www.fsu.no/issf/iaar/sk/st_ludvikh.htm", "Starts this year"],
+      ["http://www.fsu.no/issf/iaar/sk/st_ludvikh.htm", "Events this year"],
     ],
 
-    bestStatistics: [
-      {
+    bestStatistics: [{
         event: "Luft 40 skudd",
         score: 370,
         year: 2014,
@@ -580,8 +573,7 @@ const skyttere = [
       },
     ],
 
-    merits: [
-      {
+    merits: [{
         merit: "NM klasse Junior",
         results: {
           ind: {
@@ -649,8 +641,7 @@ const skyttere = [
 
     description: {
       short: "Started his career in 2014",
-      long:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam unde excepturi, quaerat sit quasi recusandae id soluta. Voluptas totam debitis, expedita odit quo voluptatum repellat suscipit animi voluptates! Temporibus, qui?",
+      long: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam unde excepturi, quaerat sit quasi recusandae id soluta. Voluptas totam debitis, expedita odit quo voluptatum repellat suscipit animi voluptates! Temporibus, qui?",
     },
 
     family: {
@@ -665,40 +656,22 @@ const skyttere = [
     },
 
     yearlyStatistics: [
-      [
-        "http://fsu.no/2019/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm",
-        "2019",
-      ],
-      [
-        "http://fsu.no/2018/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm",
-        "2018",
-      ],
-      [
-        "http://fsu.no/2017/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm",
-        "2017",
-      ],
-      [
-        "http://fsu.no/2016/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm",
-        "2016",
-      ],
-      [
-        "http://fsu.no/2015/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm",
-        "2015",
-      ],
-      [
-        "http://fsu.no/2014/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm",
-        "2014",
-      ],
+      ["http://fsu.no/2019/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm","2019",],
+      ["http://fsu.no/2018/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm","2018",],
+      ["http://fsu.no/2017/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm","2017",],
+      ["http://fsu.no/2016/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm","2016",],
+      ["http://fsu.no/2015/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm","2015",],
+      ["http://fsu.no/2014/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm","2014",],
     ],
     stasticsLinks: [
+      // ['link','navn'],
       ["http://fsu.no/issf/alle/tp/tp_timleoh.htm", "Best resuls"],
       ["http://fsu.no/issf/alle/sn/sn_timleoh.htm", "Average"],
       ["http://fsu.no/issf/alle/ant/st_timleoh.htm", "Total starts"],
-      ["http://www.fsu.no/issf/iaar/sk/st_timleoh.htm", "Starts this year"],
+      ["http://www.fsu.no/issf/iaar/sk/st_timleoh.htm", "Events this year"],
     ],
 
-    bestStatistics: [
-      {
+    bestStatistics: [{
         event: "Luft 40 skudd",
         score: 366,
         year: 2020,
@@ -755,23 +728,21 @@ const skyttere = [
       },
     ],
 
-    merits: [
-      {
-        merit: "NM klasse Ungdom",
-        results: {
-          ind: {
-            gold: 1,
-            silver: null,
-            bronze: null,
-          },
-          team: {
-            gold: null,
-            silver: null,
-            bronze: null,
-          },
+    merits: [{
+      merit: "NM klasse Ungdom",
+      results: {
+        ind: {
+          gold: 1,
+          silver: null,
+          bronze: null,
+        },
+        team: {
+          gold: null,
+          silver: null,
+          bronze: null,
         },
       },
-    ],
+    }, ],
   },
 
   {
@@ -794,8 +765,7 @@ const skyttere = [
 
     description: {
       short: "Has not yet startet his career",
-      long:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam unde excepturi, quaerat sit quasi recusandae id soluta. Voluptas totam debitis, expedita odit quo voluptatum repellat suscipit animi voluptates! Temporibus, qui?",
+      long: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam unde excepturi, quaerat sit quasi recusandae id soluta. Voluptas totam debitis, expedita odit quo voluptatum repellat suscipit animi voluptates! Temporibus, qui?",
     },
 
     family: {
@@ -810,15 +780,15 @@ const skyttere = [
     },
 
     yearlyStatistics: [],
+    // ['link','navn'],
     stasticsLinks: [
       // ["http://fsu.no/issf/alle/tp/tp_paalh.htm", "Best resuls"],
       // ["http://fsu.no/issf/alle/sn/sn_paalh.htm", "Average"],
       // ["http://fsu.no/issf/alle/ant/st_paalh.htm", "Total starts"],
-      // ["http://www.fsu.no/issf/iaar/sk/st_mattish.htm", "Starts this year"],
+      // ["http://www.fsu.no/issf/iaar/sk/st_mattish.htm", "Events this year"],
     ],
 
-    bestStatistics: [
-      {
+    bestStatistics: [{
         event: "Luft 40 skudd",
         score: "---",
         year: "----",
@@ -879,8 +849,7 @@ const skyttere = [
   },
 ];
 
-const supporters = [
-  {
+const supporters = [{
     name: "Petter Nydalen",
     alder: "Age: 28",
     klubb: "Club: Bærum PK",
@@ -900,8 +869,7 @@ const supporters = [
   },
 ];
 
-const sponsors = [
-  {
+const sponsors = [{
     name: "Bækkevolds Våpenservice",
     img: bilder.sponsors.bekkevold,
     link: "https://www.pardininorge.no/",
@@ -918,8 +886,7 @@ const sponsors = [
   },
 ];
 
-const news = [
-  {
+const news = [{
     id: 001,
     header: "Hembre domination during Octoberfest",
     text: [

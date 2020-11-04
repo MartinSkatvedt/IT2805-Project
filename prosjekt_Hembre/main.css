@@ -555,7 +555,7 @@ START OM OSS
   width: 100%;
 }
 
-#divLinks {
+.hembre #divLinks {
   display: none;
 }
 
@@ -1444,15 +1444,8 @@ START RESPONSIVE MEDIAQUERYS
     padding-left: 20px;
   }
 
-  #f_fornavn, #f_etternavn {
-    /* margin: 0px 5vh; */
-  }
 
-  /* #skytter #grid_container_stats{
-    grid-template-columns: 1fr;
-
-  } */
-  #skytter>* {
+   #skytter>* {
     grid-template-columns: 1fr;
   }
 
