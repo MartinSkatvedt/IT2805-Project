@@ -16,12 +16,12 @@ const pictures = {
     mainImage: "pictures/leonel.jpg",
   },
   newsImg: [
-    "pictures/om1.jpg",
-    "pictures/om2.jpg",
-    "pictures/om4.jpg",
-    "pictures/om5.jpg",
-    "pictures/om6.jpg",
-    "pictures/om7.jpg",
+    "pictures/about1.jpg",
+    "pictures/about2.jpg",
+    "pictures/about4.jpg",
+    "pictures/about5.jpg",
+    "pictures/about6.jpg",
+    "pictures/about7.jpg",
   ],
   sponsors: {
     bekkevold: "pictures/bakkevold.png",
