@@ -6,14 +6,14 @@
     background-color: var(--nav-color);
     box-shadow: 0px 0px 5px rgba(10,10,80,0.5);
   }
-  
-  
+
+
   footer a {
     display: block;
   }
-  
-  
-  
+
+
+
   .footer-container-one {
     grid-template-columns: repeat(6, 1fr);
     display: flex;
@@ -25,24 +25,24 @@
     border-bottom: var(--secondary-teks-color) 0.4px solid;
     text-align: left;
   }
-  
-  
+
+
   .footer-container-one ul li a {
     text-decoration: none;
     color: var(--secondary-teks-color);
     font-size: var(--font-size-small);
     padding-top: 3px;
   }
-  
+
   .footer-container-one ul li {
     list-style-type: none;
   }
-  
+
   .footer-container-one ul li p a {
     font-size: var(--font-size);
     font-weight: bold;
   }
-  
+
   .footer-container-two {
     margin: 2% 4.5%;
     display: grid;
@@ -62,27 +62,30 @@
   p {
     margin: 0;
   }
-  
+
   .footer-container-two>div {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-xsmall);
     border: solid 1px var(--secondary-teks-color);
     background-color: var(--button-color);
     color: var(--text-color);
-  
+
+
   }
-  
+
   .footer-container-two>div>a {
     color: var(--text-color);
     text-decoration: none;
     margin: auto;
+    font-size: var(--font-size-small)
   }
-  
+
   #footer_contact {
     text-align: center;
     margin-right: 40px;
     padding: 10px;
     background-color: var(--button-color);
     border-radius: 20px;
+
   }
   #footer_contact>a{
     color: var(--text-color);
@@ -94,15 +97,15 @@
     .footer-container-one>ul {
         display: none;
       }
-    
+
       .footer-container-one>div {
         margin: auto;
       }
-    
+
       .footer-container-one {
         grid-template-columns: repeat(5, 1fr);
       }
-    
+
 }
 
 @media only screen and (max-width: 610px) {
@@ -110,16 +113,16 @@
         display: grid;
         grid-template-columns: 1fr
       }
-    
+
       .footer-container-one>div {
         margin: auto;
       }
-    
+
       .logo_footer {
         display: block;
         height: 200px;
         padding-left: 20px;
-      }    
+      }
 
 }
 
@@ -128,11 +131,11 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
       }
-    
+
       .footer-container-two>p {
         display: none;
       }
-    
-    
+
+
 
 }
