@@ -101,7 +101,7 @@ function makeAthlete(i) {
 
     const textDiv = document.createElement('div')
     textDiv.className = 'text'
-    textDiv.innerHTML = skytter.about.surName + ' ' + skytter.about.lastName
+    textDiv.innerHTML = skytter.about.firstName + ' ' + skytter.about.lastName
 
     const divAthlete = document.createElement('div')
     divAthlete.appendChild(img)

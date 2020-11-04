@@ -17,9 +17,7 @@ document.write(`
     <a href="./om_oss.html">About us</a>
   </div>
   <div class="navBarElement">
-    <button type="button" name="button" id="kontaktKnapp">
       <a href="./kontakt.html">Contact</a>
-    </button>
   </div>
 </div>
 
@@ -56,10 +54,10 @@ for (let skytter of skyttere) {
 
   let anchorElement = document.createElement("a");
 
-  let fullname = skytter.about.surName + skytter.about.lastName;
+  let fullname = skytter.about.firstName + skytter.about.lastName;
   anchorElement.href = "./skyttere.html?skytter=" + skytter.id;
   anchorElement.innerText =
-    skytter.about.surName + " " + skytter.about.lastName;
+    skytter.about.firstName + " " + skytter.about.lastName;
 
   let hr = document.createElement("hr");
   hr.classList += "underline";
@@ -125,7 +123,7 @@ function showSub1(event) {
   let rect = utoverElement.getBoundingClientRect();
   submenu_1.style.display = "flex";
   submenu_1.style.left = rect.x + "px";
-  submenu_1.style.top = rect.y + rect.height + 2 + "px";
+  // submenu_1.style.top = rect.y + rect.height + 2 + "px";
 }
 
 function getShooterobject(href) {
