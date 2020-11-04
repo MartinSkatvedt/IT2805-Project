@@ -1,6 +1,6 @@
 function createSite() {
   let index = getIndex(); //GETING THE INDEX OF THE SHOOTER
-  if (index == -1) {
+  if (index === -1) {
     index = 0;
   }
   //Retruns if it doesnt find an index
@@ -79,7 +79,7 @@ function getYears(shooter) {
   if (mm < 0) if (mm < 1 || dd < 0) yyyy--;
   return yyyy;
 }
-function makeAboutDiv(shooter, local = false) {
+function makeAboutDiv(shooter, local = false) {//Local makes the links local, else it will refer to the shooters site
   //CREATING ABOUTDIV-----------------------------------------
   const aboutDiv = document.createElement("div");
   aboutDiv.id = "person_bilder";
@@ -194,8 +194,7 @@ function makeFamilyDiv(shooter, local) {
       familyTypeDiv.id = "familyType";
 
       const p = document.createElement("p");
-      p.innerHTML =
-        obj.charAt(0).toUpperCase() + obj.substring(1) + " who compete:"; //For å for føste bokstav Stor
+      p.innerHTML = obj.charAt(0).toUpperCase() + obj.substring(1) + " who compete:"; //For å for føste bokstav Stor
       familyTypeDiv.appendChild(p);
 
       familyTypeDiv.appendChild(makeFamilyTypeLinks(familyType, local));
@@ -241,37 +240,37 @@ function makeMeritsDiv(shooter) {
     const div = document.createElement("div");
     div.id = "merit";
 
-    const kursive = document.createElement("i");
-    kursive.innerHTML = element.merit;
-    div.appendChild(kursive);
+    const cursive = document.createElement("i");
+    cursive.innerHTML = element.merit;
+    div.appendChild(cursive);
 
     let strengInd = "<b>Ind:</b>";
-    let tomStreng = true;
+    let emptyString = true;
 
-    for (let medalje in element.results.ind) {
-      const antallMedaljer = element.results.ind[medalje];
-      if (antallMedaljer > 0) {
-        strengInd += " | " + antallMedaljer + " " + medalje;
-        tomStreng = false;
+    for (let medal in element.results.ind) {
+      const totalMedals = element.results.ind[medal];
+      if (totalMedals > 0) {
+        strengInd += " | " + totalMedals + " " + medal;
+        emptyString = false;
       }
     }
-    if (!tomStreng) {
+    if (!emptyString) {
       p = document.createElement("p");
       p.innerHTML = strengInd;
       div.appendChild(p);
     }
 
     let strengTeam = "<b>Team:</b>";
-    tomStreng = true;
+    emptyString = true;
 
-    for (let medalje in element.results.team) {
-      const antallMedaljer = element.results.team[medalje];
-      if (antallMedaljer > 0) {
-        strengTeam += " | " + antallMedaljer + " " + medalje;
-        tomStreng = false;
+    for (let medal in element.results.team) {
+      const totalMedals = element.results.team[medal];
+      if (totalMedals > 0) {
+        strengTeam += " | " + totalMedals + " " + medal;
+        emptyString = false;
       }
     }
-    if (!tomStreng) {
+    if (!emptyString) {
       p = document.createElement("p");
       p.innerHTML = strengTeam;
       div.appendChild(p);
@@ -284,9 +283,9 @@ function makeRecordsDiv(shooter) {
   const recordsDiv = document.createElement("div");
   recordsDiv.id = "personal-records";
 
-  const titlereDiv = document.createElement("h1");
-  titlereDiv.innerHTML = "PERSONAL RECORDS";
-  recordsDiv.appendChild(titlereDiv);
+  const titleDiv = document.createElement("h1");
+  titleDiv.innerHTML = "PERSONAL RECORDS";
+  recordsDiv.appendChild(titleDiv);
 
   const recordsTable = document.createElement("table");
   recordsTable.id = "person_rekorder";
@@ -337,7 +336,7 @@ function getIndex() {
 function findIndex(id) {
   for (let i = 0; i < shooters.length; i++) {
     const element = shooters[i].id;
-    if (element == id) {
+    if (element === id) {
       return i;
     }
   }
@@ -345,7 +344,7 @@ function findIndex(id) {
 }
 
 function writeStatsOmOss() {
-  const alleSpillere = document.querySelector("#alle_utovere");
+  const allPlayers = document.querySelector("#all_athletes");
   
   for (let i = 0; i < shooters.length; i++) {
     if (shooters[i].isShown) {
@@ -363,7 +362,7 @@ function writeStatsOmOss() {
       hembreDiv.appendChild(infoDiv);
       hembreDiv.appendChild(familyDiv);
       hembreDiv.appendChild(img);
-      alleSpillere.appendChild(hembreDiv)
+      allPlayers.appendChild(hembreDiv)
     }
   }
 }
