@@ -47,17 +47,17 @@ document.write(`
 let submenu_1 = document.getElementById("submenu_1");
 
 //Lager elementer til navbaren(athletes)
-for (let skytter of shooters) {
-  if (!skytter.isShown) continue;
+for (let shooter of shooters) {
+  if (!shooter.isShown) continue;
   let containerDiv = document.createElement("div");
   containerDiv.classList += "submenuElement_1";
 
   let anchorElement = document.createElement("a");
 
-  let fullname = skytter.about.firstName + skytter.about.lastName;
-  anchorElement.href = "./shooters.html?skytter=" + skytter.id;
+  let fullname = shooter.about.firstName + shooter.about.lastName;
+  anchorElement.href = "./shooters.html?shooter=" + shooter.id;
   anchorElement.innerText =
-    skytter.about.firstName + " " + skytter.about.lastName;
+    shooter.about.firstName + " " + shooter.about.lastName;
 
   let hr = document.createElement("hr");
   hr.classList += "underline";
@@ -131,9 +131,9 @@ function getShooterobject(href) {
   index = strHref.search("=");
   id = strHref.slice(index + 1);
 
-  for (skytter of shooters) {
-    if (skytter.id == id) {
-      return skytter;
+  for (shooter of shooters) {
+    if (shooter.id == id) {
+      return shooter;
     }
   }
 }

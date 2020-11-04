@@ -26,20 +26,20 @@ function changeTitle(shooter) {
   //CHANGING THE TOP DIV-----------------------------
   document.title = shooter.about.firstName + " " + shooter.about.lastName;
 }
-function maketopDiv(skytter) {
+function maketopDiv(shooter) {
   //CREATING THE TOP DIV
   //MAIKNG TOP-DIV-ELEMNT--------------------------------------------------------
   const topDiv = document.createElement("div");
   topDiv.id = "person_side_top";
 
   //MAKING THE ABOUTDIV----------------------------------------------------------
-  const aboutDiv = makeAboutDiv(skytter);
+  const aboutDiv = makeAboutDiv(shooter);
 
   //MAKING 'person_side_info' DIV--------------------------------------------------------
-  const infoDiv = makeInfoDiv(skytter);
+  const infoDiv = makeInfoDiv(shooter);
 
   //Making familydiv------------------------------------------------
-  const familyDiv = makeFamilyDiv(skytter);
+  const familyDiv = makeFamilyDiv(shooter);
 
   //APPENDING------------------------------------------------------------------------
   topDiv.appendChild(aboutDiv);
@@ -48,51 +48,51 @@ function maketopDiv(skytter) {
 
   return topDiv;
 }
-function makeBottomDiv(skytter) {
+function makeBottomDiv(shooter) {
   //StatsDiv-------------------------------------------
   const statsDiv = document.createElement("div");
   statsDiv.id = "grid_container_stats";
   //MERITS-------------------------------------------------
 
-  const meritsDiv = makeMeritsDiv(skytter);
+  const meritsDiv = makeMeritsDiv(shooter);
   statsDiv.appendChild(meritsDiv);
 
   //PERSONAL RECORDS----------------------------------------
-  const recordsDiv = makeRecordsDiv(skytter);
+  const recordsDiv = makeRecordsDiv(shooter);
   statsDiv.appendChild(recordsDiv);
 
   return statsDiv;
 }
 
 //Functions for topDiv--------------------------------------------------
-function getYears(skytter) {
+function getYears(shooter) {
   //cALCUTATING THE AGE FOR THE BIRTHDAY----------------
   let today = new Date();
   let dd =
     Number(String(today.getDate() + 1).padStart(2, "0")) -
-    skytter.about.birthDay;
+    shooter.about.birthDay;
   let mm =
     Number(String(today.getMonth() + 1).padStart(2, "0")) -
-    skytter.about.birthMonth; //January is 0!
-  let yyyy = today.getFullYear() - skytter.about.birthYear;
+    shooter.about.birthMonth; //January is 0!
+  let yyyy = today.getFullYear() - shooter.about.birthYear;
 
   if (mm < 0) if (mm < 1 || dd < 0) yyyy--;
   return yyyy;
 }
-function makeAboutDiv(skytter, local = false) {
+function makeAboutDiv(shooter, local = false) {
   //CREATING ABOUTDIV-----------------------------------------
   const aboutDiv = document.createElement("div");
   aboutDiv.id = "person_bilder";
   //IMG---------------------------------------------------
-  const img = makeMainImage(skytter);
+  const img = makeMainImage(shooter);
   aboutDiv.appendChild(img);
 
   //FAMILY----------------------------------------------------------
-  // const familyDiv = makeFamilyDiv(skytter,local)
+  // const familyDiv = makeFamilyDiv(shooter,local)
   // aboutDiv.appendChild(familyDiv)
   return aboutDiv;
 }
-function makeInfoDiv(skytter) {
+function makeInfoDiv(shooter) {
   //Ikke ferdig
   //MAKING 'person_side_info' DIV--------------------------------------------------------
   const infoDiv = document.createElement("div");
@@ -100,16 +100,16 @@ function makeInfoDiv(skytter) {
 
   //Overskrift--------------------------------------------------------
   const overskrift = document.createElement("h1");
-  overskrift.innerHTML = skytter.about.firstName + " " + skytter.about.lastName;
+  overskrift.innerHTML = shooter.about.firstName + " " + shooter.about.lastName;
   infoDiv.appendChild(overskrift);
 
   //Beskrivelse kort--------------------------------------------------------
   const descritonP = document.createElement("p");
-  descritonP.innerHTML = skytter.description.short;
+  descritonP.innerHTML = shooter.description.short;
   infoDiv.appendChild(descritonP);
 
   //Alder--------------------------------------------------------
-  const age = getYears(skytter);
+  const age = getYears(shooter);
   const ageP = document.createElement("p");
   ageP.innerHTML = "Age: " + age + " years";
   infoDiv.appendChild(ageP);
@@ -118,13 +118,13 @@ function makeInfoDiv(skytter) {
   const brithdayP = document.createElement("p");
   brithdayP.innerHTML =
     "Birth: " +
-    skytter.about.birthDay +
+    shooter.about.birthDay +
     "/" +
-    skytter.about.birthMonth +
+    shooter.about.birthMonth +
     "/" +
-    skytter.about.birthYear +
+    shooter.about.birthYear +
     ", " +
-    skytter.about.birthPlace;
+    shooter.about.birthPlace;
   infoDiv.appendChild(brithdayP);
 
   //medlem i bpk med linken--------------------------------------------------------
@@ -132,13 +132,13 @@ function makeInfoDiv(skytter) {
   memberShipP.innerHTML = "membership: ";
   const link = document.createElement("a");
   link.id = "medlemskap";
-  link.href = skytter.memberShip.link;
-  link.innerHTML = skytter.memberShip.name;
+  link.href = shooter.memberShip.link;
+  link.innerHTML = shooter.memberShip.name;
   link.target = "_blank";
   memberShipP.appendChild(link);
   infoDiv.appendChild(memberShipP);
   
-  const linker = makeStatLinks(skytter);
+  const linker = makeStatLinks(shooter);
   infoDiv.appendChild(linker);
   //legger til select-element------------------------------------------------------
   const select = document.createElement("select");
@@ -150,7 +150,7 @@ function makeInfoDiv(skytter) {
   opt.innerHTML = "Competition Statistics";
   select.appendChild(opt);
 
-  for (const stat of skytter.yearlyStatistics) {
+  for (const stat of shooter.yearlyStatistics) {
     opt = document.createElement("option");
     opt.value = stat[0];
     opt.innerHTML = "Events in " + stat[1];
@@ -165,11 +165,11 @@ function makeInfoDiv(skytter) {
 
   return infoDiv;
 }
-function makeStatLinks(skytter) {
+function makeStatLinks(shooter) {
   const divLinks = document.createElement("div");
   divLinks.id = "divLinks";
-  for (let i = 0; i < skytter.stasticsLinks.length; i++) {
-    const element = skytter.stasticsLinks[i];
+  for (let i = 0; i < shooter.stasticsLinks.length; i++) {
+    const element = shooter.stasticsLinks[i];
     const a = document.createElement("a");
     a.target = "_blank";
     a.innerHTML = element[1];
@@ -178,18 +178,18 @@ function makeStatLinks(skytter) {
   }
   return divLinks;
 }
-function makeMainImage(skytter) {
+function makeMainImage(shooter) {
   const img = document.createElement("img");
-  img.src = skytter.image.mainImage;
+  img.src = shooter.image.mainImage;
   return img;
 }
-function makeFamilyDiv(skytter, local) {
+function makeFamilyDiv(shooter, local) {
   const familyDiv = document.createElement("div");
   familyDiv.id = "familyDiv";
 
-  for (const obj in skytter.family) {
-    const familyType = skytter.family[obj];
-    if (skytter.family.hasOwnProperty(obj) && familyType.length > 0) {
+  for (const obj in shooter.family) {
+    const familyType = shooter.family[obj];
+    if (shooter.family.hasOwnProperty(obj) && familyType.length > 0) {
       const familyTypeDiv = document.createElement("div");
       familyTypeDiv.id = "familyType";
 
@@ -220,14 +220,14 @@ function makePersonLink(id, local) {
   const name = family.about.firstName;
   const familyId = family.id;
   const a = document.createElement("a");
-  a.href = "shooters.html?skytter=" + familyId;
+  a.href = "shooters.html?shooter=" + familyId;
   if (local) a.href = "#" + familyId;
   a.innerHTML = name;
   return a;
 }
 
 //Functions for bottomDiv-------------------------------------------------------
-function makeMeritsDiv(skytter) {
+function makeMeritsDiv(shooter) {
   meritsDiv = document.createElement("div");
   meritsDiv.id = "merits";
 
@@ -236,8 +236,8 @@ function makeMeritsDiv(skytter) {
   meritsDiv.appendChild(meritsTitle);
 
   //WRITING OUT ALL THE MERITS
-  for (let i = 0; i < skytter.merits.length; i++) {
-    const element = skytter.merits[i];
+  for (let i = 0; i < shooter.merits.length; i++) {
+    const element = shooter.merits[i];
     const div = document.createElement("div");
     div.id = "merit";
 
@@ -280,7 +280,7 @@ function makeMeritsDiv(skytter) {
   }
   return meritsDiv;
 }
-function makeRecordsDiv(skytter) {
+function makeRecordsDiv(shooter) {
   const recordsDiv = document.createElement("div");
   recordsDiv.id = "personal-records";
 
@@ -308,8 +308,8 @@ function makeRecordsDiv(skytter) {
 
   recordsTable.appendChild(headerTableRow);
 
-  for (let i = 0; i < skytter.bestStatistics.length; i++) {
-    const obj = skytter.bestStatistics[i];
+  for (let i = 0; i < shooter.bestStatistics.length; i++) {
+    const obj = shooter.bestStatistics[i];
     let tr = document.createElement("tr");
 
     for (const ovelse in obj) {
@@ -331,7 +331,7 @@ function getIndex() {
   //FUNCTION TO FETCH THE SHOOTER INDEX FOR SHOOTER ID---
   const url_string = window.location.href; //window.location.href
   const url = new URL(url_string);
-  const personId = url.searchParams.get("skytter");
+  const personId = url.searchParams.get("shooter");
   return findIndex(personId);
 }
 function findIndex(id) {
@@ -352,13 +352,13 @@ function writeStatsOmOss() {
       const hembreDiv = document.createElement('div')
       hembreDiv.className = 'hembre'
 
-      const skytter = shooters[i]
+      const shooter = shooters[i]
       
-      const infoDiv = makeInfoDiv(skytter);
-      infoDiv.appendChild(makeAthleteLink(skytter));
+      const infoDiv = makeInfoDiv(shooter);
+      infoDiv.appendChild(makeAthleteLink(shooter));
       
-      const familyDiv = makeFamilyDiv(skytter, false);
-      const img = makeMainImage(skytter);
+      const familyDiv = makeFamilyDiv(shooter, false);
+      const img = makeMainImage(shooter);
       
       hembreDiv.appendChild(infoDiv);
       hembreDiv.appendChild(familyDiv);
@@ -367,10 +367,10 @@ function writeStatsOmOss() {
     }
   }
 }
-function makeAthleteLink(skytter) {
+function makeAthleteLink(shooter) {
   const a = document.createElement("a");
-  a.href = "shooters.html?skytter=" + skytter.id;
+  a.href = "shooters.html?shooter=" + shooter.id;
   a.innerHTML =
-    "Mer om " + skytter.about.firstName + " " + skytter.about.lastName;
+    "Mer om " + shooter.about.firstName + " " + shooter.about.lastName;
   return a;
 }
