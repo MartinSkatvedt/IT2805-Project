@@ -598,6 +598,7 @@ START OM OSS
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   text-align: left;
+  -webkit-overflow-scrolling: touch
 }
 
 .hembre img,
@@ -701,6 +702,9 @@ SKYTER UNDERSIDENE:
 #person_side_top {
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
+#familyDiv {
+  margin: auto;
 }
 
 #person_bilder>img {
