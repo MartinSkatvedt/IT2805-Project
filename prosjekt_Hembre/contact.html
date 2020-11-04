@@ -9,9 +9,7 @@
 
   <link rel="stylesheet" href="./main.css" />
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
 </head>
 
 <body>
@@ -39,12 +37,12 @@
 
         <div class="gridElement" id="f_first_name">
           <label for="first_name">First name:</label>
-          <input type="text" name="first_name" required id="first_name"/>
+          <input type="text" name="first_name" required id="first_name" />
         </div>
 
         <div class="gridElement" id="f_last_name">
           <label for="last_name">Last name:</label>
-          <input type="text" name="last_name" required id="last_name"/>
+          <input type="text" name="last_name" required id="last_name" />
         </div>
 
         <div class="gridElement" id="f_telephone">
@@ -59,21 +57,19 @@
     </div>
     <div class="subFolder">
       <div id="mapContainer" class="subContainers"></div>
-        <div id="infoContainer" class="subContainers">
-          <img src="pictures/logo2.svg" alt="">
-          <h4>We train at </h4>
-          <p>BÆRUM PISTOLKLUBB</p>
-          <p>1344 Haslum</p>
-          <p>E-mail: pal.hembre@gmail.com</p>
-          <p>Phone: 32563893</p>
-        </div>
+      <div id="infoContainer" class="subContainers">
+        <img src="pictures/logo2.svg" alt="">
+        <h4>We train at </h4>
+        <p>BÆRUM PISTOLKLUBB</p>
+        <p>1344 Haslum</p>
+        <p>E-mail: pal.hembre@gmail.com</p>
+        <p>Phone: 32563893</p>
       </div>
+    </div>
 
   </main>
 
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin="">
   </script>
 
   <script src="script/map.js"></script>
@@ -81,11 +77,10 @@
   <script src="script/footer.js"></script>
   <script type="text/javascript">
     response = document.querySelector(".form_response")
-    if (window.location.href.indexOf("?email")>0){
+    if (window.location.href.indexOf("?email") > 0) {
       console.log(window.location.href)
       response.innerHTML = "Your message has been delivered, thank you!"
     }
-
   </script>
 </body>
 

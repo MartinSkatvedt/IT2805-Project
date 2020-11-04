@@ -10,45 +10,45 @@ next.addEventListener("click", btnClick)
 prev.addEventListener("click", btnClick)
 
 function btnClick(event) {
-    const eventType = event.target.id
-    if (eventType === 'next') {
-        nextSlide(1)
-        reset()
-    } else {
-        nextSlide(-1)
-        reset()
-    }
+  const eventType = event.target.id
+  if (eventType === 'next') {
+    nextSlide(1)
+    reset()
+  } else {
+    nextSlide(-1)
+    reset()
+  }
 }
 
 function reset() {
-    window.clearInterval(interval)
-    interval = window.setInterval(() => {
-        nextSlide(1);
-    }, 5000);
+  window.clearInterval(interval)
+  interval = window.setInterval(() => {
+    nextSlide(1);
+  }, 5000);
 }
 
 
 function nextSlide(n) {
-    const slides = document.getElementsByClassName("slides");
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
+  const slides = document.getElementsByClassName("slides");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
 
-    slideIndex += n
+  slideIndex += n
 
-    if (slideIndex >= slides.length) {
-        slideIndex = 0
-    }
+  if (slideIndex >= slides.length) {
+    slideIndex = 0
+  }
 
-    if (slideIndex < 0) {
-        slideIndex = slides.length - 1
-    }
-    slides[slideIndex].style.display = "block";
+  if (slideIndex < 0) {
+    slideIndex = slides.length - 1
+  }
+  slides[slideIndex].style.display = "block";
 }
 
 function startSlideShow() {
-    nextSlide(1)
-    reset()
+  nextSlide(1)
+  reset()
 }
 
 startSlideShow()

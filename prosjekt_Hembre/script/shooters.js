@@ -26,6 +26,7 @@ function changeTitle(shooter) {
   //CHANGING THE TOP DIV-----------------------------
   document.title = shooter.about.firstName + " " + shooter.about.lastName;
 }
+
 function makeTopDiv(shooter) {
   //CREATING THE TOP DIV
   //MAKING TOP-DIV-ELEMENT--------------------------------------------------------
@@ -48,6 +49,7 @@ function makeTopDiv(shooter) {
 
   return topDiv;
 }
+
 function makeBottomDiv(shooter) {
   //StatsDiv-------------------------------------------
   const statsDiv = document.createElement("div");
@@ -76,10 +78,12 @@ function getYears(shooter) {
     shooter.about.birthMonth; //January is 0!
   let yyyy = today.getFullYear() - shooter.about.birthYear;
 
-  if (mm < 0) if (mm < 1 || dd < 0) yyyy--;
+  if (mm < 0)
+    if (mm < 1 || dd < 0) yyyy--;
   return yyyy;
 }
-function makeAboutDiv(shooter, local = false) {//Local makes the links local, else it will refer to the shooters site
+
+function makeAboutDiv(shooter, local = false) { //Local makes the links local, else it will refer to the shooters site
   //CREATING ABOUTDIV-----------------------------------------
   const aboutDiv = document.createElement("div");
   aboutDiv.id = "person_pictures";
@@ -92,6 +96,7 @@ function makeAboutDiv(shooter, local = false) {//Local makes the links local, el
   // aboutDiv.appendChild(familyDiv)
   return aboutDiv;
 }
+
 function makeInfoDiv(shooter) {
   //Ikke ferdig
   //MAKING 'person_side_info' DIV--------------------------------------------------------
@@ -137,7 +142,7 @@ function makeInfoDiv(shooter) {
   link.target = "_blank";
   memberShipP.appendChild(link);
   infoDiv.appendChild(memberShipP);
-  
+
   const linker = makeStatLinks(shooter);
   infoDiv.appendChild(linker);
   //legger til select-element------------------------------------------------------
@@ -158,13 +163,14 @@ function makeInfoDiv(shooter) {
   }
   infoDiv.appendChild(select);
 
-  select.onchange = function () {
+  select.onchange = function() {
     const chosen_opt = this.options[this.selectedIndex]; // js property
     window.open(chosen_opt.value);
   };
 
   return infoDiv;
 }
+
 function makeStatLinks(shooter) {
   const divLinks = document.createElement("div");
   divLinks.id = "divLinks";
@@ -178,11 +184,13 @@ function makeStatLinks(shooter) {
   }
   return divLinks;
 }
+
 function makeMainImage(shooter) {
   const img = document.createElement("img");
   img.src = shooter.image.mainImage;
   return img;
 }
+
 function makeFamilyDiv(shooter, local) {
   const familyDiv = document.createElement("div");
   familyDiv.id = "familyDiv";
@@ -204,6 +212,7 @@ function makeFamilyDiv(shooter, local) {
   }
   return familyDiv;
 }
+
 function makeFamilyTypeLinks(familyType, local) {
   const div = document.createElement("div");
   div.id = "familyTypeLinks";
@@ -214,6 +223,7 @@ function makeFamilyTypeLinks(familyType, local) {
   }
   return div;
 }
+
 function makePersonLink(id, local) {
   const family = shooters[findIndex(id)];
   const name = family.about.firstName;
@@ -279,6 +289,7 @@ function makeMeritsDiv(shooter) {
   }
   return meritsDiv;
 }
+
 function makeRecordsDiv(shooter) {
   const recordsDiv = document.createElement("div");
   recordsDiv.id = "personal-records";
@@ -333,6 +344,7 @@ function getIndex() {
   const personId = url.searchParams.get("shooter");
   return findIndex(personId);
 }
+
 function findIndex(id) {
   for (let i = 0; i < shooters.length; i++) {
     const element = shooters[i].id;
@@ -345,20 +357,20 @@ function findIndex(id) {
 
 function writeStatsOmOss() {
   const allPlayers = document.querySelector("#all_athletes");
-  
+
   for (let i = 0; i < shooters.length; i++) {
     if (shooters[i].isShown) {
       const hembreDiv = document.createElement('div')
       hembreDiv.className = 'hembre'
 
       const shooter = shooters[i]
-      
+
       const infoDiv = makeInfoDiv(shooter);
       infoDiv.appendChild(makeAthleteLink(shooter));
-      
+
       const familyDiv = makeFamilyDiv(shooter, false);
       const img = makeMainImage(shooter);
-      
+
       hembreDiv.appendChild(infoDiv);
       hembreDiv.appendChild(familyDiv);
       hembreDiv.appendChild(img);
@@ -366,6 +378,7 @@ function writeStatsOmOss() {
     }
   }
 }
+
 function makeAthleteLink(shooter) {
   const a = document.createElement("a");
   a.href = "shooters.html?shooter=" + shooter.id;
