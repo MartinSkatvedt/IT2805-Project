@@ -887,7 +887,7 @@ const sponsors = [{
 ];
 
 const news = [{
-    id: 001,
+    id: 1,
     header: "Hembre domination during Octoberfest",
     text: [
       'Octoberfest in Ørland Pistolklubbs three day pistol festival in Brekstad was struch by a classic case of "Hembre domination".',
@@ -898,7 +898,7 @@ const news = [{
   },
 
   {
-    id: 002,
+    id: 2,
     header: " Hembre boys on top",
     text: [
       "The Hembre twins Ludvik and Mattis take second and first place respectively. The two bring home even more medals for the allready lavish collection of awards.",
@@ -908,7 +908,7 @@ const news = [{
   },
 
   {
-    id: 003,
+    id: 3,
     header: "Tripple threat in Bergen",
     text: [
       "Mattis, Ludvik and Pål had an impressive showing in last weeks event in Bergen. The three family members alle won their individual events.",
@@ -917,7 +917,7 @@ const news = [{
     img: bilder.newsImg[2],
   },
   {
-    id: 004,
+    id: 4,
     header: "Pål with new norwegian championship record",
     text: [
       "Pål takes an impressive new record in the last norwegian championship.",
