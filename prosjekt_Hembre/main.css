@@ -1039,7 +1039,7 @@ footer a {
 .contact>p{
   padding: 5px;
 }
-.nasjonalStat{
+.nationalStat{
   padding: 25px;
   text-decoration: underline;
   text-align: center;
@@ -1103,7 +1103,7 @@ START NYHETER
   position: relative;
 }
 
-.news-div .ancor:target {
+.news-div .anchor:target {
   position: absolute;
   top: -50px;
 }
