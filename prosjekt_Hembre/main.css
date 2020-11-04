@@ -819,10 +819,6 @@ START KONTAKT OSS
   padding: 2%;
 }
 
-#formContainer *{
-  background-color: inherit;
-}
-
 #contactForm{
   width: 100%;
 }
