@@ -5,10 +5,10 @@ function main() {
 
 
     const gch =  document.createElement('div')
-    gch.className = 'grid-container-hjem'
+    gch.className = 'grid-container-home'
 
     // main.innerHTML = ""
-//Sporsors------------------------------------------------
+//Sponsors------------------------------------------------
     const sponsors = document.createElement('div')
     sponsors.id = 'sponsors'
     sponsors.appendChild(createSponsors())
@@ -24,7 +24,7 @@ function main() {
 
     center.appendChild(createSlideshow())
     center.appendChild(createSlideshowButtons())
-    center.appendChild(createAtletes())
+    center.appendChild(createAthletes())
     gch.appendChild(center)
 
 //Supporters----------------------------------------------
@@ -81,7 +81,7 @@ function makeSponsor(i) {
 
 //Center functions----------------------------------------
 
-function createAtletes() {
+function createAthletes() {
     const container = document.createElement('div')
     container.className = 'grid-container-athletes'
 
@@ -184,27 +184,27 @@ function createSupporters() {
     return container
 }
 function makeSupporters(i) {
-    const stottespiller =  supporters[i]
+    const supporter =  supporters[i]
     const a = document.createElement('a')
 
     const div = document.createElement('div')
-    div.className = 'stottespiller'
+    div.className = 'supporter'
 
     const h3 = document.createElement('h3')
-    h3.innerHTML = stottespiller.name
+    h3.innerHTML = supporter.name
 
     const alder = document.createElement('h5')
-    alder.innerHTML = stottespiller.alder
-    const klubb = document.createElement('h5')
-    klubb.innerHTML = stottespiller.klubb
-    const meritter = document.createElement('h5')
-    meritter.innerHTML = stottespiller.meritter
+    alder.innerHTML = supporter.alder
+    const club = document.createElement('h5')
+    club.innerHTML = supporter.klubb
+    const merits = document.createElement('h5')
+    merits.innerHTML = supporter.meritter
 
 
     a.appendChild(h3)
     a.appendChild(alder)
-    a.appendChild(klubb)
-    a.appendChild(meritter)
+    a.appendChild(club)
+    a.appendChild(merits)
     div.appendChild(a)
     return div
 
