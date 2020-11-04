@@ -24,7 +24,7 @@ function createSite() {
 
 function changeTitle(skytter) {
   //CHANGING THE TOP DIV-----------------------------
-  document.title = skytter.about.surName + " " + skytter.about.lastName;
+  document.title = skytter.about.firstName + " " + skytter.about.lastName;
 }
 function maketopDiv(skytter) {
   //CREATING THE TOP DIV
@@ -100,7 +100,7 @@ function makeInfoDiv(skytter) {
 
   //Overskrift--------------------------------------------------------
   const overskrift = document.createElement("h1");
-  overskrift.innerHTML = skytter.about.surName + " " + skytter.about.lastName;
+  overskrift.innerHTML = skytter.about.firstName + " " + skytter.about.lastName;
   infoDiv.appendChild(overskrift);
 
   //Beskrivelse kort--------------------------------------------------------
@@ -217,7 +217,7 @@ function makeFamilyTypeLinks(familyType, local) {
 }
 function makePersonLink(id, local) {
   const family = skyttere[findIndex(id)];
-  const name = family.about.surName;
+  const name = family.about.firstName;
   const familyId = family.id;
   const a = document.createElement("a");
   a.href = "skyttere.html?skytter=" + familyId;
@@ -371,6 +371,6 @@ function makeAthleteLink(skytter) {
   const a = document.createElement("a");
   a.href = "skyttere.html?skytter=" + skytter.id;
   a.innerHTML =
-    "Mer om " + skytter.about.surName + " " + skytter.about.lastName;
+    "Mer om " + skytter.about.firstName + " " + skytter.about.lastName;
   return a;
 }

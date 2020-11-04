@@ -48,7 +48,7 @@
           // <div class="liste${i} listeFooter">
 
           //   <ul>
-          //     <li><p><a href="skyttere.html?skytter=${skyttere[i].id}">${skyttere[i].about.surName} ${skyttere[i].about.lastName}</a></p></li>
+          //     <li><p><a href="skyttere.html?skytter=${skyttere[i].id}">${skyttere[i].about.firstName} ${skyttere[i].about.lastName}</a></p></li>
           //     <li><a href="${skyttere[i].stasticsLinks[0][0]}">${skyttere[i].stasticsLinks[0][1]}</a></li>
           //     <li><a href="${skyttere[i].stasticsLinks[1][0]}">${skyttere[i].stasticsLinks[1][1]}</a></li>
           //     <li><a href="${skyttere[i].stasticsLinks[2][0]}">${skyttere[i].stasticsLinks[2][1]}</a></li>

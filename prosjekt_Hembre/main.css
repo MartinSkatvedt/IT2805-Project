@@ -10,9 +10,10 @@ START GLOBALE CSS FUNKSJONER
   --secondary-teks-color: #f2f2f2;
   --secondary-background-color: #000000bf;
   --button-color: #f2994a;
-  --font-size-large: 25pt;
-  --font-size: 15pt;
-  --font-size-small: 1.8vh;
+  --font-size-large: 2em;
+  --font-size: 1.2em;
+  --font-size-small:1em;
+  --font-size-xsmall:0.8em;
   --border-color: #000;
   --box-shadow: 0px 2px 4px rgba(10,10,80,0.5);
 
@@ -44,7 +45,6 @@ main {
   background-color: var(--background-color);
   color: var(--text-color);
   margin: auto;
-  font-size: var(--font-size);
   margin: 0 auto;
   width: 90%;
 }
@@ -263,7 +263,7 @@ START NAVBAR
   padding: 0.5% 0px;
   background-color: var(--nav-color);
   height: 12vh;
-  font-size: 4vh;
+  font-size: var(--font-size-large);
   width: 100%;
   z-index: 9;
   top: 0;
@@ -305,10 +305,17 @@ START NAVBAR
 .navBarElement {
   transition: 0.5s;
   height: 75px;
-  padding-top: 25px;
+  padding-top: 20px;
   position: relative;
   width: 16.677%;
   text-align: center;
+}
+.navBarElement:last-child a{
+  background-color: var(--button-color);
+  padding:5px;
+  border-radius: 5px;
+  /* font-size: var(--font-size-large);-------------------------------------------------------------------------------------------------------------------------- */
+  box-shadow: 1px 2px 3px black;
 }
 
 .logo_nav {
@@ -327,15 +334,6 @@ START NAVBAR
   transition-duration: 0.4s;
 }
 
-#kontaktKnapp {
-  background-color: var(--button-color);
-  border-radius: 0px;
-  border: 0px;
-  width: 50%;
-  height: 50%;
-  font-size: 1.8vw;
-  box-shadow: 1px 2px 3px;
-}
 
 #submenu_1 {
   border-top: 10px solid darkblue;
@@ -365,7 +363,7 @@ START NAVBAR
   text-align: center;
   background-color: #353131;
   font-family: fantasy;
-  font-size: 30px;
+  font-size: var(--font-size);
   width: 20%;
   position: absolute;
   transition: 0.2s;
@@ -408,16 +406,6 @@ START NAVBAR
   color: white;
 }
 
-#kontaktKnapp {
-  border-radius: 0px;
-  background-color: var(--button-color);
-  border: 0px;
-  width: 50%;
-  height: 50%;
-}
-#kontaktKnapp>a{
-  color: black;
-}
 
 /*
 SLUTT NAVBAR
@@ -428,12 +416,8 @@ START OM OSS
 /*css for hele delen over søkemotoren av header når den er større enn 600px starter under her*/
 .header_overst {
   text-align: center;
-  /* styler tekst*/
-  text-decoration: none;
   text-transform: uppercase;
-  font-size: 20px;
   font-weight: bold;
-  margin: 0px;
 }
 .knapp_header{
   margin-top: 10vh;
@@ -441,7 +425,7 @@ START OM OSS
 
 .knapp_header>a {
   color: white;
-  font-size: 25px;
+  font-size: var(--font-size-large);
   border-style: solid;
   border-color: white;
   border-width: 5px;
@@ -463,12 +447,12 @@ START OM OSS
 
 .header_over_om_oss {
   text-align: center;
-  width: 15%;
+  width: 20%;
   margin: auto;
-  margin-top: 3vh;
+  margin-top: 2%;
   color: white;
   padding: 10px;
-  font-size: 40px;
+  font-size: var(--font-size-large);
 }
 
 .logo>img {
@@ -485,18 +469,15 @@ START OM OSS
 }
 
 .folg_oss {
-  font-size: 16px;
+  font-size: var(--font-size);
   color: white;
   font-family: fantasy;
 }
 
 .fa {
-  font-size: 30px;
   width: 30px;
-  text-align: right;
   text-decoration: none;
-  border-radius: 90%;
-  float: right;
+  margin: auto;
 }
 
 /* Add a hover effect if you want */
@@ -588,7 +569,7 @@ START OM OSS
   margin-left:25%;
   margin-right: 25%;
   padding: 1%;
-  font-size: 12px;
+  font-size: var(--font-size);
 }
 
 #gold {
@@ -604,15 +585,16 @@ START OM OSS
 }
 
 #alle_utovere>div {
-  padding: 5vh 13vh;
-  height: 60vh;
+  padding: 2%;
+  height: 600px;
   scroll-snap-align: center;
 }
 
 #alle_utovere {
-  margin-left: 20%;
-  margin-right: 20%;
-  height: 70vh;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%; 
+  height: 600px;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   text-align: left;
@@ -622,12 +604,14 @@ START OM OSS
 #person_bilder img {
   padding: 0;
   margin: 0;
+  margin: auto;
   width: 100%;
 }
 
 .hembre {
   margin: auto;
   display: grid;
+  width: 96%;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -701,15 +685,6 @@ START OM OSS
   box-shadow: 0px 2px 8px 4px;
 }
 
-
-#dp_meny {
-  background-color: inherit;
-  border-color: var(--text-color);
-  padding: 8px;
-  font-size: 16px;
-  text-align: center;
-}
-
 #bilder_team {
   margin: 30px 0px;
   display: grid;
@@ -737,15 +712,14 @@ SKYTER UNDERSIDENE:
   background-color: inherit;
   border-color: black;
   padding: 8px;
-  font-size: 16px;
+  font-size: var(--font-size-small);
   text-align: center;
 }
 
-.grid_container_stats>h1,
-.person_side_top>h1 {
+#skytter h1{
   text-align: center;
-  font-size: 6vh;
-  margin-top: 0px;
+  font-size: var(--font-size-large);
+  margin-top: 0;
 }
 
 #medlemskap {
@@ -848,12 +822,15 @@ START KONTAKT OSS
   width: 100%;
 }
 
-.gridElement>input, .gridElement textarea{
-  font-size: 22px;
-  padding-top: 10px;
+#contactForm input, #contactForm label, #contactForm textarea{
+  font-size: var(--font-size);
+}
+#contactForm input, #contactForm textarea{
+  padding: 10px;
   width: 100%;
   border: 2px solid var(--border-color);
-}  
+}
+
 
 .gridElement {
   margin: auto;
@@ -922,7 +899,7 @@ START SPONSOR
 
 .spons_navn {
   padding-top: 20px;
-  font-size: 28px;
+  font-size: var(--font-size);
 }
 
 .kryss_farge_1 {
@@ -1043,7 +1020,7 @@ footer a {
 .footer-container-one ul li a {
   text-decoration: none;
   color: var(--secondary-teks-color);
-  font-size: 2vh;
+  font-size: var(--font-size-small);
   padding-top: 3px;
 }
 
@@ -1052,7 +1029,7 @@ footer a {
 }
 
 .footer-container-one ul li p a {
-  font-size: 3vh;
+  font-size: var(--font-size);
   font-weight: bold;
 }
 
@@ -1079,7 +1056,7 @@ p {
 }
 
 .footer-container-two>div {
-  font-size: 14px;
+  font-size: var(--font-size-small);
   border: solid 1px var(--secondary-teks-color);
   background-color: var(--button-color);
   color: var(--text-color);
@@ -1119,11 +1096,11 @@ START NYHETER
   margin: 0 auto 5% auto;
 }
 #news-site-headline {
-  font-size: 60px;
+  font-size: var(--font-size-large);
   padding: 3%;
   text-align: center;
   background-color: var(--element-background);
-  border: 3px solid var(--secondary-background-color);
+  border: 3px solid var(--border-color);
 }
 .news-div{
   display: grid;
@@ -1143,13 +1120,11 @@ START NYHETER
 }
 
 #textbox {
-  font-size: 25px;
-  line-height: 150%;
-  margin-left: 10%;
+  font-size: var(--font-size);
 }
 
 #textbox>h2 {
-  font-size: 40px;
+  font-size: var(--font-size-large);
 }
 
 /*SLUTT NYHETER*/
@@ -1169,10 +1144,6 @@ START NYHETER
   font-size: var(--font-size);
 }
 
-#person_side_info {
-  margin: auto;
-  padding: 0 10%;
-}
 
 #person_side_info>* {
   margin: 10px;
@@ -1261,9 +1232,6 @@ body::-webkit-scrollbar-thumb {
   border-bottom: 1px solid var(--text-color);
 }
 
-#familyDiv {
-  margin: auto auto auto 0;
-}
 
 #skytter #familyDiv a,
 #skytter #divLinks a {
@@ -1283,74 +1251,69 @@ body::-webkit-scrollbar-thumb {
   margin-top: 0;
 }
 
+
+
+
+
+
+
+
+
+
 /*
-START RESPONSIVE MEDIAQUERYS
+START RESPONSIVE MEDIAQUERYS--------------------------------------------------------------------------
 */
 /*css for hele body når den er større enn 600px starter under her*/
 @media only screen and (max-width: 1200px) {
-  #pal_info>ul>li {
-    font-size: 1.5vw;
-  }
 
   #alle_utovere>div>img {
-    width: 150px;
-    height: 250px;
+    display: none;
   }
+  .hembre{
+    grid-template-columns: 1fr 1fr;
+  }  
 
   #alle_utovere>div {
-    font-size: 2vh;
-  }
-
-
-  .gridElement>label {
-    font-size: 2.4vh;
-  }
-
-  #f_fornavn>input, #f_etternavn>input, #f_submit>button{
     font-size: var(--font-size-small);
   }
 
-  .footer-container-one ul li p a {
-    font-size: 2.5vh;
-  }
 
-  .footer-container-one>ul>li>a {
-    font-size: 2vh;
+  #contactForm input, #contactForm label, #contactForm textarea{
+    font-size: var(--font-size-small);
+  }
+  #header_om_oss{
+    height: 80vh;
+  }
+  .knapp_header{
+    display: none;
+  }
+  #vunnet *{
+    font-size: var(--font-size-small);
   }
 }
 
 @media only screen and (max-width: 1000px) {
-  .news-site-headline {
-    font-size: 30px;
-    padding: 3%;
+  #textbox {
+    font-size: var(--font-size-small);
   }
 
-
-  .textbox {
-    font-size: 15px;
-    line-height: 150%;
-  }
-
-  .textbox>h2 {
-    font-size: 20px;
+  #textbox>h2 {
+    font-size: var(--font-size);
   }
 
   .news-div {
     grid-template-columns: 1fr;
   }
-}
-
-@media only screen and (max-width: 900px) {
   #navbar{
-    font-size: 3vh;
+    font-size: var(--font-size);
     height: 8vh;
   }
   .submenuElement_1 a, .submenuElement_2 a{
-    font-size: 4vh;
+    font-size: var(--font-size-small);
   }
-  .submenu1{
-  left: 0px;
-  }
+}
+
+@media only screen and (max-width: 900px) {
 
 #header_om_oss {
     background-image: none;
@@ -1373,7 +1336,6 @@ START RESPONSIVE MEDIAQUERYS
     grid-template-columns: repeat(5, 1fr);
   }
 
-  /*Big smartphones [426px -> 600px]*/
   #center {
     grid-row: 1;
   }
@@ -1391,10 +1353,6 @@ START RESPONSIVE MEDIAQUERYS
 
   }
 
-  h1 {
-    font-size: 4vh;
-  }
-
   .main_sponsor .spons-grid-one .tom {
     display: none;
   }
@@ -1407,26 +1365,26 @@ START RESPONSIVE MEDIAQUERYS
     display: grid;
     grid-template-columns: 1fr;
   }
-  .spons-grid-container > *{
-    margin: auto;
-  }
 
-  #alle_utovere>div>img {
+  #person_side_top{
+    grid-template-columns: 1fr 1fr;
+  }
+  #familyDiv {
     display: none;
   }
 
-  #alle_utovere>div {
-    padding: 100px 0px;
+  #alle_utovere>.hembre{
+    grid-template-columns: 1fr;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
   }
 
 }
 
 @media only screen and (max-width: 610px) {
   #navbar{
-    font-size: 2vh
-  }
-  #kontaktKnapp{
-    height: 2vh
+    font-size: var(--font-size-small)
   }
 
   .footer-container-one {
@@ -1453,7 +1411,6 @@ START RESPONSIVE MEDIAQUERYS
   }
 
     #alle_utovere {
-      margin: 2vh;
       height: 51vh;
     }
 
@@ -1482,7 +1439,10 @@ START RESPONSIVE MEDIAQUERYS
     #bilder_team {
       display: none;
     }
-
+    #vunnet{
+      display: none;
+    }
+  
 }
 
 @media (max-width: 405px) {

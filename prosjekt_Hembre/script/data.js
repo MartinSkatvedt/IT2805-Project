@@ -35,7 +35,7 @@ const skyttere = [{
     isShown: true,
 
     about: {
-      surName: "Pål",
+      firstName: "Pål",
       lastName: "Hembre",
 
       birthYear: 1963,
@@ -116,7 +116,7 @@ const skyttere = [{
 
     // ['link','navn'],
     stasticsLinks: [
-      ["http://fsu.no/issf/alle/tp/tp_paalh.htm", "Best resuls"],
+      ["http://fsu.no/issf/alle/tp/tp_paalh.htm", "Best results"],
       ["http://fsu.no/issf/alle/sn/sn_paalh.htm", "Average"],
       ["http://fsu.no/issf/alle/ant/st_paalh.htm", "Total starts"],
       ["http://www.fsu.no/issf/iaar/sk/st_mattish.htm", "Events this year"],
@@ -308,7 +308,7 @@ const skyttere = [{
     isShown: true,
 
     about: {
-      surName: "Mattis",
+      firstName: "Mattis",
       lastName: "Hembre",
 
       birthYear: 2001,
@@ -351,7 +351,7 @@ const skyttere = [{
     ],
     stasticsLinks: [
       // ['link','navn'],
-      ["http://fsu.no/issf/alle/tp/tp_mattish.htm", "Best resuls"],
+      ["http://fsu.no/issf/alle/tp/tp_mattish.htm", "Best results"],
       ["http://fsu.no/issf/alle/sn/sn_mattish.htm", "Average"],
       ["http://fsu.no/issf/alle/ant/st_mattish.htm", "Total starts"],
       ["http://www.fsu.no/issf/iaar/sk/st_mattish.htm", "Events this year"],
@@ -467,7 +467,7 @@ const skyttere = [{
     isShown: true,
 
     about: {
-      surName: "Ludvik",
+      firstName: "Ludvik",
       lastName: "Hembre",
 
       birthYear: 2001,
@@ -510,7 +510,7 @@ const skyttere = [{
     ],
     stasticsLinks: [
       // ['link','navn'],
-      ["http://fsu.no/issf/alle/tp/tp_ludvikh.htm", "Best resuls"],
+      ["http://fsu.no/issf/alle/tp/tp_ludvikh.htm", "Best results"],
       ["http://fsu.no/issf/alle/sn/sn_ludvikh.htm", "Average"],
       ["http://fsu.no/issf/alle/ant/st_ludvikh.htm", "Total starts"],
       ["http://www.fsu.no/issf/iaar/sk/st_ludvikh.htm", "Events this year"],
@@ -626,7 +626,7 @@ const skyttere = [{
     isShown: true,
 
     about: {
-      surName: "Tim Leo",
+      firstName: "Tim Leo",
       lastName: "Hembre",
 
       birthYear: 2006,
@@ -665,7 +665,7 @@ const skyttere = [{
     ],
     stasticsLinks: [
       // ['link','navn'],
-      ["http://fsu.no/issf/alle/tp/tp_timleoh.htm", "Best resuls"],
+      ["http://fsu.no/issf/alle/tp/tp_timleoh.htm", "Best results"],
       ["http://fsu.no/issf/alle/sn/sn_timleoh.htm", "Average"],
       ["http://fsu.no/issf/alle/ant/st_timleoh.htm", "Total starts"],
       ["http://www.fsu.no/issf/iaar/sk/st_timleoh.htm", "Events this year"],
@@ -750,7 +750,7 @@ const skyttere = [{
     isShown: false,
 
     about: {
-      surName: "Leonel",
+      firstName: "Leonel",
       lastName: "Hembre",
 
       birthYear: 2016,
@@ -782,7 +782,7 @@ const skyttere = [{
     yearlyStatistics: [],
     // ['link','navn'],
     stasticsLinks: [
-      // ["http://fsu.no/issf/alle/tp/tp_paalh.htm", "Best resuls"],
+      // ["http://fsu.no/issf/alle/tp/tp_paalh.htm", "Best results"],
       // ["http://fsu.no/issf/alle/sn/sn_paalh.htm", "Average"],
       // ["http://fsu.no/issf/alle/ant/st_paalh.htm", "Total starts"],
       // ["http://www.fsu.no/issf/iaar/sk/st_mattish.htm", "Events this year"],
