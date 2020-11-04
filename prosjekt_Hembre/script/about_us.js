@@ -6,11 +6,11 @@ function makeNavnHeader() {
   
   const div = document.createElement('div')
   for (let i = 0; i < shooters.length; i++) {
-    const skytter = shooters[i];
-    skytter.className = 'linker'
+    const shooter = shooters[i];
+    shooter.className = 'linker'
     
-    if (skytter.isShown) {
-      const a = makePersonLink(skytter.id)
+    if (shooter.isShown) {
+      const a = makePersonLink(shooter.id)
       a.className = 'link pointer active'
       div.appendChild(a)
     }

@@ -31,33 +31,10 @@
     function makeFooter(){
       const footer = document.querySelector(".footer-container-one")
       footer.innerHTML = ""
-      // footer.innerHTML += `
-      // <div>
-      // <img class="logo_footer" src="bilder/logo2.svg" alt="">
-      // </div>
-
-      // `
-
       for(i in shooters){
-        // console.log(i);
         if (shooters[i].isShown) {
 
           const listeDiv = document.createElement('div')
-          // footer.innerHTML += `
-
-          // <div class="liste${i} listeFooter">
-
-          //   <ul>
-          //     <li><p><a href="shooters.html?skytter=${skyttere[i].id}">${skyttere[i].about.firstName} ${skyttere[i].about.lastName}</a></p></li>
-          //     <li><a href="${skyttere[i].stasticsLinks[0][0]}">${skyttere[i].stasticsLinks[0][1]}</a></li>
-          //     <li><a href="${skyttere[i].stasticsLinks[1][0]}">${skyttere[i].stasticsLinks[1][1]}</a></li>
-          //     <li><a href="${skyttere[i].stasticsLinks[2][0]}">${skyttere[i].stasticsLinks[2][1]}</a></li>
-          //     <li><a href="${skyttere[i].stasticsLinks[3][0]}">${skyttere[i].stasticsLinks[3][1]}</a></li>
-          //   </ul>
-
-          //  </div>
-
-          // `
           const ul = document.createElement('ul')
           const p = document.createElement('p')
           const liName = document.createElement('li')
