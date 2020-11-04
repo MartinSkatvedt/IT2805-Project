@@ -344,7 +344,7 @@ function findIndex(id) {
 }
 
 function writeStatsOmOss() {
-  const allPlayers = document.querySelector("#alle_utovere");
+  const allPlayers = document.querySelector("#all_athletes");
   
   for (let i = 0; i < shooters.length; i++) {
     if (shooters[i].isShown) {
