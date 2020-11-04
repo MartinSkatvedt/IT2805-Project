@@ -47,7 +47,7 @@ document.write(`
 let submenu_1 = document.getElementById("submenu_1");
 
 //Lager elementer til navbaren(athletes)
-for (let skytter of skyttere) {
+for (let skytter of shooters) {
   if (!skytter.isShown) continue;
   let containerDiv = document.createElement("div");
   containerDiv.classList += "submenuElement_1";
@@ -55,7 +55,7 @@ for (let skytter of skyttere) {
   let anchorElement = document.createElement("a");
 
   let fullname = skytter.about.firstName + skytter.about.lastName;
-  anchorElement.href = "./skyttere.html?skytter=" + skytter.id;
+  anchorElement.href = "./shooters.html?skytter=" + skytter.id;
   anchorElement.innerText =
     skytter.about.firstName + " " + skytter.about.lastName;
 
@@ -131,7 +131,7 @@ function getShooterobject(href) {
   index = strHref.search("=");
   id = strHref.slice(index + 1);
 
-  for (skytter of skyttere) {
+  for (skytter of shooters) {
     if (skytter.id == id) {
       return skytter;
     }

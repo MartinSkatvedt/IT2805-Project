@@ -30,7 +30,7 @@ const bilder = {
   },
 };
 
-const skyttere = [{
+const shooters = [{
     id: "palhembre",
     isShown: true,
 
@@ -882,7 +882,7 @@ const sponsors = [{
   {
     name: "THIS CAN BE YOUR COMPANY",
     img: bilder.sponsors.ny_spons,
-    link: "./kontakt.html",
+    link: "./contact.html",
   },
 ];
 

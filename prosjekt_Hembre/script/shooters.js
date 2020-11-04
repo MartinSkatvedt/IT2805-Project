@@ -5,7 +5,7 @@ function createSite() {
   }
   //Retruns if it doesnt find an index
 
-  const skytter = skyttere[index];
+  const skytter = shooters[index];
   const main = document.querySelector("main");
   main.id = "skytter";
   //    main.innerHTML = ''
@@ -216,11 +216,11 @@ function makeFamilyTypeLinks(familyType, local) {
   return div;
 }
 function makePersonLink(id, local) {
-  const family = skyttere[findIndex(id)];
+  const family = shooters[findIndex(id)];
   const name = family.about.firstName;
   const familyId = family.id;
   const a = document.createElement("a");
-  a.href = "skyttere.html?skytter=" + familyId;
+  a.href = "shooters.html?skytter=" + familyId;
   if (local) a.href = "#" + familyId;
   a.innerHTML = name;
   return a;
@@ -335,8 +335,8 @@ function getIndex() {
   return findIndex(personId);
 }
 function findIndex(id) {
-  for (let i = 0; i < skyttere.length; i++) {
-    const element = skyttere[i].id;
+  for (let i = 0; i < shooters.length; i++) {
+    const element = shooters[i].id;
     if (element == id) {
       return i;
     }
@@ -347,12 +347,12 @@ function findIndex(id) {
 function writeStatsOmOss() {
   const alleSpillere = document.querySelector("#alle_utovere");
   
-  for (let i = 0; i < skyttere.length; i++) {
-    if (skyttere[i].isShown) {
+  for (let i = 0; i < shooters.length; i++) {
+    if (shooters[i].isShown) {
       const hembreDiv = document.createElement('div')
       hembreDiv.className = 'hembre'
 
-      const skytter = skyttere[i]
+      const skytter = shooters[i]
       
       const infoDiv = makeInfoDiv(skytter);
       infoDiv.appendChild(makeAthleteLink(skytter));
@@ -369,7 +369,7 @@ function writeStatsOmOss() {
 }
 function makeAthleteLink(skytter) {
   const a = document.createElement("a");
-  a.href = "skyttere.html?skytter=" + skytter.id;
+  a.href = "shooters.html?skytter=" + skytter.id;
   a.innerHTML =
     "Mer om " + skytter.about.firstName + " " + skytter.about.lastName;
   return a;

@@ -26,5 +26,5 @@ function goToOxford(){
   window.open("https://www.oxfordguncompany.co.uk/","_blank")
 }
 function goToContact(){
-  window.open("./kontakt.html","_blank")
+  window.open("./contact.html","_blank")
 }

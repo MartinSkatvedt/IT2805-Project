@@ -38,9 +38,9 @@
 
       // `
 
-      for(i in skyttere){
+      for(i in shooters){
         // console.log(i);
-        if (skyttere[i].isShown) {
+        if (shooters[i].isShown) {
 
           const listeDiv = document.createElement('div')
           // footer.innerHTML += `
@@ -48,7 +48,7 @@
           // <div class="liste${i} listeFooter">
 
           //   <ul>
-          //     <li><p><a href="skyttere.html?skytter=${skyttere[i].id}">${skyttere[i].about.firstName} ${skyttere[i].about.lastName}</a></p></li>
+          //     <li><p><a href="shooters.html?skytter=${skyttere[i].id}">${skyttere[i].about.firstName} ${skyttere[i].about.lastName}</a></p></li>
           //     <li><a href="${skyttere[i].stasticsLinks[0][0]}">${skyttere[i].stasticsLinks[0][1]}</a></li>
           //     <li><a href="${skyttere[i].stasticsLinks[1][0]}">${skyttere[i].stasticsLinks[1][1]}</a></li>
           //     <li><a href="${skyttere[i].stasticsLinks[2][0]}">${skyttere[i].stasticsLinks[2][1]}</a></li>
@@ -61,12 +61,12 @@
           const ul = document.createElement('ul')
           const p = document.createElement('p')
           const liName = document.createElement('li')
-          p.appendChild(makePersonLink(skyttere[i].id))
+          p.appendChild(makePersonLink(shooters[i].id))
           liName.appendChild(p)
           ul.appendChild(liName)
 
-          for (j in skyttere[i].stasticsLinks){
-            const element = skyttere[i].stasticsLinks[j]
+          for (j in shooters[i].stasticsLinks){
+            const element = shooters[i].stasticsLinks[j]
             const a = document.createElement('a')
             const liLinks = document.createElement('li')
 

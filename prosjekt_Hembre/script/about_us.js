@@ -5,8 +5,8 @@ function makeNavnHeader() {
   const navn_header = document.querySelector(".navn_header");
   
   const div = document.createElement('div')
-  for (let i = 0; i < skyttere.length; i++) {
-    const skytter = skyttere[i];
+  for (let i = 0; i < shooters.length; i++) {
+    const skytter = shooters[i];
     skytter.className = 'linker'
     
     if (skytter.isShown) {
@@ -24,8 +24,8 @@ function getTotalMealds() {
   let gold = 0
   let silver = 0
   let bronze = 0
-  for (let i = 0; i < skyttere.length; i++) {
-    for (const merit of skyttere[i].merits) {
+  for (let i = 0; i < shooters.length; i++) {
+    for (const merit of shooters[i].merits) {
       gold += merit.results.ind.gold + merit.results.team.gold
       silver += merit.results.ind.silver + merit.results.team.silver
       bronze += merit.results.ind.bronze + merit.results.team.bronze

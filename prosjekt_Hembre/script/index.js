@@ -85,8 +85,8 @@ function createAtletes() {
     const container = document.createElement('div')
     container.className = 'grid-container-athletes'
 
-    for (let i = 0; i < skyttere.length; i++) {
-        const element = skyttere[i]
+    for (let i = 0; i < shooters.length; i++) {
+        const element = shooters[i]
         if (element.isShown) {
             container.appendChild(makeAthlete(i))
         }
@@ -94,7 +94,7 @@ function createAtletes() {
     return container
 }
 function makeAthlete(i) {
-    const skytter = skyttere[i]
+    const skytter = shooters[i]
 
     const img = document.createElement('img')
     img.src = skytter.image.mainImage
@@ -109,7 +109,7 @@ function makeAthlete(i) {
 
     const a = document.createElement('a')
     a.className = 'athlete'
-    a.href = 'skyttere.html?skytter='+skytter.id
+    a.href = 'shooters.html?skytter='+skytter.id
 
     a.appendChild(divAthlete)
 
@@ -130,7 +130,7 @@ function makeSlide(i) {
     const article = news[i]
     const aSlides = document.createElement('a')
     aSlides.className = 'slides fade pointer active'
-    aSlides.href = 'nyheter.html#'+article.id
+    aSlides.href = 'news.html#'+article.id
 
 
     const img = document.createElement('img')
