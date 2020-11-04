@@ -51,7 +51,6 @@ main > *{
   margin-top: 3%;
   margin-bottom: 3%;
 }
-
 /*
 SLUTT GLOBALE CSS FUNKSJONER
  */
@@ -123,13 +122,16 @@ START INDEX
   background-color: white;
   text-align: center;
 }
+.sponsor img{
+  width: 100%;
+}
 
-.sponsor_box>a {
+.sponsor>a {
   color: var(--text-color);
   text-decoration: none;
   margin: 0;
 }
-.sponsor_box>a>p{
+.sponsor>a>p{
   font-size: var(--font-size-xsmall);
   padding: 0px 5%;
   opacity: 0.5;
