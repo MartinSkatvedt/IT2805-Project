@@ -1030,7 +1030,7 @@ footer a {
 }
 
 .footer-container-two {
-  margin: 2%;
+  margin: 2% 4.5%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20%;
@@ -1052,7 +1052,7 @@ p {
 }
 
 .footer-container-two>div {
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-xsmall);
   border: solid 1px var(--secondary-teks-color);
   background-color: var(--button-color);
   color: var(--text-color);
