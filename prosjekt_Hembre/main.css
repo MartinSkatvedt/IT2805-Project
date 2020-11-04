@@ -517,14 +517,14 @@ START OM OSS
 }
 
 /* Style the tab buttons */
-.navn_header {
+.name_header {
   background-color: #555;
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 
-.navn_header>div {
+.name_header>div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;

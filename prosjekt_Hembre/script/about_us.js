@@ -1,8 +1,6 @@
-//let navn_header = document.querySelectorAll(".navn_header");
-
-function makeNavnHeader() {
+function makeNameHeader() {
   
-  const navn_header = document.querySelector(".navn_header");
+  const name_header = document.querySelector(".name_header");
   
   const div = document.createElement('div')
   for (let i = 0; i < shooters.length; i++) {
@@ -15,7 +13,7 @@ function makeNavnHeader() {
       div.appendChild(a)
     }
   }
-  navn_header.appendChild(div)
+  name_header.appendChild(div)
 }
 
 

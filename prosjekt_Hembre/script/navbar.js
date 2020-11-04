@@ -1,7 +1,7 @@
 document.write(`
 <div id="navbar">
   <div class="logo_nav" id="logo_navigationbar" >
-    <a href="./index.html"><img src="bilder/logo2.svg" alt=""></a>
+    <a href="./index.html"><img src="pictures/logo2.svg" alt=""></a>
   </div>
   <div class="navBarElement" id="utoverElement">
     <a href="./shooters.html">Athletes</a>
