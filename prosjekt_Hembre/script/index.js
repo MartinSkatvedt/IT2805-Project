@@ -94,14 +94,14 @@ function createAtletes() {
     return container
 }
 function makeAthlete(i) {
-    const skytter = shooters[i]
+    const shooter = shooters[i]
 
     const img = document.createElement('img')
-    img.src = skytter.image.mainImage
+    img.src = shooter.image.mainImage
 
     const textDiv = document.createElement('div')
     textDiv.className = 'text'
-    textDiv.innerHTML = skytter.about.firstName + ' ' + skytter.about.lastName
+    textDiv.innerHTML = shooter.about.firstName + ' ' + shooter.about.lastName
 
     const divAthlete = document.createElement('div')
     divAthlete.appendChild(img)
@@ -109,7 +109,7 @@ function makeAthlete(i) {
 
     const a = document.createElement('a')
     a.className = 'athlete'
-    a.href = 'shooters.html?skytter='+skytter.id
+    a.href = 'shooters.html?shooter='+shooter.id
 
     a.appendChild(divAthlete)
 
