@@ -76,9 +76,6 @@ START INDEX
 .grid-container-home>div, .news-div{
   background-color: var(--element-background);
 }
-.grid-container-home h1{
-
-}
 
 .pointer:hover{
   cursor: pointer;
@@ -1123,6 +1120,8 @@ START NYHETER
 
 #textbox {
   font-size: var(--font-size);
+  width: 90%;
+  margin: auto;
 }
 
 #textbox>h2 {
