@@ -1140,4 +1140,293 @@ footer a {
 
 /* END NEWS */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
-/* '''''''''' */
+/* MEDIA QUEERYS */
+
+@media only screen and (max-width: 1200px) {
+
+    #all_athletes>div>img {
+        display: none;
+    }
+
+    .hembre {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #all_athletes>div {
+        font-size: var(--font-size-small);
+    }
+
+
+    #contactForm input,
+    #contactForm label,
+    #contactForm textarea {
+        font-size: var(--font-size-small);
+    }
+
+    #won * {
+        font-size: var(--font-size-small);
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1000px) {
+    #textbox {
+        font-size: var(--font-size-small);
+    }
+
+    #textbox>h2 {
+        font-size: var(--font-size);
+    }
+
+    .news-div {
+        grid-template-columns: 1fr;
+    }
+
+    #navbar {
+        font-size: var(--font-size);
+        height: 8vh;
+    }
+
+    .submenu,
+    #navbar {
+        font-size: var(--font-size);
+    }
+
+    .navBarElement:not(:last-child)>a::before {
+        height: 2px;
+    }
+
+    #header_about_us {
+        background-image: none;
+        height: auto;
+    }
+
+    .header_top {
+        display: none;
+    }
+
+    .name_header {
+        display: none;
+    }
+
+    .knapp_header {
+        display: none;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 900px) {
+    .sponsor>a>img {
+        height: 70%;
+    }
+
+    .sponsor:last-child img {
+        height: 25vh;
+    }
+
+    .sponsor>a>p {
+        display: none;
+    }
+
+    .footer-container-one>ul {
+        display: none;
+    }
+
+    .footer-container-one>div {
+        margin: auto;
+    }
+
+    .footer-container-one {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    #center {
+        grid-row: 1;
+    }
+
+    .sponsor-grid-two img {
+        width: 74%;
+    }
+
+    .grid-container-athletes {
+        grid-gap: 5px;
+    }
+
+    .grid-container-home {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container-home>* {
+        margin: 3%;
+    }
+
+    #person_side_top {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #familyDiv {
+        display: none;
+    }
+
+    #all_athletes>.hembre {
+        grid-template-columns: 1fr;
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 80%;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 610px) {
+
+    #navbar,
+    .submenu {
+        font-size: var(--font-size-xsmall)
+    }
+
+    #navbar {
+        height: 6vh;
+    }
+
+    .navBarElement {
+        padding-top: 15px;
+    }
+
+    .navBarElement:not(:last-child)>a::before {
+        height: 1px;
+    }
+
+    .footer-container-one {
+        display: grid;
+        grid-template-columns: 1fr
+    }
+
+    .footer-container-one>div {
+        margin: auto;
+    }
+
+    .logo_footer {
+        display: block;
+        height: 200px;
+        padding-left: 20px;
+    }
+
+    #shooter>* {
+        grid-template-columns: 1fr;
+    }
+
+    #shooter>*>* {
+        margin: auto;
+    }
+
+    #all_athletes {
+        height: 51vh;
+    }
+
+    #all_athletes>div {
+        padding: 10px;
+        height: 50vh;
+    }
+
+    #person_side_info {
+        margin-top: 20px;
+    }
+
+    #person_side_info>* {
+        margin-bottom: 15px;
+    }
+
+    #pictures_team {
+        display: none;
+    }
+
+    #won {
+        display: none;
+    }
+
+    .hembre #dp_menu {
+        display: none;
+    }
+
+    .main_sponsor .sponsor-grid-one .tom {
+        display: none;
+    }
+
+    .main_sponsor .sponsor-grid-one {
+        grid-template-columns: 1fr;
+    }
+
+    .main_sponsor .sponsor-grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 405px) {
+
+    #navbar,
+    .submenu {
+        font-size: var(--font-size-xxsmall)
+    }
+
+    #navbar {
+        height: 4vh;
+    }
+
+    .navBarElement {
+        padding-top: 10px;
+    }
+
+    .logo_nav>a>img {
+        width: 100%;
+    }
+
+    /*Small smartphones [325px -> 425px]*/
+    .grid-container-athletes {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container-two {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .footer-container-two>p {
+        display: none;
+    }
+
+    #f_fornavn>input,
+    #f_etternavn>input,
+    .gridElement>label {
+        font-size: var(--font-size-xsmall);
+    }
+
+    .hembre p {
+        font-size: var(--font-size-xsmall);
+    }
+
+    #person_side_info {
+        margin-top: 20px;
+        padding-right: 5px;
+    }
+
+    #person_side_info>* {
+        margin-bottom: 15px;
+    }
+
+    .slideshow-container {
+        height: 50vw;
+    }
+
+    #oxford>.logo_small,
+    #bakkevold>.logo_small {
+        height: 30%;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
