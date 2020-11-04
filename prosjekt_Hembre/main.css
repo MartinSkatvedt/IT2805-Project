@@ -128,6 +128,11 @@ START INDEX
   text-decoration: none;
   margin: 0;
 }
+.sponsor>a>p{
+  font-size: var(--font-size-xsmall);
+  padding: 0px 5%;
+  opacity: 0.5;
+}
 
 .sponsor-grid-two img {
   width: 90%;
