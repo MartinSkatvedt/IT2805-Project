@@ -23,20 +23,20 @@ function makeNavnHeader() {
 function getTotalMealds() {
   let gold = 0
   let silver = 0
-  let bronse = 0
+  let bronze = 0
   for (let i = 0; i < skyttere.length; i++) {
     for (const merit of skyttere[i].merits) {
       gold += merit.results.ind.gold + merit.results.team.gold
       silver += merit.results.ind.silver + merit.results.team.silver
-      bronse += merit.results.ind.bronse + merit.results.team.bronse
+      bronze += merit.results.ind.bronze + merit.results.team.bronze
     }
   }
-  return [gold,silver,bronse]
+  return [gold,silver,bronze]
 }
 function writeMedals() { 
   const gold = document.querySelector('#gold')
   const silver = document.querySelector('#silver')
-  const bronse = document.querySelector('#bronse')
+  const bronze = document.querySelector('#bronze')
   totalMedals = getTotalMealds()
   gold.innerHTML = totalMedals[0]
   silver.innerHTML = totalMedals[1]

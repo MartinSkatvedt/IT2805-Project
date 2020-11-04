@@ -189,12 +189,12 @@ const skyttere = [
           ind: {
             gold: 3,
             silver: 3,
-            bronse: 3,
+            bronze: 3,
           },
           team: {
             gold: 3,
             silver: 7,
-            bronse: 4,
+            bronze: 4,
           },
         },
       },
@@ -205,12 +205,12 @@ const skyttere = [
           ind: {
             gold: 30,
             silver: 14,
-            bronse: 9,
+            bronze: 9,
           },
           team: {
             gold: 47,
             silver: 13,
-            bronse: null,
+            bronze: null,
           },
         },
       },
@@ -220,12 +220,12 @@ const skyttere = [
           ind: {
             gold: 1,
             silver: 2,
-            bronse: 1,
+            bronze: 1,
           },
           team: {
             gold: null,
             silver: 2,
-            bronse: null,
+            bronze: null,
           },
         },
       },
@@ -235,12 +235,12 @@ const skyttere = [
           ind: {
             gold: 2,
             silver: 1,
-            bronse: 1,
+            bronze: 1,
           },
           team: {
             gold: 5,
             silver: 5,
-            bronse: 2,
+            bronze: 2,
           },
         },
       },
@@ -250,12 +250,12 @@ const skyttere = [
           ind: {
             gold: 5,
             silver: 4,
-            bronse: 2,
+            bronze: 2,
           },
           team: {
             gold: null,
             silver: null,
-            bronse: null,
+            bronze: null,
           },
         },
       },
@@ -265,12 +265,12 @@ const skyttere = [
           ind: {
             gold: 12,
             silver: 7,
-            bronse: 3,
+            bronze: 3,
           },
           team: {
             gold: null,
             silver: null,
-            bronse: null,
+            bronze: null,
           },
         },
       },
@@ -280,12 +280,12 @@ const skyttere = [
           ind: {
             gold: 5,
             silver: null,
-            bronse: null,
+            bronze: null,
           },
           team: {
             gold: 8,
             silver: null,
-            bronse: null,
+            bronze: null,
           },
         },
       },
@@ -295,12 +295,12 @@ const skyttere = [
           ind: {
             gold: 144,
             silver: null,
-            bronse: null,
+            bronze: null,
           },
           team: {
             gold: 8,
             silver: null,
-            bronse: null,
+            bronze: null,
           },
         },
       },
@@ -426,12 +426,12 @@ const skyttere = [
           ind: {
             gold: 12,
             silver: null,
-            bronse: null,
+            bronze: null,
           },
           team: {
             gold: null,
             silver: null,
-            bronse: null,
+            bronze: null,
           },
         },
       },
@@ -441,12 +441,12 @@ const skyttere = [
           ind: {
             gold: 2,
             silver: null,
-            bronse: null,
+            bronze: null,
           },
           team: {
             gold: null,
             silver: null,
-            bronse: null,
+            bronze: null,
           },
         },
       },
@@ -456,12 +456,12 @@ const skyttere = [
           ind: {
             gold: null,
             silver: null,
-            bronse: 1,
+            bronze: 1,
           },
           team: {
             gold: null,
             silver: null,
-            bronse: null,
+            bronze: null,
           },
         },
       },
@@ -587,12 +587,12 @@ const skyttere = [
           ind: {
             gold: 7,
             silver: null,
-            bronse: null,
+            bronze: null,
           },
           team: {
             gold: null,
             silver: null,
-            bronse: null,
+            bronze: null,
           },
         },
       },
@@ -602,12 +602,12 @@ const skyttere = [
           ind: {
             gold: 7,
             silver: null,
-            bronse: null,
+            bronze: null,
           },
           team: {
             gold: null,
             silver: null,
-            bronse: null,
+            bronze: null,
           },
         },
       },
@@ -617,12 +617,12 @@ const skyttere = [
           ind: {
             gold: null,
             silver: 1,
-            bronse: null,
+            bronze: null,
           },
           team: {
             gold: null,
             silver: null,
-            bronse: null,
+            bronze: null,
           },
         },
       },
@@ -762,12 +762,12 @@ const skyttere = [
           ind: {
             gold: 1,
             silver: null,
-            bronse: null,
+            bronze: null,
           },
           team: {
             gold: null,
             silver: null,
-            bronse: null,
+            bronze: null,
           },
         },
       },
