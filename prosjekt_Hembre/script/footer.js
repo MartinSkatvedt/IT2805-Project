@@ -15,7 +15,15 @@
 
         </div>
 
-        <p></p>
+        <section class="follow_us_container">
+
+        <div>
+        <p class="follow_us">Follow us:</p>
+        <a href="https://www.facebook.com/teamhembre" target="_blank" class="fa fa-facebook"></a>
+        </div>
+
+       </section>
+
 
         <div class="nationalStat">
 

@@ -59,6 +59,9 @@ main>* {
 .active:active {
   opacity: 0.7;
 }
+p{
+  margin: 0;
+}
 
 /* END GLOBAL */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -272,8 +275,32 @@ footer a {
   color: var(--text-color);
   text-decoration: none;
   margin: auto;
-
 }
+
+
+.follow_us_container {
+  color: white;
+  font-size: var(--font-size);
+  text-align: center;
+}
+
+.fa {
+  width: 30px;
+  text-decoration: none;
+  margin: auto;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.5;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+  color: white;
+}
+
 
 /* END FOOTER */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -530,40 +557,6 @@ footer a {
 .logo>img {
   width: 30%;
   transition-duration: 0.5s;
-}
-p{
-  margin: 0;
-}
-
-.follow_us_container {
-  position: relative;
-  display: flex;
-  padding-top: 20px;
-  float: right;
-  margin-right: 15px;
-}
-
-.follow_us {
-  font-size: var(--font-size);
-  color: white;
-  font-family: fantasy;
-}
-
-.fa {
-  width: 30px;
-  text-decoration: none;
-  margin: auto;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.5;
-}
-
-/* Set a specific color for each brand */
-/* Facebook */
-.fa-facebook {
-  color: white;
 }
 
 .logo>img:hover {
@@ -1327,6 +1320,12 @@ p{
   .footer-container-one>div {
     margin: auto;
   }
+  .footer-container-two{
+    grid-template-columns: 1fr;
+  }
+  .footer-container-two>*{
+    margin: 10px 0;
+  }
 
 
   #shooter>* {
@@ -1403,11 +1402,6 @@ p{
 
   .grid-container-athletes {
     grid-template-columns: 1fr;
-  }
-
-  .footer-container-two {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
   }
 
   .footer-container-two>p {
