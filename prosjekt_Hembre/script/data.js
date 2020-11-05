@@ -887,6 +887,7 @@ const sponsors = [{
   },
 ];
 
+/* Here you can ad or remove news boxes, or just edit the text and image.  */
 const news = [{
     id: 1,
     header: "Hembre domination during Octoberfest",
