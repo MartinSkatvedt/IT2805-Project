@@ -764,7 +764,7 @@ footer a {
 /* END ABOUT US */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
 /* START SHOOTERS */
-#person_side_top {
+.person_side_top {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -1139,19 +1139,18 @@ footer a {
   top: -50px;
 }
 
-#news-img {
-  display: block;
+.news-img {
   width: 90%;
   padding: 5%;
 }
 
-#textbox {
+.textbox {
   font-size: var(--font-size);
   width: 90%;
   margin: auto;
 }
 
-#textbox>h2 {
+.textbox>h2 {
   font-size: var(--font-size-large);
 }
 
@@ -1184,11 +1183,11 @@ footer a {
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 1000px) {
-  #textbox {
+  .textbox {
     font-size: var(--font-size-small);
   }
 
-  #textbox>h2 {
+  .textbox>h2 {
     font-size: var(--font-size);
   }
 
@@ -1274,7 +1273,7 @@ footer a {
     margin: 3%;
   }
 
-  #person_side_top {
+  .person_side_top {
     grid-template-columns: 1fr 1fr;
   }
 
