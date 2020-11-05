@@ -1,5 +1,5 @@
-function writeNews() {
-  const main = document.querySelector('main') // Locaal variable that refers to element in HTML
+function writeNews() {//Function that writes ut all the news 
+  const main = document.querySelector('main')// Locaal variable that refers to element in HTML
   const newsContainer = document.createElement('div')
   newsContainer.id = 'news-container'
   newsContainer.innerHTML = `
