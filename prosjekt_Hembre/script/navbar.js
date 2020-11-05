@@ -44,7 +44,9 @@ document.write(`
   </div>
 </div>`); //Skriver ut siden fra js for å slippe å ha mye repetiv HTML
 
-let submenu_1 = document.getElementById("submenu_1"); // Global variable that refers to element in HTML
+// Global variable that refers to element in HTML
+
+let submenu_1 = document.getElementById("submenu_1");
 
 //Lager elementer til navbaren(athletes)
 for (let shooter of shooters) {
@@ -91,40 +93,45 @@ if (screen.width > 500) {
   utoverElement.children[0].addEventListener("mouseover", showSub1);
 
   for (let element of submenuElement_1_Array) {
+    //Loops thorough all the shooters and applies evenListener
     element.onmouseover = () => {
       let shooter = getShooterobject(element.children[0]);
+      //Gets the shooter based on which element is hovered over
 
       if (shooter.stasticsLinks.length === 0) {
         submenu_2.style.display = "none";
         return;
-      }
+      } //Check if shooter doesnt have subpages
 
       let rect = element.getBoundingClientRect();
       submenu_2.style.display = "flex";
       submenu_2.style.left = rect.x + rect.width + "px";
       submenu_2.style.top = rect.y + "px";
+      //Styling for displaying subelements
 
       for (let i in submenuElement_2_Array) {
         submenuElement_2_Array[i].children[0].href =
-          shooter.stasticsLinks[i][0];
+          shooter.stasticsLinks[i][0]; //Sets href for the divs
         submenuElement_2_Array[i].children[0].target = "_blank";
       }
     };
   }
 } else utoverElement.children[0].addEventListener("click", showSub1);
 
+
+//Function for hiding the submenus when cursor leaves
 function hideSubmenus() {
   submenu_1.style.display = "none";
   submenu_2.style.display = "none";
 }
-
+//function for displaying the name list
 function showSub1() {
   let rect = utoverElement.getBoundingClientRect();
   submenu_1.style.display = "flex";
   submenu_1.style.left = rect.x + "px";
-  // submenu_1.style.top = rect.y + rect.height + 2 + "px";
 }
 
+//Returns the shooter object from data.js
 function getShooterobject(href) {
   const strHref = String(href);
   const index = strHref.search("=");
