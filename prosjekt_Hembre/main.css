@@ -1030,11 +1030,12 @@ footer a {
 }
 
 .cross_color_1 {
-  background-color: #a0e6ff;
+  background-color: var(--nav-color);
+  color:white;
 }
 
 .cross_color_2 {
-  background-color: #eeaf93;
+  background-color: var(--button-color);
 }
 
 .sponsor_box .logo_small {
