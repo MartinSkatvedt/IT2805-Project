@@ -1103,6 +1103,8 @@ footer a {
 }
 
 @media only screen and (min-width: 1600px) {
+/*Large screens [1600px -> )*/
+
   .main_sponsor {
     width: 900px;
   }
@@ -1379,6 +1381,7 @@ footer a {
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
 @media (max-width: 405px) {
+/*Small smartphones [325px -> 425px]*/
 
   #navbar,
   .submenu {
@@ -1397,7 +1400,6 @@ footer a {
     width: 100%;
   }
 
-  /*Small smartphones [325px -> 425px]*/
   .grid-container-athletes {
     grid-template-columns: 1fr;
   }
