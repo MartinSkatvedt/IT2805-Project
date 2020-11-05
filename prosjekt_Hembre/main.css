@@ -1396,9 +1396,9 @@ footer a {
     padding-top: 10px;
   }
 
-    .logo_nav>a>img {
-      width: 100%;
-    }
+  .logo_nav>a>img {
+    width: 100%;
+  }
 
   .grid-container-athletes {
     grid-template-columns: 1fr;
