@@ -77,7 +77,7 @@ main>* {
   box-shadow: var(--box-shadow);
 }
 
-.navBarElement:not(:last-child)>a::before {
+.navBarElement:not(:last-child)>a::before{
   /* hentet inspirasjon fra https://css-tricks.com/having-fun-with-link-hover-effects/ */
   /* funksjoner for å skalere elementer og overgangs tid*/
   visibility: hidden;
