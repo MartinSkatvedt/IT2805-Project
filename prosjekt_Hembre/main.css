@@ -1114,23 +1114,21 @@ footer a {
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
 /* START NEWS */
 #news-container {
-  padding: 20px;
   box-shadow: 0 -4px 0 0 var(--background-color), 0 8px 0 0 var(--background-color),var(--box-shadow); /*To only get box-shadow on the sides*/
 }
 
 #news-container>* {
   width: 90%;
-  margin: 0 auto 5% auto;
-  border: 3px  solid var(--border-color);
-
+  margin: 0 auto 3% auto;
 }
 
 #news-site-headline {
+  box-shadow: var(--box-shadow);
   font-size: var(--font-size-large);
   padding: 3%;
+  width:auto;
   text-align: center;
   background-color: var(--element-background);
-  border: 3px  solid var(--border-color);
 }
 
 .news-div {
