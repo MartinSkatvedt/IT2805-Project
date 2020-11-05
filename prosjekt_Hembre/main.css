@@ -1,5 +1,5 @@
 /* START GLOBAL */
-:root {
+:root { /* global variables*/
   --background-color: #f7f1e3;
   --nav-color: #132020;
   --element-background: #d1d1d1;
@@ -85,6 +85,7 @@ p {
 
 /* :not() referes to elery child exept the last child */
 .navBarElement:not(:last-child)>a::before {
+  /* before gets the before value of the not last childs of navbarelements */
   /* hentet inspirasjon fra https://css-tricks.com/having-fun-with-link-hover-effects/ */
   /* funksjoner for å skalere elementer og overgangs tid*/
   visibility: hidden;
@@ -102,7 +103,7 @@ p {
   background-color: var(--secondary-teks-color);
 }
 
-.navBarElement:not(:last-child)>a:hover::before {
+.navBarElement:not(:last-child)>a:hover::before { /* when all the elements of navBarElement excepts the last one is hoverd over the before will now scale to 1 and be visible
   /* funksjoner for å skalere elementer*/
   visibility: visible;
   /* -moz og - webkit is so it works on different browser */
@@ -111,7 +112,7 @@ p {
   -moz-transform: scale(1);
 }
 
-.navBarElement>a {
+.navBarElement>a { /* "<" Means all the specific elements that are a in  .navBarElement*/
   position: relative;
 }
 
@@ -318,7 +319,8 @@ footer a {
   text-align: center;
 }
 
-#center>* {
+#center>* {  /* ' >* ' reffers to all the children (not granchildren) of the main element  */
+
   width: 95%;
   margin-left: auto;
   margin-right: auto;
@@ -336,7 +338,8 @@ footer a {
 .main_sponsor .sponsor-grid-one,
 .sponsor-grid-two>.sponsor_box,
 .element_about_us,
-#kontakt-main>*,
+#kontakt-main>*,  /* ' >* ' reffers to all the children (not granchildren) of the main element  */
+
 .sponsor_click {
   box-shadow: var(--box-shadow);
 }
@@ -478,7 +481,8 @@ footer a {
   margin: 0 10%;
 }
 
-.buttonsSlides>*:hover {
+.buttonsSlides>*:hover {  /* ' >* ' reffers to all the children (not granchildren) of the main element  */
+
   background-color: var(--button-color);
   color: var(--secondary-teks-color);
 }
@@ -703,11 +707,11 @@ footer a {
   display: block;
 }
 
-.hembre>* {
+.hembre>* {  /* ' >* ' reffers to all the children (not granchildren) of the main element  */
   margin: auto;
 }
 
-.hembre>*>* {
+.hembre>*>* {  /* ' >* ' reffers to all the children (not granchildren) of the main element  */
   margin: 10px;
 }
 /* Customizin the scrollbar in about us */
@@ -768,7 +772,7 @@ footer a {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.person_side_info>* {
+.person_side_info>* {  /* ' >* ' reffers to all the children (not granchildren) of the main element  */
   margin: 10px;
   text-align: left;
 }
@@ -810,7 +814,7 @@ footer a {
   grid-column-gap: 30px;
 }
 
-#grid_container_stats>* {
+#grid_container_stats>* {  /* ' >* ' reffers to all the children (not granchildren) of the main element  */
   margin: 0 auto 10px auto;
 }
 
@@ -855,7 +859,7 @@ footer a {
   margin-bottom: 10px;
 }
 
-#shooter .merit>* {
+#shooter .merit>* { /* ' >* ' reffers to all the children (not granchildren) of the main element  */
   margin: 5px;
 }
 
@@ -1004,11 +1008,11 @@ footer a {
 /* END CONTACT */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
 /* START SPONSOR */
-.main_sponsor * {
+.main_sponsor * { /* all the elements in .main_sponsor*/
   text-align: center;
 }
 
-.main_sponsor>* {
+.main_sponsor>* { /* ' >* ' reffers to all the children (not granchildren) of the main element  */
   margin-left: auto;
   margin-right: auto;
 }
@@ -1137,7 +1141,7 @@ footer a {
   /*To only get box-shadow on the sides*/
 }
 
-#news-container>* {
+#news-container>* { /* ' >* ' reffers to all the children (not granchildren) of the main element  */
   width: 90%;
   margin: 0 auto 3% auto;
 }
@@ -1292,7 +1296,7 @@ footer a {
     grid-template-columns: 1fr;
   }
 
-  .grid-container-home>* {
+  .grid-container-home>* { /* ' >* ' reffers to all the children (not granchildren) of the main element  */
     margin: 3%;
   }
 
@@ -1354,12 +1358,12 @@ footer a {
     grid-template-columns: 1fr;
   }
 
-  .footer-container-two>* {
+  .footer-container-two>* { /* ' >* ' reffers to all the children (not granchildren) of the main element  */
     margin: 10px 0;
   }
 
 
-  #shooter>* {
+  #shooter>* { /* ' >* ' reffers to all the children (not granchildren) of the main element  */
     grid-template-columns: 1fr;
   }
 
@@ -1380,7 +1384,7 @@ footer a {
     margin-top: 20px;
   }
 
-  .person_side_info>* {
+  .person_side_info>* { /* ' >* ' reffers to all the children (not granchildren) of the main element  */
     margin-bottom: 15px;
   }
 
@@ -1456,7 +1460,7 @@ footer a {
     padding-right: 5px;
   }
 
-  .person_side_info>* {
+  .person_side_info>* {/* ' >* ' reffers to all the children (not granchildren) of the main element  */
     margin-bottom: 15px;
   }
 
