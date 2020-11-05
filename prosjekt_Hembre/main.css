@@ -839,7 +839,7 @@ footer a {
 }
 
 #personal-records th,
-#merit i {
+.merit i {
   border-bottom: dashed 1px var(--text-color);
 }
 
@@ -856,15 +856,15 @@ footer a {
   margin: auto;
 }
 
-#shooter #merit {
+#shooter .merit {
   margin-bottom: 10px;
 }
 
-#shooter #merit>* {
+#shooter .merit>* {
   margin: 5px;
 }
 
-#shooter #merit,
+#shooter .merit,
 #shooter td {
   border-bottom: 1px solid var(--text-color);
 }

@@ -22,8 +22,17 @@ function main() {
   const center = document.createElement('div')
   center.id = 'center'
 
+  const newsH = document.createElement('h1')
+  newsH.innerHTML = 'News'
+  center.appendChild(newsH)
+
   center.appendChild(createSlideshow())
   center.appendChild(createSlideshowButtons())
+
+  const athletesH = document.createElement('h2')
+  athletesH.innerHTML = 'Athletes'
+  center.appendChild(athletesH)
+
   center.appendChild(createAthletes())
   gch.appendChild(center)
 
@@ -67,6 +76,7 @@ a.target = " ";
 
   const img = document.createElement('img')
   img.src = sponsor.img
+  img.alt = 'Picture of: '+sponsor.name
 
   const h4 = document.createElement('h4')
   h4.innerHTML = sponsor.name
@@ -105,6 +115,7 @@ function makeAthlete(i) {
 
   const img = document.createElement('img')
   img.src = shooter.image.mainImage
+  img.alt = 'Picture of '+shooter.about.firstName 
 
   const textDiv = document.createElement('div')
   textDiv.className = 'text'
@@ -144,6 +155,7 @@ function makeSlide(i) {
 
   const img = document.createElement('img')
   img.src = article.img
+  img.alt = article.header
 
   const textDiv = document.createElement('div')
   textDiv.className = 'text'
