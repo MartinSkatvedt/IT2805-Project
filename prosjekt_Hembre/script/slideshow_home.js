@@ -1,8 +1,8 @@
 let slideIndex = -1;
 
 
-const next = document.querySelector("#next");
-const prev = document.querySelector("#prev");
+const next = document.querySelector("#next"); // Global variable that refers to element in HTML
+const prev = document.querySelector("#prev"); // Global variable that refers to element in HTML
 
 
 next.addEventListener("click", btnClick)
