@@ -959,6 +959,8 @@ footer a {
 
   padding: 0;
   opacity: 0;
+
+  /* Adding fade-animation in script tag in contact.html so i start when the form is compleeted */
 }
 
 @-webkit-keyframes fadeOut {
