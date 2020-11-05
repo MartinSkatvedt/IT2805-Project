@@ -230,6 +230,7 @@ function makePersonLink(id, local) {
   a.href = "shooters.html?shooter=" + familyId;
   if (local) a.href = "#" + familyId;
   a.innerHTML = name;
+  a.className = 'active'
   return a;
 }
 
