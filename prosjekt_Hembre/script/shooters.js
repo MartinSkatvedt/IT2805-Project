@@ -89,7 +89,7 @@ function makeAboutDiv(shooter, local = false) { //Local makes the links local, e
   aboutDiv.id = "person_pictures";
   //IMG---------------------------------------------------
   const img = makeMainImage(shooter);
-  img.alt = 'Picture of '+shooter.about.firstName
+  img.alt = 'Picture of ' + shooter.about.firstName
   aboutDiv.appendChild(img);
 
   return aboutDiv;
@@ -161,7 +161,7 @@ function makeInfoDiv(shooter) {
   }
   infoDiv.appendChild(select);
 
-  select.onchange = function() {
+  select.onchange = function () {
     const chosen_opt = this.options[this.selectedIndex]; // js property
     window.open(chosen_opt.value);
   };
@@ -317,8 +317,8 @@ function makeRecordsDiv(shooter) {
 
   recordsTable.appendChild(headerTableRow);
 
-//Sorting the array (alfabeticly if there is a score)
-  shooter.bestStatistics.sort(function(a, b) {
+  //Sorting the array (alfabeticly if there is a score)
+  shooter.bestStatistics.sort(function (a, b) {
     let keyA = a.event;
     let keyB = b.event;
     // If there score isn't a number, it will be placed on the bottom
@@ -327,7 +327,7 @@ function makeRecordsDiv(shooter) {
     if (keyA < keyB) return -1;
     if (keyA > keyB) return 1;
     return 0;
-    });
+  });
 
   for (let i = 0; i < shooter.bestStatistics.length; i++) {
     const obj = shooter.bestStatistics[i];
@@ -365,4 +365,3 @@ function findIndex(id) {
   }
   return -1;
 }
-

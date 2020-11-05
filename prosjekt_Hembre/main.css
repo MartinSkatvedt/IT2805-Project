@@ -40,7 +40,7 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid;
 }
 
-main{
+main {
   background-color: var(--background-color);
   color: var(--text-color);
   margin: 0 auto;
@@ -59,7 +59,8 @@ main>* {
 .active:active {
   opacity: 0.7;
 }
-p{
+
+p {
   margin: 0;
 }
 
@@ -80,7 +81,7 @@ p{
   box-shadow: var(--box-shadow);
 }
 
-.navBarElement:not(:last-child)>a::before{
+.navBarElement:not(:last-child)>a::before {
   /* hentet inspirasjon fra https://css-tricks.com/having-fun-with-link-hover-effects/ */
   /* funksjoner for å skalere elementer og overgangs tid*/
   visibility: hidden;
@@ -118,6 +119,7 @@ p{
   width: 16.677%;
   text-align: center;
 }
+
 .logo_nav {
   width: 15%;
   margin-left: 5%;
@@ -204,7 +206,8 @@ p{
 
 /* END NAVBAR */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
-#navbar .navBarElement:last-child a, #footer_contact a {
+#navbar .navBarElement:last-child a,
+#footer_contact a {
   background-color: var(--button-color);
   padding: 5px;
   border-radius: 5px;
@@ -212,6 +215,7 @@ p{
   color: black;
   font-weight: normal;
 }
+
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
 /* START FOOTER */
 footer {
@@ -256,9 +260,10 @@ footer a {
 }
 
 .contact>p {
-  margin-top:5%;
+  margin-top: 5%;
   text-align: center
 }
+
 .nationalStat {
   padding: 15%;
   text-decoration: underline;
@@ -383,6 +388,7 @@ footer a {
 .sponsor img {
   width: 100%;
 }
+
 .sponsor:last-child img {
   height: 14vh;
 }
@@ -937,12 +943,14 @@ footer a {
 #infoContainer>h4 {
   margin: 0;
 }
+
 #infoContainer>p {
   margin: 2%;
 }
-.form_response{
+
+.form_response {
   position: relative;
-  background-color:var(--button-color);
+  background-color: var(--button-color);
 
   text-align: center;
   border-radius: 10px;
@@ -953,7 +961,7 @@ footer a {
   opacity: 0;
 }
 
-@-webkit-keyframes fadeOut{
+@-webkit-keyframes fadeOut {
   10% {
     padding: 20px;
     opacity: 1;
@@ -963,6 +971,7 @@ footer a {
     padding: 20px;
     opacity: 1;
   }
+
   100% {
     padding: 0;
     opacity: 0;
@@ -979,6 +988,7 @@ footer a {
     padding: 20px;
     opacity: 1;
   }
+
   100% {
     padding: 0;
     opacity: 0;
@@ -1020,7 +1030,7 @@ footer a {
 
 .cross_color_1 {
   background-color: var(--nav-color);
-  color:white;
+  color: white;
 }
 
 .cross_color_2 {
@@ -1035,7 +1045,8 @@ footer a {
   transition-duration: 0.5s;
   margin: auto;
 }
-#oxford>.logo_small{
+
+#oxford>.logo_small {
   margin: 0.5% 0%;
   width: 45%;
 }
@@ -1077,15 +1088,17 @@ footer a {
 
 .sponsor_click {
   border-radius: 5px;
-  box-shadow:none;
-  border-color:white;
+  box-shadow: none;
+  border-color: white;
   width: 40%;
   color: white;
 
 }
-#oxford_info>.sponsor_click{
+
+#oxford_info>.sponsor_click {
   color: var(--button-color)
 }
+
 .sponsor-grid-two>div {
   text-align: center;
   padding: 10px;
@@ -1103,7 +1116,7 @@ footer a {
 }
 
 @media only screen and (min-width: 1600px) {
-/*Large screens [1600px -> )*/
+  /*Large screens [1600px -> )*/
 
   .main_sponsor {
     width: 900px;
@@ -1114,7 +1127,8 @@ footer a {
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
 /* START NEWS */
 #news-container {
-  box-shadow: 0 -4px 0 0 var(--background-color), 0 8px 0 0 var(--background-color),var(--box-shadow); /*To only get box-shadow on the sides*/
+  box-shadow: 0 -4px 0 0 var(--background-color), 0 8px 0 0 var(--background-color), var(--box-shadow);
+  /*To only get box-shadow on the sides*/
 }
 
 #news-container>* {
@@ -1126,7 +1140,7 @@ footer a {
   box-shadow: var(--box-shadow);
   font-size: var(--font-size-large);
   padding: 3%;
-  width:auto;
+  width: auto;
   text-align: center;
   background-color: var(--element-background);
 }
@@ -1320,10 +1334,12 @@ footer a {
   .footer-container-one>div {
     margin: auto;
   }
-  .footer-container-two{
+
+  .footer-container-two {
     grid-template-columns: 1fr;
   }
-  .footer-container-two>*{
+
+  .footer-container-two>* {
     margin: 10px 0;
   }
 
@@ -1381,7 +1397,7 @@ footer a {
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
 @media (max-width: 405px) {
-/*Small smartphones [325px -> 425px]*/
+  /*Small smartphones [325px -> 425px]*/
 
   #navbar,
   .submenu {
@@ -1436,5 +1452,6 @@ footer a {
     height: 30%;
   }
 }
+
 /* END MEDIA QUEERYS */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
