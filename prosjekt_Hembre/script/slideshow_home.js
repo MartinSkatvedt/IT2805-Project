@@ -40,7 +40,7 @@ function nextSlide(n) {
     slideIndex = 0
   }
 
-  if (slideIndex < 0) {
+  if (slideIndex < 0) { 
     slideIndex = slides.length - 1
   }
   slides[slideIndex].style.display = "block";
