@@ -4,7 +4,7 @@ document.write(`
     <a href="index.html"><img src="pictures/logo2.svg" alt=""></a>
   </div>
   <div class="navBarElement" id="utoverElement">
-    <a href="shooters.html">Athletes</a>
+    <a>Athletes</a>
 
   </div>
   <div class="navBarElement">
