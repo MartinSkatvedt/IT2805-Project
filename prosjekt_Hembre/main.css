@@ -265,7 +265,7 @@ footer a {
 
 .footer-container-two>div {
   font-size: var(--font-size-xsmall);
-  background-color: var(--button-color);
+  background-color: ;
 }
 
 .footer-container-two>div>a {
@@ -375,10 +375,6 @@ footer a {
 .sponsor-grid-two img {
   margin-top: 5%;
   width: 90%;
-}
-
-.sponsor_box:last-child img {
-  height: 15vh;
 }
 
 .supporter {
@@ -1018,6 +1014,7 @@ footer a {
 
 .sponsor_name {
   padding-top: 20px;
+  padding-bottom: 10px;
   font-size: var(--font-size);
 }
 
@@ -1037,6 +1034,10 @@ footer a {
   transform: scale(1);
   transition-duration: 0.5s;
   margin: auto;
+}
+#oxford>.logo_small{
+  margin: 0.5% 0%;
+  width: 45%;
 }
 
 .logo_small:hover {
@@ -1075,11 +1076,16 @@ footer a {
 }
 
 .sponsor_click {
-  background-color: var(--button-color);
   border-radius: 5px;
-  width: 50%;
-}
+  box-shadow:none;
+  border-color:white;
+  width: 40%;
+  color: white;
 
+}
+#oxford_info>.sponsor_click{
+  color: var(--button-color)
+}
 .sponsor-grid-two>div {
   text-align: center;
   padding: 10px;
