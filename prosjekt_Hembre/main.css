@@ -1119,10 +1119,11 @@ footer a {
 
 #news-container>* {
   width: 90%;
-  margin: 0 auto 5% auto;
+  margin: 0 auto 3% auto;
 }
 
 #news-site-headline {
+  box-shadow: var(--box-shadow);
   font-size: var(--font-size-large);
   padding: 3%;
   width:auto;
