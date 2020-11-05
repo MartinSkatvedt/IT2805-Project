@@ -261,7 +261,7 @@ footer a {
 .footer-container-two {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 2% 4.5%;
+  margin: 2% 4.5% 0;
   padding: 10px;
 }
 
