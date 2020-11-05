@@ -318,6 +318,18 @@ function makeRecordsDiv(shooter) {
 
   recordsTable.appendChild(headerTableRow);
 
+//Sorting the array (alfabeticly if there is a score)
+  shooter.bestStatistics.sort(function(a, b) {
+    let keyA = a.event;
+    let keyB = b.event;
+    // If there score isn't a number, it will be placed on the bottom
+    if (isNaN(a.score)) return 1;
+    // Compare the 2 events
+    if (keyA < keyB) return -1;
+    if (keyA > keyB) return 1;
+    return 0;
+    });
+
   for (let i = 0; i < shooter.bestStatistics.length; i++) {
     const obj = shooter.bestStatistics[i];
     let tr = document.createElement("tr");
