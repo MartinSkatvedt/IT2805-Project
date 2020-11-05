@@ -865,9 +865,9 @@ const supporters = [
   },
   {
     name: "This can be you!!",
-    alder: "Age",
-    klubb: "Club",
-    meritter: "Merits",
+    alder: "Age: --------",
+    klubb: "Club: --------",
+    meritter: "Merits: --------",
   },
 ];
 
