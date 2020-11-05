@@ -1,8 +1,8 @@
 let slideIndex = -1;
 
 
-const next = document.querySelector("#next");
-const prev = document.querySelector("#prev");
+const next = document.querySelector("#next"); // Global variable that refers to element in HTML
+const prev = document.querySelector("#prev"); // Global variable that refers to element in HTML
 
 
 next.addEventListener("click", btnClick)
@@ -40,7 +40,7 @@ function nextSlide(n) {
     slideIndex = 0
   }
 
-  if (slideIndex < 0) {
+  if (slideIndex < 0) { 
     slideIndex = slides.length - 1
   }
   slides[slideIndex].style.display = "block";

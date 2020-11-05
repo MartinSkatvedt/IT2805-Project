@@ -1,4 +1,4 @@
-let bakkevold = document.querySelector("#bakkevold")
+let bakkevold = document.querySelector("#bakkevold")  // Global variable that refers to element in HTML
 let oxford = document.querySelector("#oxford")
 let bakkevold_info = document.querySelector("#bakkevold_info")
 let oxford_info = document.querySelector("#oxford_info")
@@ -33,10 +33,10 @@ function goToContact() {
   window.open("contact.html", "_blank")
 }
 
-bakkevold.onclick = bakkevoldS
-oxford.onclick = oxfordS
+bakkevold.onclick = bakkevoldS // runs the function bakkevoldS when bakkevold is clicked
+oxford.onclick = oxfordS // runs the function oxfordS when oxford is clicked
 
-bakkevold_info.onclick = goToBakkevold
+bakkevold_info.onclick = goToBakkevold 
 oxford_info.onclick = goToOxford
 
 contact_click.onclick = goToContact

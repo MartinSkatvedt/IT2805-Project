@@ -1,5 +1,5 @@
 function main() {
-  const main = document.querySelector('main')
+  const main = document.querySelector('main') // Global variable that refers to element in HTML
   main.id = 'main_index'
   main.className = 'main_index'
 

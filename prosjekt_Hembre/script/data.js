@@ -1,4 +1,4 @@
-const pictures = {
+const pictures = { // Global variables to sorting data
   pal: {
     mainImage: "pictures/pal.jpg",
     mainImage2: "pictures/pal.png",

@@ -1314,7 +1314,16 @@ footer a {
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 610px) {
-
+  .subFolder{
+    display: block;
+  }
+  .subFolder>div{
+    width: 100%;
+    margin-top: 5%;
+  }
+    #navbar {
+      height: 4vh;
+    }
   #navbar,
   .submenu {
     font-size: var(--font-size-xsmall)
@@ -1387,7 +1396,7 @@ footer a {
     display: none;
   }
 
-  .main_sponsor .sponsor-grid-one .tom {
+  .main_sponsor .sponsor-grid-one {
     display: none;
   }
 
@@ -1409,10 +1418,12 @@ footer a {
   .submenu {
     font-size: var(--font-size-xxsmall)
   }
-
-  #navbar {
-    height: 4vh;
+  #formContainer{
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 5%;
   }
+
 
   .navBarElement {
     padding-top: 10px;
@@ -1456,6 +1467,10 @@ footer a {
   #oxford>.logo_small,
   #bakkevold>.logo_small {
     height: 30%;
+  }
+
+  .sponsor:last-child img {
+    height: 14vh;
   }
 }
 

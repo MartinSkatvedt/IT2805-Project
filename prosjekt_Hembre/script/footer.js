@@ -37,7 +37,7 @@
     </footer>`)
 
  function makeFooter() {
-   const footer = document.querySelector(".footer-container-one")
+   const footer = document.querySelector(".footer-container-one") // Global variable that refers to element in HTML
    footer.innerHTML = ""
    for (let i in shooters) {
      if (shooters[i].isShown) {
