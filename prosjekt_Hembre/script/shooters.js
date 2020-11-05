@@ -6,7 +6,7 @@ function createSite() {
   //Retruns if it doesnt find an index
 
   const shooter = shooters[index];
-  const main = document.querySelector("main");
+  const main = document.querySelector("main"); // Global variable that refers to element in HTML
   main.id = "shooter";
   //    main.innerHTML = ''
 

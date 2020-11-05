@@ -44,7 +44,7 @@ document.write(`
   </div>
 </div>`); //Skriver ut siden fra js for å slippe å ha mye repetiv HTML
 
-let submenu_1 = document.getElementById("submenu_1");
+let submenu_1 = document.getElementById("submenu_1"); // Global variable that refers to element in HTML
 
 //Lager elementer til navbaren(athletes)
 for (let shooter of shooters) {

@@ -1,20 +1,20 @@
 function writeNews() {
-  const main = document.querySelector('main')
-  const newsContainer = document.createElement('div')
+  const main = document.querySelector('main') // Global variable that refers to element in HTML
+  const newsContainer = document.createElement('div') // Global variable that refers to element in HTML
   newsContainer.id = 'news-container'
   newsContainer.innerHTML = `
     <h1 id="news-site-headline">NEWS</h1>
     `
   for (let i = 0; i < news.length; i++) {
-    const element = news[i];
-    const newsDiv = document.createElement('div')
+    const element = news[i]; // Global variable that refers to element in HTML
+    const newsDiv = document.createElement('div') // Global variable that refers to element in HTML
     newsDiv.className = 'news-div'
 
 
-    const header = document.createElement('h2')
+    const header = document.createElement('h2') // Global variable that refers to element in HTML
     header.innerHTML = element.header
 
-    const img = document.createElement('img')
+    const img = document.createElement('img') // Global variable that refers to element in HTML
     img.src = element.img
     img.className = 'news-img'
     img.alt = element.header

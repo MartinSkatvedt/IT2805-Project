@@ -1,6 +1,6 @@
 function makeNameHeader() {
 
-  const name_header = document.querySelector(".name_header");
+  const name_header = document.querySelector(".name_header"); // Global variable that refers to element in HTML
 
   const div = document.createElement('div')
   for (let i = 0; i < shooters.length; i++) {
