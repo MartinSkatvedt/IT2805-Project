@@ -369,6 +369,10 @@ footer a {
 .sponsor img {
   width: 100%;
 }
+.sponsor:last-child img {
+  height: 16vh;
+}
+
 
 .sponsor>a {
   color: var(--text-color);
@@ -940,7 +944,7 @@ footer a {
 .form_response{
   position: relative;
   background-color:var(--button-color);
-  
+
   text-align: center;
   border-radius: 10px;
   margin: 20px auto 0;
