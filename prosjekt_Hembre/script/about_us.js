@@ -31,6 +31,7 @@ function writeStatsOmOss() {
 
       const familyDiv = makeFamilyDiv(shooter, false);
       const img = makeMainImage(shooter);
+      img.alt = 'Picture of '+shooter.about.firstName
 
       hembreDiv.appendChild(infoDiv);
       hembreDiv.appendChild(familyDiv);
