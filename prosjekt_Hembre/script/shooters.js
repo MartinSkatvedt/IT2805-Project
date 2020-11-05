@@ -96,7 +96,6 @@ function makeAboutDiv(shooter, local = false) { //Local makes the links local, e
 }
 
 function makeInfoDiv(shooter) {
-  //Ikke ferdig
   //MAKING 'person_side_info' DIV--------------------------------------------------------
   const infoDiv = document.createElement("div");
   infoDiv.className = "person_side_info";
