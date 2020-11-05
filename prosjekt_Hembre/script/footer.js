@@ -49,6 +49,7 @@
 
          a.innerHTML = element[1]
          a.href = element[0]
+         a.className = 'active'
          a.target = " "
          liLinks.appendChild(a)
          ul.appendChild(liLinks)
