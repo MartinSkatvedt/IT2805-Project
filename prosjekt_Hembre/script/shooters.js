@@ -383,6 +383,6 @@ function makeAthleteLink(shooter) {
   const a = document.createElement("a");
   a.href = "shooters.html?shooter=" + shooter.id;
   a.innerHTML =
-    "Mer om " + shooter.about.firstName + " " + shooter.about.lastName;
+    "More about " + shooter.about.firstName + " " + shooter.about.lastName;
   return a;
 }
