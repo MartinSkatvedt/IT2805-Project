@@ -89,6 +89,7 @@ function makeAboutDiv(shooter, local = false) { //Local makes the links local, e
   aboutDiv.id = "person_pictures";
   //IMG---------------------------------------------------
   const img = makeMainImage(shooter);
+  img.alt = 'Picture of '+shooter.about.firstName
   aboutDiv.appendChild(img);
 
   //FAMILY----------------------------------------------------------
@@ -248,7 +249,7 @@ function makeMeritsDiv(shooter) {
   for (let i = 0; i < shooter.merits.length; i++) {
     const element = shooter.merits[i];
     const div = document.createElement("div");
-    div.id = "merit";
+    div.className = "merit";
 
     const cursive = document.createElement("i");
     cursive.innerHTML = element.merit;
