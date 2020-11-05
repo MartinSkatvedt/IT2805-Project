@@ -900,6 +900,7 @@ footer a {
   width: 100%;
   border: 2px solid var(--border-color);
   text-align: left;
+  font-family: "Arial", "sans-serif", "Helvetica";
 }
 
 .gridElement {
@@ -938,47 +939,56 @@ footer a {
 }
 .form_response{
   position: relative;
-  border-radius: 10px;
+  background-color:var(--button-color);
+  
   text-align: center;
-  padding: 20px;
-  width: fit-content;
+  border-radius: 10px;
   margin: 20px auto 0;
-  background-color:#27ae60;
-  
-  
+
+  padding: 0;
   opacity: 0;
-  -webkit-animation: fadeOut 2s;
-  animation: fadeOut 5s;
+
+  /* -webkit-animation: fadeOut 2s;
+  animation: fadeOut 5s; legger til disse i js */
+
 }
 
-@-webkit-keyframes fadeOut {
+@-webkit-keyframes fadeOut{
   0% {
+    padding: 0;
     opacity: 0;
   }
   15% {
+    padding: 20px;
     opacity: 1;
   }
 
   70% {
+    padding: 20px;
     opacity: 1;
   }
   100% {
+    padding: 0;
     opacity: 0;
   }
 }
 
 @keyframes fadeOut {
   0% {
+    padding: 0;
     opacity: 0;
   }
   15% {
+    padding: 20px;
     opacity: 1;
   }
 
   70% {
+    padding: 20px;
     opacity: 1;
   }
   100% {
+    padding: 0;
     opacity: 0;
   }
 }
