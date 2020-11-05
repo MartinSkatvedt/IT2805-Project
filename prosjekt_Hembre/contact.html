@@ -15,16 +15,17 @@
 <body>
   <script src="script/data.js" charset="utf-8"></script>
   <script src="script/navbar.js" charset="utf-8"></script>
-  <div class="form_response"></div>
   <main id="contact-main">
 
     <div id="formContainer">
+      <div class="form_response"><p>Your message has been delivered, thank you!</p></div>
       <h1>Contact us</h1>
       <p>
         Fill out the form, and we'll take contact as soon as we can.
       </p>
 
-      <form id="contactForm" action="#" method="get">
+      <form id="contactForm" method="get">
+
         <div class="gridElement" id="f_mail">
           <label for="email">Mail:</label>
           <input type="email" required name="email" id="email" />
@@ -54,6 +55,7 @@
           <button type="submit" class="pointer active" name="button">Send</button>
         </div>
       </form>
+
     </div>
     <div class="subFolder">
       <div id="mapContainer" class="subContainers"></div>
@@ -78,7 +80,9 @@
   <script type="text/javascript">
     response = document.querySelector(".form_response")
     if (window.location.href.indexOf("?email") > 0) {
-      response.innerHTML = "Your message has been delivered, thank you!"
+      response.style.animation = "fadeOut 5s"
+      response.style.webkitAnimation = "fadeOut 5s"
+
     }
   </script>
 </body>

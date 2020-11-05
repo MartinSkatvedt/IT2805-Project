@@ -1,7 +1,7 @@
 /* START GLOBAL */
 :root {
   --background-color: #f7f1e3;
-  --nav-color: #132020;
+  --nav-color: #132020; 
   --element-background: #d1d1d1;
   --text-color: #000;
   --background-text-color: none;
@@ -369,6 +369,10 @@ footer a {
 .sponsor img {
   width: 100%;
 }
+.sponsor:last-child img {
+  height: 16vh;
+}
+
 
 .sponsor>a {
   color: var(--text-color);
@@ -900,6 +904,7 @@ footer a {
   width: 100%;
   border: 2px solid var(--border-color);
   text-align: left;
+  font-family: "Arial", "sans-serif", "Helvetica";
 }
 
 .gridElement {
@@ -935,6 +940,61 @@ footer a {
 
 #infoContainer>h4 {
   margin-top: 0;
+}
+.form_response{
+  position: relative;
+  background-color:var(--button-color);
+
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px auto 0;
+
+  padding: 0;
+  opacity: 0;
+
+  /* -webkit-animation: fadeOut 2s;
+  animation: fadeOut 5s; legger til disse i js */
+
+}
+
+@-webkit-keyframes fadeOut{
+  0% {
+    padding: 0;
+    opacity: 0;
+  }
+  15% {
+    padding: 20px;
+    opacity: 1;
+  }
+
+  70% {
+    padding: 20px;
+    opacity: 1;
+  }
+  100% {
+    padding: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    padding: 0;
+    opacity: 0;
+  }
+  15% {
+    padding: 20px;
+    opacity: 1;
+  }
+
+  70% {
+    padding: 20px;
+    opacity: 1;
+  }
+  100% {
+    padding: 0;
+    opacity: 0;
+  }
 }
 
 /* END CONTACT */
