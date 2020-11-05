@@ -92,9 +92,6 @@ function makeAboutDiv(shooter, local = false) { //Local makes the links local, e
   img.alt = 'Picture of '+shooter.about.firstName
   aboutDiv.appendChild(img);
 
-  //FAMILY----------------------------------------------------------
-  // const familyDiv = makeFamilyDiv(shooter,local)
-  // aboutDiv.appendChild(familyDiv)
   return aboutDiv;
 }
 
@@ -102,7 +99,7 @@ function makeInfoDiv(shooter) {
   //Ikke ferdig
   //MAKING 'person_side_info' DIV--------------------------------------------------------
   const infoDiv = document.createElement("div");
-  infoDiv.id = "person_side_info";
+  infoDiv.className = "person_side_info";
 
   //Overskrift--------------------------------------------------------
   const header = document.createElement("h1");
@@ -137,7 +134,7 @@ function makeInfoDiv(shooter) {
   const memberShipP = document.createElement("p");
   memberShipP.innerHTML = "membership: ";
   const link = document.createElement("a");
-  link.id = "membership";
+  link.className = "membership";
   link.href = shooter.memberShip.link;
   link.innerHTML = shooter.memberShip.name;
   link.target = "_blank";
@@ -148,7 +145,7 @@ function makeInfoDiv(shooter) {
   infoDiv.appendChild(linker);
   //legger til select-element------------------------------------------------------
   const select = document.createElement("select");
-  select.id = "dp_menu";
+  select.className = "dp_menu";
 
   let opt = document.createElement("option");
   opt.disabled = true;
@@ -174,7 +171,7 @@ function makeInfoDiv(shooter) {
 
 function makeStatLinks(shooter) {
   const divLinks = document.createElement("div");
-  divLinks.id = "divLinks";
+  divLinks.className = "divLinks";
   for (let i = 0; i < shooter.stasticsLinks.length; i++) {
     const element = shooter.stasticsLinks[i];
     const a = document.createElement("a");
@@ -194,13 +191,13 @@ function makeMainImage(shooter) {
 
 function makeFamilyDiv(shooter, local) {
   const familyDiv = document.createElement("div");
-  familyDiv.id = "familyDiv";
+  familyDiv.className = "familyDiv";
 
   for (const obj in shooter.family) {
     const familyType = shooter.family[obj];
     if (shooter.family.hasOwnProperty(obj) && familyType.length > 0) {
       const familyTypeDiv = document.createElement("div");
-      familyTypeDiv.id = "familyType";
+      familyTypeDiv.className = "familyType";
 
       const p = document.createElement("p");
       p.innerHTML = obj.charAt(0).toUpperCase() + obj.substring(1) + " who compete:"; //For å for føste bokstav Stor

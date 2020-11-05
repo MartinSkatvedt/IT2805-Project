@@ -619,7 +619,7 @@ footer a {
   width: 100%;
 }
 
-.hembre #divLinks {
+.hembre .divLinks {
   display: none;
 }
 
@@ -773,12 +773,12 @@ footer a {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-#person_side_info>* {
+.person_side_info>* {
   margin: 10px;
   text-align: left;
 }
 
-#familyDiv {
+.familyDiv {
   margin: auto;
 }
 
@@ -787,7 +787,7 @@ footer a {
   border-radius: 10px;
 }
 
-#dp_menu {
+.dp_menu {
   background-color: inherit;
   border-color: black;
   padding: 8px;
@@ -802,7 +802,7 @@ footer a {
   margin-top: 0;
 }
 
-#shooter #membership {
+#shooter .membership {
   text-decoration: underline;
 }
 
@@ -869,21 +869,21 @@ footer a {
   border-bottom: 1px solid var(--text-color);
 }
 
-#shooter #familyDiv a,
-#shooter #divLinks a {
+#shooter .familyDiv a,
+#shooter .divLinks a {
   display: block;
 }
 
-#shooter #familyType>p {
+#shooter .familyType>p {
   margin: 0;
   display: inline;
 }
 
-#shooter #familyType {
+#shooter .familyType {
   margin-top: 20px;
 }
 
-#shooter #familyType:first-child {
+#shooter .familyType:first-child {
   margin-top: 0;
 }
 
@@ -1281,7 +1281,7 @@ footer a {
     grid-template-columns: 1fr 1fr;
   }
 
-  #familyDiv {
+  .familyDiv {
     display: none;
   }
 
@@ -1345,11 +1345,11 @@ footer a {
     height: 69vh;
   }
 
-  #person_side_info {
+  .person_side_info {
     margin-top: 20px;
   }
 
-  #person_side_info>* {
+  .person_side_info>* {
     margin-bottom: 15px;
   }
 
@@ -1361,7 +1361,7 @@ footer a {
     display: none;
   }
 
-  .hembre #dp_menu {
+  .hembre .dp_menu {
     display: none;
   }
 
@@ -1423,12 +1423,12 @@ footer a {
     font-size: var(--font-size-xsmall);
   }
 
-  #person_side_info {
+  .person_side_info {
     margin-top: 20px;
     padding-right: 5px;
   }
 
-  #person_side_info>* {
+  .person_side_info>* {
     margin-bottom: 15px;
   }
 
