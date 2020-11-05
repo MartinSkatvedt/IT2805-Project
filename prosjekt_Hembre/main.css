@@ -1,7 +1,7 @@
 /* START GLOBAL */
 :root {
   --background-color: #f7f1e3;
-  --nav-color: #132020; 
+  --nav-color: #132020;
   --element-background: #d1d1d1;
   --text-color: #000;
   --background-text-color: none;
@@ -502,15 +502,19 @@ footer a {
 
 .knapp_header {
   margin-top: 10vh;
+
 }
 
 .knapp_header>a {
-  color: rgb(241, 215, 95);
+  color: var(--text-color);
+  border-color: rgb(241, 215, 95);
   font-size: var(--font-size-large);
   border-style: solid;
   border-width: 5px;
   padding: 12px 28px;
   text-decoration: none;
+  background-color: white;
+  opacity: 0.8;
 }
 
 .knapp_header>a:hover {
@@ -764,7 +768,7 @@ footer a {
 /* END ABOUT US */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
 /* START SHOOTERS */
-#person_side_top {
+.person_side_top {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -835,7 +839,7 @@ footer a {
 }
 
 #personal-records th,
-#merit i {
+.merit i {
   border-bottom: dashed 1px var(--text-color);
 }
 
@@ -852,15 +856,15 @@ footer a {
   margin: auto;
 }
 
-#shooter #merit {
+#shooter .merit {
   margin-bottom: 10px;
 }
 
-#shooter #merit>* {
+#shooter .merit>* {
   margin: 5px;
 }
 
-#shooter #merit,
+#shooter .merit,
 #shooter td {
   border-bottom: 1px solid var(--text-color);
 }
@@ -1111,7 +1115,6 @@ footer a {
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
 /* START NEWS */
 #news-container {
-  background-color: #555;
   padding: 20px;
 }
 
@@ -1139,19 +1142,18 @@ footer a {
   top: -50px;
 }
 
-#news-img {
-  display: block;
+.news-img {
   width: 90%;
   padding: 5%;
 }
 
-#textbox {
+.textbox {
   font-size: var(--font-size);
   width: 90%;
   margin: auto;
 }
 
-#textbox>h2 {
+.textbox>h2 {
   font-size: var(--font-size-large);
 }
 
@@ -1184,11 +1186,11 @@ footer a {
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 1000px) {
-  #textbox {
+  .textbox {
     font-size: var(--font-size-small);
   }
 
-  #textbox>h2 {
+  .textbox>h2 {
     font-size: var(--font-size);
   }
 
@@ -1274,7 +1276,7 @@ footer a {
     margin: 3%;
   }
 
-  #person_side_top {
+  .person_side_top {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -1440,4 +1442,3 @@ footer a {
 }
 /* END MEDIA QUEERYS */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
-

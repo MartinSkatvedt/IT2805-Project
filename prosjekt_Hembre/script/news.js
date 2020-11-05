@@ -16,10 +16,11 @@ function writeNews() {
 
     const img = document.createElement('img')
     img.src = element.img
-    img.id = 'news-img'
+    img.className = 'news-img'
+    img.alt = element.header
 
     const textDiv = document.createElement('div')
-    textDiv.id = 'textbox'
+    textDiv.className = 'textbox'
 
     textDiv.appendChild(header)
     for (const paragraph of element.text) {
