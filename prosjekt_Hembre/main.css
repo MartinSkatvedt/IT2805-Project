@@ -83,7 +83,7 @@ p {
   box-shadow: var(--box-shadow);
 }
 
-/* :not() referes to elery child exept the last child */
+/* :not(:last-child) referes to elery child exept the last child */
 .navBarElement:not(:last-child)>a::before {
   /* hentet inspirasjon fra https://css-tricks.com/having-fun-with-link-hover-effects/ */
   /* funksjoner for å skalere elementer og overgangs tid*/

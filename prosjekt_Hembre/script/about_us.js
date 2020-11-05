@@ -49,7 +49,7 @@ function makeAthleteLink(shooter) {
   return a;
 }
 
-function getTotalMedals() {
+function getTotalMedals() {//function that calculates the all the medals from all the athletes an returns them in an array [gold, silver, broze] 
   let gold = 0
   let silver = 0
   let bronze = 0
@@ -63,7 +63,7 @@ function getTotalMedals() {
   return [gold, silver, bronze]
 }
 
-function writeMedals() {
+function writeMedals() { //function that writes out the medals in the document
   const gold = document.querySelector('#gold')
   const silver = document.querySelector('#silver')
   const bronze = document.querySelector('#bronze')
