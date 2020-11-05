@@ -948,21 +948,14 @@ footer a {
   text-align: center;
   border-radius: 10px;
   margin: 20px auto 0;
+  width: fit-content;
 
   padding: 0;
   opacity: 0;
-
-  /* -webkit-animation: fadeOut 2s;
-  animation: fadeOut 5s; legger til disse i js */
-
 }
 
 @-webkit-keyframes fadeOut{
-  0% {
-    padding: 0;
-    opacity: 0;
-  }
-  15% {
+  10% {
     padding: 20px;
     opacity: 1;
   }
@@ -978,16 +971,12 @@ footer a {
 }
 
 @keyframes fadeOut {
-  0% {
-    padding: 0;
-    opacity: 0;
-  }
-  15% {
+  10% {
     padding: 20px;
     opacity: 1;
   }
 
-  70% {
+  75% {
     padding: 20px;
     opacity: 1;
   }
