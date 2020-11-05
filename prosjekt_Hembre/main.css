@@ -46,15 +46,18 @@ main {
   width: 85%;
 }
 
+ /* ' >* ' reffers to all the children (not granchildren) of the main element  */
 main>* {
   margin-top: 3%;
   margin-bottom: 3%;
 }
 
+/* :hover activates when the mouse is over the element */
 .pointer:hover {
   cursor: pointer;
 }
 
+/* :active activates when the clicking on the element */
 .active:active {
   opacity: 0.7;
 }
@@ -80,6 +83,7 @@ p {
   box-shadow: var(--box-shadow);
 }
 
+/* :not() referes to elery child exept the last child */
 .navBarElement:not(:last-child)>a::before {
   /* hentet inspirasjon fra https://css-tricks.com/having-fun-with-link-hover-effects/ */
   /* funksjoner for å skalere elementer og overgangs tid*/
@@ -101,6 +105,7 @@ p {
 .navBarElement:not(:last-child)>a:hover::before {
   /* funksjoner for å skalere elementer*/
   visibility: visible;
+  /* -moz og - webkit is so it works on different browser */
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
   -moz-transform: scale(1);
@@ -484,7 +489,7 @@ footer a {
   cursor: pointer;
 }
 
-/* Fading animation*/
+/* Fading animation; adding a fading annimatoin on the slideshow -webikt for more browsers */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1s;
@@ -705,7 +710,7 @@ footer a {
 .hembre>*>* {
   margin: 10px;
 }
-
+/* Customizin the scrollbar in about us */
 #all_athletes::-webkit-scrollbar {
   width: 8px;
 }

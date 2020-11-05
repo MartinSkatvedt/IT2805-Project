@@ -16,7 +16,7 @@ function makeNameHeader() {
   name_header.appendChild(div)
 }
 
-function writeStatsOmOss() {
+function writeStatsOmOss() {//Making the the bow with atheletes function 
   const allPlayers = document.querySelector("#all_athletes");
 
   for (let i = 0; i < shooters.length; i++) {
