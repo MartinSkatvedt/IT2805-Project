@@ -92,9 +92,6 @@ a.target = " ";
   return div
 }
 
-
-
-
 //Center functions----------------------------------------
 
 function createAthletes() {
@@ -188,8 +185,6 @@ function createSlideshowButtons() {
   return buttonSlidesDiv
 
 }
-
-
 
 // supporters functions--------------------------------------
 function createSupporters() {

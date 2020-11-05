@@ -346,7 +346,7 @@ function makeRecordsDiv(shooter) {
   return recordsDiv;
 }
 
-//Getting index functions
+//Getting index functions------------------------------
 function getIndex() {
   //FUNCTION TO FETCH THE SHOOTER INDEX FOR SHOOTER ID---
   const url_string = window.location.href; //window.location.href
@@ -365,34 +365,3 @@ function findIndex(id) {
   return -1;
 }
 
-function writeStatsOmOss() {
-  const allPlayers = document.querySelector("#all_athletes");
-
-  for (let i = 0; i < shooters.length; i++) {
-    if (shooters[i].isShown) {
-      const hembreDiv = document.createElement('div')
-      hembreDiv.className = 'hembre'
-
-      const shooter = shooters[i]
-
-      const infoDiv = makeInfoDiv(shooter);
-      infoDiv.appendChild(makeAthleteLink(shooter));
-
-      const familyDiv = makeFamilyDiv(shooter, false);
-      const img = makeMainImage(shooter);
-
-      hembreDiv.appendChild(infoDiv);
-      hembreDiv.appendChild(familyDiv);
-      hembreDiv.appendChild(img);
-      allPlayers.appendChild(hembreDiv)
-    }
-  }
-}
-
-function makeAthleteLink(shooter) {
-  const a = document.createElement("a");
-  a.href = "shooters.html?shooter=" + shooter.id;
-  a.innerHTML =
-    "More about " + shooter.about.firstName + " " + shooter.about.lastName;
-  return a;
-}
