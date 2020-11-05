@@ -4,7 +4,6 @@ let slideIndex = -1;
 const next = document.querySelector("#next");
 const prev = document.querySelector("#prev");
 
-let interval;
 
 next.addEventListener("click", btnClick)
 prev.addEventListener("click", btnClick)
@@ -19,7 +18,8 @@ function btnClick(event) {
     reset()
   }
 }
-
+let interval;
+//Reseting the interval every time the user clicks
 function reset() {
   window.clearInterval(interval)
   interval = window.setInterval(() => {
