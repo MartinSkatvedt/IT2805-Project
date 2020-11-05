@@ -936,6 +936,52 @@ footer a {
 #infoContainer>h4 {
   margin-top: 0;
 }
+.form_response{
+  position: relative;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  width: fit-content;
+  margin: 20px auto 0;
+  background-color:#27ae60;
+  
+  
+  opacity: 0;
+  -webkit-animation: fadeOut 2s;
+  animation: fadeOut 5s;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 /* END CONTACT */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
