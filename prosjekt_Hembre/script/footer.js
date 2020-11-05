@@ -33,7 +33,7 @@
    footer.innerHTML = ""
    for (let i in shooters) {
      if (shooters[i].isShown) {
-      
+
        const listDiv = document.createElement('div')
        const ul = document.createElement('ul')
        const p = document.createElement('p')
@@ -50,6 +50,7 @@
          a.innerHTML = element[1]
          a.href = element[0]
          a.className = 'active'
+         a.target = " "
          liLinks.appendChild(a)
          ul.appendChild(liLinks)
        }

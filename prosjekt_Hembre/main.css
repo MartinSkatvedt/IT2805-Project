@@ -115,7 +115,6 @@ main>* {
   width: 16.677%;
   text-align: center;
 }
-
 .logo_nav {
   width: 15%;
   margin-left: 5%;
@@ -511,10 +510,10 @@ footer a {
 }
 
 .logo {
+  margin: auto;
   padding-top: 0;
   text-align: center;
   margin-top: 0;
-  padding-left: 30px;
 }
 
 .header_over_om_oss {
@@ -529,6 +528,9 @@ footer a {
 .logo>img {
   width: 30%;
   transition-duration: 0.5s;
+}
+p{
+  margin: 0;
 }
 
 .follow_us_container {
@@ -932,13 +934,16 @@ footer a {
 }
 
 #infoContainer>img {
-  width: 18vh;
+  width: 16vh;
   display: block;
   margin: auto;
 }
 
 #infoContainer>h4 {
-  margin-top: 0;
+  margin: 0;
+}
+#infoContainer>p {
+  margin: 2%;
 }
 .form_response{
   position: relative;
@@ -1321,11 +1326,6 @@ footer a {
     margin: auto;
   }
 
-  .logo_footer {
-    display: block;
-    height: 200px;
-    padding-left: 20px;
-  }
 
   #shooter>* {
     grid-template-columns: 1fr;
@@ -1395,9 +1395,9 @@ footer a {
     padding-top: 10px;
   }
 
-  .logo_nav>a>img {
-    width: 100%;
-  }
+    .logo_nav>a>img {
+      width: 100%;
+    }
 
   .grid-container-athletes {
     grid-template-columns: 1fr;
