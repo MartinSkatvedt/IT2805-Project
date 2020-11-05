@@ -30,8 +30,7 @@ const pictures = {
   },
 };
 
-const shooters = [
-    {
+const shooters = [{
     id: "palhembre",
     isShown: true,
 
@@ -657,12 +656,12 @@ const shooters = [
     },
 
     yearlyStatistics: [
-      ["http://fsu.no/2019/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm","2019",],
-      ["http://fsu.no/2018/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm","2018",],
-      ["http://fsu.no/2017/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm","2017",],
-      ["http://fsu.no/2016/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm","2016",],
-      ["http://fsu.no/2015/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm","2015",],
-      ["http://fsu.no/2014/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm","2014",],
+      ["http://fsu.no/2019/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm", "2019", ],
+      ["http://fsu.no/2018/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm", "2018", ],
+      ["http://fsu.no/2017/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm", "2017", ],
+      ["http://fsu.no/2016/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm", "2016", ],
+      ["http://fsu.no/2015/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm", "2015", ],
+      ["http://fsu.no/2014/kretser/akershus/klubber/baerumpk/sk/sk-timleoh.htm", "2014", ],
     ],
     stasticsLinks: [
       // ['link','navn'],
@@ -781,12 +780,8 @@ const shooters = [
     },
 
     yearlyStatistics: [],
-    // ['link','navn'],
     stasticsLinks: [
-      // ["http://fsu.no/issf/alle/tp/tp_paalh.htm", "Best results"],
-      // ["http://fsu.no/issf/alle/sn/sn_paalh.htm", "Average"],
-      // ["http://fsu.no/issf/alle/ant/st_paalh.htm", "Total starts"],
-      // ["http://www.fsu.no/issf/iaar/sk/st_mattish.htm", "Events this year"],
+      // ['link','navn'],
     ],
 
     bestStatistics: [{
@@ -850,8 +845,7 @@ const shooters = [
   },
 ];
 
-const supporters = [
-    {
+const supporters = [{
     name: "Petter Nydalen",
     alder: "Age: 28",
     klubb: "Club: Bærum PK",
@@ -871,12 +865,12 @@ const supporters = [
   },
 ];
 
-const sponsors = [
-    {
+const sponsors = [{
     name: "Bækkevolds Våpenservice",
     img: pictures.sponsors.bekkevold,
     link: "https://www.pardininorge.no/",
-    text: "The best service you can give your weapons, available in Norway"},
+    text: "The best service you can give your weapons, available in Norway"
+  },
   {
     name: "The Oxford Gun Company",
     img: pictures.sponsors.oxford_gun,
@@ -893,8 +887,7 @@ const sponsors = [
   },
 ];
 
-const news = [
-    {
+const news = [{
     id: 1,
     header: "Hembre domination during Octoberfest",
     text: [

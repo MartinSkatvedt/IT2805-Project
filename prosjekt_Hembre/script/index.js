@@ -70,13 +70,13 @@ function makeSponsor(i) {
   const sponsor = sponsors[i]
   const a = document.createElement('a')
   a.href = sponsor.link
-a.target = " ";
+  a.target = " ";
   const div = document.createElement('div')
   div.className = 'sponsor'
 
   const img = document.createElement('img')
   img.src = sponsor.img
-  img.alt = 'Picture of: '+sponsor.name
+  img.alt = 'Picture of: ' + sponsor.name
 
   const h4 = document.createElement('h4')
   h4.innerHTML = sponsor.name
@@ -112,7 +112,7 @@ function makeAthlete(i) {
 
   const img = document.createElement('img')
   img.src = shooter.image.mainImage
-  img.alt = 'Picture of '+shooter.about.firstName 
+  img.alt = 'Picture of ' + shooter.about.firstName
 
   const textDiv = document.createElement('div')
   textDiv.className = 'text'
