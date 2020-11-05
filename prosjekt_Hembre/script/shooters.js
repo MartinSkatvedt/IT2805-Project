@@ -31,7 +31,7 @@ function makeTopDiv(shooter) {
   //CREATING THE TOP DIV
   //MAKING TOP-DIV-ELEMENT--------------------------------------------------------
   const topDiv = document.createElement("div");
-  topDiv.id = "person_side_top";
+  topDiv.className = "person_side_top";
 
   //MAKING THE ABOUTDIV----------------------------------------------------------
   const aboutDiv = makeAboutDiv(shooter);
@@ -216,7 +216,7 @@ function makeFamilyDiv(shooter, local) {
 
 function makeFamilyTypeLinks(familyType, local) {
   const div = document.createElement("div");
-  div.id = "familyTypeLinks";
+  div.className = "familyTypeLinks";
   for (let i = 0; i < familyType.length; i++) {
     const individual = familyType[i];
     const a = makePersonLink(individual, local);
