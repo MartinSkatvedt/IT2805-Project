@@ -70,7 +70,7 @@ function makeSponsor(i) {
   const sponsor = sponsors[i]
   const a = document.createElement('a')
   a.href = sponsor.link
-
+a.target = " ";
   const div = document.createElement('div')
   div.className = 'sponsor'
 

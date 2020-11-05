@@ -1,7 +1,7 @@
 /* START GLOBAL */
 :root {
   --background-color: #f7f1e3;
-  --nav-color: #132020; 
+  --nav-color: #132020;
   --element-background: #d1d1d1;
   --text-color: #000;
   --background-text-color: none;
@@ -502,15 +502,19 @@ footer a {
 
 .knapp_header {
   margin-top: 10vh;
+
 }
 
 .knapp_header>a {
-  color: rgb(241, 215, 95);
+  color: var(--text-color);
+  border-color: rgb(241, 215, 95);
   font-size: var(--font-size-large);
   border-style: solid;
   border-width: 5px;
   padding: 12px 28px;
   text-decoration: none;
+  background-color: white;
+  opacity: 0.8;
 }
 
 .knapp_header>a:hover {
@@ -1439,4 +1443,3 @@ footer a {
 }
 /* END MEDIA QUEERYS */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
-
