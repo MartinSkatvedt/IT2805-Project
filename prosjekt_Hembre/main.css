@@ -1115,13 +1115,14 @@ footer a {
 /* ---------------------------------------------------------------------------------------------------------------------------------------------- */
 /* START NEWS */
 #news-container {
-  background-color: #555;
   padding: 20px;
 }
 
 #news-container>* {
   width: 90%;
   margin: 0 auto 5% auto;
+  border: 3px  solid var(--border-color);
+
 }
 
 #news-site-headline {
@@ -1129,7 +1130,7 @@ footer a {
   padding: 3%;
   text-align: center;
   background-color: var(--element-background);
-  border: 3px solid var(--border-color);
+  border: 3px  solid var(--border-color);
 }
 
 .news-div {
