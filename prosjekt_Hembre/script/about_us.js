@@ -1,4 +1,4 @@
-function makeNameHeader() {
+function makeNameHeader() {//function that writes the aproiate name header
 
   const name_header = document.querySelector(".name_header"); // Global variable that refers to element in HTML
 
@@ -41,7 +41,7 @@ function writeStatsOmOss() {//Making the the bow with atheletes function
   }
 }
 
-function makeAthleteLink(shooter) {
+function makeAthleteLink(shooter) {//funtion that makes a like baset on the shooter
   const a = document.createElement("a");
   a.href = "shooters.html?shooter=" + shooter.id;
   a.innerHTML =
